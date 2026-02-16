@@ -10,7 +10,7 @@ _Learn about the person you're helping. Update this as you go._
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- **Preferences**: Prefers using `Gemini 3 Pro` for complex reasoning tasks via sub-agents (Option 2), while keeping the main session on `Flash` for efficiency.
 
 ---
 
