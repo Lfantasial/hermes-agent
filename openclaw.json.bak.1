@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.15",
+    "lastTouchedAt": "2026-02-16T15:27:09.406Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-16T13:56:34.289Z",
+    "lastRunVersion": "2026.2.15",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "update": {
+    "channel": "dev",
+    "checkOnStart": true
+  },
+  "auth": {
+    "profiles": {
+      "google-antigravity:lfantaellint@gmail.com": {
+        "provider": "google-antigravity",
+        "mode": "oauth",
+        "email": "lfantaellint@gmail.com"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google-antigravity/gemini-3-flash"
+      },
+      "models": {
+        "google-antigravity/gemini-3-flash": {},
+        "google-antigravity/gemini-3-pro": {},
+        "google-antigravity/gemini-3-pro-low": {}
+      },
+      "workspace": "/home/lfant/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": false
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8383705979:AAGV0AIQftM-rzingVgFV-orYcKgHZP8e8Q",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial",
+      "actions": {
+        "reactions": true,
+        "sendMessage": true,
+        "sticker": true
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "86ed5b1b4612554db0e14b1a75f3f3f942194e6013b1c289"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "google-antigravity-auth": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}
