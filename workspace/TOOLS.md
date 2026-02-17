@@ -25,10 +25,9 @@ Things like:
 
 - home-server → 192.168.1.100, user: admin
 
-### TTS
+### Notion
 
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
+- Integration Token: `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`
 ```
 
 ## Why Separate?

@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1771254363238,
+      "updatedAtMs": 1771351272077,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -24,21 +24,25 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771264800000
+        "nextRunAtMs": 1771437600000,
+        "lastRunAtMs": 1771351202927,
+        "lastStatus": "ok",
+        "lastDurationMs": 69150,
+        "consecutiveErrors": 0
       }
     },
     {
       "id": "dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc",
       "agentId": "main",
-      "name": "weekly-update-check",
+      "name": "daily-update-check",
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771254363249,
+      "updatedAtMs": 1771365263804,
       "schedule": {
         "tz": "Asia/Seoul",
-        "expr": "0 8 * * 1",
-        "kind": "cron"
+        "kind": "cron",
+        "expr": "0 6 * * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -50,7 +54,7 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771801200000
+        "nextRunAtMs": 1771448400000
       }
     },
     {
@@ -86,7 +90,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771254363268,
+      "updatedAtMs": 1771365942212,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -99,10 +103,40 @@
         "message": "It's 7 AM. Provide a morning briefing for Sam: 1. Current weather in Seoul (using weather skill). 2. Brief system status overview. 3. Any urgent notifications or tasks from memory. Keep it sharp and helpful."
       },
       "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1771452000000,
+        "lastRunAtMs": 1771365602929,
+        "lastStatus": "ok",
+        "lastDurationMs": 94172,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "9fbab8e2-08fa-4e76-aa00-93296c5dfd89",
+      "agentId": "main",
+      "name": "notion-daily-briefing",
+      "enabled": true,
+      "notify": true,
+      "createdAtMs": 1771342778984,
+      "updatedAtMs": 1771342778984,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Run the python script `/home/lfant/.openclaw/workspace/notion_daily_brief.py` to fetch the latest Notion tasks from yesterday 07:00 to today 07:00. Present the results clearly to Sam in your normal assistant voice (Antigravity 🌌).",
+        "kind": "agentTurn"
+      },
+      "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771279200000
+        "nextRunAtMs": 1771369200000
       }
     }
   ]

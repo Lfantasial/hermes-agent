@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Card 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif KR', serif;
+            background-color: #f9f6f2;
+            width: 1200px;
+            height: 1800px;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 50px;
+            color: #1e272e;
+            position: relative;
+        }
+        .hanji-texture {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0.05;
+            background-image: url('https://www.transparenttextures.com/patterns/handmade-paper.png');
+            pointer-events: none;
+        }
+        .sun {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(to bottom, #f0932b, #eb4d4b);
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(235, 77, 75, 0.3);
+            margin-top: 50px;
+        }
+        .mountains {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(transparent, rgba(47, 53, 66, 0.05));
+            clip-path: polygon(0 100%, 0 80%, 20% 60%, 40% 90%, 60% 50%, 80% 85%, 100% 70%, 100% 100%);
+            z-index: -1;
+        }
+        .content {
+            text-align: center;
+            z-index: 10;
+        }
+        .title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 80px;
+            letter-spacing: -1px;
+        }
+        .body-text {
+            font-size: 42px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+        .signature {
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 100px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-top: 150px;
+            opacity: 0.7;
+        }
+        .logo-item {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-box {
+            width: 24px; height: 24px;
+            display: grid; grid-template-columns: 1fr 1fr;
+        }
+        .logo-box div { width: 10px; height: 10px; margin: 1px; }
+        .horse-icon {
+            position: absolute;
+            bottom: 100px;
+            right: 150px;
+            opacity: 0.15;
+            transform: scale(4);
+        }
+    </style>
+</head>
+<body>
+    <div class="hanji-texture"></div>
+    <div class="sun"></div>
+    <div class="mountains"></div>
+
+    <div class="content">
+        <h1 class="title">조승환 부장님, 여승주 부장님!!</h1>
+        <div class="body-text">
+            <p>2026년 병오년 새해 복 많이 받으시고</p>
+            <p>새해에는 하시는 일 모두 건승하시길 기원합니다.</p>
+            <br>
+            <p>건강과 가족이 무엇보다도 <strong>제일</strong> 중요하니</p>
+            <p>항상 건강하시고 가정에 화목이 <strong>깃들길</strong> 기원합니다.</p>
+            <br>
+            <p>조만간 다시 다 같이 일할 수 있는 기회가 생기면 좋겠네요!</p>
+        </div>
+        <div class="signature">박찬주 배상</div>
+
+        <div class="logos">
+            <div class="logo-item">CSWind</div>
+            <div class="logo-item">
+                <div class="logo-box">
+                    <div style="background:#f35325"></div><div style="background:#81bc06"></div>
+                    <div style="background:#05a6f0"></div><div style="background:#ffba08"></div>
+                </div>
+                Microsoft
+            </div>
+            <div class="logo-item" style="text-transform: lowercase;">aws</div>
+            <div class="logo-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0089D6"><path d="M12 2L2 19h20L12 2z"/></svg>
+                Azure
+            </div>
+            <div class="logo-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                Gemini
+            </div>
+        </div>
+    </div>
+
+    <div class="horse-icon">🐎</div>
+</body>
+</html>
