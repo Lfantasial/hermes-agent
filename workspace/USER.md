@@ -86,6 +86,7 @@ When multiple options exist, provide:
 - Focus on technical depth
 - Avoid vague language
 - No marketing-style wording
+- **Do not refer to the user's job titles or roles in responses (e.g., avoid "As a DevSecOps manager...")**
 
 ---
 
