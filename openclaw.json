@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.15",
-    "lastTouchedAt": "2026-02-16T15:33:21.155Z"
+    "lastTouchedVersion": "2026.2.17",
+    "lastTouchedAt": "2026-02-18T11:55:10.278Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-16T13:56:34.289Z",
@@ -10,7 +10,7 @@
     "lastRunMode": "local"
   },
   "update": {
-    "channel": "dev",
+    "channel": "stable",
     "checkOnStart": true
   },
   "auth": {
@@ -25,10 +25,12 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google-antigravity/gemini-3-flash"
+        "primary": "google-antigravity/gemini-3-pro-high"
       },
       "models": {
         "google-antigravity/gemini-3-flash": {},
+        "google-antigravity/gemini-3-pro": {},
+        "google-antigravity/gemini-3-pro-low": {},
         "google-antigravity/gemini-3-pro-high": {}
       },
       "workspace": "/home/lfant/.openclaw/workspace",
@@ -92,12 +94,33 @@
     }
   },
   "plugins": {
+    "slots": {
+      "memory": "claude-mem"
+    },
     "entries": {
       "google-antigravity-auth": {
         "enabled": true
       },
       "telegram": {
         "enabled": true
+      },
+      "claude-mem": {
+        "enabled": true
+      },
+      "memory-core": {
+        "enabled": false
+      },
+      "memory-lancedb": {
+        "enabled": false
+      }
+    },
+    "installs": {
+      "claude-mem": {
+        "source": "path",
+        "sourcePath": "/tmp/claude-mem-install",
+        "installPath": "/home/lfant/.openclaw/extensions/claude-mem",
+        "version": "1.0.0",
+        "installedAt": "2026-02-18T11:55:10.134Z"
       }
     }
   }

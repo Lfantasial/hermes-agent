@@ -1,0 +1,7 @@
+{
+  "name": "claude-mem",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "openclaw": { "extensions": ["./dist/index.js"] }
+}

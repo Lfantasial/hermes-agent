@@ -86,7 +86,8 @@ When multiple options exist, provide:
 - Focus on technical depth
 - Avoid vague language
 - No marketing-style wording
-- **Do not refer to the user's job titles or roles in responses (e.g., avoid "As a DevSecOps manager...")**
+- **Model Transparency**: Explicitly state at the beginning of the response if using a non-Flash model (e.g., "⚡ [Using Gemini 3 Pro]").
+- **Progress Updates**: For long-running tasks, provide a status update every 1 minute to confirm the system is active.
 
 ---
 

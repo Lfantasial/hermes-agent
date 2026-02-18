@@ -4,9 +4,9 @@
     "google-antigravity:lfantaellint@gmail.com": {
       "type": "oauth",
       "provider": "google-antigravity",
-      "access": "ya29.a0ATkoCc6NbqAWxUNZEMtKrT_olE0Qumj0tlXtscmZaMh6hJeT_9YSqVjkrZYpYqOciYE3YoYBxfIqCM2-KQF5ybWfbvz3Gc5fAk-D2tYuf_ixtLY3h63dIoPPbznzmxQxLrrgrGSENH62Drqfnp0zVwrSqlJu3wL0mWb7rktZWvZV5o3BNP-uWdcHa6RUsqbGE5LS0pgJGqexWgaCgYKAXMSARISFQHGX2Mi57jGsW6cB-JdPz2UqG03bA0213",
+      "access": "ya29.a0ATkoCc51jzWKAnUK8Owrz7L3QNkfA5P9HCsEW6ezdUicHR6jFl00M3eT0I0jI77nay6nokfCeS_m4xoTkbxvrGfW0Tjo780DYOAEmrgfoqzlkjaLrGBCBa22PULy_0LaHFZna7b3A-djMmc-r-5HM2eBVhl1DIgcyOJZ9UFWv0d40cEqNBiW71nHFEYdU006h5Bp2UagWuyhtgaCgYKAaUSARISFQHGX2MisjOFS8v0bvROsNE3sMba-g0213",
       "refresh": "1//0eceuHGDy_vl2CgYIARAAGA4SNwF-L9Ir5dHjndzrvknnnXdDsP8mWOWouOL4v53rcIh7jcrpR0jJlu4KFcFVZ-JsWRJ8j4bLeLs",
-      "expires": 1771368207647,
+      "expires": 1771444502321,
       "email": "lfantaellint@gmail.com",
       "projectId": "light-pagoda-w5l6z"
     }
@@ -16,7 +16,7 @@
   },
   "usageStats": {
     "google-antigravity:lfantaellint@gmail.com": {
-      "lastUsed": 1771367773143,
+      "lastUsed": 1771437817628,
       "errorCount": 0
     }
   }
