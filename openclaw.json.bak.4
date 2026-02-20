@@ -1,38 +1,128 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.15",
-    "lastTouchedAt": "2026-02-16T15:26:58.283Z"
+    "lastTouchedVersion": "2026.2.19-2",
+    "lastTouchedAt": "2026-02-20T07:40:55.561Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-16T13:56:34.289Z",
-    "lastRunVersion": "2026.2.15",
-    "lastRunCommand": "configure",
+    "lastRunAt": "2026-02-20T07:34:23.511Z",
+    "lastRunVersion": "2026.2.19-2",
+    "lastRunCommand": "onboard",
     "lastRunMode": "local"
   },
   "update": {
-    "channel": "dev",
+    "channel": "stable",
     "checkOnStart": true
   },
   "auth": {
     "profiles": {
-      "google-antigravity:lfantaellint@gmail.com": {
-        "provider": "google-antigravity",
-        "mode": "oauth",
-        "email": "lfantaellint@gmail.com"
+      "zai:coding-plan": {
+        "provider": "zai",
+        "mode": "token"
+      },
+      "zai:default": {
+        "provider": "zai",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "zai": {
+        "baseUrl": "https://api.z.ai/api/coding/paas/v4",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flash",
+            "name": "GLM-4.7 Flash",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flashx",
+            "name": "GLM-4.7 FlashX",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google-antigravity/gemini-3-pro-low"
+        "primary": "zai/glm-5",
+        "fallbacks": [
+          "zai/glm-4.7-flash"
+        ]
       },
       "models": {
-        "google-antigravity/gemini-3-flash": {},
-        "google-antigravity/gemini-3-pro": {},
-        "google-antigravity/gemini-3-pro-low": {}
+        "zai/glm-5": {
+          "alias": "GLM"
+        },
+        "zai/glm-4.7": {},
+        "zai/glm-4.7-flash": {},
+        "zai/glm-4.6": {}
       },
       "workspace": "/home/lfant/.openclaw/workspace",
+      "memorySearch": {
+        "provider": "local",
+        "local": {
+          "modelPath": "hf:nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q8_0.gguf"
+        }
+      },
       "compaction": {
         "mode": "safeguard"
       },
@@ -80,7 +170,7 @@
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "86ed5b1b4612554db0e14b1a75f3f3f942194e6013b1c289"
+      "token": "b44011b2db51156528f461d7970e14d189068730cd9444f8"
     },
     "tailscale": {
       "mode": "off",
@@ -93,12 +183,34 @@
     }
   },
   "plugins": {
+    "allow": [
+      "telegram",
+      "claude-mem"
+    ],
+    "slots": {
+      "memory": "claude-mem"
+    },
     "entries": {
-      "google-antigravity-auth": {
-        "enabled": true
-      },
       "telegram": {
         "enabled": true
+      },
+      "claude-mem": {
+        "enabled": true
+      },
+      "memory-core": {
+        "enabled": false
+      },
+      "memory-lancedb": {
+        "enabled": false
+      }
+    },
+    "installs": {
+      "claude-mem": {
+        "source": "path",
+        "sourcePath": "/tmp/claude-mem-install",
+        "installPath": "/home/lfant/.openclaw/extensions/claude-mem",
+        "version": "1.0.0",
+        "installedAt": "2026-02-18T11:55:10.134Z"
       }
     }
   }

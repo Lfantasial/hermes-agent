@@ -1,22 +1,18 @@
 {
   "version": 1,
   "profiles": {
-    "google-antigravity:lfantaellint@gmail.com": {
-      "type": "oauth",
-      "provider": "google-antigravity",
-      "access": "ya29.a0ATkoCc51jzWKAnUK8Owrz7L3QNkfA5P9HCsEW6ezdUicHR6jFl00M3eT0I0jI77nay6nokfCeS_m4xoTkbxvrGfW0Tjo780DYOAEmrgfoqzlkjaLrGBCBa22PULy_0LaHFZna7b3A-djMmc-r-5HM2eBVhl1DIgcyOJZ9UFWv0d40cEqNBiW71nHFEYdU006h5Bp2UagWuyhtgaCgYKAaUSARISFQHGX2MisjOFS8v0bvROsNE3sMba-g0213",
-      "refresh": "1//0eceuHGDy_vl2CgYIARAAGA4SNwF-L9Ir5dHjndzrvknnnXdDsP8mWOWouOL4v53rcIh7jcrpR0jJlu4KFcFVZ-JsWRJ8j4bLeLs",
-      "expires": 1771444502321,
-      "email": "lfantaellint@gmail.com",
-      "projectId": "light-pagoda-w5l6z"
+    "zai:default": {
+      "type": "api_key",
+      "provider": "zai",
+      "key": "48c18390668b4e86a03c2dd0e2208849.Uxdbh9IuxSkMf8hD"
     }
   },
   "lastGood": {
-    "google-antigravity": "google-antigravity:lfantaellint@gmail.com"
+    "zai": "zai:default"
   },
   "usageStats": {
-    "google-antigravity:lfantaellint@gmail.com": {
-      "lastUsed": 1771437817628,
+    "zai:default": {
+      "lastUsed": 1771580664317,
       "errorCount": 0
     }
   }

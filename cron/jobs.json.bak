@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1771437753611,
+      "updatedAtMs": 1771580651542,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -24,11 +24,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771524000000,
-        "lastRunAtMs": 1771437604008,
+        "nextRunAtMs": 1771610400000,
+        "lastRunAtMs": 1771580640057,
         "lastStatus": "error",
-        "lastDurationMs": 149603,
-        "consecutiveErrors": 1,
+        "lastDurationMs": 11485,
+        "consecutiveErrors": 3,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -39,7 +39,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771365263804,
+      "updatedAtMs": 1771535443394,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -55,7 +55,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771448400000
+        "nextRunAtMs": 1771621200000,
+        "lastRunAtMs": 1771535435053,
+        "lastStatus": "ok",
+        "lastDurationMs": 8341,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -91,7 +95,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771365942212,
+      "updatedAtMs": 1771572894442,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -104,14 +108,15 @@
         "message": "It's 7 AM. Provide a morning briefing for Sam: 1. Current weather in Seoul (using weather skill). 2. Brief system status overview. 3. Any urgent notifications or tasks from memory. Keep it sharp and helpful."
       },
       "delivery": {
-        "mode": "none"
+        "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771452000000,
-        "lastRunAtMs": 1771365602929,
-        "lastStatus": "ok",
-        "lastDurationMs": 94172,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771624800000,
+        "lastRunAtMs": 1771572865897,
+        "lastStatus": "error",
+        "lastDurationMs": 28545,
+        "consecutiveErrors": 1,
+        "lastError": "Error: All models failed (2): zai/glm-5: ⚠️ API rate limit reached. Please try again later. (rate_limit) | zai/glm-4.7-flash: No available auth profile for zai (all in cooldown or unavailable). (rate_limit)"
       }
     },
     {
@@ -121,7 +126,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771342778984,
-      "updatedAtMs": 1771370147760,
+      "updatedAtMs": 1771572894496,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -134,14 +139,15 @@
         "kind": "agentTurn"
       },
       "delivery": {
-        "mode": "none"
+        "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771455600000,
-        "lastRunAtMs": 1771369205869,
-        "lastStatus": "ok",
-        "lastDurationMs": 25062,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771628400000,
+        "lastRunAtMs": 1771572894444,
+        "lastStatus": "error",
+        "lastDurationMs": 52,
+        "consecutiveErrors": 1,
+        "lastError": "Error: All models failed (2): zai/glm-5: No available auth profile for zai (all in cooldown or unavailable). (rate_limit) | zai/glm-4.7-flash: Provider zai is in cooldown (all profiles unavailable) (rate_limit)"
       }
     },
     {
@@ -151,7 +157,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771408374779,
+      "updatedAtMs": 1771535451034,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -167,8 +173,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771441200000,
-        "runningAtMs": 1771441202933
+        "nextRunAtMs": 1771614000000,
+        "lastRunAtMs": 1771535443395,
+        "lastStatus": "ok",
+        "lastDurationMs": 7639,
+        "consecutiveErrors": 0
       }
     }
   ]
