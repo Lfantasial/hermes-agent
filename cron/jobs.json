@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1771580651542,
+      "updatedAtMs": 1771610430313,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -24,11 +24,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771610400000,
-        "lastRunAtMs": 1771580640057,
+        "nextRunAtMs": 1771696800000,
+        "lastRunAtMs": 1771610400003,
         "lastStatus": "error",
-        "lastDurationMs": 11485,
-        "consecutiveErrors": 3,
+        "lastDurationMs": 30310,
+        "consecutiveErrors": 4,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -177,7 +177,8 @@
         "lastRunAtMs": 1771580681681,
         "lastStatus": "ok",
         "lastDurationMs": 36344,
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771614004762
       }
     }
   ]

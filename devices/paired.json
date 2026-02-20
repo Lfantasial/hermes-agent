@@ -25,7 +25,7 @@
         ],
         "createdAtMs": 1771252522327,
         "rotatedAtMs": 1771406582380,
-        "lastUsedAtMs": 1771579234747
+        "lastUsedAtMs": 1771607155071
       }
     },
     "createdAtMs": 1771252522327,
@@ -35,8 +35,8 @@
     "deviceId": "71006e4ba8a5e0ce8ed39a6ceb072750be71048e9b53fb6148f9f853cddd6429",
     "publicKey": "QcOlI06t1uj7fa0ITLvvf14k-GQGsJ9aFoyeY0kaB7Y",
     "platform": "linux",
-    "clientId": "cli",
-    "clientMode": "probe",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
     "role": "operator",
     "roles": [
       "operator"
@@ -45,23 +45,22 @@
       "operator.admin",
       "operator.approvals",
       "operator.pairing",
-      "operator.read"
+      "operator.read",
+      "operator.write"
     ],
     "tokens": {
       "operator": {
-        "token": "iRYKm8xC-rx73JDq0EPbZ9jyF_beyvT4KtNT0wClnu4",
+        "token": "oK0AcXk26iXZ2dStgo6gBF9H4cw3DA_PmMashi3FZvw",
         "role": "operator",
         "scopes": [
-          "operator.admin",
-          "operator.approvals",
-          "operator.pairing"
+          "operator.admin"
         ],
         "createdAtMs": 1771252810180,
-        "rotatedAtMs": 1771580963462
+        "rotatedAtMs": 1771611115699
       }
     },
     "createdAtMs": 1771252810180,
-    "approvedAtMs": 1771577353441
+    "approvedAtMs": 1771603619701
   },
   "a98d0280ff86b60e5bd3c168c2b73251a86e72d7e1bfd55bcb3ac171a459b5f6": {
     "deviceId": "a98d0280ff86b60e5bd3c168c2b73251a86e72d7e1bfd55bcb3ac171a459b5f6",

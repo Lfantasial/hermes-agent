@@ -4,6 +4,8 @@
     "path": "/home/lfant/.openclaw/exec-approvals.sock",
     "token": "QQohe5A2N-V-Rl93a_z7eIKNceZbZkgh"
   },
-  "defaults": {},
+  "defaults": {
+    "autoAllowSkills": true
+  },
   "agents": {}
 }

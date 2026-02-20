@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.19-2",
-    "lastTouchedAt": "2026-02-20T08:34:26.536Z"
+    "lastTouchedAt": "2026-02-20T16:33:07.917Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-20T07:34:23.511Z",
+    "lastRunAt": "2026-02-20T15:23:28.289Z",
     "lastRunVersion": "2026.2.19-2",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -22,6 +22,10 @@
       "zai:default": {
         "provider": "zai",
         "mode": "api_key"
+      },
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
       }
     }
   },
@@ -89,7 +93,7 @@
       "model": {
         "primary": "zai/glm-4.7",
         "fallbacks": [
-          "zai/glm-4.7"
+          "openai-codex/gpt-5.3-codex"
         ]
       },
       "models": {
@@ -97,7 +101,8 @@
           "alias": "GLM"
         },
         "zai/glm-4.7-flash": {},
-        "zai/glm-4.7-flashx": {}
+        "zai/glm-4.7-flashx": {},
+        "openai-codex/gpt-5.3-codex": {}
       },
       "workspace": "/home/lfant/.openclaw/workspace",
       "memorySearch": {
@@ -111,7 +116,9 @@
       },
       "maxConcurrent": 4,
       "subagents": {
-        "maxConcurrent": 8
+        "maxConcurrent": 8,
+        "model": "openai-codex/gpt-5.3-codex",
+        "thinking": "high"
       }
     }
   },
@@ -126,12 +133,32 @@
     }
   },
   "messages": {
+    "responsePrefix": "[{model} | thinking:{thinkingLevel}]",
     "ackReactionScope": "group-mentions"
   },
   "commands": {
     "native": "auto",
     "nativeSkills": false,
     "restart": true
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
   },
   "channels": {
     "telegram": {
@@ -144,6 +171,11 @@
         "reactions": true,
         "sendMessage": true,
         "sticker": true
+      },
+      "heartbeat": {
+        "showOk": true,
+        "showAlerts": true,
+        "useIndicator": true
       }
     }
   },
