@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-20 6:44pm GMT+9
+# [openclaw-main] recent context, 2026-02-20 6:50pm GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,9 +14,9 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 35 observations (9,555 tokens to read)
-- Work investment: 50,552 tokens spent on research, building, and decisions
-- Your savings: 40,997 tokens (81% reduction from reuse)
+- Loading: 46 observations (13,192 tokens to read)
+- Work investment: 78,196 tokens spent on research, building, and decisions
+- Your savings: 65,004 tokens (83% reduction from reuse)
 
 ### Feb 18, 2026
 
@@ -64,18 +64,6 @@ When you need implementation details, rationale, or debugging context:
 | #86 | " | 🔴 | web_fetch Tool Failure During Morning Briefing Weather Fetch | ~287 |  |
 | #87 | " | 🔴 | Missing CLI Tool "openclaw" Causes Command Not Found Error | ~299 |  |
 | #88 | 7:01 AM | 🔴 | Read Tool Called Without Required "path" Parameter | ~351 |  |
-
-**#S21** Telegram connectivity check — user verified messages are being received ("지금 메세지 보여?") (Feb 19, 8:22 AM)
-
-**#S22** Root cause explanation for missing morning briefings — user confirmed they had not received the expected 7am/8am briefings (Feb 19, 8:23 AM)
-
-**#S23** Log analysis to determine why Telegram messages failed between 08:10–08:20 this morning (Feb 19, 8:23 AM)
-
-**#S40** Change all sub-agent models to the current model (Feb 19, 8:23 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
 | #89 | 8:23 AM | 🔵 | Gateway tool requires `action` field — config patch call failed validation | ~297 |  |
 | #90 | " | 🔵 | Gateway tool `action` field has restricted enum — "apply" is not a valid value | ~310 |  |
 | #91 | 8:24 AM | 🔵 | CLI `set` subcommand argument error during config attempt | ~245 |  |
@@ -125,64 +113,115 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #241 | " | 🔵 | Sub-Agent Jobs Directory Contains jobs.json Config | ~273 |  |
-
-**#242** " 🔵 **jobs.json Reveals Sub-Agent Jobs Failing Due to zai/GLM Model Errors**
-
-Reading jobs.json exposed the root cause of the sub-agent failures: the jobs are configured to use the zai provider's GLM models (zai/glm-5 and zai/glm-4.7-flash), both of which are currently rate-limited and unavailable. This directly motivates the user's request to "change all sub-agent models to the current model" — the intent is to replace these failing zai/GLM model references with the currently working Gemini model. The jobs.json file is the primary target for the model update. No model fields are explicitly visible in jobs.json itself (jobs use agentId: "main"), suggesting the model configuration may be stored in the agent definition rather than per-job, or in a separate config file referenced by the openclaw system.
-
-Read: ~494
+| #242 | " | 🔵 | jobs.json Reveals Sub-Agent Jobs Failing Due to zai/GLM Model Errors | ~494 |  |
 
 **../../home/lfant/.openclaw/openclaw.json.bak**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#243** " 🔵 **openclaw.json Backup Files Contain zai/glm-5 Model Definitions**
-
-This search reveals the true location of model configuration: openclaw.json (not jobs.json). The backup chain (bak through bak.3) shows a history of edits to this file, all of which previously contained zai/glm-5. Since the live openclaw.json was not returned in the search results, the current file has likely already been updated as part of the model unification task. The shell completion scripts also reveal that openclaw supports a broad range of providers, confirming the flexibility of the system's model configuration.
-
-Read: ~366
+| #243 | " | 🔵 | openclaw.json Backup Files Contain zai/glm-5 Model Definitions | ~366 |  |
 
 **#S45** Gmail 접근 방법 확인 및 canvas-design 설정 여부 질문 (Feb 20, 6:16 PM)
 
 **~/.openclaw/openclaw.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #244 | 6:17 PM | 🔵 | Full openclaw.json Config Structure Revealed | ~325 |  |
 
-**#244** 6:17 PM 🔵 **Full openclaw.json Config Structure Revealed**
+**../../home/lfant/.openclaw/openclaw.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #245 | 6:18 PM | ✅ | Sub-agent Model Configuration Updated in openclaw.json | ~199 |  |
 
-The primary session read the full openclaw.json to audit sub-agent model configuration. While the primary/fallback model fields correctly point to zai/glm-4.7 and zai/glm-4.7-flash, the agents.defaults.models pool still includes legacy entries: zai/glm-5 and zai/glm-4.6. This is the likely target for the user's request to "change all sub-agent models to the current model" — removing or updating these stale model references in the models pool so only current glm-4.7-series models remain.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #246 | 6:24 PM | 🔵 | Canvas-Design Configuration Status Questioned | ~172 |  |
 
-Read: ~325
+**#S46** gog CLI 설치 방법 안내 — canvas-design 등 설정 미비 항목 확인 중 (Feb 20, 6:25 PM)
+
+**#S47** User asked whether canvas-design settings are configured, in context of ongoing Gmail API OAuth setup (Feb 20, 6:37 PM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #247 | 6:47 PM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul) | ~292 |  |
+
+**SOUL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #248 | " | 🔵 | Hugin Agent Identity Defined in SOUL.md | ~390 |  |
+
+**USER.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #249 | " | 🔵 | Sam's Full User Profile Defined in USER.md | ~468 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2026-02-20.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #250 | 6:48 PM | 🔵 | Daily Memory File Path Convention | ~205 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/troubleshooting.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #251 | " | 🔵 | Telegram Connectivity Fix: Node 22+ IPv6 Timeout in WSL | ~270 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/context-index.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#252** " 🔵 **OpenClaw Session Context Index Structure and Recent History**
+
+The context index file is a lightweight semantic index of all past observations, designed to be loaded at session start for minimal token cost. It enables Hugin to understand what was previously built or decided without re-reading code, fetching full observation details only when needed via MCP tools.
+
+Read: ~239
 
 **../../home/lfant/.openclaw/openclaw.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#245** 6:18 PM ✅ **Sub-agent Model Configuration Updated in openclaw.json**
+**#253** " ✅ **Sub-Agent Model Unification: zai/glm-4.7 Series Adopted in openclaw.json**
 
-The user requested that all sub-agent model references be updated to match the currently active model. A text replacement was applied to `/home/lfant/.openclaw/openclaw.json`, which is the primary OpenClaw configuration file. This likely updated one or more model identifier fields (e.g., model names or IDs) used to configure sub-agents within the OpenClaw system.
+Sam requested that all sub-agent model references be unified to the currently active model. Investigation revealed that jobs were failing because they referenced zai/glm-5 and zai/glm-4.7-flash which were rate-limited. The fix was applied to /home/lfant/.openclaw/openclaw.json via text replacement, updating the agents.defaults.models pool to remove stale glm-5 and glm-4.6 entries. The model hierarchy in openclaw.json is: primary model → fallback model → models pool for sub-agents.
 
-Read: ~199
+Read: ~375
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #254 | " | 🔵 | gog CLI Not Installed; Canvas-Design Configuration Gap Identified | ~292 |  |
 
-**#246** 6:24 PM 🔵 **Canvas-Design Configuration Status Questioned**
+**#255** " 🔴 **Weather Fetch 404 During Morning Briefing (wunderground.com)**
 
-The user raised a question about whether canvas-design (or similar design tooling) has been properly configured. This appears to be a gap discovery moment — the user suspects that canvas-design settings may not yet be set up. No code changes or tool executions were observed; this is an open question about current configuration state.
+The morning briefing cron job's weather fetch step is consistently failing. The web_fetch tool is hitting a 404 on what appears to be a wunderground.com URL. This has now failed on at least two consecutive mornings (Feb 19 and Feb 20). The weather skill or URL used for Seoul weather needs to be replaced with a working endpoint. The 404 response contains New Relic browser instrumentation, confirming the domain is reachable but the specific resource path is invalid.
 
-Read: ~172
+Read: ~301
 
-**#S46** gog CLI 설치 방법 안내 — canvas-design 등 설정 미비 항목 확인 중 (Feb 20, 6:37 PM)
+**#S48** Gmail API OAuth authentication setup in WSL environment — encountering difficulties completing the OAuth callback flow (Feb 20, 6:49 PM)
 
-**Investigated**: 현재 환경(WSL 추정)에 gog CLI(gogcli by steipete)가 설치되어 있지 않음을 확인. canvas-design 관련 설정이 누락되어 있는지 점검하는 맥락에서 gog 설치 필요성이 제기됨.
+**#S49** Security audit of installed Claude plugins and skills — two CRITICAL issues found in claude-mem and writing-skills (Feb 20, 6:49 PM)
 
-**Learned**: gog CLI 설치 경로는 세 가지: (1) Homebrew via steipete/tap, (2) Go 소스 빌드(Linux용 go1.22.0 tar.gz), (3) GitHub releases 바이너리 직접 다운로드. WSL 환경에서는 옵션 2(Go+소스) 또는 옵션 3(바이너리)이 현실적.
+**#S50** OpenClaw update check — current version v2026.2.19-2 has an update available, all skills are up to date (Feb 20, 6:50 PM)
 
-**Completed**: gog CLI 설치 방법 세 가지 옵션 제시 완료. 사용자 선택 대기 중.
+**../../home/lfant/.openclaw/workspace/ (jobs config, likely jobs.json or similar)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
 
-**Next Steps**: 사용자가 설치 옵션(1/2/3)을 선택하면 해당 방식으로 gog CLI 설치 진행 예정. 설치 완료 후 canvas-design 등 미설정 항목들을 gog를 통해 구성하는 작업으로 이어질 것으로 보임.
+**#256** 6:50 PM 🔵 **OpenClaw Scheduled Jobs Configuration Revealed**
+
+The OpenClaw scheduler configuration was read, revealing 6 active cron jobs running in the Asia/Seoul timezone. The system is set up for daily automation: security audits at 3am, GitHub backups at 4am, update checks at 6am, morning briefings at 7am, Notion briefings at 8am, and weekly memory maintenance on Sundays at 11pm. The only fully healthy job is daily-github-backup. Three jobs (security audit, morning briefing, Notion briefing) are failing — two due to zai LLM provider rate limits, and one due to "cron announce delivery failed" suggesting a notification delivery issue. The user's name appears to be Sam. The assistant persona is named "Antigravity 🌌". Memory files live at workspace/memory/ and are periodically distilled into MEMORY.md.
+
+Read: ~548
+
+**../../home/lfant/.openclaw/openclaw.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#257** " 🔴 **Subagent Session Spawn Failing — Gateway Pairing Required Error**
+
+An attempt to spawn a subagent session failed because the OpenClaw gateway WebSocket connection at ws://127.0.0.1:18789 closed with code 1008 (policy violation) indicating that pairing is required but not set up. This likely explains several of the earlier cron job failures labeled "cron announce delivery failed" — the gateway pairing issue is a systemic problem preventing subagent spawning and announcement delivery across multiple scheduled jobs.
+
+Read: ~257
 
 
-Access 51k tokens of past research & decisions for just 9,555t. Use MCP search tools to access memories by ID.
+Access 78k tokens of past research & decisions for just 13,192t. Use MCP search tools to access memories by ID.

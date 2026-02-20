@@ -39,7 +39,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771535443394,
+      "updatedAtMs": 1771580769641,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -56,10 +56,11 @@
       },
       "state": {
         "nextRunAtMs": 1771621200000,
-        "lastRunAtMs": 1771535435053,
-        "lastStatus": "ok",
-        "lastDurationMs": 8341,
-        "consecutiveErrors": 0
+        "lastRunAtMs": 1771580751663,
+        "lastStatus": "error",
+        "lastDurationMs": 17978,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -95,7 +96,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771572894442,
+      "updatedAtMs": 1771581041229,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -112,11 +113,10 @@
       },
       "state": {
         "nextRunAtMs": 1771624800000,
-        "lastRunAtMs": 1771572865897,
-        "lastStatus": "error",
-        "lastDurationMs": 28545,
-        "consecutiveErrors": 1,
-        "lastError": "Error: All models failed (2): zai/glm-5: ⚠️ API rate limit reached. Please try again later. (rate_limit) | zai/glm-4.7-flash: No available auth profile for zai (all in cooldown or unavailable). (rate_limit)"
+        "lastRunAtMs": 1771580788905,
+        "lastStatus": "ok",
+        "lastDurationMs": 252324,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -157,7 +157,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771535451034,
+      "updatedAtMs": 1771580718025,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -174,9 +174,9 @@
       },
       "state": {
         "nextRunAtMs": 1771614000000,
-        "lastRunAtMs": 1771535443395,
+        "lastRunAtMs": 1771580681681,
         "lastStatus": "ok",
-        "lastDurationMs": 7639,
+        "lastDurationMs": 36344,
         "consecutiveErrors": 0
       }
     }
