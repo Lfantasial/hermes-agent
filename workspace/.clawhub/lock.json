@@ -4,6 +4,34 @@
     "gog": {
       "version": "1.0.0",
       "installedAt": 1771579475242
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1771626975590
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1771626977681
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1771626984092
+    },
+    "ontology": {
+      "version": "0.1.2",
+      "installedAt": 1771626985401
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1771626986521
+    },
+    "self-improving-agent": {
+      "version": "1.0.5",
+      "installedAt": 1771627340529
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1771627342452
     }
   }
 }

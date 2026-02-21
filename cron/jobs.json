@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1771610430313,
+      "updatedAtMs": 1771696870816,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -17,18 +17,18 @@
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
-        "message": "Run 'openclaw security audit --deep'. If any critical issues are found, alert Sam immediately. Otherwise, provide a brief summary of the system health.",
+        "message": "Run 'openclaw security audit --deep'. Ignore false positives from claude-mem (bun-runner.js, context-generator.cjs, mcp-server.cjs, smart-install.js, worker-cli.js) and writing-skills (render-graphs.js). If any OTHER critical issues are found, alert Sam immediately. Otherwise, provide a brief summary of system health.",
         "kind": "agentTurn"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771696800000,
-        "lastRunAtMs": 1771610400003,
+        "nextRunAtMs": 1771783200000,
+        "lastRunAtMs": 1771696801605,
         "lastStatus": "error",
-        "lastDurationMs": 30310,
-        "consecutiveErrors": 4,
+        "lastDurationMs": 69211,
+        "consecutiveErrors": 5,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -39,7 +39,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771580769641,
+      "updatedAtMs": 1771621334042,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -55,12 +55,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771621200000,
-        "lastRunAtMs": 1771580751663,
-        "lastStatus": "error",
-        "lastDurationMs": 17978,
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1771707600000,
+        "lastRunAtMs": 1771621207171,
+        "lastStatus": "ok",
+        "lastDurationMs": 126871,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -96,7 +95,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771581041229,
+      "updatedAtMs": 1771624918776,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -112,11 +111,12 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771624800000,
-        "lastRunAtMs": 1771580788905,
-        "lastStatus": "ok",
-        "lastDurationMs": 252324,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771711200000,
+        "lastRunAtMs": 1771624801759,
+        "lastStatus": "error",
+        "lastDurationMs": 117017,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -126,7 +126,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771342778984,
-      "updatedAtMs": 1771572894496,
+      "updatedAtMs": 1771628454534,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -142,12 +142,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771628400000,
-        "lastRunAtMs": 1771572894444,
-        "lastStatus": "error",
-        "lastDurationMs": 52,
-        "consecutiveErrors": 1,
-        "lastError": "Error: All models failed (2): zai/glm-5: No available auth profile for zai (all in cooldown or unavailable). (rate_limit) | zai/glm-4.7-flash: Provider zai is in cooldown (all profiles unavailable) (rate_limit)"
+        "nextRunAtMs": 1771714800000,
+        "lastRunAtMs": 1771628402020,
+        "lastStatus": "ok",
+        "lastDurationMs": 52514,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -157,7 +156,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771580718025,
+      "updatedAtMs": 1771614023484,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -173,12 +172,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771614000000,
-        "lastRunAtMs": 1771580681681,
+        "nextRunAtMs": 1771700400000,
+        "lastRunAtMs": 1771614004763,
         "lastStatus": "ok",
-        "lastDurationMs": 36344,
+        "lastDurationMs": 18721,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771614004762
+        "runningAtMs": 1771700400808
       }
     }
   ]
