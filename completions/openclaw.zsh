@@ -10,7 +10,7 @@ _openclaw_root_completion() {
     "--dev[Dev profile: isolate state under ~/.openclaw-dev, default gateway port 19001, and shift derived ports (browser/canvas)]" \
     "--profile[Use a named profile (isolates OPENCLAW_STATE_DIR/OPENCLAW_CONFIG_PATH under ~/.openclaw-<name>)]" \
     "--no-color[Disable ANSI colors]" \
-    "1: :_values 'command' 'completion[Generate shell completion script]' 'setup[Initialize ~/.openclaw/openclaw.json and the agent workspace]' 'onboard[Interactive wizard to set up the gateway, workspace, and skills]' 'configure[Interactive prompt to set up credentials, devices, and agent defaults]' 'config[Config helpers (get/set/unset). Run without subcommand for the wizard.]' 'doctor[Health checks + quick fixes for the gateway and channels]' 'dashboard[Open the Control UI with your current token]' 'reset[Reset local config/state (keeps the CLI installed)]' 'uninstall[Uninstall the gateway service + local data (CLI remains)]' 'message[Send messages and channel actions]' 'memory[Memory search tools]' 'agent[Run an agent turn via the Gateway (use --local for embedded)]' 'agents[Manage isolated agents (workspaces + auth + routing)]' 'status[Show channel health and recent session recipients]' 'health[Fetch health from the running gateway]' 'sessions[List stored conversation sessions]' 'browser[Manage OpenClaw'\''s dedicated browser (Chrome/Chromium)]' 'acp[Run an ACP bridge backed by the Gateway]' 'gateway[Run the WebSocket Gateway]' 'daemon[Manage the Gateway service (launchd/systemd/schtasks)]' 'logs[Tail gateway file logs via RPC]' 'system[System tools (events, heartbeat, presence)]' 'models[Model discovery, scanning, and configuration]' 'approvals[Manage exec approvals (gateway or node host)]' 'nodes[Manage gateway-owned node pairing]' 'devices[Device pairing and auth tokens]' 'node[Run a headless node host (system.run/system.which)]' 'sandbox[Manage sandbox containers (Docker-based agent isolation)]' 'tui[Open a terminal UI connected to the Gateway]' 'cron[Manage cron jobs (via Gateway)]' 'dns[DNS helpers for wide-area discovery (Tailscale + CoreDNS)]' 'docs[Search the live OpenClaw docs]' 'hooks[Manage internal agent hooks]' 'webhooks[Webhook helpers and integrations]' 'pairing[Secure DM pairing (approve inbound requests)]' 'plugins[Manage OpenClaw plugins/extensions]' 'channels[Manage chat channel accounts]' 'directory[Directory lookups (self, peers, groups) for channels that support it]' 'security[Security tools (audit)]' 'skills[List and inspect available skills]' 'update[Update OpenClaw to the latest version]'" \
+    "1: :_values 'command' 'completion[Generate shell completion script]' 'setup[Initialize ~/.openclaw/openclaw.json and the agent workspace]' 'onboard[Interactive wizard to set up the gateway, workspace, and skills]' 'configure[Interactive setup wizard for credentials, channels, gateway, and agent defaults]' 'config[Non-interactive config helpers (get/set/unset). Run without subcommand for the setup wizard.]' 'doctor[Health checks + quick fixes for the gateway and channels]' 'dashboard[Open the Control UI with your current token]' 'reset[Reset local config/state (keeps the CLI installed)]' 'uninstall[Uninstall the gateway service + local data (CLI remains)]' 'message[Send, read, and manage messages and channel actions]' 'memory[Search, inspect, and reindex memory files]' 'agent[Run an agent turn via the Gateway (use --local for embedded)]' 'agents[Manage isolated agents (workspaces + auth + routing)]' 'status[Show channel health and recent session recipients]' 'health[Fetch health from the running gateway]' 'sessions[List stored conversation sessions]' 'browser[Manage OpenClaw'\''s dedicated browser (Chrome/Chromium)]' 'acp[Run an ACP bridge backed by the Gateway]' 'gateway[Run, inspect, and query the WebSocket Gateway]' 'daemon[Manage the Gateway service (launchd/systemd/schtasks)]' 'logs[Tail gateway file logs via RPC]' 'system[System tools (events, heartbeat, presence)]' 'models[Model discovery, scanning, and configuration]' 'approvals[Manage exec approvals (gateway or node host)]' 'nodes[Manage gateway-owned nodes (pairing, status, invoke, and media)]' 'devices[Device pairing and auth tokens]' 'node[Run and manage the headless node host service]' 'sandbox[Manage sandbox containers (Docker-based agent isolation)]' 'tui[Open a terminal UI connected to the Gateway]' 'cron[Manage cron jobs (via Gateway)]' 'dns[DNS helpers for wide-area discovery (Tailscale + CoreDNS)]' 'docs[Search the live OpenClaw docs]' 'hooks[Manage internal agent hooks]' 'webhooks[Webhook helpers and integrations]' 'qr[Generate an iOS pairing QR code and setup code]' 'clawbot[Legacy clawbot command aliases]' 'pairing[Secure DM pairing (approve inbound requests)]' 'plugins[Manage OpenClaw plugins and extensions]' 'channels[Manage connected chat channels and accounts]' 'directory[Lookup contact and group IDs (self, peers, groups) for supported chat channels]' 'security[Audit local config and state for common security foot-guns]' 'skills[List and inspect available skills]' 'update[Update OpenClaw and inspect update channel status]'" \
     "*::arg:->args"
 
   case $state in
@@ -50,6 +50,8 @@ _openclaw_root_completion() {
         (docs) _openclaw_docs ;;
         (hooks) _openclaw_hooks ;;
         (webhooks) _openclaw_webhooks ;;
+        (qr) _openclaw_qr ;;
+        (clawbot) _openclaw_clawbot ;;
         (pairing) _openclaw_pairing ;;
         (plugins) _openclaw_plugins ;;
         (channels) _openclaw_channels ;;
@@ -89,7 +91,7 @@ _openclaw_onboard() {
     "--accept-risk[Acknowledge that agents are powerful and full system access is risky (required for --non-interactive)]" \
     "--flow[Wizard flow: quickstart|advanced|manual]" \
     "--mode[Wizard mode: local|remote]" \
-    "--auth-choice[Auth: token|openai-codex|chutes|vllm|openai-api-key|xai-api-key|qianfan-api-key|openrouter-api-key|litellm-api-key|ai-gateway-api-key|cloudflare-ai-gateway-api-key|moonshot-api-key|moonshot-api-key-cn|kimi-code-api-key|synthetic-api-key|venice-api-key|together-api-key|huggingface-api-key|github-copilot|gemini-api-key|google-antigravity|google-gemini-cli|zai-api-key|zai-coding-global|zai-coding-cn|zai-global|zai-cn|xiaomi-api-key|minimax-portal|qwen-portal|copilot-proxy|apiKey|opencode-zen|minimax-api|minimax-api-key-cn|minimax-api-lightning|custom-api-key|skip|setup-token|oauth|claude-cli|codex-cli|minimax-cloud|minimax]" \
+    "--auth-choice[Auth: token|openai-codex|chutes|vllm|openai-api-key|xai-api-key|volcengine-api-key|byteplus-api-key|qianfan-api-key|openrouter-api-key|litellm-api-key|ai-gateway-api-key|cloudflare-ai-gateway-api-key|moonshot-api-key|moonshot-api-key-cn|kimi-code-api-key|synthetic-api-key|venice-api-key|together-api-key|huggingface-api-key|github-copilot|gemini-api-key|google-antigravity|google-gemini-cli|zai-api-key|zai-coding-global|zai-coding-cn|zai-global|zai-cn|xiaomi-api-key|minimax-portal|qwen-portal|copilot-proxy|apiKey|opencode-zen|minimax-api|minimax-api-key-cn|minimax-api-lightning|custom-api-key|skip|setup-token|oauth|claude-cli|codex-cli|minimax-cloud|minimax]" \
     "--token-provider[Token provider id (non-interactive; used with --auth-choice token)]" \
     "--token[Token value (non-interactive; used with --auth-choice token)]" \
     "--token-profile-id[Auth profile id (non-interactive; default: <provider>:manual)]" \
@@ -115,6 +117,8 @@ _openclaw_onboard() {
     "--xai-api-key[xAI API key]" \
     "--litellm-api-key[LiteLLM API key]" \
     "--qianfan-api-key[QIANFAN API key]" \
+    "--volcengine-api-key[Volcano Engine API key]" \
+    "--byteplus-api-key[BytePlus API key]" \
     "--custom-base-url[Custom provider base URL]" \
     "--custom-api-key[Custom provider API key (optional)]" \
     "--custom-model-id[Custom provider model ID]" \
@@ -153,7 +157,8 @@ _openclaw_config_get() {
 
 _openclaw_config_set() {
   _arguments -C \
-    "--json[Parse value as JSON5 (required)]"
+    "--strict-json[Strict JSON5 parsing (error instead of raw string fallback)]" \
+    "--json[Legacy alias for --strict-json]"
 }
 
 _openclaw_config_unset() {
@@ -224,6 +229,7 @@ _openclaw_message_send() {
     "(--target -t)"{--target,-t}"[Recipient/channel: E.164 for WhatsApp/Signal, Telegram chat id/@username, Discord/Slack channel/user, or iMessage handle/chat_id]" \
     "--media[Attach media (image/audio/video/document). Accepts local paths or URLs.]" \
     "--buttons[Telegram inline keyboard buttons as JSON (array of button rows)]" \
+    "--components[Discord components payload as JSON]" \
     "--card[Adaptive Card JSON object (when supported by the channel)]" \
     "--reply-to[Reply-to message id]" \
     "--thread-id[Thread id (Telegram forum thread)]" \
@@ -1418,7 +1424,7 @@ _openclaw_browser_set_offline() {
 
 _openclaw_browser_set_headers() {
   _arguments -C \
-    "--json[JSON object of headers]" \
+    "--headers-json[JSON object of headers]" \
     "--target-id[CDP target id (or unique prefix)]"
 }
 
@@ -1561,7 +1567,9 @@ _openclaw_acp() {
   _arguments -C \
     "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
     "--token[Gateway token (if required)]" \
+    "--token-file[Read gateway token from file]" \
     "--password[Gateway password (if required)]" \
+    "--password-file[Read gateway password from file]" \
     "--session[Default session key (e.g. agent:main:main)]" \
     "--session-label[Default session label to resolve]" \
     "--require-existing[Fail if the session key/label does not exist]" \
@@ -2384,6 +2392,18 @@ _openclaw_nodes_notify() {
     "--json[Output JSON]"
 }
 
+_openclaw_nodes_push() {
+  _arguments -C \
+    "--node[Node id, name, or IP]" \
+    "--title[Push title]" \
+    "--body[Push body]" \
+    "--environment[Override APNs environment]" \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--timeout[Timeout in ms]" \
+    "--json[Output JSON]"
+}
+
 _openclaw_nodes_canvas_snapshot() {
   _arguments -C \
     "--node[Node id, name, or IP]" \
@@ -2635,7 +2655,7 @@ _openclaw_nodes() {
   
   _arguments -C \
      \
-    "1: :_values 'command' 'status[List known nodes with connection status and capabilities]' 'describe[Describe a node (capabilities + supported invoke commands)]' 'list[List pending and paired nodes]' 'pending[List pending pairing requests]' 'approve[Approve a pending pairing request]' 'reject[Reject a pending pairing request]' 'rename[Rename a paired node (display name override)]' 'invoke[Invoke a command on a paired node]' 'run[Run a shell command on a node (mac only)]' 'notify[Send a local notification on a node (mac only)]' 'canvas[Capture or render canvas content from a paired node]' 'camera[Capture camera media from a paired node]' 'screen[Capture screen recordings from a paired node]' 'location[Fetch location from a paired node]'" \
+    "1: :_values 'command' 'status[List known nodes with connection status and capabilities]' 'describe[Describe a node (capabilities + supported invoke commands)]' 'list[List pending and paired nodes]' 'pending[List pending pairing requests]' 'approve[Approve a pending pairing request]' 'reject[Reject a pending pairing request]' 'rename[Rename a paired node (display name override)]' 'invoke[Invoke a command on a paired node]' 'run[Run a shell command on a node (mac only)]' 'notify[Send a local notification on a node (mac only)]' 'push[Send an APNs test push to an iOS node]' 'canvas[Capture or render canvas content from a paired node]' 'camera[Capture camera media from a paired node]' 'screen[Capture screen recordings from a paired node]' 'location[Fetch location from a paired node]'" \
     "*::arg:->args"
 
   case $state in
@@ -2651,6 +2671,7 @@ _openclaw_nodes() {
         (invoke) _openclaw_nodes_invoke ;;
         (run) _openclaw_nodes_run ;;
         (notify) _openclaw_nodes_notify ;;
+        (push) _openclaw_nodes_push ;;
         (canvas) _openclaw_nodes_canvas ;;
         (camera) _openclaw_nodes_camera ;;
         (screen) _openclaw_nodes_screen ;;
@@ -2669,8 +2690,29 @@ _openclaw_devices_list() {
     "--json[Output JSON]"
 }
 
+_openclaw_devices_remove() {
+  _arguments -C \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--password[Gateway password (password auth)]" \
+    "--timeout[Timeout in ms]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_devices_clear() {
+  _arguments -C \
+    "--pending[Also reject all pending pairing requests]" \
+    "--yes[Confirm destructive clear]" \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--password[Gateway password (password auth)]" \
+    "--timeout[Timeout in ms]" \
+    "--json[Output JSON]"
+}
+
 _openclaw_devices_approve() {
   _arguments -C \
+    "--latest[Approve the most recent pending request]" \
     "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
     "--token[Gateway token (if required)]" \
     "--password[Gateway password (password auth)]" \
@@ -2716,13 +2758,15 @@ _openclaw_devices() {
   
   _arguments -C \
      \
-    "1: :_values 'command' 'list[List pending and paired devices]' 'approve[Approve a pending device pairing request]' 'reject[Reject a pending device pairing request]' 'rotate[Rotate a device token for a role]' 'revoke[Revoke a device token for a role]'" \
+    "1: :_values 'command' 'list[List pending and paired devices]' 'remove[Remove a paired device entry]' 'clear[Clear paired devices from the gateway table]' 'approve[Approve a pending device pairing request]' 'reject[Reject a pending device pairing request]' 'rotate[Rotate a device token for a role]' 'revoke[Revoke a device token for a role]'" \
     "*::arg:->args"
 
   case $state in
     (args)
       case $line[1] in
         (list) _openclaw_devices_list ;;
+        (remove) _openclaw_devices_remove ;;
+        (clear) _openclaw_devices_clear ;;
         (approve) _openclaw_devices_approve ;;
         (reject) _openclaw_devices_reject ;;
         (rotate) _openclaw_devices_rotate ;;
@@ -2884,8 +2928,10 @@ _openclaw_cron_add() {
     "--wake[Wake mode (now|next-heartbeat)]" \
     "--at[Run once at time (ISO) or +duration (e.g. 20m)]" \
     "--every[Run every duration (e.g. 10m, 1h)]" \
-    "--cron[Cron expression (5-field)]" \
+    "--cron[Cron expression (5-field or 6-field with seconds)]" \
     "--tz[Timezone for cron expressions (IANA)]" \
+    "--stagger[Cron stagger window (e.g. 30s, 5m)]" \
+    "--exact[Disable cron staggering (set stagger to 0)]" \
     "--system-event[System event payload (main session)]" \
     "--message[Agent message payload]" \
     "--thinking[Thinking level for agent jobs (off|minimal|low|medium|high)]" \
@@ -2964,6 +3010,8 @@ _openclaw_cron_edit() {
     "--every[Set interval duration like 10m]" \
     "--cron[Set cron expression]" \
     "--tz[Timezone for cron expressions (IANA)]" \
+    "--stagger[Cron stagger window (e.g. 30s, 5m)]" \
+    "--exact[Disable cron staggering (set stagger to 0)]" \
     "--system-event[Set systemEvent payload]" \
     "--message[Set agentTurn payload message]" \
     "--thinking[Thinking level for agent jobs]" \
@@ -3066,7 +3114,8 @@ _openclaw_hooks_disable() {
 
 _openclaw_hooks_install() {
   _arguments -C \
-    "(--link -l)"{--link,-l}"[Link a local path instead of copying]"
+    "(--link -l)"{--link,-l}"[Link a local path instead of copying]" \
+    "--pin[Record npm installs as exact resolved <name>@<version>]"
 }
 
 _openclaw_hooks_update() {
@@ -3179,6 +3228,48 @@ _openclaw_webhooks() {
   esac
 }
 
+_openclaw_qr() {
+  _arguments -C \
+    "--remote[Use gateway.remote.url and gateway.remote token/password (ignores device-pair publicUrl)]" \
+    "--url[Override gateway URL used in the setup payload]" \
+    "--public-url[Override gateway public URL used in the setup payload]" \
+    "--token[Override gateway token for setup payload]" \
+    "--password[Override gateway password for setup payload]" \
+    "--setup-code-only[Print only the setup code]" \
+    "--no-ascii[Skip ASCII QR rendering]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_clawbot_qr() {
+  _arguments -C \
+    "--remote[Use gateway.remote.url and gateway.remote token/password (ignores device-pair publicUrl)]" \
+    "--url[Override gateway URL used in the setup payload]" \
+    "--public-url[Override gateway public URL used in the setup payload]" \
+    "--token[Override gateway token for setup payload]" \
+    "--password[Override gateway password for setup payload]" \
+    "--setup-code-only[Print only the setup code]" \
+    "--no-ascii[Skip ASCII QR rendering]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_clawbot() {
+  local -a commands
+  local -a options
+  
+  _arguments -C \
+     \
+    "1: :_values 'command' 'qr[Generate an iOS pairing QR code and setup code]'" \
+    "*::arg:->args"
+
+  case $state in
+    (args)
+      case $line[1] in
+        (qr) _openclaw_clawbot_qr ;;
+      esac
+      ;;
+  esac
+}
+
 _openclaw_pairing_list() {
   _arguments -C \
     "--channel[Channel (telegram)]" \
@@ -3244,7 +3335,8 @@ _openclaw_plugins_uninstall() {
 
 _openclaw_plugins_install() {
   _arguments -C \
-    "(--link -l)"{--link,-l}"[Link a local path instead of copying]"
+    "(--link -l)"{--link,-l}"[Link a local path instead of copying]" \
+    "--pin[Record npm installs as exact resolved <name>@<version>]"
 }
 
 _openclaw_plugins_update() {

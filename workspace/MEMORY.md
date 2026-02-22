@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-22 4:00am GMT+9
+# [openclaw-main] recent context, 2026-02-23 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,256 +14,292 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (15,825 tokens to read)
-- Work investment: 111,205 tokens spent on research, building, and decisions
-- Your savings: 95,380 tokens (86% reduction from reuse)
+- Loading: 50 observations (15,229 tokens to read)
+- Work investment: 62,078 tokens spent on research, building, and decisions
+- Your savings: 46,849 tokens (75% reduction from reuse)
 
-### Feb 21, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #324 | 1:14 AM | 🔵 | 수학 테스트 2 함수 분석 결과 (sympy 계산) | ~417 |  |
-| #325 | 1:21 AM | 🟣 | Sub-agent Session Spawned for Logic Puzzle Benchmark | ~161 |  |
-| #326 | 1:22 AM | 🔴 | Codex Sub-agent Logic Puzzle Run Failed | ~249 |  |
-
-**.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/subsystem-BCQGGxdd.js**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #327 | " | 🔵 | Openclaw Sub-agent Auto-retry and Successful Completion After Initial Error | ~391 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #328 | " | 🟣 | Second Sub-agent Spawned — Likely GLM-4.7 Benchmark Run | ~188 |  |
-
-**AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #329 | 1:33 AM | 🔵 | AGENTS.md — Core Agent Workspace Operational Framework | ~554 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/tools/subagents.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #330 | " | 🔵 | openclaw Subagent Model Routing Documentation | ~382 |  |
-| #331 | 1:34 AM | 🔵 | openclaw Subagent System — Full Architecture Documentation | ~600 |  |
-
-**../../home/lfant/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #332 | " | ✅ | openclaw Subagent Default Model Set to Codex GPT-5.3 with High Thinking | ~328 |  |
-
-**../../home/lfant/.openclaw/workspace/AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #333 | 1:38 AM | ✅ | AGENTS.md에 복잡한 작업 판단 기준 추가 | ~102 |  |
-
-**../../home/lfaint/.openclaw/workspace/memory/2026-02-21.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #334 | 1:43 AM | 🟣 | 오늘 날짜 메모리 파일 신규 생성 | ~93 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #336 | 1:45 AM | 🔵 | openclaw AGENTS.md 파일 경로 확인 | ~121 |  |
-
-**AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #337 | " | 🔵 | openclaw AGENTS.md — 워크스페이스 핵심 운영 규칙 전체 파악 | ~270 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #338 | 1:49 AM | 🔵 | GLM-4.7 모델로 논리 추론 서브에이전트 테스트 실행 | ~142 |  |
-| #345 | 6:00 AM | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~282 |  |
-| #346 | " | 🔵 | OpenClaw Update Available: 2026.2.19-2 | ~166 |  |
-| #347 | 6:01 AM | 🔵 | Skills Check: All Up to Date (skills@1.4.1, 1 skill installed) | ~175 |  |
-
-**~/.openclaw/agents/main/sessions/sessions.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #348 | " | 🔵 | OpenClaw Full System Status: Telegram OK, 2 Security Warnings Active | ~422 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #349 | 6:34 AM | 🔵 | 한국 초저출산율 다각적 분석 요청 | ~190 |  |
-| #350 | " | 🔵 | Logical Reasoning Benchmark Task Dispatched as Subagent | ~467 |  |
-| #351 | 6:37 AM | 🔵 | Scheduled Daily Security Audit via openclaw | ~297 |  |
-| #352 | " | 🔵 | 한국 저출산 문제 분석 및 정책 제언 요청 | ~138 |  |
-
-**plugin/scripts/bun-runner.js**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #353 | " | 🔵 | openclaw Deep Security Audit: 2 Critical Issues Found | ~691 |  |
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #354 | 6:43 AM | 🔵 | Daily GitHub Backup Cron Job via backup_to_github.sh | ~215 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #355 | " | 🔵 | Daily Update Check Cron Job — OpenClaw & Skills | ~337 |  |
-
-**agents/main/sessions/2ed1f065-3831-482e-8659-7cb81299cce6.jsonl**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #356 | " | ✅ | Daily GitHub Backup Completed Successfully (2026-02-21 04:00 KST) | ~372 |  |
-
-**.openclaw/config.json (OpenClaw global settings)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #357 | 6:49 AM | 🔵 | Telegram Channel Config Has allowlist groupPolicy But No Entries Defined | ~325 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway/configuration-reference.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #358 | 6:50 AM | 🔵 | OpenClaw Telegram Allowlist Config Uses allowFrom Field and groupPolicy | ~368 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/security-cli-8o-ix2Cw.js**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #359 | " | 🔵 | OpenClaw groupPolicy Allowlist Enforcement Uses allowFrom/groupAllowFrom Arrays | ~383 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/audit-zk7xzRGs.js**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #360 | " | 🔵 | Telegram Group Allowlist Requires Numeric Chat IDs; Wildcard and Empty Lists Have Security Implications | ~455 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #361 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~316 |  |
+### Feb 22, 2026
 
 **SOUL.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #362 | " | 🔵 | SOUL.md — Core Identity and Philosophy of Hugin | ~397 |  |
+| #392 | 7:00 AM | 🔵 | Hugin Identity Defined in SOUL.md | ~376 |  |
 
 **USER.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #363 | " | 🔵 | USER.md — Sam's Full Professional Profile and AI Interaction Standards | ~517 |  |
+| #393 | " | 🔵 | Sam's User Profile Defined in USER.md | ~482 |  |
 
 **2026-02-21.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #364 | " | 🔵 | 2026-02-21 Daily Memory Log — System Config, Model Routing, and Known Issues | ~580 |  |
+| #394 | " | 🔵 | Morning Briefing Context Index — System State at 7 AM KST Feb 22, 2026 | ~603 |  |
 
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway/configuration-reference.md**
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #365 | 7:01 AM | 🔵 | OpenClaw Telegram Allowlist — groupAllowFrom Requires Numeric Chat IDs | ~428 |  |
-
-**plugin/scripts/bun-runner.js**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #366 | " | 🔵 | Daily Security Audit — 2 Critical Issues Found (Feb 21, 6:37 AM KST) | ~279 |  |
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #367 | " | 🔵 | Daily GitHub Backup Completed — 38 Files Committed (2026-02-21 04:00 KST) | ~303 |  |
+| #395 | 7:51 AM | 🔵 | Daily Security Audit Flagged Tavily Skill for Credential Harvesting | ~456 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #368 | " | 🔵 | OpenClaw Update Available: 2026.2.19-2; Skills All Current at 1.4.1 | ~217 |  |
-
-**skills/clawhub/README.md (or equivalent skill definition file)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #369 | 7:30 AM | 🔵 | ClawHub CLI Skill - 기능 및 사용법 확인 | ~176 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #370 | 7:38 AM | 🔵 | self-improving-agent skill metadata inspected via clawhub | ~287 |  |
-| #371 | " | 🔵 | agent-browser skill metadata inspected via clawhub | ~288 |  |
-| #372 | " | 🔵 | find-skills skill metadata inspected via clawhub | ~238 |  |
-| #373 | " | 🔵 | proactive-agent skill metadata inspected via clawhub | ~324 |  |
-| #374 | 7:47 AM | 🔵 | GitHub Repository Search for "find-skills" Skill | ~262 |  |
+| #396 | 7:52 AM | ✅ | OpenClaw Updated via CLI | ~195 |  |
+| #397 | " | 🔵 | OpenClaw Runtime Process Inventory Post-Update | ~339 |  |
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #375 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job System | ~340 |  |
+| #398 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Antigravity Assistant Voice | ~342 |  |
+| #399 | " | 🔵 | notion_daily_brief.py — Internal Implementation Details | ~448 |  |
 
-**#S114** User asked what to do next — repeated gog OAuth setup instructions as user had not yet acted on them (Feb 21, 10:50 AM)
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #400 | " | 🔵 | `python` Command Not Found on Host — python3 Required | ~209 |  |
 
-**#S115** No new user request or Claude response — empty checkpoint (Feb 21, 10:50 AM)
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #401 | 8:01 AM | 🟣 | Notion Daily Briefing Successfully Executed — 12 Items Returned for 02/21–02/22 | ~542 |  |
 
-**#S116** Troubleshooting gog (gogcli) Google Calendar CLI authentication failure — keyring module missing and config not found (Feb 21, 10:50 AM)
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #402 | 8:06 AM | 🔵 | Tavily Skill Flagged for Credential Harvesting Vulnerability | ~447 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #403 | " | ✅ | OpenClaw Self-Update Completed via Background Task | ~253 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #404 | 8:08 AM | 🔵 | Security Audit Flagged Tavily Skill for Credential Harvesting | ~431 |  |
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway/mcp.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #405 | 8:41 AM | 🔵 | openclaw Package Missing Documentation Files | ~296 |  |
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/mcporter**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #406 | " | 🔵 | openclaw Package Contains mcporter Skill and playwright-core MCP Bundle | ~304 |  |
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #407 | " | 🔵 | openclaw Docs Directory Structure Confirmed | ~307 |  |
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #408 | " | 🔵 | openclaw Gateway Documentation Directory Contents | ~345 |  |
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/docs.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #409 | 8:42 AM | 🔵 | OpenClaw Identified as Self-Hosted AI Messaging Gateway | ~348 |  |
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/reference/AGENTS.default.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #410 | " | 🔵 | OpenClaw Ships zh-CN Localization, Threat Model, and Agent Reference Docs | ~359 |  |
+
+**#S138** 버전 상태 체크 요청 → Proactive Agent 스킬의 WAL(Write-Ahead Logging) 프로토콜 분석 (Feb 22, 9:53 AM)
+
+**README.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #411 | 10:04 AM | 🔵 | Proactive Agent Current Version: v3.1.0 | ~328 |  |
+
+**#S139** 버전 상태 체크 (Version/Status Check) - Tavily Search Skill Verification (Feb 22, 10:29 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #412 | 10:29 AM | ✅ | TAVILY_API_KEY 환경 설정 완료 | ~72 |  |
+| #413 | " | 🔴 | TAVILY_API_KEY 설정 후 즉시 누락 오류 발생 | ~108 |  |
+
+**#S140** WAL 시스템 상태 확인 — WAL이 상시 작동 중인지, 현재 버전/시스템 상태 점검 (Feb 22, 10:31 AM)
+
+**.openclaw/workspace/skills/proactive-agent/SKILL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #414 | 10:31 AM | 🔵 | Proactive-Agent Skill File Structure and Versioning State | ~243 |  |
+
+**.openclaw/workspace/skills/proactive-agent/_meta.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #415 | " | 🔵 | Proactive-Agent Skill Additional Structure: scripts/, _meta.json, .clawhub/ | ~318 |  |
+
+**.openclaw/workspace/skills/proactive-agent/SKILL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #416 | " | 🔵 | Proactive-Agent Skill: WAL Protocol and Three-Tier Memory Architecture | ~444 |  |
+
+**.openclaw/workspace/skills/proactive-agent/scripts/security-audit.sh**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #417 | 10:32 AM | 🔵 | Proactive-Agent Skill Includes security-audit.sh Script | ~227 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #418 | " | 🔵 | Memory Tool Ecosystem: Four Registered Memory Providers | ~250 |  |
+
+**#S141** Proactive Agent 스킬 버전 상태 체크 - WAL 시스템 및 메모리 구성 요소 현황 점검 (Feb 22, 10:38 AM)
+
+**#S142** 버전 상태 체크 요청 → 에이전트 라우팅 규칙 설명 반환 (Feb 22, 10:41 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #419 | 10:41 AM | 🔵 | openclaw-gateway 프로세스 실행 중 확인 | ~108 |  |
+
+**#S143** Version/status check of the current Proactive Agent configuration and how it operates within the OpenClaw Gateway (Feb 22, 12:45 PM)
+
+**#S149** Version status check (버전 상태 체크) - led to WAL system explanation with practical examples (Feb 22, 9:13 PM)
+
+**HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #420 | 9:13 PM | 🔵 | HEARTBEAT.md Controls Periodic Agent Check Behavior | ~224 |  |
+
+**MEMORY.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #440 | 11:00 PM | ✅ | Periodic Memory Maintenance Cron Job Executed | ~289 |  |
+
+**workspace/memory/2026-02-22.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #441 | " | 🔵 | 2026-02-22 Daily Memory: System Status and Security Audit | ~439 |  |
+
+**workspace/AGENTS.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #442 | " | ⚖️ | Aggressive Subagent Routing Policy Adopted in AGENTS.md | ~350 |  |
+
+**workspace/memory/2026-02-21.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #443 | " | 🔵 | OpenClaw Gateway Model Configuration: GLM-4.7 Primary, Codex Fallback | ~383 |  |
+
+**workspace/memory/2026-02-20-1712.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #444 | 11:01 PM | 🔵 | Claude Persona Configured as "Hugin" for User Sam | ~241 |  |
+
+**workspace/memory/2026-02-19.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #445 | " | 🔵 | Telegram "Network request failed" in WSL Caused by IPv6 Timeout on Node 22+ | ~272 |  |
+
+**workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #446 | " | 🟣 | Notion Daily Briefing and GitHub Backup Automation Configured | ~368 |  |
+
+**workspace/memory/2026-02-18.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #447 | " | 🔵 | openclaw.json Contains Plain-Text Secrets Requiring Private Repo | ~268 |  |
+
+**#S150** 버전 상태 체크 - 설치된 스킬들의 현재 상태 확인 (Feb 22, 11:03 PM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #448 | 11:03 PM | 🔵 | TAVILY_API_KEY Missing from Environment | ~197 |  |
+
+**.env**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #449 | " | 🔴 | TAVILY_API_KEY Added to .env File | ~165 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #450 | " | 🔴 | TAVILY_API_KEY Still Missing After .env Update | ~240 |  |
+
+**.env**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #451 | " | 🔵 | TAVILY_API_KEY Successfully Retrieved from Environment | ~205 |  |
+| #452 | " | 🟣 | Tavily Search Operational - Live Korean News Retrieved | ~296 |  |
+
+**#S151** 주기적 메모리 유지보수 및 시스템 상태 점검 - MEMORY.md 증류 및 전체 아키텍처 리뷰 (Feb 22, 11:19 PM)
+
+**.learnings/**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #453 | 11:19 PM | 🟣 | Proactive Agent WAL 기능 활성화 - .learnings/ 폴더 생성 | ~122 |  |
+
+**.claude/skills/proactive-agent/README.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #455 | 11:20 PM | 🔵 | Proactive Agent v3.1.0 스킬 구조 및 기능 확인 | ~205 |  |
+
+**SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #457 | " | 🟣 | SESSION-STATE.md 파일 생성 - 3계층 메모리 시스템 구성 요소 추가 | ~116 |  |
+
+**#S155** Version/status check of Proactive Agent skill — WAL activation and component readiness confirmed (Feb 22, 11:23 PM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#383** 10:50 AM 🔵 **gog keyring authentication fails without TTY — requires GOG_KEYRING_PASSWORD env var**
+**#458** 11:23 PM 🔵 **Installed Skills Version Inventory**
 
-When gog ran in the current environment, it could not read the stored OAuth token for lfantaellint@gmail.com because the keyring file backend requires an interactive TTY to prompt for the keyring password. Since the session is non-interactive (no TTY available), the prompt cannot be shown and the command fails. The solution is to set the GOG_KEYRING_PASSWORD environment variable so gog can decrypt the keyring file without needing user input. This confirms gog is installed and has been authenticated previously (a token exists for lfantaellint@gmail.com), but the keyring is locked in the current execution context.
+A version status check was run on the openclaw workspace, listing all currently installed skills. The proactive-agent skill (3.1.0) and self-improving-agent (1.0.5) have the most development activity reflected in their version numbers. All other skills (gog, tavily-search, summarize, github, weather) are at stable 1.0.0 releases. The ontology skill is at a pre-release 0.1.2 version, suggesting it is still under active early development.
 
-Read: ~328
+Read: ~217
 
-**../../home/lfant/.gog/config.json**
+**../../home/lfant/.openclaw/workspace/skills/proactive-agent/.learnings**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#384** " 🔵 **gog config file does not exist at expected path**
+**#459** 11:24 PM 🔵 **proactive-agent Skill Directory Structure Revealed**
 
-Attempting to read the gog configuration file at `/home/lfant/.gog/config.json` revealed the file does not exist. This confirms that gog has not been initialized or configured on this machine for the `lfant` user. Combined with the previous keyring error, it appears gog may be partially installed but has never completed the `gog auth credentials` + `gog auth add` setup flow. The ~/.gog/ directory and its config.json are created during initial gog authentication setup.
+The proactive-agent skill directory at `/home/lfant/.openclaw/workspace/skills/proactive-agent/` maintains multiple versions of its skill definition: the current SKILL.md, a v3 draft, and a v2.3 backup. The WAL infrastructure (.learnings/ and SESSION-STATE.md) was created today during this session. The presence of both a draft and backup alongside the active SKILL.md suggests the skill is in active iterative development.
 
-Read: ~237
+Read: ~274
 
-**#S117** WSL 환경에서 gog(Google OAuth 도구) 인증 설정 중 bash 경로 인식 문제 발생 및 allowlist 생성 요청 (Feb 21, 10:52 AM)
-
-**#S118** gog Google OAuth 인증을 위한 client_secret.json 파일 위치 탐색 및 allowlist 구현 논의 (Feb 21, 10:55 AM)
-
-**../../home/lfant/.gog/client_secret_453301157914-jr8k6epgnrd9feo9j6pqoendvvdq9jmq.apps.googleusercontent.com.json**
+**~/.openclaw/openclaw.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#385** 10:55 AM 🔵 **gog client_secret.json 파일 누락 확인**
+**#460** " 🔵 **openclaw-gateway Service Status and Config Warning**
 
-gog 인증 설정 중 예상 경로에서 client_secret JSON 파일을 cat으로 읽으려 했으나 "No such file or directory" 오류 발생. WSL 환경에서 파일이 실제로 해당 Linux 경로에 없거나, Windows 측 경로에만 존재할 가능성이 있음.
+The openclaw-gateway service is fully operational (RPC probe ok, process active) but the status check flagged a configuration warning: the systemd service uses a hardcoded nvm Node.js path (/home/lfant/.nvm/versions/node/v22.22.0/bin/node), which is fragile and will break if the Node version is upgraded or changed via nvm. The recommended remediation is `openclaw doctor --repair`. The gateway is loopback-bound, restricting access to local connections only.
 
-Read: ~127
+Read: ~312
 
-**#S119** gog Google OAuth 인증 설정 중 백그라운드 프로세스 실행 중 (Feb 21, 10:55 AM)
+### Feb 23, 2026
 
-**#S120** gog Google OAuth 인증 설정 — 복수의 백그라운드 프로세스 실행 중 (Feb 21, 10:55 AM)
+**claude-mem/bun-runner.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
 
-**#S121** gog Google OAuth 인증 설정 — 프로세스 실행 중, 결과 대기 (Feb 21, 10:55 AM)
+**#464** 3:00 AM 🔵 **Daily Security Audit Cron Job — Known False Positives Catalogued**
 
-**#S122** gog Google OAuth 인증 설정 — 세 번째 백그라운드 프로세스 추가 실행 (Feb 21, 10:56 AM)
+A recurring cron task runs `openclaw security audit --deep` nightly at 3 AM Asia/Seoul. The task definition explicitly documents six files across two internal packages (claude-mem and writing-skills) that produce known false-positive security alerts and should be ignored during triage. Any critical findings beyond those exclusions trigger an immediate alert to Sam. This pattern indicates openclaw is the primary security scanning tool for the project, and the false-positive list represents a stable, known set of flagged-but-safe files in the infrastructure/tooling layer of the codebase.
 
-**#S124** PC 재부팅 원인 조사 - 대용량 find 명령어로 인한 I/O 과부하 진단 (Feb 21, 6:41 PM)
-
-### Feb 22, 2026
+Read: ~340
 
 **../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#387** 3:02 AM 🔵 **Security Audit Flagged Tavily Skill for Credential Harvesting**
+**#465** 3:01 AM 🔵 **Security Audit: New Critical Finding in Tavily Skill — Sam Alert Required**
 
-The automated daily-security-audit cron job completed its run and identified a critical security concern in the tavily-search skill installed at /home/lfant/.openclaw/workspace/skills/tavily-search. Two script files—extract.mjs (line 18) and search.mjs (line 42)—were flagged for an "env-harvesting" pattern, meaning they access environment variables and also make network calls, which could indicate credential exfiltration. The audit filtered known-safe false positives (claude-mem plugin and writing-skills) before surfacing this as a genuine alert. The recommended action is to audit the tavily skill source and consider removal if the code cannot be trusted. Sam was flagged as the responsible party to notify.
+The daily 3 AM security audit completed successfully. After filtering the six documented false positives across claude-mem and writing-skills, one genuine unexpected critical finding remains: the tavily-search skill (located at /home/lfant/.openclaw/workspace/skills/tavily-search) triggers two env-harvesting alerts — one in scripts/extract.mjs (line 18) and one in scripts/search.mjs (line 42). These are flagged as potential credential harvesting via environment variable access combined with outbound network sends. Since this is outside the known false-positive set, the cron job's escalation rule applies and Sam must be alerted immediately. Two warnings also exist: missing trusted proxy config for the gateway Control UI, and the claude-mem plugin being reachable under the permissive "default" tool policy context.
 
-Read: ~457
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#388** 3:03 AM 🔵 **Tavily extract.mjs Security Flag Confirmed as False Positive**
-
-After the daily-security-audit raised a critical alert against the tavily-search skill, the source file extract.mjs was read to assess the actual risk. The code is a straightforward Tavily API client: it reads TAVILY_API_KEY from the environment and includes it in a POST to https://api.tavily.com/extract — the canonical Tavily endpoint. There is no exfiltration to a third-party host. The security scanner's "env-harvesting" heuristic is overly broad and cannot distinguish between legitimate API authentication (sending a key to its owner's server) and actual credential theft (sending a key to an attacker's server). This finding should be added to the audit whitelist as a known false positive, matching the same treatment already applied to claude-mem and writing-skills.
-
-Read: ~443
+Read: ~526
 
 
-Access 111k tokens of past research & decisions for just 15,825t. Use MCP search tools to access memories by ID.
+Access 62k tokens of past research & decisions for just 15,229t. Use MCP search tools to access memories by ID.

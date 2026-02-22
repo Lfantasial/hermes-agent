@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1771696870816,
+      "updatedAtMs": 1771783285159,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -24,11 +24,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771783200000,
-        "lastRunAtMs": 1771696801605,
+        "nextRunAtMs": 1771869600000,
+        "lastRunAtMs": 1771783204970,
         "lastStatus": "error",
-        "lastDurationMs": 69211,
-        "consecutiveErrors": 5,
+        "lastDurationMs": 80189,
+        "consecutiveErrors": 6,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -39,7 +39,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771621334042,
+      "updatedAtMs": 1771707639487,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -55,11 +55,12 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771707600000,
-        "lastRunAtMs": 1771621207171,
-        "lastStatus": "ok",
-        "lastDurationMs": 126871,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771794000000,
+        "lastRunAtMs": 1771707601782,
+        "lastStatus": "error",
+        "lastDurationMs": 37705,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -69,7 +70,7 @@
       "enabled": true,
       "notify": false,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1771254363257,
+      "updatedAtMs": 1771768914896,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -85,7 +86,12 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771768800000
+        "nextRunAtMs": 1772373600000,
+        "lastRunAtMs": 1771768802618,
+        "lastStatus": "error",
+        "lastDurationMs": 112278,
+        "lastError": "cron announce delivery failed",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -95,7 +101,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771624918776,
+      "updatedAtMs": 1771711303674,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -111,11 +117,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771711200000,
-        "lastRunAtMs": 1771624801759,
+        "nextRunAtMs": 1771797600000,
+        "lastRunAtMs": 1771711201121,
         "lastStatus": "error",
-        "lastDurationMs": 117017,
-        "consecutiveErrors": 1,
+        "lastDurationMs": 102553,
+        "consecutiveErrors": 2,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -126,7 +132,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771342778984,
-      "updatedAtMs": 1771628454534,
+      "updatedAtMs": 1771714926942,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -142,11 +148,12 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771714800000,
-        "lastRunAtMs": 1771628402020,
-        "lastStatus": "ok",
-        "lastDurationMs": 52514,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771801200000,
+        "lastRunAtMs": 1771714801082,
+        "lastStatus": "error",
+        "lastDurationMs": 125860,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -156,7 +163,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771614023484,
+      "updatedAtMs": 1771700461262,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -172,12 +179,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771700400000,
-        "lastRunAtMs": 1771614004763,
+        "nextRunAtMs": 1771786800000,
+        "lastRunAtMs": 1771700400810,
         "lastStatus": "ok",
-        "lastDurationMs": 18721,
+        "lastDurationMs": 60452,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771700400808
+        "runningAtMs": 1771786804047
       }
     }
   ]
