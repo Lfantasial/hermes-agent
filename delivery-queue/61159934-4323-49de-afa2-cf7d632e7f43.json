@@ -1,0 +1,14 @@
+{
+  "id": "61159934-4323-49de-afa2-cf7d632e7f43",
+  "enqueuedAt": 1771880952136,
+  "channel": "telegram",
+  "to": "telegram:5487758242",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "Gateway restart update skipped (unknown)\nReason: not-git-install\nRun: openclaw doctor --non-interactive"
+    }
+  ],
+  "bestEffort": true,
+  "retryCount": 0
+}

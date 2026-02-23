@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-24 4:00am GMT+9
+# [openclaw-main] recent context, 2026-02-24 6:38am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -9,56 +9,21 @@
 **Context Index:** This semantic index (titles, types, files, tokens) is usually sufficient to understand past work.
 
 When you need implementation details, rationale, or debugging context:
-- Use MCP tools (search, get_observations) to fetch full observations on-demand
-- Critical types ( bugfix, decision) often need detailed fetching
+- Fetch by ID: get_observations([IDs]) for observations visible in this index
+- Search history: Use the mem-search skill for past decisions, bugs, and deeper research
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (14,695 tokens to read)
-- Work investment: 59,997 tokens spent on research, building, and decisions
-- Your savings: 45,302 tokens (76% reduction from reuse)
+- Loading: 50 observations (14,438 tokens to read)
+- Work investment: 65,951 tokens spent on research, building, and decisions
+- Your savings: 51,513 tokens (78% reduction from reuse)
 
 ### Feb 22, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #403 | 8:06 AM | ✅ | OpenClaw Self-Update Completed via Background Task | ~253 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #404 | 8:08 AM | 🔵 | Security Audit Flagged Tavily Skill for Credential Harvesting | ~431 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway/mcp.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #405 | 8:41 AM | 🔵 | openclaw Package Missing Documentation Files | ~296 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/mcporter**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #406 | " | 🔵 | openclaw Package Contains mcporter Skill and playwright-core MCP Bundle | ~304 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #407 | " | 🔵 | openclaw Docs Directory Structure Confirmed | ~307 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #408 | " | 🔵 | openclaw Gateway Documentation Directory Contents | ~345 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/docs.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #409 | 8:42 AM | 🔵 | OpenClaw Identified as Self-Hosted AI Messaging Gateway | ~348 |  |
 
 **../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/reference/AGENTS.default.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #410 | " | 🔵 | OpenClaw Ships zh-CN Localization, Threat Model, and Agent Reference Docs | ~359 |  |
+| #410 | 8:42 AM | 🔵 | OpenClaw Ships zh-CN Localization, Threat Model, and Agent Reference Docs | ~359 |  |
 
 **README.md**
 | ID | Time | T | Title | Read | Work |
@@ -230,32 +195,15 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #470 | 8:00 AM | 🔵 | Cron-Triggered Notion Daily Briefing Automation | ~341 |  |
 
-**#S160** Empty response checkpoint — no new user input or Claude output to summarize (Feb 23, 8:01 AM)
-
-**#S161** Full cron job completion report and system health summary — confirming all scheduled tasks ran successfully (Feb 23, 8:01 AM)
-
-**#S162** Empty response checkpoint — no new activity to capture (Feb 23, 8:02 AM)
-
-**#S163** Version status check requested by user (Korean: "지금 버전 상태 체크해줘") (Feb 23, 8:02 AM)
-
 **~/.config/systemd/user/openclaw-gateway.service**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #471 | 8:02 AM | 🔵 | OpenClaw Gateway Service Config Fragility — NVM Node Path | ~372 |  |
 
-**#S164** Version/status check of the OpenClaw system (Korean: "지금 버전 상태 체크해줘") — cron jobs state read (Feb 23, 8:24 AM)
-
 **~/.openclaw/workspace/ (cron jobs config, read via SDK tool)**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#472** 8:25 AM 🔵 **OpenClaw Cron Jobs Status: Widespread "announce delivery" Failures**
-
-The primary session read the OpenClaw cron jobs configuration to check system version/status. The data reveals that 5 of 6 scheduled jobs are in a failure state, all with the same error: "cron announce delivery failed". The one job that succeeds (daily-github-backup) uses delivery mode "none", bypassing the announce mechanism entirely. This pattern makes it clear that the cron job execution itself is working, but the "announce" delivery channel (likely Telegram or another notification channel) is broken. The jobs cover: security audits, update checks, memory maintenance, morning briefings, Notion task briefings, and GitHub backups. The security audit job has been failing the longest (6 consecutive errors), while memory maintenance just started failing (1 error). This status check was requested by user Sam via what appears to be a Telegram message interface.
-
-Read: ~593
-
-**#S165** 시스템 버전/상태 체크 - Cron 작업 현황 및 Telegram 알림 실패 문제 진단 (Feb 23, 8:25 AM)
+| #472 | 8:25 AM | 🔵 | OpenClaw Cron Jobs Status: Widespread "announce delivery" Failures | ~593 |  |
 
 **#S166** 아침 브리핑 메시지 내용 부족 문제 분석 - notion_daily_brief.py 날짜 범위 설정 이슈 (Feb 23, 9:01 PM)
 
@@ -265,47 +213,87 @@ Read: ~593
 
 **#S169** WAL system explanation — user asked how WAL (Write-Ahead Logging) works and why Claude keeps responding about it (Feb 23, 9:41 PM)
 
+**#S170** Daily Security Audit Cron Job — Run `openclaw security audit --deep` and report findings or alert Sam on critical issues (Feb 23, 9:41 PM)
+
 **SOUL.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#473** 9:42 PM 🔵 **Hugin AI Identity File: SOUL.md**
-
-The session read SOUL.md, the foundational identity document for Hugin, an AI assistant persona. This file encodes Hugin's philosophical purpose: to be a memory keeper and thoughtful companion for Sam. It defines behavioral guidelines (resourcefulness, privacy respect), communication style (calm, honest, non-flattering), and explains how the file itself enables continuity across stateless sessions. This is a core system-identity file that grounds Hugin's behavior in every session.
-
-Read: ~302
+| #473 | 9:42 PM | 🔵 | Hugin AI Identity File: SOUL.md | ~302 |  |
 
 ### Feb 24, 2026
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #474 | 3:00 AM | 🔵 | Daily Security Audit Cron Job Configuration | ~309 |  |
+| #475 | " | 🔵 | `openclaw` Command Not Found in Execution Environment | ~237 |  |
+| #476 | " | 🔵 | `openclaw` Confirmed Absent — No Binary or Bin Directory Found | ~197 |  |
+| #477 | 6:00 AM | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~288 |  |
+| #478 | " | 🔵 | openclaw Command Not Found in PATH | ~204 |  |
 
-**#474** 3:00 AM 🔵 **Daily Security Audit Cron Job Configuration**
+**#479** 6:01 AM 🔵 **openclaw Installed via npx Cache, Not as Global Binary**
 
-A daily cron job runs `openclaw security audit --deep` every day at 3:00 AM (Asia/Seoul). The job has a maintained suppression list of known false positives across two internal packages — claude-mem and writing-skills — to avoid noisy alerts. Any critical findings outside the suppression list trigger an immediate alert to Sam. If no critical issues exist, the job outputs a brief plain-text system health summary for automated delivery. This pattern establishes a low-noise, high-signal automated security monitoring baseline for the system.
+Investigation of the command-not-found error for 'openclaw' revealed that openclaw is installed only within the npx cache at /home/lfant/.npm/_npx/8718c3904bb5fece/node_modules/openclaw/. It is not a globally installed binary and therefore not available as a bare shell command. The correct invocation is 'npx openclaw'. The cache also reveals openclaw has several extensions: zalo, google-antigravity-auth, discord, whatsapp, and lobster. The daily update check cron job should use 'npx openclaw update status' rather than 'openclaw update status'.
 
-Read: ~309
+Read: ~272
+
+**../../home/lfant/.openclaw/workspace/skills/proactive-agent/scripts/security-audit.sh**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#480** 6:07 AM 🔵 **Daily Security Audit Cron Job Fails — openclaw CLI Not in PATH**
+
+The scheduled daily security audit cron job ran successfully (in terms of process execution) but could not perform its intended deep security scan. The underlying command `openclaw security audit --deep` depends on the openclaw CLI tool being globally installed, which it is not on this WSL2 system. The cron job found a workaround candidate — a shell script at /home/lfant/.openclaw/workspace/skills/proactive-agent/scripts/security-audit.sh — but noted it only covers basic checks. The recommended fix is either to install the openclaw CLI globally or to update the cron job definition to use the available shell script. This means the system has been running a security audit cron job that silently degrades without the CLI tool present.
+
+Read: ~411
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#475** " 🔵 **`openclaw` Command Not Found in Execution Environment**
+**#481** " 🔵 **Daily Security Audit Cron Job — Known False Positives Catalogued**
 
-When the daily-security-audit cron job attempted to execute `openclaw security audit --deep`, the shell reported the binary as not found (exit code 127). This means either `openclaw` was never installed, was removed, or its install location is not included in the PATH for this execution context. The audit cannot run until the tool is installed and accessible. This is a blocking issue for the automated daily security monitoring workflow.
+A recurring daily security audit cron task (ID: 78f50a18-690a-4667-a12c-99a01398515c) runs `openclaw security audit --deep` every day at 3:00 AM Korea Standard Time. The task has a pre-defined allowlist of known false-positive flagged files across two internal packages: claude-mem (bun-runner.js, context-generator.cjs, mcp-server.cjs, smart-install.js, worker-cli.js) and writing-skills (render-graphs.js). These files are expected to trigger security scanner warnings but are considered safe. Any critical findings outside this allowlist are escalated to Sam immediately. The output format is plain text, and the agent is instructed not to send external messages itself but to flag the recipient if escalation is needed.
 
-Read: ~237
+Read: ~367
+
+**#S171** Daily Security Audit Cron Job Result — openclaw CLI missing, deep scan failed (Feb 24, 6:08 AM)
+
+**#S172** Duplicate cron job delivery check — NO_REPLY issued, result already delivered (Feb 24, 6:08 AM)
+
+**#S173** Second duplicate cron delivery suppressed — NO_REPLY issued again (Feb 24, 6:08 AM)
+
+**#S174** Daily GitHub Backup Cron Job — Execute backup_to_github.sh and confirm result (Feb 24, 6:08 AM)
+
+**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#482** 6:28 AM ✅ **Daily GitHub Backup Cron Job Triggered**
+
+The daily-github-backup cron job fired at 4:00 AM KST and invoked the backup_to_github.sh shell script located in the .openclaw workspace directory. This is a recurring automated task designed to back up workspace contents to GitHub. The script was triggered via the exec tool in the primary session. Result of the execution was not included in the observed session data.
+
+Read: ~207
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#476** " 🔵 **`openclaw` Confirmed Absent — No Binary or Bin Directory Found**
+**#483** " 🔵 **Daily Update Check Cron Job Configured**
 
-Two follow-up discovery steps confirmed that `openclaw` is not present anywhere on the system — neither on PATH nor in any bin directory. This rules out a misconfigured PATH and confirms the tool was never installed. The daily security audit cron job is non-functional until `openclaw` is installed and its binary made available on PATH.
+A recurring daily cron job is configured to run at 6:00 AM Asia/Seoul time. Its purpose is to check for updates to both OpenClaw and the skills system. The workflow involves running 'openclaw update status' and 'npx skills check', then conditionally verifying Telegram channel sync and notifying Sam if updates are found. The agent is instructed to return plain text summaries and flag external messaging recipients rather than sending messages itself.
 
-Read: ~197
+Read: ~278
+
+**#S175** Daily update check cron job (dc1f52da) — checked OpenClaw and skills for available updates at 6:00 AM Asia/Seoul on February 24, 2026 (Feb 24, 6:29 AM)
+
+**Investigated**: Ran 'openclaw update status' to compare installed version against npm registry, and 'npx skills check' to audit all installed skills for pending updates
+
+**Learned**: OpenClaw is installed via pnpm on the stable channel. The latest available version on npm is 2026.2.22-2, which is newer than the currently installed version. Skills system has 1 skill installed and it is fully up to date.
+
+**Completed**: Update check completed. OpenClaw update (2026.2.22-2) confirmed available. Skills confirmed up to date. Summary report generated for automated delivery to Sam flagging the OpenClaw update and noting Telegram channel sync verification should precede notification.
+
+**Next Steps**: Automated delivery system is expected to deliver the plain-text summary to Sam. No further agent action is required unless Sam responds or a follow-up task is triggered.
 
 
-Access 60k tokens of past research & decisions for just 14,695t. Use MCP search tools to access memories by ID.
+Access 66k tokens of past research & decisions for just 14,438t. Use the claude-mem skill to access memories by ID.

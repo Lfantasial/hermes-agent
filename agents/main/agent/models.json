@@ -18,7 +18,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 204800,
-          "maxTokens": 131072
+          "maxTokens": 131072,
+          "api": "openai-completions"
         },
         {
           "id": "glm-4.7-flash",
@@ -34,7 +35,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 204800,
-          "maxTokens": 131072
+          "maxTokens": 131072,
+          "api": "openai-completions"
         },
         {
           "id": "glm-4.7-flashx",
@@ -50,7 +52,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 204800,
-          "maxTokens": 131072
+          "maxTokens": 131072,
+          "api": "openai-completions"
         }
       ],
       "apiKey": "ZAI_API_KEY"

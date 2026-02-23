@@ -25,7 +25,7 @@
         ],
         "createdAtMs": 1771252522327,
         "rotatedAtMs": 1771406582380,
-        "lastUsedAtMs": 1771853839454
+        "lastUsedAtMs": 1771882366991
       }
     },
     "createdAtMs": 1771252522327,
@@ -50,13 +50,13 @@
     ],
     "tokens": {
       "operator": {
-        "token": "ZCuUUV65To-7ARF3XrVCEZjvrwluUOILZTs2G2N2XlA",
+        "token": "9wh9ynMhzwBqjeoJ-NgFRZxGJO2waQPSmeKmlYLbP_o",
         "role": "operator",
         "scopes": [
-          "operator.write"
+          "operator.admin"
         ],
         "createdAtMs": 1771252810180,
-        "rotatedAtMs": 1771869655504
+        "rotatedAtMs": 1771881384983
       }
     },
     "createdAtMs": 1771252810180,
