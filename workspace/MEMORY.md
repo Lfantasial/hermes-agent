@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-23 4:00am GMT+9
+# [openclaw-main] recent context, 2026-02-24 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,63 +14,16 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (15,229 tokens to read)
-- Work investment: 62,078 tokens spent on research, building, and decisions
-- Your savings: 46,849 tokens (75% reduction from reuse)
+- Loading: 50 observations (14,695 tokens to read)
+- Work investment: 59,997 tokens spent on research, building, and decisions
+- Your savings: 45,302 tokens (76% reduction from reuse)
 
 ### Feb 22, 2026
 
-**SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #392 | 7:00 AM | 🔵 | Hugin Identity Defined in SOUL.md | ~376 |  |
-
-**USER.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #393 | " | 🔵 | Sam's User Profile Defined in USER.md | ~482 |  |
-
-**2026-02-21.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #394 | " | 🔵 | Morning Briefing Context Index — System State at 7 AM KST Feb 22, 2026 | ~603 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #395 | 7:51 AM | 🔵 | Daily Security Audit Flagged Tavily Skill for Credential Harvesting | ~456 |  |
-
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #396 | 7:52 AM | ✅ | OpenClaw Updated via CLI | ~195 |  |
-| #397 | " | 🔵 | OpenClaw Runtime Process Inventory Post-Update | ~339 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #398 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Antigravity Assistant Voice | ~342 |  |
-| #399 | " | 🔵 | notion_daily_brief.py — Internal Implementation Details | ~448 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #400 | " | 🔵 | `python` Command Not Found on Host — python3 Required | ~209 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #401 | 8:01 AM | 🟣 | Notion Daily Briefing Successfully Executed — 12 Items Returned for 02/21–02/22 | ~542 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #402 | 8:06 AM | 🔵 | Tavily Skill Flagged for Credential Harvesting Vulnerability | ~447 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #403 | " | ✅ | OpenClaw Self-Update Completed via Background Task | ~253 |  |
+| #403 | 8:06 AM | ✅ | OpenClaw Self-Update Completed via Background Task | ~253 |  |
 
 **../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
@@ -107,22 +60,16 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #410 | " | 🔵 | OpenClaw Ships zh-CN Localization, Threat Model, and Agent Reference Docs | ~359 |  |
 
-**#S138** 버전 상태 체크 요청 → Proactive Agent 스킬의 WAL(Write-Ahead Logging) 프로토콜 분석 (Feb 22, 9:53 AM)
-
 **README.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #411 | 10:04 AM | 🔵 | Proactive Agent Current Version: v3.1.0 | ~328 |  |
-
-**#S139** 버전 상태 체크 (Version/Status Check) - Tavily Search Skill Verification (Feb 22, 10:29 AM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #412 | 10:29 AM | ✅ | TAVILY_API_KEY 환경 설정 완료 | ~72 |  |
 | #413 | " | 🔴 | TAVILY_API_KEY 설정 후 즉시 누락 오류 발생 | ~108 |  |
-
-**#S140** WAL 시스템 상태 확인 — WAL이 상시 작동 중인지, 현재 버전/시스템 상태 점검 (Feb 22, 10:31 AM)
 
 **.openclaw/workspace/skills/proactive-agent/SKILL.md**
 | ID | Time | T | Title | Read | Work |
@@ -148,19 +95,7 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #418 | " | 🔵 | Memory Tool Ecosystem: Four Registered Memory Providers | ~250 |  |
-
-**#S141** Proactive Agent 스킬 버전 상태 체크 - WAL 시스템 및 메모리 구성 요소 현황 점검 (Feb 22, 10:38 AM)
-
-**#S142** 버전 상태 체크 요청 → 에이전트 라우팅 규칙 설명 반환 (Feb 22, 10:41 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
 | #419 | 10:41 AM | 🔵 | openclaw-gateway 프로세스 실행 중 확인 | ~108 |  |
-
-**#S143** Version/status check of the current Proactive Agent configuration and how it operates within the OpenClaw Gateway (Feb 22, 12:45 PM)
-
-**#S149** Version status check (버전 상태 체크) - led to WAL system explanation with practical examples (Feb 22, 9:13 PM)
 
 **HEARTBEAT.md**
 | ID | Time | T | Title | Read | Work |
@@ -207,8 +142,6 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #447 | " | 🔵 | openclaw.json Contains Plain-Text Secrets Requiring Private Repo | ~268 |  |
 
-**#S150** 버전 상태 체크 - 설치된 스킬들의 현재 상태 확인 (Feb 22, 11:03 PM)
-
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -230,8 +163,6 @@ When you need implementation details, rationale, or debugging context:
 | #451 | " | 🔵 | TAVILY_API_KEY Successfully Retrieved from Environment | ~205 |  |
 | #452 | " | 🟣 | Tavily Search Operational - Live Korean News Retrieved | ~296 |  |
 
-**#S151** 주기적 메모리 유지보수 및 시스템 상태 점검 - MEMORY.md 증류 및 전체 아키텍처 리뷰 (Feb 22, 11:19 PM)
-
 **.learnings/**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -247,59 +178,134 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #457 | " | 🟣 | SESSION-STATE.md 파일 생성 - 3계층 메모리 시스템 구성 요소 추가 | ~116 |  |
 
-**#S155** Version/status check of Proactive Agent skill — WAL activation and component readiness confirmed (Feb 22, 11:23 PM)
-
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#458** 11:23 PM 🔵 **Installed Skills Version Inventory**
-
-A version status check was run on the openclaw workspace, listing all currently installed skills. The proactive-agent skill (3.1.0) and self-improving-agent (1.0.5) have the most development activity reflected in their version numbers. All other skills (gog, tavily-search, summarize, github, weather) are at stable 1.0.0 releases. The ontology skill is at a pre-release 0.1.2 version, suggesting it is still under active early development.
-
-Read: ~217
+| #458 | 11:23 PM | 🔵 | Installed Skills Version Inventory | ~217 |  |
 
 **../../home/lfant/.openclaw/workspace/skills/proactive-agent/.learnings**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#459** 11:24 PM 🔵 **proactive-agent Skill Directory Structure Revealed**
-
-The proactive-agent skill directory at `/home/lfant/.openclaw/workspace/skills/proactive-agent/` maintains multiple versions of its skill definition: the current SKILL.md, a v3 draft, and a v2.3 backup. The WAL infrastructure (.learnings/ and SESSION-STATE.md) was created today during this session. The presence of both a draft and backup alongside the active SKILL.md suggests the skill is in active iterative development.
-
-Read: ~274
+| #459 | 11:24 PM | 🔵 | proactive-agent Skill Directory Structure Revealed | ~274 |  |
 
 **~/.openclaw/openclaw.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#460** " 🔵 **openclaw-gateway Service Status and Config Warning**
-
-The openclaw-gateway service is fully operational (RPC probe ok, process active) but the status check flagged a configuration warning: the systemd service uses a hardcoded nvm Node.js path (/home/lfant/.nvm/versions/node/v22.22.0/bin/node), which is fragile and will break if the Node version is upgraded or changed via nvm. The recommended remediation is `openclaw doctor --repair`. The gateway is loopback-bound, restricting access to local connections only.
-
-Read: ~312
+| #460 | " | 🔵 | openclaw-gateway Service Status and Config Warning | ~312 |  |
 
 ### Feb 23, 2026
 
 **claude-mem/bun-runner.js**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#464** 3:00 AM 🔵 **Daily Security Audit Cron Job — Known False Positives Catalogued**
-
-A recurring cron task runs `openclaw security audit --deep` nightly at 3 AM Asia/Seoul. The task definition explicitly documents six files across two internal packages (claude-mem and writing-skills) that produce known false-positive security alerts and should be ignored during triage. Any critical findings beyond those exclusions trigger an immediate alert to Sam. This pattern indicates openclaw is the primary security scanning tool for the project, and the false-positive list represents a stable, known set of flagged-but-safe files in the infrastructure/tooling layer of the codebase.
-
-Read: ~340
+| #464 | 3:00 AM | 🔵 | Daily Security Audit Cron Job — Known False Positives Catalogued | ~340 |  |
 
 **../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #465 | 3:01 AM | 🔵 | Security Audit: New Critical Finding in Tavily Skill — Sam Alert Required | ~526 |  |
 
-**#465** 3:01 AM 🔵 **Security Audit: New Critical Finding in Tavily Skill — Sam Alert Required**
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #466 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~316 |  |
 
-The daily 3 AM security audit completed successfully. After filtering the six documented false positives across claude-mem and writing-skills, one genuine unexpected critical finding remains: the tavily-search skill (located at /home/lfant/.openclaw/workspace/skills/tavily-search) triggers two env-harvesting alerts — one in scripts/extract.mjs (line 18) and one in scripts/search.mjs (line 42). These are flagged as potential credential harvesting via environment variable access combined with outbound network sends. Since this is outside the known false-positive set, the cron job's escalation rule applies and Sam must be alerted immediately. Two warnings also exist: missing trusted proxy config for the gateway Control UI, and the claude-mem plugin being reachable under the permissive "default" tool policy context.
+**SOUL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #467 | " | 🔵 | Hugin Identity Defined in SOUL.md | ~438 |  |
 
-Read: ~526
+**USER.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #468 | " | 🔵 | Sam's User Profile Defined in USER.md | ~486 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2025-02-22.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #469 | " | 🔵 | Daily Memory File Path Structure and Missing File | ~314 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #470 | 8:00 AM | 🔵 | Cron-Triggered Notion Daily Briefing Automation | ~341 |  |
+
+**#S160** Empty response checkpoint — no new user input or Claude output to summarize (Feb 23, 8:01 AM)
+
+**#S161** Full cron job completion report and system health summary — confirming all scheduled tasks ran successfully (Feb 23, 8:01 AM)
+
+**#S162** Empty response checkpoint — no new activity to capture (Feb 23, 8:02 AM)
+
+**#S163** Version status check requested by user (Korean: "지금 버전 상태 체크해줘") (Feb 23, 8:02 AM)
+
+**~/.config/systemd/user/openclaw-gateway.service**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #471 | 8:02 AM | 🔵 | OpenClaw Gateway Service Config Fragility — NVM Node Path | ~372 |  |
+
+**#S164** Version/status check of the OpenClaw system (Korean: "지금 버전 상태 체크해줘") — cron jobs state read (Feb 23, 8:24 AM)
+
+**~/.openclaw/workspace/ (cron jobs config, read via SDK tool)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#472** 8:25 AM 🔵 **OpenClaw Cron Jobs Status: Widespread "announce delivery" Failures**
+
+The primary session read the OpenClaw cron jobs configuration to check system version/status. The data reveals that 5 of 6 scheduled jobs are in a failure state, all with the same error: "cron announce delivery failed". The one job that succeeds (daily-github-backup) uses delivery mode "none", bypassing the announce mechanism entirely. This pattern makes it clear that the cron job execution itself is working, but the "announce" delivery channel (likely Telegram or another notification channel) is broken. The jobs cover: security audits, update checks, memory maintenance, morning briefings, Notion task briefings, and GitHub backups. The security audit job has been failing the longest (6 consecutive errors), while memory maintenance just started failing (1 error). This status check was requested by user Sam via what appears to be a Telegram message interface.
+
+Read: ~593
+
+**#S165** 시스템 버전/상태 체크 - Cron 작업 현황 및 Telegram 알림 실패 문제 진단 (Feb 23, 8:25 AM)
+
+**#S166** 아침 브리핑 메시지 내용 부족 문제 분석 - notion_daily_brief.py 날짜 범위 설정 이슈 (Feb 23, 9:01 PM)
+
+**#S167** OpenClaw 버전 상태 확인 - v2026.2.21-2 최신 버전 설치 완료 확인 (Feb 23, 9:01 PM)
+
+**#S168** Version/system status check — WAL (Write-Ahead Logging) infrastructure state verification (Feb 23, 9:01 PM)
+
+**#S169** WAL system explanation — user asked how WAL (Write-Ahead Logging) works and why Claude keeps responding about it (Feb 23, 9:41 PM)
+
+**SOUL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#473** 9:42 PM 🔵 **Hugin AI Identity File: SOUL.md**
+
+The session read SOUL.md, the foundational identity document for Hugin, an AI assistant persona. This file encodes Hugin's philosophical purpose: to be a memory keeper and thoughtful companion for Sam. It defines behavioral guidelines (resourcefulness, privacy respect), communication style (calm, honest, non-flattering), and explains how the file itself enables continuity across stateless sessions. This is a core system-identity file that grounds Hugin's behavior in every session.
+
+Read: ~302
+
+### Feb 24, 2026
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#474** 3:00 AM 🔵 **Daily Security Audit Cron Job Configuration**
+
+A daily cron job runs `openclaw security audit --deep` every day at 3:00 AM (Asia/Seoul). The job has a maintained suppression list of known false positives across two internal packages — claude-mem and writing-skills — to avoid noisy alerts. Any critical findings outside the suppression list trigger an immediate alert to Sam. If no critical issues exist, the job outputs a brief plain-text system health summary for automated delivery. This pattern establishes a low-noise, high-signal automated security monitoring baseline for the system.
+
+Read: ~309
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#475** " 🔵 **`openclaw` Command Not Found in Execution Environment**
+
+When the daily-security-audit cron job attempted to execute `openclaw security audit --deep`, the shell reported the binary as not found (exit code 127). This means either `openclaw` was never installed, was removed, or its install location is not included in the PATH for this execution context. The audit cannot run until the tool is installed and accessible. This is a blocking issue for the automated daily security monitoring workflow.
+
+Read: ~237
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#476** " 🔵 **`openclaw` Confirmed Absent — No Binary or Bin Directory Found**
+
+Two follow-up discovery steps confirmed that `openclaw` is not present anywhere on the system — neither on PATH nor in any bin directory. This rules out a misconfigured PATH and confirms the tool was never installed. The daily security audit cron job is non-functional until `openclaw` is installed and its binary made available on PATH.
+
+Read: ~197
 
 
-Access 62k tokens of past research & decisions for just 15,229t. Use MCP search tools to access memories by ID.
+Access 60k tokens of past research & decisions for just 14,695t. Use MCP search tools to access memories by ID.
