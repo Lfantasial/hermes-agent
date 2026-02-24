@@ -31,7 +31,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1771967050397
       }
     },
     {
@@ -41,7 +42,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771880477133,
+      "updatedAtMs": 1771882745848,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -58,10 +59,14 @@
       },
       "state": {
         "nextRunAtMs": 1771966800000,
-        "lastRunAtMs": 1771880403586,
+        "lastRunAtMs": 1771882709335,
         "lastStatus": "ok",
-        "lastDurationMs": 73547,
-        "consecutiveErrors": 0
+        "lastDurationMs": 36513,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1771967050397
       }
     },
     {
@@ -71,7 +76,7 @@
       "enabled": true,
       "notify": false,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1771768914896,
+      "updatedAtMs": 1771882805107,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -88,11 +93,13 @@
       },
       "state": {
         "nextRunAtMs": 1772373600000,
-        "lastRunAtMs": 1771768802618,
-        "lastStatus": "error",
-        "lastDurationMs": 112278,
-        "lastError": "cron announce delivery failed",
-        "consecutiveErrors": 1
+        "lastRunAtMs": 1771882746873,
+        "lastStatus": "ok",
+        "lastDurationMs": 58234,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -102,7 +109,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771882583716,
+      "updatedAtMs": 1771884071047,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -118,10 +125,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771884000000,
-        "lastRunAtMs": 1771882528302,
+        "nextRunAtMs": 1771970400000,
+        "lastRunAtMs": 1771884005947,
         "lastStatus": "ok",
-        "lastDurationMs": 55414,
+        "lastDurationMs": 65100,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -135,7 +142,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771342778984,
-      "updatedAtMs": 1771882657160,
+      "updatedAtMs": 1771887648295,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -151,10 +158,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771887600000,
-        "lastRunAtMs": 1771882584593,
+        "nextRunAtMs": 1771974000000,
+        "lastRunAtMs": 1771887602721,
         "lastStatus": "ok",
-        "lastDurationMs": 72567,
+        "lastDurationMs": 45574,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -168,7 +175,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771873230390,
+      "updatedAtMs": 1771882708408,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -185,11 +192,14 @@
       },
       "state": {
         "nextRunAtMs": 1771959600000,
-        "lastRunAtMs": 1771873203588,
+        "lastRunAtMs": 1771882702954,
         "lastStatus": "ok",
-        "lastDurationMs": 26802,
+        "lastDurationMs": 5454,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771882702954
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "runningAtMs": 1771967050397
       }
     }
   ]
