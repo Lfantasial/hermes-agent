@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-25 6:05am GMT+9
+# [openclaw-main] recent context, 2026-02-26 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,142 +14,19 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (18,928 tokens to read)
-- Work investment: 120,582 tokens spent on research, building, and decisions
-- Your savings: 101,654 tokens (84% reduction from reuse)
-
-### Feb 23, 2026
-
-**USER.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #468 | 7:00 AM | 🔵 | Sam's User Profile Defined in USER.md | ~486 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/2025-02-22.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #469 | " | 🔵 | Daily Memory File Path Structure and Missing File | ~314 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #470 | 8:00 AM | 🔵 | Cron-Triggered Notion Daily Briefing Automation | ~341 |  |
-
-**~/.config/systemd/user/openclaw-gateway.service**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #471 | 8:02 AM | 🔵 | OpenClaw Gateway Service Config Fragility — NVM Node Path | ~372 |  |
-
-**~/.openclaw/workspace/ (cron jobs config, read via SDK tool)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #472 | 8:25 AM | 🔵 | OpenClaw Cron Jobs Status: Widespread "announce delivery" Failures | ~593 |  |
-
-**#S170** Daily Security Audit Cron Job — Run `openclaw security audit --deep` and report findings or alert Sam on critical issues (Feb 23, 9:41 PM)
-
-**SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #473 | 9:42 PM | 🔵 | Hugin AI Identity File: SOUL.md | ~302 |  |
+- Loading: 50 observations (19,170 tokens to read)
+- Work investment: 110,074 tokens spent on research, building, and decisions
+- Your savings: 90,904 tokens (83% reduction from reuse)
 
 ### Feb 24, 2026
 
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #474 | 3:00 AM | 🔵 | Daily Security Audit Cron Job Configuration | ~309 |  |
-| #475 | " | 🔵 | `openclaw` Command Not Found in Execution Environment | ~237 |  |
-| #476 | " | 🔵 | `openclaw` Confirmed Absent — No Binary or Bin Directory Found | ~197 |  |
-| #477 | 6:00 AM | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~288 |  |
-| #478 | " | 🔵 | openclaw Command Not Found in PATH | ~204 |  |
-| #479 | 6:01 AM | 🔵 | openclaw Installed via npx Cache, Not as Global Binary | ~272 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/proactive-agent/scripts/security-audit.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #480 | 6:07 AM | 🔵 | Daily Security Audit Cron Job Fails — openclaw CLI Not in PATH | ~411 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #481 | " | 🔵 | Daily Security Audit Cron Job — Known False Positives Catalogued | ~367 |  |
-
-**#S171** Daily Security Audit Cron Job Result — openclaw CLI missing, deep scan failed (Feb 24, 6:08 AM)
-
-**#S172** Duplicate cron job delivery check — NO_REPLY issued, result already delivered (Feb 24, 6:08 AM)
-
-**#S173** Second duplicate cron delivery suppressed — NO_REPLY issued again (Feb 24, 6:08 AM)
-
-**#S174** Daily GitHub Backup Cron Job — Execute backup_to_github.sh and confirm result (Feb 24, 6:08 AM)
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #482 | 6:28 AM | ✅ | Daily GitHub Backup Cron Job Triggered | ~207 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #483 | " | 🔵 | Daily Update Check Cron Job Configured | ~278 |  |
-
-**#S175** Daily update check cron job (dc1f52da) — checked OpenClaw and skills for available updates at 6:00 AM Asia/Seoul on February 24, 2026 (Feb 24, 6:29 AM)
-
-**#S176** Investigating whether openclaw is installed in multiple locations on the system (Feb 24, 6:29 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #484 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~327 |  |
-
-**SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #485 | " | 🔵 | Hugin Agent Identity Defined in SOUL.md | ~433 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #486 | 8:10 AM | 🔵 | openclaw Installed in Two Locations | ~305 |  |
-| #487 | 8:11 AM | 🔵 | Both openclaw Installations Are the Same Version | ~167 |  |
-
-**#S177** Understanding whether openclaw's workspace and config are shared across both installations (Feb 24, 8:11 AM)
-
-**../../home/lfant/.openclaw/workspace/AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #488 | 8:11 AM | 🔵 | openclaw Workspace Directory Contents | ~339 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #489 | " | 🔵 | openclaw Config Explicitly Sets Workspace Path | ~166 |  |
-
-**../../home/lfant/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #490 | " | 🔵 | openclaw Main Config File Structure (openclaw.json) | ~321 |  |
-
 **#S178** Diagnosing why openclaw is installed in two places and deciding which installation to keep (Feb 24, 8:11 AM)
 
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #491 | 8:12 AM | 🔵 | Precise Timestamps for Both openclaw Installation Symlinks | ~221 |  |
-| #492 | " | 🔵 | openclaw Installations Differ: NVM Has Skills Directory, npm-global Is 1.3GB | ~300 |  |
-| #493 | " | 🔵 | npm-global openclaw Disk Usage Breakdown | ~301 |  |
-| #494 | 8:21 PM | 🔵 | Research: OpenClaw OAuth + AntiGravity Ban Cases | ~228 |  |
-
-**~/.openclaw/**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #495 | " | 🔵 | Local Environment Has .openclaw and .clawhub Directories | ~319 |  |
+**#S179** OpenClaw + Google Antigravity(Gemini) OAuth 사용으로 인한 계정 밴 케이스 조사 (Feb 24, 8:12 AM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #496 | 8:22 PM | 🔵 | Anthropic Banned OpenClaw OAuth Tokens; Google AI Also Restricting Accounts | ~449 |  |
-| #497 | " | 🔵 | Anthropic Banned OAuth Token Use in Third-Party Tools (Feb 19, 2026) | ~562 |  |
-| #498 | " | 🔵 | OpenClaw Founder Joined OpenAI; Anthropic Ban Has Corporate Conflict-of-Interest Dimension | ~482 |  |
 | #499 | 8:23 PM | 🔵 | Real User Ban Case: Google AI One Pro + OpenCode OAuth → ToS Ban via AntiGravity | ~535 |  |
 | #500 | " | 🔵 | Google Antigravity Mass Ban: Zero-Tolerance Policy for OpenClaw OAuth Use | ~821 |  |
 
@@ -200,58 +77,185 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #511 | " | 🔵 | openclaw doctor 실행 결과 - 시스템 상태 점검 | ~219 |  |
 
-**#S179** OpenClaw + Google Antigravity(Gemini) OAuth 사용으로 인한 계정 밴 케이스 조사 (Feb 24, 8:54 PM)
+**#S180** Daily security audit cron job result delivered to user — critical issues found in tavily-search skill (Feb 24, 8:54 PM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #512 | 9:23 PM | 🔵 | Google DeepMind/Antigravity OpenClaw Ban — Background Intelligence | ~493 |  |
+| #513 | 9:24 PM | 🔵 | Google DeepMind Engineer Announced Appeal Path for Banned OpenClaw/Antigravity Users | ~649 |  |
+| #514 | " | 🔵 | The Register Confirms Mohan's Reinstatement Promise + Google Developer Forum Threads | ~539 |  |
+| #515 | 9:25 PM | 🔵 | Google's Official Appeal Channel: Antigravity In-App Feedback Tool (Practically Inaccessible to Banned Users) | ~569 |  |
+| #516 | " | 🔵 | Second Google Forum Thread Confirms Global Scope: Korean Users Affected, Subscriptions Charged During Ban | ~495 |  |
+| #517 | " | 🔵 | Critical New Details: Permanent Bans Reported, "WAF Bug" Cited, Fake Student Accounts as Root Cause | ~656 |  |
 
-**#513** 9:24 PM 🔵 **Google DeepMind Engineer Announced Appeal Path for Banned OpenClaw/Antigravity Users**
+### Feb 25, 2026
 
-The primary session's subagent was asked whether Google DeepMind engineers announced an appeal/소명 procedure for users banned in the OpenClaw/Antigravity incident. The VentureBeat article (2026-02-23) provides the definitive answer: YES. Varun Mohan, a Google DeepMind engineer, explicitly stated in an X post that users unaware of the ToS violation "will get a path for them to come back on." This constitutes a public announcement of an appeal/reinstatement pathway, though the specific mechanics of that process had not yet been defined at time of publication. The ban itself was motivated by massive Gemini token overconsumption routed through OpenClaw's OAuth plugin to Antigravity, degrading service for paying users. The incident also has a competitive dimension: OpenClaw's creator joined OpenAI one week prior, making Google's action a simultaneous ToS enforcement and competitive barrier. Both Google and Anthropic are moving toward "walled garden" agent ecosystems that exclude third-party wrappers.
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #518 | 6:17 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~437 |  |
 
-Read: ~649
+**#S181** Security audit flagged tavily-search skill as critical threat — user reviewed findings to determine if real or false positive (Feb 25, 6:17 AM)
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #519 | 6:21 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~388 |  |
+| #520 | 6:22 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~452 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/proactive-agent/scripts/security-audit.sh**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #521 | 6:23 AM | 🔵 | Security Audit Script Implementation in proactive-agent Skill | ~512 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #522 | " | 🔵 | OpenClaw CLI Has Built-in Security Audit Command | ~313 |  |
+
+**#S182** Investigating tavily-search security audit false positives and how to suppress them in the daily-security-audit cron job (Feb 25, 6:23 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #523 | 6:24 AM | 🔵 | Security Audit Config Uses allowlist groupPolicy | ~236 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #524 | 6:26 AM | 🔵 | Critical Security Issues Detected in tavily-search Skill | ~482 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #525 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Active for Sam (Seoul, 7 AM) | ~282 |  |
+| #526 | " | 🔵 | wttr.in Weather Fetch Failed with Exit Code 52 During Morning Briefing | ~274 |  |
+| #527 | 7:01 AM | 🔵 | Second wttr.in Fetch Also Terminated During Morning Briefing | ~266 |  |
+| #528 | " | 🔵 | web_fetch Also Failed for Weather During Morning Briefing | ~219 |  |
+| #529 | " | 🔵 | Open-Meteo API Succeeded as Fallback Weather Source for Seoul | ~285 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2026-02-25.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #530 | " | 🔵 | Daily Memory File Convention: Date-Named Markdown in ~/.openclaw/workspace/memory/ | ~223 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #531 | 7:24 AM | 🔵 | Critical Security Issues Detected in tavily-search Skill | ~377 |  |
+
+**#S183** Confirming tavily-search security findings are false positives and evaluating two fixes: cron exemption update and .env auto-load support (Feb 25, 7:24 AM)
+
+**#S184** User asked whether Grok models can be used in the current OpenClaw setup (Feb 25, 7:24 AM)
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/search.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #532 | 7:25 AM | 🔵 | tavily-search scripts/search.mjs Source Reviewed — False Positive Confirmed | ~353 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #533 | 7:26 AM | 🔵 | Critical Security Issues Detected in tavily-search Skill | ~404 |  |
+| #534 | 7:33 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~370 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #535 | " | 🔵 | OpenClaw Global Configuration State | ~327 |  |
+
+**https://docs.openclaw.ai/providers**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #537 | 7:34 AM | 🔵 | OpenClaw Supported Model Providers List Fetched | ~410 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #536 | " | 🔵 | Critical Security Issues Found in tavily-search Skill | ~411 |  |
+
+**#S185** OpenClaw model configuration — reviewing current setup and options for setting Claude API as primary model (Feb 25, 7:35 AM)
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #538 | 8:00 AM | 🔵 | Notion Daily Briefing Cron System | ~288 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #539 | 8:01 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~412 |  |
+
+**#S186** Morning briefing cron result delivery issue — results being dropped or incomplete when manually re-sent (Feb 25, 8:01 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #540 | 8:01 AM | 🔵 | Cron Job "notion-daily-briefing" Does Not Exist | ~218 |  |
+| #541 | " | 🔵 | notion-daily-briefing Cron Job Exists and Is Currently Running | ~287 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #542 | 8:02 AM | 🔵 | Notion Daily Briefing Cron Job | ~279 |  |
+
+**#S187** Notion Daily Briefing — fetch and summarize Notion tasks from Feb 24 07:00 to Feb 25 07:00 for Sam (Antigravity 🌌 persona) (Feb 25, 8:02 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #543 | 8:02 AM | 🔵 | `python` Command Not Found on Host System | ~206 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#544** " 🔵 **notion_daily_brief.py Raw Output Format — 60 Structured Tasks**
+
+The `notion_daily_brief.py` script was invoked (via `python3` after the initial `python` command failed) and returned 60 structured task entries covering the 24-hour window. Each entry includes a category tag, action title, original sender, and a Korean-language summary. The raw output is a numbered markdown list which is then reformatted into the final sectioned briefing presented to Sam. The script appears to pull from email/Notion integrations and categorizes items automatically. Key active workstreams identified: EOL 2026 APAC VM/DB finalization, three overdue CVE-2025-24813 vulnerability patches, onboarding prep for 18 people, Azure PIM role expiry, Netskope UAT documentation, and Hunet Azure AD SSO schedule confirmation.
+
+Read: ~438
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#514** " 🔵 **The Register Confirms Mohan's Reinstatement Promise + Google Developer Forum Threads**
+**#545** 8:03 AM 🔵 **Two Long-Running Sessions and openclaw-gateway Process State**
 
-The Register article (2026-02-23) corroborates the VentureBeat findings and adds a second Mohan quote explicitly promising reinstatement. The article also surfaces Google developer forum threads where affected users organized and documented their bans. The core finding for the original research question remains: Mohan publicly committed to a path for users to return, framing it as urgency-driven rather than punitive. No formal appeal mechanism with specific steps has been announced — just a commitment that one will exist. Anthropic's parallel ban (documented 2026-02-20) suggests this is an industry-wide pattern of clamping down on subscription token arbitrage via third-party wrappers.
+During investigation of the notion-daily-briefing cron job, a process listing revealed two background sessions with still-running commands (fast-haven, delta-forest), likely spawned as part of the briefing or security audit workflows. The openclaw-gateway process is healthy and long-running since system start at 06:07, with high memory usage (~594MB) typical for a persistent gateway service.
 
-Read: ~539
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#515** 9:25 PM 🔵 **Google's Official Appeal Channel: Antigravity In-App Feedback Tool (Practically Inaccessible to Banned Users)**
-
-The Google AI developer forum thread (discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778) reveals that the ban wave predates news coverage by ~10 days, starting around 2026-02-12. A Google staff member did respond and pointed users toward the official appeal mechanism: the Antigravity in-app feedback "Report Issue" tool. However, this was a Catch-22 — banned users were fully logged out of their accounts and unable to access the app to submit feedback. Support escalation through Google Cloud and Google One created a circular redirect with no resolution. This directly answers the original research question: yes, Google provided an official appeal channel (in-app feedback), but it was operationally inaccessible to the affected users, compounding the perception that the ban was "draconian."
-
-Read: ~569
+Read: ~237
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#516** " 🔵 **Second Google Forum Thread Confirms Global Scope: Korean Users Affected, Subscriptions Charged During Ban**
+**#546** " 🔵 **Cron Job Processes Not Found by UUID Search**
 
-The second Google AI developer forum thread (discuss.ai.google.dev/t/.../123015) corroborates and extends the picture: the ban was global (Korean-language user confirmed affected), Google continued billing banned subscribers with no service, and no formal appeal/소명 process existed as of mid-February. The absence of any Google staff response in this higher-profile thread (vs. the token response in thread 122778) reinforces that the "path to come back" promised by Varun Mohan on 2026-02-23 was a response to escalating public pressure, not a pre-existing process. The OpenClaw ban predated Mohan's public commitment by ~10 days with no official reinstatement mechanism in place during that window.
+A targeted ps/grep search for the notion-daily-briefing cron UUID (9fbab8e2) and a second job ID fragment (eb440) found no matching running processes. The cron job showed "running" status in the registry moments earlier, so either the job completed quickly, or its worker process is tracked differently and not exposed as a named PID. This may be relevant to diagnosing why briefing delivery is unreliable — if job completion isn't reflected in process state, polling for results may need to use the cron registry API rather than process inspection.
 
-Read: ~495
+Read: ~274
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#517** " 🔵 **Critical New Details: Permanent Bans Reported, "WAF Bug" Cited, Fake Student Accounts as Root Cause**
+**#547** 8:04 AM 🔵 **notion-daily-briefing Stuck in "running" State 4 Minutes After Trigger**
 
-The processed summary of both forum threads reveals significant new details. First, some bans are permanent — at least one user was explicitly told after 3 weeks that their account cannot be restored. Second, Google's own Tier 1 support described the issue as a "known WAF bug," raising the possibility that some bans were triggered by automated web application firewall rules misidentifying legitimate OpenClaw OAuth traffic as malicious. Third, a community member identified "millions of fake student accounts" as the underlying capacity problem, meaning innocent developers were caught in a broad sweep targeting account abuse. Fourth, a second Google staff post acknowledged the issue and promised prioritized resolution. The appeal/소명 process that Varun Mohan promised on 2026-02-23 had not materialized for users who had been waiting since 2026-02-12, with at least some being told their accounts cannot be restored.
+A second status check on notion-daily-briefing shows the job still marked as "running" 4 minutes after its last trigger, yet no worker process was found via ps/grep. This mismatch between registry state and process reality is notable — it may indicate the job is hung, that its process is managed internally by openclaw-gateway rather than as a direct OS process, or that the status field doesn't update promptly on completion. This behavior could explain why morning briefing results are sometimes missing or unreliable.
 
-Read: ~656
+Read: ~288
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#548** 8:05 AM 🔵 **notion-daily-briefing Is Disabled and Last Run Errored**
+
+The full JSON status of notion-daily-briefing reveals the root cause of missing morning briefings: the job is disabled (enabled: false) and its last execution ended in error after ~102 seconds. Delivery status is "unknown", meaning the results were never confirmed as delivered. The job is designed to run /home/lfant/.openclaw/workspace/notion_daily_brief.py, fetch Notion tasks from the previous day (07:00 to 07:00 window), and present them to Sam in the Antigravity 🌌 assistant voice. The combination of disabled state, error on last run, and unknown delivery status fully explains the morning briefing reliability problem reported earlier in this session.
+
+Read: ~392
 
 
-Access 121k tokens of past research & decisions for just 18,928t. Use the claude-mem skill to access memories by ID.
+Access 110k tokens of past research & decisions for just 19,170t. Use the claude-mem skill to access memories by ID.

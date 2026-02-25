@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1771882701960,
+      "updatedAtMs": 1772042457488,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -17,22 +17,21 @@
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
-        "message": "Run 'openclaw security audit --deep'. Ignore false positives from claude-mem (bun-runner.js, context-generator.cjs, mcp-server.cjs, smart-install.js, worker-cli.js) and writing-skills (render-graphs.js). If any OTHER critical issues are found, alert Sam immediately. Otherwise, provide a brief summary of system health.",
+        "message": "Run 'openclaw security audit --deep'. Ignore false positives from tavily-search (scripts/extract.mjs, scripts/search.mjs) and also from claude-mem (bun-runner.js, context-generator.cjs, mcp-server.cjs, smart-install.js, worker-cli.js) and writing-skills (render-graphs.js).",
         "kind": "agentTurn"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771956000000,
-        "lastRunAtMs": 1771882658175,
+        "nextRunAtMs": 1772128800000,
+        "lastRunAtMs": 1772042402960,
         "lastStatus": "ok",
-        "lastDurationMs": 43785,
+        "lastDurationMs": 54528,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1771967050397
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -42,7 +41,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771882745848,
+      "updatedAtMs": 1771967114241,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -58,15 +57,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771966800000,
-        "lastRunAtMs": 1771882709335,
+        "nextRunAtMs": 1772053200000,
+        "lastRunAtMs": 1771967089432,
         "lastStatus": "ok",
-        "lastDurationMs": 36513,
+        "lastDurationMs": 24809,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1771967050397
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -109,7 +107,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771884071047,
+      "updatedAtMs": 1771970558575,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -125,10 +123,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771970400000,
-        "lastRunAtMs": 1771884005947,
+        "nextRunAtMs": 1772056800000,
+        "lastRunAtMs": 1771970400004,
         "lastStatus": "ok",
-        "lastDurationMs": 65100,
+        "lastDurationMs": 158571,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -139,10 +137,10 @@
       "id": "9fbab8e2-08fa-4e76-aa00-93296c5dfd89",
       "agentId": "main",
       "name": "notion-daily-briefing",
-      "enabled": true,
+      "enabled": false,
       "notify": true,
       "createdAtMs": 1771342778984,
-      "updatedAtMs": 1771887648295,
+      "updatedAtMs": 1771974316789,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -158,14 +156,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771974000000,
-        "lastRunAtMs": 1771887602721,
+        "lastRunAtMs": 1771974108980,
         "lastStatus": "ok",
-        "lastDurationMs": 45574,
+        "lastDurationMs": 207809,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
       }
     },
     {
@@ -175,7 +172,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771882708408,
+      "updatedAtMs": 1771967122210,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -191,15 +188,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771959600000,
-        "lastRunAtMs": 1771882702954,
+        "nextRunAtMs": 1772046000000,
+        "lastRunAtMs": 1771967114241,
         "lastStatus": "ok",
-        "lastDurationMs": 5454,
+        "lastDurationMs": 7969,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1771967050397
+        "runningAtMs": 1772046001997
       }
     }
   ]

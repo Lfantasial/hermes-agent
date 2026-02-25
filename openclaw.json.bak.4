@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.19-2",
-    "lastTouchedAt": "2026-02-20T15:30:01.327Z"
+    "lastTouchedAt": "2026-02-20T16:33:06.924Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-20T15:23:28.289Z",
@@ -91,9 +91,9 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-codex/gpt-5.3-codex",
+        "primary": "zai/glm-4.7",
         "fallbacks": [
-          "zai/glm-4.7"
+          "openai-codex/gpt-5.3-codex"
         ]
       },
       "models": {
@@ -116,7 +116,9 @@
       },
       "maxConcurrent": 4,
       "subagents": {
-        "maxConcurrent": 8
+        "maxConcurrent": 8,
+        "model": "openai-codex/gpt-5.3-codex",
+        "thinking": "high"
       }
     }
   },
@@ -131,6 +133,7 @@
     }
   },
   "messages": {
+    "responsePrefix": "[{model} | thinking:{thinkingLevel}]",
     "ackReactionScope": "group-mentions"
   },
   "commands": {

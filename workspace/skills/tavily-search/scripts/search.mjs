@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+import dotenv from 'dotenv';
+import path from 'path';
+
+// Load .env file from the script's directory
+const envPath = path.join(process.cwd(), '.env');
+dotenv.config({ path: envPath });
+
 function usage() {
   console.error(`Usage: search.mjs "query" [-n 5] [--deep] [--topic general|news] [--days 7]`);
   process.exit(2);

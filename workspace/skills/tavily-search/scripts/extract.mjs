@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+import dotenv from 'dotenv';
+import path from 'path';
+
+// Load .env file from the script's directory
+const envPath = path.join(process.cwd(), '.env');
+dotenv.config({ path: envPath });
+
 function usage() {
   console.error(`Usage: extract.mjs "url1" ["url2" ...]`);
   process.exit(2);

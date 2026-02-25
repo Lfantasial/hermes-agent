@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.22-2",
-    "lastTouchedAt": "2026-02-23T21:22:16.493Z"
+    "lastTouchedVersion": "2026.2.23",
+    "lastTouchedAt": "2026-02-25T18:13:18.917Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-20T15:23:28.289Z",
@@ -170,6 +170,7 @@
       "dmPolicy": "pairing",
       "botToken": "8383705979:AAGV0AIQftM-rzingVgFV-orYcKgHZP8e8Q",
       "groupPolicy": "allowlist",
+      "streaming": "partial",
       "actions": {
         "reactions": true,
         "sendMessage": true,
@@ -179,8 +180,7 @@
         "showOk": true,
         "showAlerts": true,
         "useIndicator": true
-      },
-      "streaming": "partial"
+      }
     }
   },
   "gateway": {
