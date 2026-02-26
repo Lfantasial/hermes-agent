@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1772042457488,
+      "updatedAtMs": 1772128835522,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772128800000,
-        "lastRunAtMs": 1772042402960,
+        "nextRunAtMs": 1772215200000,
+        "lastRunAtMs": 1772128801751,
         "lastStatus": "ok",
-        "lastDurationMs": 54528,
+        "lastDurationMs": 33771,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -41,7 +41,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1771967114241,
+      "updatedAtMs": 1772053263815,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -57,10 +57,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772053200000,
-        "lastRunAtMs": 1771967089432,
+        "nextRunAtMs": 1772139600000,
+        "lastRunAtMs": 1772053200002,
         "lastStatus": "ok",
-        "lastDurationMs": 24809,
+        "lastDurationMs": 63813,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -107,7 +107,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1771970558575,
+      "updatedAtMs": 1772056880827,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -123,10 +123,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772056800000,
-        "lastRunAtMs": 1771970400004,
+        "nextRunAtMs": 1772143200000,
+        "lastRunAtMs": 1772056805498,
         "lastStatus": "ok",
-        "lastDurationMs": 158571,
+        "lastDurationMs": 75329,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -172,7 +172,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1771967122210,
+      "updatedAtMs": 1772046009869,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -188,15 +188,84 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772046000000,
-        "lastRunAtMs": 1771967114241,
+        "nextRunAtMs": 1772132400000,
+        "lastRunAtMs": 1772046001998,
         "lastStatus": "ok",
-        "lastDurationMs": 7969,
+        "lastDurationMs": 7871,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772046001997
+        "runningAtMs": 1772132403583
+      }
+    },
+    {
+      "id": "9b8c5a0b-efb6-4d9b-b3ec-44b5384e6cba",
+      "name": "notion-daily-br-legacy",
+      "enabled": false,
+      "createdAtMs": 1772062869056,
+      "updatedAtMs": 1772063223688,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run 'python3 /home/lfant/.openclaw/workspace/notion_daily_brief.py' and deliver the full output to Sam in Korean.",
+        "timeoutSeconds": 240
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5487758242"
+      },
+      "state": {
+        "lastRunAtMs": 1772063042186,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 181502,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      },
+      "agentId": "main"
+    },
+    {
+      "id": "de62862d-0431-460a-93d4-a21c9c54aa7c",
+      "agentId": "main",
+      "name": "notion-daily-briefing",
+      "enabled": true,
+      "createdAtMs": 1772063184622,
+      "updatedAtMs": 1772105314732,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run 'python3 /home/lfant/.openclaw/workspace/notion_daily_brief.py' and send the full output to Sam in Korean.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5487758242"
+      },
+      "state": {
+        "nextRunAtMs": 1772146800000,
+        "lastRunAtMs": 1772105000787,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 313945,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]

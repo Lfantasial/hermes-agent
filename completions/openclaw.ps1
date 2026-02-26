@@ -46,7 +46,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'openclaw onboard') {
-                $completions = @('--workspace','--reset','--non-interactive','--accept-risk','--flow','--mode','--auth-choice','--token-provider','--token','--token-profile-id','--token-expires-in','--cloudflare-ai-gateway-account-id','--cloudflare-ai-gateway-gateway-id','--anthropic-api-key','--openai-api-key','--mistral-api-key','--openrouter-api-key','--ai-gateway-api-key','--cloudflare-ai-gateway-api-key','--moonshot-api-key','--kimi-code-api-key','--gemini-api-key','--zai-api-key','--xiaomi-api-key','--minimax-api-key','--synthetic-api-key','--venice-api-key','--together-api-key','--huggingface-api-key','--opencode-zen-api-key','--xai-api-key','--litellm-api-key','--qianfan-api-key','--volcengine-api-key','--byteplus-api-key','--custom-base-url','--custom-api-key','--custom-model-id','--custom-provider-id','--custom-compatibility','--gateway-port','--gateway-bind','--gateway-auth','--gateway-token','--gateway-password','--remote-url','--remote-token','--tailscale','--tailscale-reset-on-exit','--install-daemon','--no-install-daemon','--skip-daemon','--daemon-runtime','--skip-channels','--skip-skills','--skip-health','--skip-ui','--node-manager','--json')
+                $completions = @('--workspace','--reset','--non-interactive','--accept-risk','--flow','--mode','--auth-choice','--token-provider','--token','--token-profile-id','--token-expires-in','--cloudflare-ai-gateway-account-id','--cloudflare-ai-gateway-gateway-id','--anthropic-api-key','--openai-api-key','--mistral-api-key','--openrouter-api-key','--kilocode-api-key','--ai-gateway-api-key','--cloudflare-ai-gateway-api-key','--moonshot-api-key','--kimi-code-api-key','--gemini-api-key','--zai-api-key','--xiaomi-api-key','--minimax-api-key','--synthetic-api-key','--venice-api-key','--together-api-key','--huggingface-api-key','--opencode-zen-api-key','--xai-api-key','--litellm-api-key','--qianfan-api-key','--volcengine-api-key','--byteplus-api-key','--custom-base-url','--custom-api-key','--custom-model-id','--custom-provider-id','--custom-compatibility','--gateway-port','--gateway-bind','--gateway-auth','--gateway-token','--gateway-password','--remote-url','--remote-token','--tailscale','--tailscale-reset-on-exit','--install-daemon','--no-install-daemon','--skip-daemon','--daemon-runtime','--skip-channels','--skip-skills','--skip-health','--skip-ui','--node-manager','--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -417,7 +417,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'openclaw memory search') {
-                $completions = @('--agent','--max-results','--min-score','--json')
+                $completions = @('--query','--agent','--max-results','--min-score','--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -480,7 +480,14 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'openclaw sessions') {
-                $completions = @('--json','--verbose','--store','--active')
+                $completions = @('cleanup','--json','--verbose','--store','--agent','--all-agents','--active')
+                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
+                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
+                }
+            }
+
+            if ($commandPath -eq 'openclaw sessions cleanup') {
+                $completions = @('--store','--agent','--all-agents','--dry-run','--enforce','--active-key','--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }

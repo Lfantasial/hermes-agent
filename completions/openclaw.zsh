@@ -92,7 +92,7 @@ _openclaw_onboard() {
     "--accept-risk[Acknowledge that agents are powerful and full system access is risky (required for --non-interactive)]" \
     "--flow[Wizard flow: quickstart|advanced|manual]" \
     "--mode[Wizard mode: local|remote]" \
-    "--auth-choice[Auth: token|openai-codex|chutes|vllm|openai-api-key|mistral-api-key|xai-api-key|volcengine-api-key|byteplus-api-key|qianfan-api-key|openrouter-api-key|litellm-api-key|ai-gateway-api-key|cloudflare-ai-gateway-api-key|moonshot-api-key|moonshot-api-key-cn|kimi-code-api-key|synthetic-api-key|venice-api-key|together-api-key|huggingface-api-key|github-copilot|gemini-api-key|google-antigravity|google-gemini-cli|zai-api-key|zai-coding-global|zai-coding-cn|zai-global|zai-cn|xiaomi-api-key|minimax-portal|qwen-portal|copilot-proxy|apiKey|opencode-zen|minimax-api|minimax-api-key-cn|minimax-api-lightning|custom-api-key|skip|setup-token|oauth|claude-cli|codex-cli|minimax-cloud|minimax]" \
+    "--auth-choice[Auth: token|openai-codex|chutes|vllm|apiKey|openai-api-key|mistral-api-key|openrouter-api-key|kilocode-api-key|ai-gateway-api-key|cloudflare-ai-gateway-api-key|moonshot-api-key|kimi-code-api-key|gemini-api-key|zai-api-key|xiaomi-api-key|minimax-api|synthetic-api-key|venice-api-key|together-api-key|huggingface-api-key|opencode-zen|xai-api-key|litellm-api-key|qianfan-api-key|volcengine-api-key|byteplus-api-key|moonshot-api-key-cn|github-copilot|gemini-api-key|google-gemini-cli|zai-api-key|zai-coding-global|zai-coding-cn|zai-global|zai-cn|xiaomi-api-key|minimax-portal|qwen-portal|copilot-proxy|apiKey|opencode-zen|minimax-api|minimax-api-key-cn|minimax-api-lightning|custom-api-key|skip|setup-token|oauth|claude-cli|codex-cli|minimax-cloud|minimax]" \
     "--token-provider[Token provider id (non-interactive; used with --auth-choice token)]" \
     "--token[Token value (non-interactive; used with --auth-choice token)]" \
     "--token-profile-id[Auth profile id (non-interactive; default: <provider>:manual)]" \
@@ -103,6 +103,7 @@ _openclaw_onboard() {
     "--openai-api-key[OpenAI API key]" \
     "--mistral-api-key[Mistral API key]" \
     "--openrouter-api-key[OpenRouter API key]" \
+    "--kilocode-api-key[Kilo Gateway API key]" \
     "--ai-gateway-api-key[Vercel AI Gateway API key]" \
     "--cloudflare-ai-gateway-api-key[Cloudflare AI Gateway API key]" \
     "--moonshot-api-key[Moonshot API key]" \
@@ -846,6 +847,7 @@ _openclaw_memory_index() {
 
 _openclaw_memory_search() {
   _arguments -C \
+    "--query[Search query (alternative to positional argument)]" \
     "--agent[Agent id (default: default agent)]" \
     "--max-results[Max results]" \
     "--min-score[Minimum score]" \
@@ -965,12 +967,38 @@ _openclaw_health() {
     "--debug[Alias for --verbose]"
 }
 
+_openclaw_sessions_cleanup() {
+  _arguments -C \
+    "--store[Path to session store (default: resolved from config)]" \
+    "--agent[Agent id to maintain (default: configured default agent)]" \
+    "--all-agents[Run maintenance across all configured agents]" \
+    "--dry-run[Preview maintenance actions without writing]" \
+    "--enforce[Apply maintenance even when configured mode is warn]" \
+    "--active-key[Protect this session key from budget-eviction]" \
+    "--json[Output JSON]"
+}
+
 _openclaw_sessions() {
+  local -a commands
+  local -a options
+  
   _arguments -C \
     "--json[Output as JSON]" \
     "--verbose[Verbose logging]" \
     "--store[Path to session store (default: resolved from config)]" \
-    "--active[Only show sessions updated within the past N minutes]"
+    "--agent[Agent id to inspect (default: configured default agent)]" \
+    "--all-agents[Aggregate sessions across all configured agents]" \
+    "--active[Only show sessions updated within the past N minutes]" \
+    "1: :_values 'command' 'cleanup[Run session-store maintenance now]'" \
+    "*::arg:->args"
+
+  case $state in
+    (args)
+      case $line[1] in
+        (cleanup) _openclaw_sessions_cleanup ;;
+      esac
+      ;;
+  esac
 }
 
 _openclaw_browser_status() {

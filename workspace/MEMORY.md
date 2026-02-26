@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-26 4:00am GMT+9
+# [openclaw-main] recent context, 2026-02-27 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,140 +14,11 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (19,170 tokens to read)
-- Work investment: 110,074 tokens spent on research, building, and decisions
-- Your savings: 90,904 tokens (83% reduction from reuse)
-
-### Feb 24, 2026
-
-**#S178** Diagnosing why openclaw is installed in two places and deciding which installation to keep (Feb 24, 8:11 AM)
-
-**#S179** OpenClaw + Google Antigravity(Gemini) OAuth 사용으로 인한 계정 밴 케이스 조사 (Feb 24, 8:12 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #499 | 8:23 PM | 🔵 | Real User Ban Case: Google AI One Pro + OpenCode OAuth → ToS Ban via AntiGravity | ~535 |  |
-| #500 | " | 🔵 | Google Antigravity Mass Ban: Zero-Tolerance Policy for OpenClaw OAuth Use | ~821 |  |
-
-**~/.openclaw/agents/&lt;agentId&gt;/agent/auth-profiles.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #501 | 8:24 PM | 🔵 | OpenClaw OAuth Docs: Anthropic Uses setup-token Flow; Google/AntiGravity Not Listed | ~586 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #502 | " | 🔵 | Global Media Coverage: OpenClaw Antigravity Ban Is Worldwide News; Creator May End Project | ~698 |  |
-| #503 | 8:25 PM | 🔵 | GitHub Issue #14203: Exact Error Messages and Recommended Fix for Antigravity Ban | ~534 |  |
-
-**../../home/lfant/.openclaw/workspace**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #504 | 8:52 PM | 🔵 | OpenClaw Version Check Before Update | ~329 |  |
-
-**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #505 | " | 🔵 | OpenClaw Auto-Update Skipped: npm Global Install Requires Manual Update | ~321 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #506 | " | 🔴 | OpenClaw Update Fails: System npm Used Instead of NVM npm | ~357 |  |
-| #507 | " | 🔵 | PATH Conflict: System Node/npm Active While OpenClaw Lives Under NVM | ~312 |  |
-
-**../../home/lfant/.nvm/current/bin**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #508 | 8:53 PM | 🔵 | NVM Global Bin Directory Contents Mapped | ~329 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #509 | " | 🔵 | Research: OpenClaw OAuth Usage Leading to Anti-Gravity Ban | ~243 |  |
-
-**package-lock.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #510 | " | ✅ | openclaw npm 패키지 업데이트 | ~145 |  |
-
-**~/.openclaw/agents/main/sessions/sessions.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #511 | " | 🔵 | openclaw doctor 실행 결과 - 시스템 상태 점검 | ~219 |  |
-
-**#S180** Daily security audit cron job result delivered to user — critical issues found in tavily-search skill (Feb 24, 8:54 PM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #512 | 9:23 PM | 🔵 | Google DeepMind/Antigravity OpenClaw Ban — Background Intelligence | ~493 |  |
-| #513 | 9:24 PM | 🔵 | Google DeepMind Engineer Announced Appeal Path for Banned OpenClaw/Antigravity Users | ~649 |  |
-| #514 | " | 🔵 | The Register Confirms Mohan's Reinstatement Promise + Google Developer Forum Threads | ~539 |  |
-| #515 | 9:25 PM | 🔵 | Google's Official Appeal Channel: Antigravity In-App Feedback Tool (Practically Inaccessible to Banned Users) | ~569 |  |
-| #516 | " | 🔵 | Second Google Forum Thread Confirms Global Scope: Korean Users Affected, Subscriptions Charged During Ban | ~495 |  |
-| #517 | " | 🔵 | Critical New Details: Permanent Bans Reported, "WAF Bug" Cited, Fake Student Accounts as Root Cause | ~656 |  |
+- Loading: 50 observations (17,375 tokens to read)
+- Work investment: 409,461 tokens spent on research, building, and decisions
+- Your savings: 392,086 tokens (96% reduction from reuse)
 
 ### Feb 25, 2026
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #518 | 6:17 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~437 |  |
-
-**#S181** Security audit flagged tavily-search skill as critical threat — user reviewed findings to determine if real or false positive (Feb 25, 6:17 AM)
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #519 | 6:21 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~388 |  |
-| #520 | 6:22 AM | 🔵 | Critical Security Issues Found in tavily-search Skill | ~452 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/proactive-agent/scripts/security-audit.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #521 | 6:23 AM | 🔵 | Security Audit Script Implementation in proactive-agent Skill | ~512 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #522 | " | 🔵 | OpenClaw CLI Has Built-in Security Audit Command | ~313 |  |
-
-**#S182** Investigating tavily-search security audit false positives and how to suppress them in the daily-security-audit cron job (Feb 25, 6:23 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #523 | 6:24 AM | 🔵 | Security Audit Config Uses allowlist groupPolicy | ~236 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #524 | 6:26 AM | 🔵 | Critical Security Issues Detected in tavily-search Skill | ~482 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #525 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Active for Sam (Seoul, 7 AM) | ~282 |  |
-| #526 | " | 🔵 | wttr.in Weather Fetch Failed with Exit Code 52 During Morning Briefing | ~274 |  |
-| #527 | 7:01 AM | 🔵 | Second wttr.in Fetch Also Terminated During Morning Briefing | ~266 |  |
-| #528 | " | 🔵 | web_fetch Also Failed for Weather During Morning Briefing | ~219 |  |
-| #529 | " | 🔵 | Open-Meteo API Succeeded as Fallback Weather Source for Seoul | ~285 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/2026-02-25.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #530 | " | 🔵 | Daily Memory File Convention: Date-Named Markdown in ~/.openclaw/workspace/memory/ | ~223 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #531 | 7:24 AM | 🔵 | Critical Security Issues Detected in tavily-search Skill | ~377 |  |
-
-**#S183** Confirming tavily-search security findings are false positives and evaluating two fixes: cron exemption update and .env auto-load support (Feb 25, 7:24 AM)
-
-**#S184** User asked whether Grok models can be used in the current OpenClaw setup (Feb 25, 7:24 AM)
 
 **../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/search.mjs**
 | ID | Time | T | Title | Read | Work |
@@ -175,8 +46,6 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #536 | " | 🔵 | Critical Security Issues Found in tavily-search Skill | ~411 |  |
 
-**#S185** OpenClaw model configuration — reviewing current setup and options for setting Claude API as primary model (Feb 25, 7:35 AM)
-
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -189,6 +58,8 @@ When you need implementation details, rationale, or debugging context:
 
 **#S186** Morning briefing cron result delivery issue — results being dropped or incomplete when manually re-sent (Feb 25, 8:01 AM)
 
+**#S187** Notion Daily Briefing — fetch and summarize Notion tasks from Feb 24 07:00 to Feb 25 07:00 for Sam (Antigravity 🌌 persona) (Feb 25, 8:01 AM)
+
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -200,7 +71,7 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #542 | 8:02 AM | 🔵 | Notion Daily Briefing Cron Job | ~279 |  |
 
-**#S187** Notion Daily Briefing — fetch and summarize Notion tasks from Feb 24 07:00 to Feb 25 07:00 for Sam (Antigravity 🌌 persona) (Feb 25, 8:02 AM)
+**#S188** Daily Morning Briefing Cron Job Execution — Sam, Seoul, 7 AM (Feb 25, 2026) (Feb 25, 8:02 AM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
@@ -210,52 +81,209 @@ When you need implementation details, rationale, or debugging context:
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #544 | " | 🔵 | notion_daily_brief.py Raw Output Format — 60 Structured Tasks | ~438 |  |
 
-**#544** " 🔵 **notion_daily_brief.py Raw Output Format — 60 Structured Tasks**
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #545 | 8:03 AM | 🔵 | Two Long-Running Sessions and openclaw-gateway Process State | ~237 |  |
+| #546 | " | 🔵 | Cron Job Processes Not Found by UUID Search | ~274 |  |
+| #547 | 8:04 AM | 🔵 | notion-daily-briefing Stuck in "running" State 4 Minutes After Trigger | ~288 |  |
 
-The `notion_daily_brief.py` script was invoked (via `python3` after the initial `python` command failed) and returned 60 structured task entries covering the 24-hour window. Each entry includes a category tag, action title, original sender, and a Korean-language summary. The raw output is a numbered markdown list which is then reformatted into the final sectioned briefing presented to Sam. The script appears to pull from email/Notion integrations and categorizes items automatically. Key active workstreams identified: EOL 2026 APAC VM/DB finalization, three overdue CVE-2025-24813 vulnerability patches, onboarding prep for 18 people, Azure PIM role expiry, Netskope UAT documentation, and Hunet Azure AD SSO schedule confirmation.
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #548 | 8:05 AM | 🔵 | notion-daily-briefing Is Disabled and Last Run Errored | ~392 |  |
 
-Read: ~438
+### Feb 26, 2026
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #549 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Active for Sam (Seoul, 7 AM) | ~300 |  |
+
+**#S189** 시스템 상태 조회 요청 (2026-02-25) (Feb 26, 7:00 AM)
+
+**../../home/lfant/.openclaw/skills/weather/SKILL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #550 | 7:00 AM | 🔵 | Weather Skill Missing SKILL.md Documentation File | ~191 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/tavily-search/scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #551 | 7:28 AM | 🔵 | Critical Security Issues Detected in tavily-search Skill | ~438 |  |
+
+**~/.openclaw/openclaw.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #552 | 7:32 AM | 🔵 | Openclaw Gateway Service Status | ~354 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #553 | 7:33 AM | 🔵 | Openclaw Scheduled Task Inventory | ~298 |  |
+| #554 | 8:08 AM | 🔵 | Cron Job System with Telegram Delivery - State Explanation Request | ~425 |  |
+
+**proactive-agent (skill/SKILL.md)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #555 | " | 🔵 | Proactive Agent v3.1.0 Skill - Full Architecture Specification | ~855 |  |
+
+**../../home/lfant/.openclaw/cron/jobs.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #556 | 8:09 AM | 🔵 | Root Cause: "cron announce delivery failed" Affecting 5 of 6 Cron Jobs | ~589 |  |
+| #557 | " | 🔵 | OpenClaw System Architecture and Agent Configuration | ~595 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #558 | " | 🔵 | OpenClaw v2026.2.21 Release - Key Changes Relevant to This System | ~502 |  |
+
+**../../home/lfant/.openclaw/cron/jobs.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #559 | 8:10 AM | 🔴 | Cron "announce delivery failed" Error Resolved - All Jobs Now Delivering | ~472 |  |
+
+**#S190** 사용 가능한 AI 모델 목록 조회 및 모델 변경 방법 안내 (Feb 26, 8:20 AM)
+
+**#S191** OpenAI Codex를 Primary 모델로 변경하는 방법 안내 및 확인 요청 (Feb 26, 8:20 AM)
+
+**#S192** OpenAI Codex Primary 설정 + 한국어 지원 추가 두 가지 변경 요청 (Feb 26, 8:20 AM)
+
+**#S193** 1단계만 진행 — OpenAI Codex GPT-5.3을 Primary 모델로 설정 확인 요청 (Feb 26, 8:20 AM)
+
+**#S194** 시스템 상태 확인 — 현재 모델 설정 및 fallback 구성 점검 (Feb 26, 8:20 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #560 | 8:21 AM | 🔵 | openclaw models set 명령어 구문 오류 발견 | ~165 |  |
+| #561 | " | 🔵 | openclaw models set 올바른 구문 확인 | ~148 |  |
+
+**~/.openclaw/models.json (추정)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #562 | " | 🔵 | OpenClaw 모델 설정 파일 구조 및 Zai 프로바이더 상세 확인 | ~175 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #563 | " | 🔵 | OpenClaw 설정 파일에 "primary" 키 미지원 확인 | ~169 |  |
+
+**https://docs.openclaw.ai/cli/models**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #564 | " | 🔵 | OpenClaw 공식 문서에서 models 명령어 올바른 사용법 확인 | ~214 |  |
+
+**~/.openclaw/openclaw.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #565 | 8:22 AM | 🔵 | OpenClaw 전체 시스템 상태 및 인증 구성 확인 | ~231 |  |
+
+**skills/healthcheck.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #566 | 8:38 AM | 🔵 | OpenClaw `healthcheck` Skill Definition Read | ~440 |  |
+
+**~/.openclaw/openclaw.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #567 | 8:40 AM | 🔵 | OpenClaw System Status After Restart | ~296 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #568 | 8:41 AM | 🔵 | OpenClaw Update Channel and Version Status | ~137 |  |
+| #569 | " | 🔵 | OpenClaw Scheduled Tasks Configuration | ~289 |  |
+
+**#S195** Post-restart system health check of OpenClaw agent environment (Feb 26, 8:41 AM)
+
+**../../home/lfant/.openclaw/agents/main/sessions/sessions.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #570 | 8:41 AM | 🔵 | OpenClaw Doctor Diagnostic Results | ~444 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #571 | " | 🔵 | Automated Notion Daily Briefing Cron Job (Korean Output) | ~313 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #572 | " | 🔵 | OpenClaw Cron Add Command Options | ~280 |  |
+
+**notion-daily-briefing script (full path not shown in output)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #573 | 8:42 AM | 🔵 | Notion Daily Briefing Python Script Logic | ~338 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #574 | " | 🔵 | notion_daily_brief.py Script Output — Sam.Yeo's IT Work Inbox Summary | ~600 |  |
+
+**notion-daily-briefing script (full path not shown)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #575 | " | 🔵 | Notion Daily Briefing Script Has Hardcoded Credentials | ~238 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #576 | " | 🟣 | notion-daily-briefing Cron Job Re-registered | ~305 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#545** 8:03 AM 🔵 **Two Long-Running Sessions and openclaw-gateway Process State**
+**#577** " 🔵 **Gateway Timeout Error on Command Execution**
 
-During investigation of the notion-daily-briefing cron job, a process listing revealed two background sessions with still-running commands (fast-haven, delta-forest), likely spawned as part of the briefing or security audit workflows. The openclaw-gateway process is healthy and long-running since system start at 06:07, with high memory usage (~594MB) typical for a persistent gateway service.
+A command sent to the OpenClaw gateway timed out after 30 seconds while attempting to connect to the local WebSocket endpoint. This may indicate the gateway process was temporarily busy, restarting, or the command required more time than the default 30s timeout allows. This is notable given the doctor run had flagged a gateway entrypoint mismatch (dist/entry.js vs dist/index.js), which could contribute to gateway instability post-restart.
 
-Read: ~237
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#546** " 🔵 **Cron Job Processes Not Found by UUID Search**
-
-A targeted ps/grep search for the notion-daily-briefing cron UUID (9fbab8e2) and a second job ID fragment (eb440) found no matching running processes. The cron job showed "running" status in the registry moments earlier, so either the job completed quickly, or its worker process is tracked differently and not exposed as a named PID. This may be relevant to diagnosing why briefing delivery is unreliable — if job completion isn't reflected in process state, polling for results may need to use the cron registry API rather than process inspection.
-
-Read: ~274
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#547** 8:04 AM 🔵 **notion-daily-briefing Stuck in "running" State 4 Minutes After Trigger**
-
-A second status check on notion-daily-briefing shows the job still marked as "running" 4 minutes after its last trigger, yet no worker process was found via ps/grep. This mismatch between registry state and process reality is notable — it may indicate the job is hung, that its process is managed internally by openclaw-gateway rather than as a direct OS process, or that the status field doesn't update promptly on completion. This behavior could explain why morning briefing results are sometimes missing or unreliable.
-
-Read: ~288
+Read: ~225
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#548** 8:05 AM 🔵 **notion-daily-briefing Is Disabled and Last Run Errored**
+**#578** 8:48 AM 🔵 **Notion Daily Briefing Cron Job — Korean Delivery to Sam**
 
-The full JSON status of notion-daily-briefing reveals the root cause of missing morning briefings: the job is disabled (enabled: false) and its last execution ended in error after ~102 seconds. Delivery status is "unknown", meaning the results were never confirmed as delivered. The job is designed to run /home/lfant/.openclaw/workspace/notion_daily_brief.py, fetch Notion tasks from the previous day (07:00 to 07:00 window), and present them to Sam in the Antigravity 🌌 assistant voice. The combination of disabled state, error on last run, and unknown delivery status fully explains the morning briefing reliability problem reported earlier in this session.
+A recurring cron job named "notion-daily-briefing" is configured in the primary session's automation infrastructure. Each morning (Asia/Seoul timezone), it triggers a run of the Python script at /home/lfant/.openclaw/workspace/notion_daily_brief.py, captures the full output, and delivers a Korean-language summary to a recipient named Sam. The cron system passes the task to Claude as a plain-text request, expecting plain-text output in return — the delivery pipeline handles routing automatically. This is part of the .openclaw workspace automation suite running under the lfant user.
 
-Read: ~392
+Read: ~331
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#579** " 🔵 **notion_daily_brief.py Output — Sam Yeo's IT Ops Inbox (02/25–02/26 KST)**
+
+The notion_daily_brief.py script executed successfully and returned a comprehensive 81-item Korean-language briefing covering Sam Yeo's IT responsibilities at OB맥주 (AB InBev Korea). The briefing spans email-derived tasks organized by urgency type. Critical pending items as of Feb 26 include approving the February patch Tuesday deployment (zero-day vulnerability patches), finalizing the EOL 2026 program scope (deadline: Feb 26), and completing Qualys authenticated scan onboarding by end of February. A major infrastructure project — SAP PRD→QAS system refresh — is being coordinated for March 9 with vendor support from Withdata and Commvault. Security events include a resolved Trojan detection on a VM and an active phishing awareness campaign. An Azure credit invoice for ~111M KRW was processed same day. The output confirms the script aggregates Notion-tracked email threads and generates structured Korean summaries per item, tagging each with a workflow category.
+
+Read: ~616
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#583** 8:23 PM 🔵 **Automated Notion Daily Briefing Cron Job (Korean)**
+
+A recurring cron job named "notion-daily-briefing" triggers execution of the Python script at /home/lfant/.openclaw/workspace/notion_daily_brief.py. The script generates a daily Notion briefing, and the full output is to be translated into Korean and sent to a user named Sam. The task specifies returning plain text output for automated delivery rather than direct messaging. This reveals an automated personal productivity pipeline combining Notion data retrieval with Korean-language delivery to a named recipient.
+
+Read: ~269
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#584** 8:24 PM 🔵 **notion_daily_brief.py Output: Sam Yeo's IT Work Briefing (OB맥주)**
+
+The notion_daily_brief.py script executed successfully and produced a structured daily briefing for Sam Yeo (여승주, Sam.Yeo@ob.co.kr), an IT manager at OB맥주 (Oriental Brewery, part of AB InBev). The briefing covers 81 items from the 24-hour window of Feb 25–26, 2026, sourced from emails in Notion. Each item is tagged by urgency type and includes sender, summary, and action needed — all in Korean. The briefing reveals Sam's IT domain covers: endpoint/patch management (Intune/MECM), Azure cloud operations, SAP infrastructure, network security (Qualys, ORCA vulnerability scanning, Netskope), VPN support (GlobalProtect/OB VPN), and employee IT requests. Several items are time-sensitive: EOL 2026 scope must be confirmed by Feb 26, a retired user account must be restored by Feb 28, and patch deployment approval is pending. The script is functioning as a daily aggregator-and-summarizer of Notion-tracked work emails.
+
+Read: ~539
 
 
-Access 110k tokens of past research & decisions for just 19,170t. Use the claude-mem skill to access memories by ID.
+Access 409k tokens of past research & decisions for just 17,375t. Use the claude-mem skill to access memories by ID.

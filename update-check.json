@@ -1,15 +1,10 @@
 {
-  "lastCheckedAt": "2026-02-25T18:13:17.481Z",
-  "lastNotifiedVersion": "2026.2.24",
+  "lastCheckedAt": "2026-02-26T18:59:17.339Z",
+  "lastNotifiedVersion": "2026.2.25",
   "lastNotifiedTag": "latest",
   "autoInstallId": "15d42d3a-f8c1-40c0-beaa-c48003bf33dd",
-  "lastAvailableVersion": "2026.2.24",
-  "lastAvailableTag": "latest",
-  "autoFirstSeenVersion": "2026.2.24",
-  "autoFirstSeenTag": "latest",
-  "autoFirstSeenAt": "2026-02-25T04:21:23.645Z",
   "autoLastAttemptVersion": "2026.2.24",
-  "autoLastAttemptAt": "2026-02-25T18:13:17.481Z",
+  "autoLastAttemptAt": "2026-02-25T21:27:37.546Z",
   "autoLastSuccessVersion": "2026.2.24",
-  "autoLastSuccessAt": "2026-02-25T18:13:17.481Z"
+  "autoLastSuccessAt": "2026-02-25T21:27:37.546Z"
 }
