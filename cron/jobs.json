@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1772128835522,
+      "updatedAtMs": 1772215459912,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -21,13 +21,15 @@
         "kind": "agentTurn"
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772215200000,
-        "lastRunAtMs": 1772128801751,
+        "nextRunAtMs": 1772301600000,
+        "lastRunAtMs": 1772215202207,
         "lastStatus": "ok",
-        "lastDurationMs": 33771,
+        "lastDurationMs": 257705,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -41,7 +43,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1772053263815,
+      "updatedAtMs": 1772147518578,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -54,13 +56,15 @@
         "kind": "agentTurn"
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772139600000,
-        "lastRunAtMs": 1772053200002,
+        "nextRunAtMs": 1772226000000,
+        "lastRunAtMs": 1772139600004,
         "lastStatus": "ok",
-        "lastDurationMs": 63813,
+        "lastDurationMs": 36768,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -107,7 +111,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1772056880827,
+      "updatedAtMs": 1772147517647,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -120,49 +124,19 @@
         "message": "It's 7 AM. Provide a morning briefing for Sam: 1. Current weather in Seoul (using weather skill). 2. Brief system status overview. 3. Any urgent notifications or tasks from memory. Keep it sharp and helpful."
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772143200000,
-        "lastRunAtMs": 1772056805498,
+        "nextRunAtMs": 1772229600000,
+        "lastRunAtMs": 1772143205784,
         "lastStatus": "ok",
-        "lastDurationMs": 75329,
+        "lastDurationMs": 127272,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered"
-      }
-    },
-    {
-      "id": "9fbab8e2-08fa-4e76-aa00-93296c5dfd89",
-      "agentId": "main",
-      "name": "notion-daily-briefing",
-      "enabled": false,
-      "notify": true,
-      "createdAtMs": 1771342778984,
-      "updatedAtMs": 1771974316789,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8 * * *",
-        "tz": "Asia/Seoul"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "message": "Run the python script `/home/lfant/.openclaw/workspace/notion_daily_brief.py` to fetch the latest Notion tasks from yesterday 07:00 to today 07:00. Present the results clearly to Sam in your normal assistant voice (Antigravity 🌌).",
-        "kind": "agentTurn"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1771974108980,
-        "lastStatus": "ok",
-        "lastDurationMs": 207809,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
       }
     },
     {
@@ -172,7 +146,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1772046009869,
+      "updatedAtMs": 1772147520427,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -185,53 +159,21 @@
         "kind": "agentTurn"
       },
       "delivery": {
-        "mode": "none"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772132400000,
-        "lastRunAtMs": 1772046001998,
+        "nextRunAtMs": 1772218800000,
+        "lastRunAtMs": 1772132403584,
         "lastStatus": "ok",
-        "lastDurationMs": 7871,
+        "lastDurationMs": 8031,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772132403583
+        "runningAtMs": 1772218802932
       }
-    },
-    {
-      "id": "9b8c5a0b-efb6-4d9b-b3ec-44b5384e6cba",
-      "name": "notion-daily-br-legacy",
-      "enabled": false,
-      "createdAtMs": 1772062869056,
-      "updatedAtMs": 1772063223688,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8 * * *",
-        "tz": "Asia/Seoul"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run 'python3 /home/lfant/.openclaw/workspace/notion_daily_brief.py' and deliver the full output to Sam in Korean.",
-        "timeoutSeconds": 240
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "5487758242"
-      },
-      "state": {
-        "lastRunAtMs": 1772063042186,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 181502,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      },
-      "agentId": "main"
     },
     {
       "id": "de62862d-0431-460a-93d4-a21c9c54aa7c",
@@ -239,7 +181,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1772105314732,
+      "updatedAtMs": 1772147779095,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -249,20 +191,20 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run 'python3 /home/lfant/.openclaw/workspace/notion_daily_brief.py' and send the full output to Sam in Korean.",
+        "message": "Run 'python3 /home/lfant/.openclaw/workspace/notion_daily_brief.py'. Then produce a concise Korean briefing for Sam: max 25 items (top priority first), include category counts and immediate actions. Keep under 3500 characters for Telegram delivery.",
         "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce",
         "channel": "telegram",
-        "to": "5487758242"
+        "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772146800000,
-        "lastRunAtMs": 1772105000787,
+        "nextRunAtMs": 1772233200000,
+        "lastRunAtMs": 1772147722835,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 313945,
+        "lastDurationMs": 56260,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

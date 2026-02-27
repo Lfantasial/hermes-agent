@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.23",
-    "lastTouchedAt": "2026-02-25T21:27:38.979Z"
+    "lastTouchedVersion": "2026.2.24",
+    "lastTouchedAt": "2026-02-25T23:30:33.233Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-20T15:23:28.289Z",
@@ -94,7 +94,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "zai/glm-4.7",
+        "primary": "openai-codex/gpt-5.3-codex",
         "fallbacks": [
           "openai-codex/gpt-5.3-codex"
         ]
