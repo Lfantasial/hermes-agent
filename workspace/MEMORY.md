@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-02-28 4:00am GMT+9
+# [openclaw-main] recent context, 2026-03-01 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,47 +14,16 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (17,951 tokens to read)
-- Work investment: 220,455 tokens spent on research, building, and decisions
-- Your savings: 202,504 tokens (92% reduction from reuse)
+- Loading: 50 observations (18,395 tokens to read)
+- Work investment: 233,922 tokens spent on research, building, and decisions
+- Your savings: 215,527 tokens (92% reduction from reuse)
 
 ### Feb 26, 2026
-
-**https://docs.openclaw.ai/cli/models**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #564 | 8:21 AM | 🔵 | OpenClaw 공식 문서에서 models 명령어 올바른 사용법 확인 | ~214 |  |
-
-**~/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #565 | 8:22 AM | 🔵 | OpenClaw 전체 시스템 상태 및 인증 구성 확인 | ~231 |  |
-
-**skills/healthcheck.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #566 | 8:38 AM | 🔵 | OpenClaw `healthcheck` Skill Definition Read | ~440 |  |
-
-**~/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #567 | 8:40 AM | 🔵 | OpenClaw System Status After Restart | ~296 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #568 | 8:41 AM | 🔵 | OpenClaw Update Channel and Version Status | ~137 |  |
-| #569 | " | 🔵 | OpenClaw Scheduled Tasks Configuration | ~289 |  |
-
-**../../home/lfant/.openclaw/agents/main/sessions/sessions.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #570 | " | 🔵 | OpenClaw Doctor Diagnostic Results | ~444 |  |
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #571 | " | 🔵 | Automated Notion Daily Briefing Cron Job (Korean Output) | ~313 |  |
+| #571 | 8:41 AM | 🔵 | Automated Notion Daily Briefing Cron Job (Korean Output) | ~313 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
@@ -127,12 +96,6 @@ When you need implementation details, rationale, or debugging context:
 | #590 | " | 🔵 | OpenClaw System Status Snapshot — February 27, 2026 | ~450 |  |
 | #591 | 7:19 AM | 🟣 | notion-daily-briefing Cron Job Delivered Daily Email Summary | ~623 |  |
 | #592 | 7:20 AM | 🔵 | Subagent Spawned from Primary Session | ~275 |  |
-
-**#S201** Cron job health check and Telegram delivery troubleshooting — verifying why certain cron results weren't appearing in Telegram (Feb 27, 7:21 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
 | #593 | 7:21 AM | 🔵 | Full Cron Job Schedule Discovered | ~444 |  |
 | #594 | " | 🔴 | CLI Command Failed — Missing Required --id Option | ~181 |  |
 
@@ -147,29 +110,11 @@ When you need implementation details, rationale, or debugging context:
 | #596 | " | 🔵 | Cron Job Delivery Status — Duplicate notion-daily-briefing Entry and GitHub Backup Delivery Failure | ~427 |  |
 | #597 | 7:33 AM | 🟣 | notion-daily-briefing Cron Job Delivered Daily Work Summary | ~567 |  |
 
-**#S202** Cron job result delivery deduplication check — NO_REPLY issued because result was already delivered in the same turn (Feb 27, 7:33 AM)
-
-**#S203** Notion Daily Briefing Cron Job — Run notion_daily_brief.py and deliver full output to Sam in Korean (2026-02-26, 8:23 PM KST) (Feb 27, 7:33 AM)
-
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #598 | 7:55 AM | 🔵 | Notion Daily Briefing Cron Job (Korean, to Sam) | ~281 |  |
-
-**#S204** Notion Daily Briefing Cron Job — Run notion_daily_brief.py and deliver full output to Sam in Korean (02/26 07:00 ~ 02/27 07:00 KST) (Feb 27, 7:55 AM)
-
-**#S205** Notion Daily Briefing Cron Job — Run notion_daily_brief.py and deliver full output to Sam in Korean (Feb 26, 2026, 8:23 PM KST) (Feb 27, 7:56 AM)
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
 | #599 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Delivery to Sam | ~295 |  |
-
-**#S206** Manual trigger of notion-daily-briefing cron job and status check (Feb 27, 8:00 AM)
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
 | #600 | 8:01 AM | 🟣 | notion_daily_brief.py Executed Successfully — 100-Item Korean Briefing Produced | ~476 |  |
 
 **General**
@@ -193,6 +138,8 @@ When you need implementation details, rationale, or debugging context:
 
 **#S209** Second consecutive NO_REPLY — another duplicate cron delivery suppressed (Feb 27, 8:12 AM)
 
+**#S210** Cron job status check — confirmed manual run completed, offered another immediate re-run (Feb 27, 8:13 AM)
+
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -203,7 +150,7 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #605 | " | 🟣 | Notion Daily Brief Script — Successful Automated Korean Delivery (02/26~02/27) | ~469 |  |
 
-**#S210** Cron job status check — confirmed manual run completed, offered another immediate re-run (Feb 27, 8:13 AM)
+**#S211** Daily Security Audit (openclaw security audit --deep) — Filtered Results for Feb 28, 2026 (Feb 27, 8:13 AM)
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
@@ -230,52 +177,83 @@ When you need implementation details, rationale, or debugging context:
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #612 | " | 🔵 | notion-daily-briefing New Run: 02/26~02/27 Period Delivered | ~423 |  |
+| #613 | 8:15 AM | ✅ | notion-daily-briefing Payload Prompt Updated with Output Constraints | ~399 |  |
+| #614 | " | 🔵 | OpenClaw Cron Job Deduplication: "already-running" Guard | ~192 |  |
+| #615 | " | 🔵 | notion-daily-briefing Disabled Then Re-enabled to Cancel Running Job | ~304 |  |
+| #616 | 8:16 AM | 🔵 | Updated-Prompt Run Completed: 02/26~02/27 Briefing Delivered in ~3.8 Minutes | ~358 |  |
 
-**#612** " 🔵 **notion-daily-briefing New Run: 02/26~02/27 Period Delivered**
+### Feb 28, 2026
 
-The log check revealed the most recently completed notion-daily-briefing run (the scheduled 08:00 KST run) successfully covered the 02/26~02/27 period and was delivered. This is distinct from the earlier manually triggered run. Token usage was slightly higher (31,352 vs 27,591) suggesting more email content in this period. The job status showed "running" at time of check, indicating the second manual trigger (initiated by the user in this session) is still executing as a separate concurrent run. The run history has grown to 4 total log entries. New briefing content reflects IT operations activities including Qualys scanning setup, an upcoming hiring interview, and automation program data requests.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #617 | 6:00 AM | 🔵 | Daily Automated Update Check Cron Job for OpenClaw and Skills | ~370 |  |
 
-Read: ~423
+**scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #618 | 6:59 AM | 🔵 | Daily Security Audit Cron Job — Known False Positives Catalogued | ~368 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#613** 8:15 AM ✅ **notion-daily-briefing Payload Prompt Updated with Output Constraints**
+**#619** " 🔵 **Daily Security Audit Results — 2026-02-28**
 
-The notion-daily-briefing job payload was updated during this session to impose structure and length constraints on the output. The original prompt simply sent the full Python script output to Sam in Korean. The new prompt instructs the agent to produce a concise briefing capped at 25 items (sorted by priority), include category counts, highlight immediate actions, and stay under 3,500 characters — the practical limit for a single Telegram message. This change directly addresses the issue of the previous run producing 81 items, which likely exceeded Telegram's message display comfort zone. The updated config is already being used by the currently-running manual trigger job.
+The daily automated security audit completed successfully on 2026-02-28. The raw scan flagged 3 critical issues, but all 3 were suppressed by the configured ignore policy covering known false positives in the tavily-search, claude-mem, and writing-skills plugins. The two remaining warnings are genuine action items: (1) trusted proxy configuration is absent despite a loopback bind, which matters if a reverse proxy is in use for the Control UI; (2) the claude-mem extension plugin's tools are accessible under the current permissive tool policy, which poses a risk for agents processing untrusted input. The overall attack surface is characterized as low external exposure with a personal-assistant trust model.
 
-Read: ~399
+Read: ~504
 
-**General**
+**#S212** Daily security audit results delivered to user — 2026-02-28 automated scan via `openclaw security audit --deep` (Feb 28, 6:59 AM)
+
+**#S213** GitHub backup completed successfully (Feb 28, 7:00 AM)
+
+**#S214** Daily update check completed — OpenClaw, Skills, and Telegram sync all verified current (Feb 28, 7:00 AM)
+
+**#S215** Daily cron update check for OpenClaw and skills (2026-02-28 06:00 KST) — no updates found, no Sam notification needed (Feb 28, 7:00 AM)
+
+**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#614** " 🔵 **OpenClaw Cron Job Deduplication: "already-running" Guard**
+**#620** 7:11 AM 🔵 **Daily GitHub Backup Cron Job Configured**
 
-A trigger attempt for notion-daily-briefing was rejected because the job was already executing. OpenClaw returns a structured response distinguishing between "request accepted" (ok: true) and "actually started a new run" (ran: false), with a human-readable reason. This deduplication prevents concurrent executions of the same cron job.
+A recurring cron job is configured in the Claude agent environment to perform daily GitHub backups. It triggers at 4:00 AM Asia/Seoul time and runs the shell script at /home/lfant/.openclaw/workspace/backup_to_github.sh. The job is designed to surface errors if the script fails, or silently confirm completion on success. This is part of the .openclaw workspace automation infrastructure.
 
-Read: ~192
+Read: ~216
 
-**General**
+**agents/main/sessions/10123afa-5ee5-426b-b7c0-c21113069de9.jsonl**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#615** " 🔵 **notion-daily-briefing Disabled Then Re-enabled to Cancel Running Job**
+**#621** 7:12 AM ✅ **Daily GitHub Backup Executed Successfully**
 
-The notion-daily-briefing job was briefly disabled and immediately re-enabled — a toggle pattern used to cancel the currently-running manual trigger job. The disable cleared the running state (runningAtMs disappeared) and removed the next scheduled run. Re-enabling restored the schedule. This reveals that OpenClaw does not have a direct "cancel run" command; instead, disabling the job is the mechanism to interrupt an in-progress execution. The updated payload (25-item limit, 3500-char constraint) remains in place after the toggle.
+The daily GitHub backup cron job (ID: 52ed00fd) executed successfully at 4:00 AM Asia/Seoul on 2026-02-28. The backup script staged all changes in the openclaw config workspace, committed them with a timestamped message, and pushed to the GitHub remote repository Lfantasial/openclaw-config-backup. The commit captured a day's worth of agent session lifecycle changes — new sessions created, active sessions locked, and expired sessions soft-deleted via rename. A new cron run log was also committed, confirming the run record pattern is working.
 
-Read: ~304
+Read: ~331
 
-**General**
+**#S216** Daily GitHub Backup Cron Job — Execute backup_to_github.sh at 4:00 AM Asia/Seoul (Feb 28, 7:12 AM)
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#616** 8:16 AM 🔵 **Updated-Prompt Run Completed: 02/26~02/27 Briefing Delivered in ~3.8 Minutes**
+**#622** 8:00 AM 🔵 **Notion Daily Briefing Cron Job — Korean Telegram Summary for Sam**
 
-The first run using the updated prompt (max 25 items, 3500-char limit) completed successfully in ~3.8 minutes and was delivered to Telegram. Token usage was marginally lower than the prior run on the same email dataset, suggesting the output constraints may have reduced generation length slightly. The run was triggered by the manual start after the disable/re-enable cycle that cancelled the previous stuck run. The log history has now grown to 5 entries. Since the same 02/26~02/27 email period was used as input, the actual impact of the new prompt constraints on item count and formatting will only be visible in the Telegram-delivered output.
+A recurring cron automation is configured under the openclaw workspace to generate a daily Korean briefing from Notion data. The script `notion_daily_brief.py` is executed each morning at 8AM KST. The resulting briefing is constrained to 3500 characters (Telegram message limit), includes up to 25 prioritized items, and must include category counts and actionable items. The cron system itself handles Telegram delivery — the agent task only produces the plain text output. This pattern separates content generation from delivery concerns.
 
-Read: ~358
+Read: ~322
+
+**../../home/lfant/.openclaw/workspace/SOUL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#623** " 🔵 **Hugin Agent Identity — SOUL.md Core Persona File**
+
+SOUL.md is the identity anchor for the Hugin agent. It establishes a library/raven-themed persona (Hugin is one of Odin's ravens) that prioritizes memory, context, and calm analysis over raw data delivery. The file encodes behavioral constraints: stay on topic, don't over-reference history, search before asking, and respect privacy. The continuity model explicitly acknowledges stateless sessions — SOUL.md and associated memory files are how Hugin persists across restarts. This file is foundational to every Hugin session initialization.
+
+Read: ~384
 
 
-Access 220k tokens of past research & decisions for just 17,951t. Use the claude-mem skill to access memories by ID.
+Access 234k tokens of past research & decisions for just 18,395t. Use the claude-mem skill to access memories by ID.
