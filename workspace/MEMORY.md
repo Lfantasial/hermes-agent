@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-01 4:00am GMT+9
+# [openclaw-main] recent context, 2026-03-02 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,21 +14,11 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (18,395 tokens to read)
-- Work investment: 233,922 tokens spent on research, building, and decisions
-- Your savings: 215,527 tokens (92% reduction from reuse)
+- Loading: 50 observations (18,758 tokens to read)
+- Work investment: 236,465 tokens spent on research, building, and decisions
+- Your savings: 217,707 tokens (92% reduction from reuse)
 
 ### Feb 26, 2026
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #571 | 8:41 AM | 🔵 | Automated Notion Daily Briefing Cron Job (Korean Output) | ~313 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #572 | " | 🔵 | OpenClaw Cron Add Command Options | ~280 |  |
 
 **notion-daily-briefing script (full path not shown in output)**
 | ID | Time | T | Title | Read | Work |
@@ -198,12 +188,7 @@ When you need implementation details, rationale, or debugging context:
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#619** " 🔵 **Daily Security Audit Results — 2026-02-28**
-
-The daily automated security audit completed successfully on 2026-02-28. The raw scan flagged 3 critical issues, but all 3 were suppressed by the configured ignore policy covering known false positives in the tavily-search, claude-mem, and writing-skills plugins. The two remaining warnings are genuine action items: (1) trusted proxy configuration is absent despite a loopback bind, which matters if a reverse proxy is in use for the Control UI; (2) the claude-mem extension plugin's tools are accessible under the current permissive tool policy, which poses a risk for agents processing untrusted input. The overall attack surface is characterized as low external exposure with a personal-assistant trust model.
-
-Read: ~504
+| #619 | " | 🔵 | Daily Security Audit Results — 2026-02-28 | ~504 |  |
 
 **#S212** Daily security audit results delivered to user — 2026-02-28 automated scan via `openclaw security audit --deep` (Feb 28, 6:59 AM)
 
@@ -216,12 +201,7 @@ Read: ~504
 **../../home/lfant/.openclaw/workspace/backup_to_github.sh**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#620** 7:11 AM 🔵 **Daily GitHub Backup Cron Job Configured**
-
-A recurring cron job is configured in the Claude agent environment to perform daily GitHub backups. It triggers at 4:00 AM Asia/Seoul time and runs the shell script at /home/lfant/.openclaw/workspace/backup_to_github.sh. The job is designed to surface errors if the script fails, or silently confirm completion on success. This is part of the .openclaw workspace automation infrastructure.
-
-Read: ~216
+| #620 | 7:11 AM | 🔵 | Daily GitHub Backup Cron Job Configured | ~216 |  |
 
 **agents/main/sessions/10123afa-5ee5-426b-b7c0-c21113069de9.jsonl**
 | ID | Time | T | Title | Read | Work |
@@ -255,5 +235,27 @@ SOUL.md is the identity anchor for the Hugin agent. It establishes a library/rav
 
 Read: ~384
 
+### Mar 1, 2026
 
-Access 234k tokens of past research & decisions for just 18,395t. Use the claude-mem skill to access memories by ID.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#624** 7:00 AM 🟣 **Daily Morning Briefing Cron Job Executed for Sam (Seoul, 7 AM)**
+
+A scheduled cron job (daily-morning-briefing) fired at 7:00 AM Seoul time on February 28, 2026 for user Sam. The task instructs the primary Claude session to compose a concise morning briefing with three components: (1) current Seoul weather fetched via the weather skill, (2) a brief system status overview, and (3) any urgent notifications or tasks surfaced from memory. The briefing is delivered as plain text through the automated pipeline. If the task requires messaging an external recipient, the agent notes the destination instead of sending directly. This pattern reflects a recurring daily-briefing automation tied to Sam's morning routine in Seoul.
+
+Read: ~344
+
+**~/.openclaw/openclaw.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#625** 7:01 AM 🔵 **Sam's OpenClaw System State — Full Cron Schedule and Open Security Warnings**
+
+The primary session loaded its full recent-context memory index (Feb 26–28, 2026) to prepare the morning briefing for Sam. This index reveals the complete operational state of Sam's OpenClaw personal-assistant automation system. Five cron jobs run daily: a 7 AM Notion email briefing (Korean, delivered to Telegram), a 7 AM morning briefing (weather + status + memory), a 6 AM update check for OpenClaw and skills, a 3 AM deep security audit, and a 4 AM GitHub backup (currently failing delivery). The most recent security audit (Feb 28) produced no actionable critical findings after false-positive filtering, but two genuine warnings remain open: absent trusted proxy config and overly permissive tool policy for the claude-mem plugin. These open items are candidates for inclusion in the morning briefing as "urgent notifications." The memory system itself is healthy and well-indexed.
+
+Read: ~612
+
+
+Access 236k tokens of past research & decisions for just 18,758t. Use the claude-mem skill to access memories by ID.
