@@ -1,12 +1,12 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.23",
-    "lastTouchedAt": "2026-02-25T20:23:13.699Z"
+    "lastTouchedVersion": "2026.3.1",
+    "lastTouchedAt": "2026-03-02T22:19:37.357Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-20T15:23:28.289Z",
-    "lastRunVersion": "2026.2.19-2",
-    "lastRunCommand": "onboard",
+    "lastRunAt": "2026-03-02T22:19:37.333Z",
+    "lastRunVersion": "2026.3.1",
+    "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
   "update": {
@@ -94,9 +94,11 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "zai/glm-4.7",
+        "primary": "openai-codex/gpt-5.3-codex",
         "fallbacks": [
-          "openai-codex/gpt-5.3-codex"
+          "zai/glm-4.7",
+          "zai/glm-4.7-flash",
+          "zai/glm-4.7-flashx"
         ]
       },
       "models": {

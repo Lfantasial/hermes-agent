@@ -26,7 +26,7 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772474400000,
+        "nextRunAtMs": 1772560800000,
         "lastRunAtMs": 1772388000003,
         "lastStatus": "ok",
         "lastDurationMs": 61494,
@@ -43,7 +43,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1772312444877,
+      "updatedAtMs": 1772485237268,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,10 +61,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772398800000,
-        "lastRunAtMs": 1772312406004,
+        "nextRunAtMs": 1772571600000,
+        "lastRunAtMs": 1772485201104,
         "lastStatus": "ok",
-        "lastDurationMs": 38873,
+        "lastDurationMs": 36164,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -111,7 +111,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1772316091646,
+      "updatedAtMs": 1772488802081,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -129,14 +129,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772402400000,
-        "lastRunAtMs": 1772316006955,
-        "lastStatus": "ok",
-        "lastDurationMs": 84691,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "nextRunAtMs": 1772575200000,
+        "lastRunAtMs": 1772488801712,
+        "lastStatus": "error",
+        "lastDurationMs": 369,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate."
       }
     },
     {
@@ -146,7 +146,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1772305223415,
+      "updatedAtMs": 1772391624251,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -164,15 +164,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772391600000,
-        "lastRunAtMs": 1772305201694,
+        "nextRunAtMs": 1772564400000,
+        "lastRunAtMs": 1772391600003,
         "lastStatus": "ok",
-        "lastDurationMs": 21721,
+        "lastDurationMs": 24248,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772391600002
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -181,7 +180,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1772319639820,
+      "updatedAtMs": 1772492438019,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -200,11 +199,45 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772406000000,
-        "lastRunAtMs": 1772319602669,
+        "nextRunAtMs": 1772578800000,
+        "lastRunAtMs": 1772492403422,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 37151,
+        "lastDurationMs": 34597,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "0f2e06c5-425c-40b2-845b-135e47277fe1",
+      "name": "github-repo-daily-briefing",
+      "enabled": true,
+      "createdAtMs": 1772414390336,
+      "updatedAtMs": 1772496093547,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Seoul"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "매일 09:00 KST 기준으로 GitHub 인기 레포 브리핑을 생성해 Sam에게 한국어로 전달하세요. 반드시 GitHub API(gh api 또는 공식 REST)로 실제 데이터를 조회하세요. 출력 형식: (1) 최근 인기 Top 5(최근 7일 생성 + stars 기준), (2) 누적 스타 상위 Top 5(archived 제외, 가능하면 최근 활동 있는 레포 우선), (3) 각 레포 핵심 설명 1~2문장(무엇/왜 중요한지), (4) OpenClaw 또는 Claude Code에 바로 적용 가능한 아이디어 3~5개(자동화/보안/개발생산성 관점), (5) 오늘 바로 실행할 액션 3개. 중복 레포는 한 번만 노출하고 전체 2500자 이내로 간결하게 작성하세요.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:5487758242"
+      },
+      "state": {
+        "nextRunAtMs": 1772582400000,
+        "lastRunAtMs": 1772496000003,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 93544,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
