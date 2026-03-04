@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1772388061497,
+      "updatedAtMs": 1772647262202,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,10 +26,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772560800000,
-        "lastRunAtMs": 1772388000003,
+        "nextRunAtMs": 1772733600000,
+        "lastRunAtMs": 1772647203020,
         "lastStatus": "ok",
-        "lastDurationMs": 61494,
+        "lastDurationMs": 59182,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -43,7 +43,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1772485237268,
+      "updatedAtMs": 1772573763393,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,10 +61,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772571600000,
-        "lastRunAtMs": 1772485201104,
+        "nextRunAtMs": 1772658000000,
+        "lastRunAtMs": 1772573730886,
         "lastStatus": "ok",
-        "lastDurationMs": 36164,
+        "lastDurationMs": 32507,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -111,7 +111,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1772488802081,
+      "updatedAtMs": 1772575330962,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -129,14 +129,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772575200000,
-        "lastRunAtMs": 1772488801712,
-        "lastStatus": "error",
-        "lastDurationMs": 369,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate."
+        "nextRunAtMs": 1772661600000,
+        "lastRunAtMs": 1772575200662,
+        "lastStatus": "ok",
+        "lastDurationMs": 130300,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
       }
     },
     {
@@ -146,7 +146,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1772391624251,
+      "updatedAtMs": 1772573776976,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -164,10 +164,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772564400000,
-        "lastRunAtMs": 1772391600003,
+        "nextRunAtMs": 1772650800000,
+        "lastRunAtMs": 1772573763393,
         "lastStatus": "ok",
-        "lastDurationMs": 24248,
+        "lastDurationMs": 13583,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -180,7 +180,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1772492438019,
+      "updatedAtMs": 1772578850000,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -199,11 +199,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772578800000,
-        "lastRunAtMs": 1772492403422,
+        "nextRunAtMs": 1772665200000,
+        "lastRunAtMs": 1772578800798,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 34597,
+        "lastDurationMs": 49202,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -214,7 +214,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1772496093547,
+      "updatedAtMs": 1772582414267,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -233,14 +233,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772582400000,
-        "lastRunAtMs": 1772496000003,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 93544,
+        "nextRunAtMs": 1772668800000,
+        "lastRunAtMs": 1772582401839,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 12428,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID ad091e04-efb4-49b8-a19a-f82012698830 in your message.\",\"param\":null},\"sequence_number\":2}"
       }
     }
   ]

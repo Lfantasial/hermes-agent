@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-04 6:36am GMT+9
+# [openclaw-main] recent context, 2026-03-05 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,60 +14,16 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (19,434 tokens to read)
-- Work investment: 177,206 tokens spent on research, building, and decisions
-- Your savings: 157,772 tokens (89% reduction from reuse)
+- Loading: 50 observations (18,988 tokens to read)
+- Work investment: 123,359 tokens spent on research, building, and decisions
+- Your savings: 104,371 tokens (85% reduction from reuse)
 
 ### Feb 27, 2026
 
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #590 | 7:01 AM | 🔵 | OpenClaw System Status Snapshot — February 27, 2026 | ~450 |  |
-| #591 | 7:19 AM | 🟣 | notion-daily-briefing Cron Job Delivered Daily Email Summary | ~623 |  |
-| #592 | 7:20 AM | 🔵 | Subagent Spawned from Primary Session | ~275 |  |
-| #593 | 7:21 AM | 🔵 | Full Cron Job Schedule Discovered | ~444 |  |
-| #594 | " | 🔴 | CLI Command Failed — Missing Required --id Option | ~181 |  |
-
-**~/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #595 | " | 🔵 | Openclaw Gateway Service Status and Configuration | ~414 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #596 | " | 🔵 | Cron Job Delivery Status — Duplicate notion-daily-briefing Entry and GitHub Backup Delivery Failure | ~427 |  |
-| #597 | 7:33 AM | 🟣 | notion-daily-briefing Cron Job Delivered Daily Work Summary | ~567 |  |
-
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #598 | 7:55 AM | 🔵 | Notion Daily Briefing Cron Job (Korean, to Sam) | ~281 |  |
-| #599 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Delivery to Sam | ~295 |  |
-| #600 | 8:01 AM | 🟣 | notion_daily_brief.py Executed Successfully — 100-Item Korean Briefing Produced | ~476 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #601 | 8:12 AM | 🟣 | notion-daily-briefing Cron Job Delivers Email Summary | ~421 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #602 | " | 🔵 | Automated Notion Daily Briefing Cron Job (Korean Delivery) | ~273 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #603 | " | 🔵 | notion-daily-briefing Cron Job Technical Details | ~361 |  |
-| #604 | 8:13 AM | 🔵 | notion-daily-briefing Manual Run Completed Successfully | ~202 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #605 | " | 🟣 | Notion Daily Brief Script — Successful Automated Korean Delivery (02/26~02/27) | ~469 |  |
-| #606 | " | 🔵 | notion-daily-briefing Full Configuration Revealed | ~371 |  |
+| #606 | 8:13 AM | 🔵 | notion-daily-briefing Full Configuration Revealed | ~371 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
@@ -112,16 +68,10 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #619 | " | 🔵 | Daily Security Audit Results — 2026-02-28 | ~504 |  |
 
-**#S214** Daily update check completed — OpenClaw, Skills, and Telegram sync all verified current (Feb 28, 7:00 AM)
-
-**#S215** Daily cron update check for OpenClaw and skills (2026-02-28 06:00 KST) — no updates found, no Sam notification needed (Feb 28, 7:00 AM)
-
 **../../home/lfant/.openclaw/workspace/backup_to_github.sh**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #620 | 7:11 AM | 🔵 | Daily GitHub Backup Cron Job Configured | ~216 |  |
-
-**#S216** Daily GitHub Backup Cron Job — Execute backup_to_github.sh at 4:00 AM Asia/Seoul (Feb 28, 7:11 AM)
 
 **agents/main/sessions/10123afa-5ee5-426b-b7c0-c21113069de9.jsonl**
 | ID | Time | T | Title | Read | Work |
@@ -199,6 +149,8 @@ When you need implementation details, rationale, or debugging context:
 
 **#S223** Notion Daily Briefing — 08:00 KST work task briefing with 16 items triaged and morning execution schedule delivered (Mar 2, 10:20 AM)
 
+**#S251** Pre-compaction memory flush to memory/2026-03-03.md + system environment diagnostics on WSL2 machine (Mar 2, 10:20 AM)
+
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -211,57 +163,129 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #696 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Summary for Telegram | ~313 |  |
 
-**#S251** Pre-compaction memory flush to memory/2026-03-03.md + system environment diagnostics on WSL2 machine (Mar 3, 8:45 AM)
+**#S260** Daily cron update check for OpenClaw and skills, with Telegram sync verification and Sam notification if updates found (Mar 3, 8:45 AM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#697** 8:45 AM 🔵 **NVIDIA RTX 4090 Windows Driver Instability Confirmed via Event Log**
-
-The WSL2 session on the RTX 4090 machine (hostname: Lfantasial4090, Korean-locale Windows) successfully queried Windows System Event Log for GPU driver errors using PowerShell via full path. Results confirmed significant NVIDIA driver instability: 59 total matching events, with nvlddmkm ID 153 (GPU hang/TDR recovery) appearing in clusters on 2026-03-02 morning and midday. Event ID 14 from nvlddmkm co-occurring with ID 153 strongly suggests GPU Timeout Detection and Recovery (TDR) events — the GPU was hanging and Windows was recovering it. The machine also runs Parsec for remote display, which adds a virtual display driver layer. This investigation was part of diagnosing GPU driver stability issues on the system.
-
-Read: ~438
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#698** 9:00 AM 🔵 **Daily GitHub Trending Briefing Cron Job — Sam (KST 09:00)**
-
-A scheduled cron agent task fires every morning at 09:00 KST to produce a GitHub trending repository briefing in Korean for Sam. The agent must query real GitHub data (via `gh api` or REST), not hallucinate results. The structured output covers five sections: recent trending repos, all-time star leaders, per-repo summaries, actionable ideas mapped to OpenClaw/Claude Code workflows, and concrete next steps. The 2500-character cap forces conciseness. Duplicate repos between the two ranking lists must appear only once. The task is designed to keep Sam informed about the open-source landscape and surface directly applicable engineering insights daily.
-
-Read: ~449
+| #697 | 8:45 AM | 🔵 | NVIDIA RTX 4090 Windows Driver Instability Confirmed via Event Log | ~438 |  |
+| #698 | 9:00 AM | 🔵 | Daily GitHub Trending Briefing Cron Job — Sam (KST 09:00) | ~449 |  |
 
 **SOUL.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#699** " 🔵 **Hugin Agent Identity — SOUL.md Core Principles**
-
-SOUL.md is Hugin's foundational identity document. It establishes that Hugin is a memory-keeping agent bound to Sam, whose purpose is insight over raw data, resourcefulness before asking questions, and strict privacy. A critical behavioral constraint is topic discipline: Hugin must not proactively surface old memories or past work unless Sam raises them first. The document also defines Hugin's continuity mechanism — reading these "scrolls" each session to reconstruct prior wisdom, and updating them so future sessions are incrementally smarter.
-
-Read: ~391
+| #699 | " | 🔵 | Hugin Agent Identity — SOUL.md Core Principles | ~391 |  |
 
 **USER.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#700** 9:01 AM 🔵 **Sam's User Profile — USER.md**
-
-USER.md provides Hugin with a comprehensive profile of Sam to calibrate every response. Sam operates at senior engineer / architect level in an enterprise Korean environment with strict governance. All outputs must meet production standards — full implementations, security implications included, automation preferred. Responses default to Korean. When options exist, a structured decision matrix (pros/cons/risks/impacts/recommendation) is mandatory. The profile also enforces transparency about AI model usage and requires periodic heartbeat updates during long tasks.
-
-Read: ~472
+| #700 | 9:01 AM | 🔵 | Sam's User Profile — USER.md | ~472 |  |
 
 **TODAY.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #701 | " | 🔵 | Today's Pre-Compaction Memory Flush — 2026-03-03 System State Snapshot | ~667 |  |
 
-**#701** " 🔵 **Today's Pre-Compaction Memory Flush — 2026-03-03 System State Snapshot**
+### Mar 4, 2026
 
-Today's pre-compaction memory flushes (07:19–08:43 KST) capture the system's state after a morning of configuration work. The most significant durable change is the addition and successful test of the `github-repo-daily-briefing` cron job. A key operational lesson was documented: CLI gateway timeouts do not equal delivery failure — the cron status API is the authoritative source. The model fallback stack was simplified to a single Codex entry matching the default, replacing the prior zai/glm family. New operational risks were noted: Telegram group policy misconfiguration (allowlist with no entries) and intermittent OAuth token refresh failures for openai-codex. A minor version display discrepancy between CLI (2026.3.1) and Gateway app (2026.2.26) is tracked but not blocking.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #712 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~305 |  |
 
-Read: ~667
+**SOUL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #713 | " | 🔵 | SOUL.md — Hugin's Core Identity and Behavioral Constitution | ~438 |  |
+
+**USER.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #714 | " | 🔵 | USER.md — Sam's Detailed Professional Profile and Agent Interaction Contract | ~496 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2026-03-04.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #715 | 7:01 AM | 🔵 | Daily Memory File Not Yet Created for 2026-03-04 | ~209 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2026-03-03.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #716 | " | 🔵 | 2026-03-03 Daily Memory: System Configuration Snapshot | ~406 |  |
+| #717 | " | 🟣 | GitHub Repo Daily Briefing Cron Configured and Tested | ~296 |  |
+| #718 | " | 🔵 | NVIDIA Driver Errors (nvlddmkm) Detected on 2026-03-02 | ~293 |  |
+
+**agents/main/sessions/[context-index]**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #719 | " | 🔵 | OpenClaw Context Index — Semantic Memory System Architecture | ~402 |  |
+
+**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #720 | " | 🔵 | Full Hugin Cron Job Schedule — Five Recurring Automated Tasks | ~383 |  |
+| #721 | 7:12 AM | 🔵 | Daily GitHub Backup Cron Job Configured for openclaw Workspace | ~239 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #722 | " | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~305 |  |
+
+**agents/main/sessions/19e7d098-ea78-4700-96c3-d7ceb81121cc.jsonl**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#723** 7:13 AM ✅ **Daily GitHub Backup Completed Successfully — 51 Files Changed**
+
+The daily GitHub backup cron job executed successfully at 6:36 AM KST on March 4, 2026. The backup script committed and pushed 51 changed files to the openclaw-config-backup repository on GitHub. The diff reflects active session churn (new agent sessions created, old ones cleaned up), a new cron run log, an inbound media file, a daily memory note for 2026-03-03, and a Telegram command hash update. This confirms the openclaw workspace state is continuously versioned and recoverable via GitHub.
+
+Read: ~382
+
+**#S261** Daily GitHub Backup Cron Job Execution — March 4, 2026 (Mar 4, 7:13 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#724** 7:15 AM 🔵 **Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM)**
+
+A recurring cron task is configured to run every morning at 7 AM Seoul time for a user named Sam. The task instructs the primary Claude session to produce a concise morning briefing with three sections: (1) current weather in Seoul using the weather skill, (2) a brief system status overview, and (3) any urgent notifications or tasks retrieved from memory. The output is plain text, delivered automatically by the cron system. If the task required messaging an external recipient, the agent would note the target rather than send it directly. This cron appears to be part of a personal assistant workflow integrated into the Claude agent environment.
+
+Read: ~329
+
+**#S262** Daily Morning Briefing for Sam — Wednesday March 4, 2026, 7:00 AM KST (Seoul) (Mar 4, 7:16 AM)
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#725** 8:00 AM 🔵 **Notion Daily Briefing Cron Job — Korean Telegram Summary Pipeline**
+
+A recurring cron task (ID: de62862d-0431-460a-93d4-a21c9c54aa7c) triggers each morning at 8:00 AM KST to execute the Python script at /home/lfant/.openclaw/workspace/notion_daily_brief.py. The script pulls data from Notion and the primary Claude session produces a structured Korean-language briefing. The briefing is constrained to 25 items maximum (sorted by priority), includes category counts and immediate action callouts, and must remain under 3500 characters for Telegram delivery. The output is plain text intended for automatic delivery to Sam via Telegram. The cron system is part of the .openclaw workspace infrastructure.
+
+Read: ~354
+
+### Mar 5, 2026
+
+**scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#726** 3:00 AM 🔵 **Daily Security Audit Cron Job — False Positive Exclusion List**
+
+The project runs a nightly deep security audit via `openclaw security audit --deep` scheduled at 3:00 AM Korea Standard Time. The audit spans multiple internal tools/packages: tavily-search, claude-mem, and writing-skills. Several files across these packages have been identified as known false positives and are explicitly excluded from actionable findings. The cron system handles delivery of the plain-text summary automatically. This pattern suggests the project has mature security tooling with an established baseline of expected alerts that are not security risks.
+
+Read: ~339
+
+**healthcheck (skill/prompt definition)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#727** " 🔵 **OpenClaw `healthcheck` Skill — Security Audit Workflow Definition**
+
+The `healthcheck` skill file is the governing specification for daily security audits triggered by the OpenClaw cron scheduler. It defines a complete, ordered workflow covering OS context discovery, OpenClaw deep audit execution, version/update status checks, risk posture selection, remediation planning, and post-change verification. Key design decisions include: explicit scope limits (openclaw cannot change OS firewall/SSH), numbered choices for every user decision point, reversible/staged changes only, and opt-in durable memory writes. The cron job observed earlier (`openclaw security audit --deep` at 3 AM KST) maps directly to Step 2 of this workflow running in a headless/automated mode.
+
+Read: ~537
 
 
-Access 177k tokens of past research & decisions for just 19,434t. Use the claude-mem skill to access memories by ID.
+Access 123k tokens of past research & decisions for just 18,988t. Use the claude-mem skill to access memories by ID.
