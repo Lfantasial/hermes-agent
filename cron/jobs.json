@@ -33,7 +33,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1772746607389
       }
     },
     {
@@ -43,7 +44,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1772573763393,
+      "updatedAtMs": 1772658033588,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,14 +62,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772658000000,
-        "lastRunAtMs": 1772573730886,
+        "nextRunAtMs": 1772744400000,
+        "lastRunAtMs": 1772658003033,
         "lastStatus": "ok",
-        "lastDurationMs": 32507,
+        "lastDurationMs": 30555,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1772746607389
       }
     },
     {
@@ -111,7 +113,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1772575330962,
+      "updatedAtMs": 1772661754017,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -129,10 +131,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772661600000,
-        "lastRunAtMs": 1772575200662,
+        "nextRunAtMs": 1772748000000,
+        "lastRunAtMs": 1772661601902,
         "lastStatus": "ok",
-        "lastDurationMs": 130300,
+        "lastDurationMs": 152115,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -146,7 +148,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1772573776976,
+      "updatedAtMs": 1772650814031,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -164,15 +166,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772650800000,
-        "lastRunAtMs": 1772573763393,
+        "nextRunAtMs": 1772737200000,
+        "lastRunAtMs": 1772650801732,
         "lastStatus": "ok",
-        "lastDurationMs": 13583,
+        "lastDurationMs": 12299,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772650801731
+        "runningAtMs": 1772746607389
       }
     },
     {
@@ -181,7 +183,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1772578850000,
+      "updatedAtMs": 1772665231924,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -200,11 +202,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772665200000,
-        "lastRunAtMs": 1772578800798,
+        "nextRunAtMs": 1772751600000,
+        "lastRunAtMs": 1772665205232,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 49202,
+        "lastDurationMs": 26692,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -215,7 +217,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1772582414267,
+      "updatedAtMs": 1772668877978,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -234,15 +236,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772668800000,
-        "lastRunAtMs": 1772582401839,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 12428,
+        "nextRunAtMs": 1772755200000,
+        "lastRunAtMs": 1772668800005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 77973,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID ad091e04-efb4-49b8-a19a-f82012698830 in your message.\",\"param\":null},\"sequence_number\":2}"
+        "consecutiveErrors": 0
       }
     }
   ]

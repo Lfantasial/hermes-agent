@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-05 4:00am GMT+9
+# [openclaw-main] recent context, 2026-03-06 6:38am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,38 +14,15 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (18,988 tokens to read)
-- Work investment: 123,359 tokens spent on research, building, and decisions
-- Your savings: 104,371 tokens (85% reduction from reuse)
+- Loading: 50 observations (18,539 tokens to read)
+- Work investment: 131,501 tokens spent on research, building, and decisions
+- Your savings: 112,962 tokens (86% reduction from reuse)
 
 ### Feb 27, 2026
 
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #606 | 8:13 AM | 🔵 | notion-daily-briefing Full Configuration Revealed | ~371 |  |
-
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #607 | " | 🔵 | Second Cron Job: daily-morning-briefing at 07:00 KST | ~436 |  |
-| #608 | 8:14 AM | 🔵 | Third Cron Job: daily-update-check at 06:00 KST | ~387 |  |
-| #609 | " | 🔵 | Fourth Cron Job: daily-security-audit at 03:00 KST | ~432 |  |
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #610 | " | 🔵 | Fifth Cron Job: daily-github-backup at 04:00 KST — Delivery Failure Detected | ~389 |  |
-
-**../../home/lfant/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #611 | " | 🔵 | OpenClaw Gateway Architecture: WebSocket on localhost:18789 | ~309 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #612 | " | 🔵 | notion-daily-briefing New Run: 02/26~02/27 Period Delivered | ~423 |  |
 | #613 | 8:15 AM | ✅ | notion-daily-briefing Payload Prompt Updated with Output Constraints | ~399 |  |
 | #614 | " | 🔵 | OpenClaw Cron Job Deduplication: "already-running" Guard | ~192 |  |
 | #615 | " | 🔵 | notion-daily-briefing Disabled Then Re-enabled to Cancel Running Job | ~304 |  |
@@ -77,8 +54,6 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #621 | 7:12 AM | ✅ | Daily GitHub Backup Executed Successfully | ~331 |  |
-
-**#S218** Periodic Memory Maintenance — MEMORY.md long-term restructuring and cron job delivery (Feb 28, 7:12 AM)
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
@@ -234,58 +209,95 @@ When you need implementation details, rationale, or debugging context:
 **agents/main/sessions/19e7d098-ea78-4700-96c3-d7ceb81121cc.jsonl**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#723** 7:13 AM ✅ **Daily GitHub Backup Completed Successfully — 51 Files Changed**
-
-The daily GitHub backup cron job executed successfully at 6:36 AM KST on March 4, 2026. The backup script committed and pushed 51 changed files to the openclaw-config-backup repository on GitHub. The diff reflects active session churn (new agent sessions created, old ones cleaned up), a new cron run log, an inbound media file, a daily memory note for 2026-03-03, and a Telegram command hash update. This confirms the openclaw workspace state is continuously versioned and recoverable via GitHub.
-
-Read: ~382
+| #723 | 7:13 AM | ✅ | Daily GitHub Backup Completed Successfully — 51 Files Changed | ~382 |  |
 
 **#S261** Daily GitHub Backup Cron Job Execution — March 4, 2026 (Mar 4, 7:13 AM)
+
+**#S262** Daily Morning Briefing for Sam — Wednesday March 4, 2026, 7:00 AM KST (Seoul) (Mar 4, 7:13 AM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#724** 7:15 AM 🔵 **Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM)**
-
-A recurring cron task is configured to run every morning at 7 AM Seoul time for a user named Sam. The task instructs the primary Claude session to produce a concise morning briefing with three sections: (1) current weather in Seoul using the weather skill, (2) a brief system status overview, and (3) any urgent notifications or tasks retrieved from memory. The output is plain text, delivered automatically by the cron system. If the task required messaging an external recipient, the agent would note the target rather than send it directly. This cron appears to be part of a personal assistant workflow integrated into the Claude agent environment.
-
-Read: ~329
-
-**#S262** Daily Morning Briefing for Sam — Wednesday March 4, 2026, 7:00 AM KST (Seoul) (Mar 4, 7:16 AM)
+| #724 | 7:15 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~329 |  |
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#725** 8:00 AM 🔵 **Notion Daily Briefing Cron Job — Korean Telegram Summary Pipeline**
-
-A recurring cron task (ID: de62862d-0431-460a-93d4-a21c9c54aa7c) triggers each morning at 8:00 AM KST to execute the Python script at /home/lfant/.openclaw/workspace/notion_daily_brief.py. The script pulls data from Notion and the primary Claude session produces a structured Korean-language briefing. The briefing is constrained to 25 items maximum (sorted by priority), includes category counts and immediate action callouts, and must remain under 3500 characters for Telegram delivery. The output is plain text intended for automatic delivery to Sam via Telegram. The cron system is part of the .openclaw workspace infrastructure.
-
-Read: ~354
+| #725 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Telegram Summary Pipeline | ~354 |  |
 
 ### Mar 5, 2026
 
 **scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#726** 3:00 AM 🔵 **Daily Security Audit Cron Job — False Positive Exclusion List**
-
-The project runs a nightly deep security audit via `openclaw security audit --deep` scheduled at 3:00 AM Korea Standard Time. The audit spans multiple internal tools/packages: tavily-search, claude-mem, and writing-skills. Several files across these packages have been identified as known false positives and are explicitly excluded from actionable findings. The cron system handles delivery of the plain-text summary automatically. This pattern suggests the project has mature security tooling with an established baseline of expected alerts that are not security risks.
-
-Read: ~339
+| #726 | 3:00 AM | 🔵 | Daily Security Audit Cron Job — False Positive Exclusion List | ~339 |  |
 
 **healthcheck (skill/prompt definition)**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #727 | " | 🔵 | OpenClaw `healthcheck` Skill — Security Audit Workflow Definition | ~537 |  |
 
-**#727** " 🔵 **OpenClaw `healthcheck` Skill — Security Audit Workflow Definition**
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #728 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Configured for Sam | ~318 |  |
 
-The `healthcheck` skill file is the governing specification for daily security audits triggered by the OpenClaw cron scheduler. It defines a complete, ordered workflow covering OS context discovery, OpenClaw deep audit execution, version/update status checks, risk posture selection, remediation planning, and post-change verification. Key design decisions include: explicit scope limits (openclaw cannot change OS firewall/SSH), numbered choices for every user decision point, reversible/staged changes only, and opt-in durable memory writes. The cron job observed earlier (`openclaw security audit --deep` at 3 AM KST) maps directly to Step 2 of this workflow running in a headless/automated mode.
+**~/.claude/skills/weather.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #729 | " | 🔵 | Weather Skill Uses wttr.in — No API Key Required | ~300 |  |
 
-Read: ~537
+**../../home/lfant/.openclaw/workspace/memory/2026-03-05.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#730** 7:01 AM 🔵 **No Memory File Found for 2026-03-05**
+
+When the daily morning briefing cron ran at 7 AM on March 5th 2026, it attempted to read the day's memory file at `/home/lfant/.openclaw/workspace/memory/2026-03-05.md` to surface urgent tasks and notifications. The file did not exist, indicating either the daily memory file is created later in the day or no entries had been written yet. The briefing must handle this gracefully by noting no urgent items are on record.
+
+Read: ~211
+
+**scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#731** " 🔵 **March 5 Security Audit Ran at 3 AM KST — Known False Positives Excluded**
+
+Every night at 3 AM KST, a cron job triggers a deep security audit across the openclaw workspace. By March 5, 2026, the system has a mature false-positive exclusion list for tavily-search, claude-mem, and writing-skills packages — meaning the baseline is established and only genuinely new findings would require action. The `healthcheck` skill file is the authoritative spec for this workflow, covering six ordered steps with explicit design constraints: no OS firewall/SSH changes, staged reversible remediations only, and opt-in memory persistence.
+
+Read: ~360
+
+**../../home/lfant/.openclaw/workspace/memory/context-index**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#732** " 🔵 **OpenClaw Context Index — 85% Token Savings via Semantic Memory Reuse**
+
+The OpenClaw memory system surfaces a compressed semantic context index at the start of each session. The index for the morning briefing on March 5 spans 8 days of history and achieves an 85% token reduction by storing titles, types, file paths, and token costs rather than full observation text. Agents are instructed to use this index as the authoritative source for past decisions rather than re-reading source files. Deep retrieval is available on demand by ID. The five active cron jobs form the backbone of Sam's daily automated workflow.
+
+Read: ~392
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#733** 9:00 AM 🟣 **Daily GitHub Trending Repo Briefing Cron Job (KST 09:00)**
+
+A recurring cron job (ID: 0f2e06c5-425c-40b2-845b-135e47277fe1) is configured to fire daily at 09:00 KST. Each run queries the GitHub REST API for real repository data and assembles a structured Korean-language briefing for Sam. The briefing covers two repo lists (recent 7-day trending by stars, and all-time top starred excluding archived), descriptive summaries, and practical ideas specifically framed around OpenClaw and Claude Code use cases in automation, security, and developer productivity. Three concrete daily action items are always included. Deduplication and a 2500-character limit keep the output concise. The cron task itself returns plain text and flags the intended recipient/channel rather than dispatching messages autonomously.
+
+Read: ~449
+
+**#S263** Daily GitHub Trending Repo Briefing Cron — Korean summary for Sam at 09:00 KST (Mar 5, 9:00 AM)
+
+**.claude/skills/github.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#734** 9:01 AM 🔵 **GitHub Skill Doc Loaded for gh CLI Usage**
+
+Before executing the daily GitHub trending briefing, the session loaded the GitHub skill documentation. This skill establishes `gh api` as the primary tool for REST queries, aligning with the cron job's requirement to use real GitHub API data. The skill also documents `--json` + `--jq` patterns that would be used to extract repo name, star count, description, and activity fields needed to build the Top 5 trending and Top 5 all-time starred lists.
+
+Read: ~268
 
 
-Access 123k tokens of past research & decisions for just 18,988t. Use the claude-mem skill to access memories by ID.
+Access 132k tokens of past research & decisions for just 18,539t. Use the claude-mem skill to access memories by ID.
