@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-06 6:38am GMT+9
+# [openclaw-main] recent context, 2026-03-06 9:01am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,36 +14,11 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (18,539 tokens to read)
-- Work investment: 131,501 tokens spent on research, building, and decisions
-- Your savings: 112,962 tokens (86% reduction from reuse)
-
-### Feb 27, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #613 | 8:15 AM | ✅ | notion-daily-briefing Payload Prompt Updated with Output Constraints | ~399 |  |
-| #614 | " | 🔵 | OpenClaw Cron Job Deduplication: "already-running" Guard | ~192 |  |
-| #615 | " | 🔵 | notion-daily-briefing Disabled Then Re-enabled to Cancel Running Job | ~304 |  |
-| #616 | 8:16 AM | 🔵 | Updated-Prompt Run Completed: 02/26~02/27 Briefing Delivered in ~3.8 Minutes | ~358 |  |
+- Loading: 50 observations (18,743 tokens to read)
+- Work investment: 132,899 tokens spent on research, building, and decisions
+- Your savings: 114,156 tokens (86% reduction from reuse)
 
 ### Feb 28, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #617 | 6:00 AM | 🔵 | Daily Automated Update Check Cron Job for OpenClaw and Skills | ~370 |  |
-
-**scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #618 | 6:59 AM | 🔵 | Daily Security Audit Cron Job — Known False Positives Catalogued | ~368 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #619 | " | 🔵 | Daily Security Audit Results — 2026-02-28 | ~504 |  |
 
 **../../home/lfant/.openclaw/workspace/backup_to_github.sh**
 | ID | Time | T | Title | Read | Work |
@@ -250,54 +225,91 @@ When you need implementation details, rationale, or debugging context:
 **../../home/lfant/.openclaw/workspace/memory/2026-03-05.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#730** 7:01 AM 🔵 **No Memory File Found for 2026-03-05**
-
-When the daily morning briefing cron ran at 7 AM on March 5th 2026, it attempted to read the day's memory file at `/home/lfant/.openclaw/workspace/memory/2026-03-05.md` to surface urgent tasks and notifications. The file did not exist, indicating either the daily memory file is created later in the day or no entries had been written yet. The briefing must handle this gracefully by noting no urgent items are on record.
-
-Read: ~211
+| #730 | 7:01 AM | 🔵 | No Memory File Found for 2026-03-05 | ~211 |  |
 
 **scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#731** " 🔵 **March 5 Security Audit Ran at 3 AM KST — Known False Positives Excluded**
-
-Every night at 3 AM KST, a cron job triggers a deep security audit across the openclaw workspace. By March 5, 2026, the system has a mature false-positive exclusion list for tavily-search, claude-mem, and writing-skills packages — meaning the baseline is established and only genuinely new findings would require action. The `healthcheck` skill file is the authoritative spec for this workflow, covering six ordered steps with explicit design constraints: no OS firewall/SSH changes, staged reversible remediations only, and opt-in memory persistence.
-
-Read: ~360
+| #731 | " | 🔵 | March 5 Security Audit Ran at 3 AM KST — Known False Positives Excluded | ~360 |  |
 
 **../../home/lfant/.openclaw/workspace/memory/context-index**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#732** " 🔵 **OpenClaw Context Index — 85% Token Savings via Semantic Memory Reuse**
-
-The OpenClaw memory system surfaces a compressed semantic context index at the start of each session. The index for the morning briefing on March 5 spans 8 days of history and achieves an 85% token reduction by storing titles, types, file paths, and token costs rather than full observation text. Agents are instructed to use this index as the authoritative source for past decisions rather than re-reading source files. Deep retrieval is available on demand by ID. The five active cron jobs form the backbone of Sam's daily automated workflow.
-
-Read: ~392
+| #732 | " | 🔵 | OpenClaw Context Index — 85% Token Savings via Semantic Memory Reuse | ~392 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#733** 9:00 AM 🟣 **Daily GitHub Trending Repo Briefing Cron Job (KST 09:00)**
-
-A recurring cron job (ID: 0f2e06c5-425c-40b2-845b-135e47277fe1) is configured to fire daily at 09:00 KST. Each run queries the GitHub REST API for real repository data and assembles a structured Korean-language briefing for Sam. The briefing covers two repo lists (recent 7-day trending by stars, and all-time top starred excluding archived), descriptive summaries, and practical ideas specifically framed around OpenClaw and Claude Code use cases in automation, security, and developer productivity. Three concrete daily action items are always included. Deduplication and a 2500-character limit keep the output concise. The cron task itself returns plain text and flags the intended recipient/channel rather than dispatching messages autonomously.
-
-Read: ~449
+| #733 | 9:00 AM | 🟣 | Daily GitHub Trending Repo Briefing Cron Job (KST 09:00) | ~449 |  |
 
 **#S263** Daily GitHub Trending Repo Briefing Cron — Korean summary for Sam at 09:00 KST (Mar 5, 9:00 AM)
 
 **.claude/skills/github.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #734 | 9:01 AM | 🔵 | GitHub Skill Doc Loaded for gh CLI Usage | ~268 |  |
 
-**#734** 9:01 AM 🔵 **GitHub Skill Doc Loaded for gh CLI Usage**
+### Mar 6, 2026
 
-Before executing the daily GitHub trending briefing, the session loaded the GitHub skill documentation. This skill establishes `gh api` as the primary tool for REST queries, aligning with the cron job's requirement to use real GitHub API data. The skill also documents `--json` + `--jq` patterns that would be used to extract repo name, star count, description, and activity fields needed to build the Top 5 trending and Top 5 all-time starred lists.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #737 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~318 |  |
 
-Read: ~268
+**~/.claude/skills/weather.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #738 | " | 🔵 | Weather Skill Uses wttr.in — No API Key Required | ~326 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2026-03-06.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#739** " 🔵 **No Daily Memory File Exists for 2026-03-06**
+
+During the morning briefing cron job, the system attempted to read a daily memory file scoped to today's date (2026-03-06.md) from the workspace memory directory. The file was not found, indicating either that no tasks or notes were recorded for today in advance, or that the daily file is created on first write rather than pre-initialized. The morning briefing's "urgent notifications from memory" section would therefore have no data to surface for this run.
+
+Read: ~231
+
+**../../home/lfant/.openclaw/agents/main/sessions/[context-index]**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#740** 7:01 AM 🔵 **OpenClaw Context Index Loaded — Full System State as of March 6, 2026**
+
+At the start of the March 6 morning briefing, the session loaded the full OpenClaw context index — a compressed semantic index of all recorded observations across the last 8 days. This index is the memory system's primary efficiency mechanism: instead of re-reading 131k tokens of past work, agents access 18.5k tokens of structured titles, types, file paths, and token costs. The five cron jobs (security audit, morning briefing, Notion briefing, GitHub trending briefing, GitHub backup) are the operational backbone of Sam's automated daily system. The NVIDIA driver issue remains an open hardware concern. Daily memory files are consistently absent at 7 AM briefing time, suggesting they are either written later in the day or not being written at all. The healthcheck/security audit skill has a well-established false-positive baseline, meaning only genuinely new findings require action.
+
+Read: ~570
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#741** 8:00 AM 🔵 **Notion Daily Briefing Cron Job for Telegram Delivery**
+
+A recurring cron task is configured to run each morning at 8:00 AM KST. It executes the Python script notion_daily_brief.py located in the .openclaw workspace. The script fetches Notion data and formats it into a concise Korean-language daily briefing for a user named Sam. The briefing must be prioritized (most urgent first), organized by category with counts, and highlight immediate actions. The entire output must stay under 3500 characters to fit within Telegram's single-message delivery constraints. The output is plain text and is delivered automatically by the cron infrastructure — no external messaging step is required unless a specific named recipient is targeted externally.
+
+Read: ~357
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#742** 9:00 AM 🔵 **GitHub Daily Briefing Cron Job — Korean Language, Delivered to Sam**
+
+A recurring cron task is configured to run every day at 09:00 KST and produce a GitHub repository intelligence briefing in Korean. The briefing has a strict 5-section structure: recent trending repos (7-day window, star-ranked), all-time star leaders (non-archived, activity-weighted), concise per-repo summaries, applied ideas for OpenClaw/Claude Code projects, and immediate next actions. Real GitHub API data is mandatory. The agent delivering this briefing is instructed to output plain text and note the intended recipient (Sam) rather than attempting to message externally itself. This cron is already active in the primary session's scheduling system.
+
+Read: ~425
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#743** 9:01 AM 🔵 **GitHub Briefing Cron — Live API Data Successfully Retrieved (No jq)**
+
+The GitHub daily briefing cron task successfully called the GitHub REST API to retrieve live trending and all-time star data even though `jq` was not available in the shell environment. The agent adapted and produced structured plain-text output. The recent list highlights AI/developer tooling themes (Workspace CLI, Apple Neural Engine training, zero-human company orchestration, open-source Figma). The all-time list is dominated by curated learning/reference repos (build-your-own-x, awesome lists, freeCodeCamp). This raw data feeds the 5-section Korean briefing for Sam.
+
+Read: ~472
 
 
-Access 132k tokens of past research & decisions for just 18,539t. Use the claude-mem skill to access memories by ID.
+Access 133k tokens of past research & decisions for just 18,743t. Use the claude-mem skill to access memories by ID.
