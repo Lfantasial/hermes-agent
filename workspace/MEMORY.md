@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-06 9:01am GMT+9
+# [openclaw-main] recent context, 2026-03-08 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,60 +14,11 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (18,743 tokens to read)
-- Work investment: 132,899 tokens spent on research, building, and decisions
-- Your savings: 114,156 tokens (86% reduction from reuse)
-
-### Feb 28, 2026
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #620 | 7:11 AM | 🔵 | Daily GitHub Backup Cron Job Configured | ~216 |  |
-
-**agents/main/sessions/10123afa-5ee5-426b-b7c0-c21113069de9.jsonl**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #621 | 7:12 AM | ✅ | Daily GitHub Backup Executed Successfully | ~331 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #622 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Telegram Summary for Sam | ~322 |  |
-
-**../../home/lfant/.openclaw/workspace/SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #623 | " | 🔵 | Hugin Agent Identity — SOUL.md Core Persona File | ~384 |  |
-
-### Mar 1, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #624 | 7:00 AM | 🟣 | Daily Morning Briefing Cron Job Executed for Sam (Seoul, 7 AM) | ~344 |  |
-
-**~/.openclaw/openclaw.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #625 | 7:01 AM | 🔵 | Sam's OpenClaw System State — Full Cron Schedule and Open Security Warnings | ~612 |  |
+- Loading: 50 observations (18,784 tokens to read)
+- Work investment: 134,650 tokens spent on research, building, and decisions
+- Your savings: 115,866 tokens (86% reduction from reuse)
 
 ### Mar 2, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #642 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam | ~290 |  |
-
-**SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #643 | " | 🔵 | Hugin Agent Identity Defined in SOUL.md | ~418 |  |
-
-**USER.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #644 | " | 🔵 | Sam's User Profile Defined in USER.md | ~481 |  |
 
 **../../home/lfant/.openclaw/workspace/memory/2026-03-01.md**
 | ID | Time | T | Title | Read | Work |
@@ -264,52 +215,95 @@ When you need implementation details, rationale, or debugging context:
 **../../home/lfant/.openclaw/workspace/memory/2026-03-06.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#739** " 🔵 **No Daily Memory File Exists for 2026-03-06**
-
-During the morning briefing cron job, the system attempted to read a daily memory file scoped to today's date (2026-03-06.md) from the workspace memory directory. The file was not found, indicating either that no tasks or notes were recorded for today in advance, or that the daily file is created on first write rather than pre-initialized. The morning briefing's "urgent notifications from memory" section would therefore have no data to surface for this run.
-
-Read: ~231
+| #739 | " | 🔵 | No Daily Memory File Exists for 2026-03-06 | ~231 |  |
 
 **../../home/lfant/.openclaw/agents/main/sessions/[context-index]**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#740** 7:01 AM 🔵 **OpenClaw Context Index Loaded — Full System State as of March 6, 2026**
-
-At the start of the March 6 morning briefing, the session loaded the full OpenClaw context index — a compressed semantic index of all recorded observations across the last 8 days. This index is the memory system's primary efficiency mechanism: instead of re-reading 131k tokens of past work, agents access 18.5k tokens of structured titles, types, file paths, and token costs. The five cron jobs (security audit, morning briefing, Notion briefing, GitHub trending briefing, GitHub backup) are the operational backbone of Sam's automated daily system. The NVIDIA driver issue remains an open hardware concern. Daily memory files are consistently absent at 7 AM briefing time, suggesting they are either written later in the day or not being written at all. The healthcheck/security audit skill has a well-established false-positive baseline, meaning only genuinely new findings require action.
-
-Read: ~570
+| #740 | 7:01 AM | 🔵 | OpenClaw Context Index Loaded — Full System State as of March 6, 2026 | ~570 |  |
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #741 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job for Telegram Delivery | ~357 |  |
 
-**#741** 8:00 AM 🔵 **Notion Daily Briefing Cron Job for Telegram Delivery**
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #742 | 9:00 AM | 🔵 | GitHub Daily Briefing Cron Job — Korean Language, Delivered to Sam | ~425 |  |
+| #743 | 9:01 AM | 🔵 | GitHub Briefing Cron — Live API Data Successfully Retrieved (No jq) | ~472 |  |
 
-A recurring cron task is configured to run each morning at 8:00 AM KST. It executes the Python script notion_daily_brief.py located in the .openclaw workspace. The script fetches Notion data and formats it into a concise Korean-language daily briefing for a user named Sam. The briefing must be prioritized (most urgent first), organized by category with counts, and highlight immediate actions. The entire output must stay under 3500 characters to fit within Telegram's single-message delivery constraints. The output is plain text and is delivered automatically by the cron infrastructure — no external messaging step is required unless a specific named recipient is targeted externally.
+### Mar 7, 2026
 
-Read: ~357
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #744 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Configured for Sam (Seoul, 7 AM) | ~317 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #745 | 8:00 AM | 🟣 | Notion Daily Briefing Cron Job — Korean Summary for Telegram | ~300 |  |
+
+**.claude/skills/using-superpowers.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #746 | " | 🔵 | Skill Invocation Protocol — "using-superpowers" System Rule | ~420 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #747 | 9:00 AM | 🟣 | Daily GitHub Trending Repo Briefing Cron Job (09:00 KST) | ~461 |  |
+
+**../../tmp/gh_recent.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#748** 9:01 AM 🔵 **GitHub API Search Returned Zero Results for Trending Repo Queries**
+
+During the March 7, 2026 09:00 KST daily briefing run, the GitHub API queries for both recent trending repos (created in the last 7 days, sorted by stars) and cumulative top-starred repos returned zero results. The API responses were structurally valid JSON (containing total_count, incomplete_results, and items keys), but the items arrays were empty. This may indicate an issue with query parameters (e.g., date range filters, authentication scope, or API rate limiting). Additionally, both `jq` and `python` (as command) were unavailable in the execution environment, requiring workarounds for JSON parsing.
+
+Read: ~329
+
+**../../tmp/gh_top.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#749** " 🔵 **GitHub Top-Starred Repos Retrieved Successfully via Fallback Query**
+
+After the initial GitHub API queries returned zero results, a fallback or adjusted query successfully retrieved the top 5 all-time starred GitHub repositories. The results reveal that openclaw/openclaw is the most-starred repo on GitHub with 270,888 stars, followed by a collection of AI-tooling repositories: a system-prompts reference collection, opencode (anomalyco), gemini-cli (Google), and DeepSeek-R1. This data is used to populate Section 2 of Sam's daily GitHub briefing (cumulative top stars, non-archived, recently active).
+
+Read: ~345
+
+**../../tmp/gh_recent.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#750** 9:02 AM 🔵 **GitHub Recently Trending Repos Retrieved for Daily Briefing (2026-03-07)**
+
+The recent trending section of the daily briefing was populated with 5 repos created between January and February 2026, all gaining significant star counts quickly. Notably, the trending list is heavily concentrated in the Claude Code / OpenClaw ecosystem: affaan-m/everything-claude-code leads with 62,990 stars, VoltAgent/awesome-openclaw-skills has 29,614 stars, and zeroclaw-labs/zeroclaw has 23,954 stars — suggesting strong community momentum around these tools. One result with a null name was silently dropped. This data feeds Section 1 of Sam's daily Korean-language GitHub briefing.
+
+Read: ~366
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#742** 9:00 AM 🔵 **GitHub Daily Briefing Cron Job — Korean Language, Delivered to Sam**
+**#751** " 🔵 **Ultra-Recent GitHub Trending Repos (Last 7 Days) — March 2026 Snapshot**
 
-A recurring cron task is configured to run every day at 09:00 KST and produce a GitHub repository intelligence briefing in Korean. The briefing has a strict 5-section structure: recent trending repos (7-day window, star-ranked), all-time star leaders (non-archived, activity-weighted), concise per-repo summaries, applied ideas for OpenClaw/Claude Code projects, and immediate next actions. Real GitHub API data is mandatory. The agent delivering this briefing is instructed to output plain text and note the intended recipient (Sam) rather than attempting to message externally itself. This cron is already active in the primary session's scheduling system.
+A secondary or refined GitHub search query targeting repos created in the past 7 days (Feb 28 – Mar 3, 2026) returned 10 candidates. The top result, googleworkspace/cli, gained 14,165 stars in just days — suggesting a major official CLI tool release from Google Workspace. Two repos are directly OpenClaw-related: LeoYeAI/openclaw-master-skills (a skills/prompt library) and slowmist/openclaw-security-practice-guide (a security-focused guide for OpenClaw, from the well-known SlowMist security firm). These are highly relevant to the briefing's Section 4 requirement for ideas applicable to OpenClaw or Claude Code in automation/security/dev productivity.
 
-Read: ~425
+Read: ~375
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#743** 9:01 AM 🔵 **GitHub Briefing Cron — Live API Data Successfully Retrieved (No jq)**
+**#752** 9:03 AM 🟣 **Final Merged GitHub Briefing Dataset Assembled (Recent + Cumulative, 10 Repos)**
 
-The GitHub daily briefing cron task successfully called the GitHub REST API to retrieve live trending and all-time star data even though `jq` was not available in the shell environment. The agent adapted and produced structured plain-text output. The recent list highlights AI/developer tooling themes (Workspace CLI, Apple Neural Engine training, zero-human company orchestration, open-source Figma). The all-time list is dominated by curated learning/reference repos (build-your-own-x, awesome lists, freeCodeCamp). This raw data feeds the 5-section Korean briefing for Sam.
+The briefing pipeline successfully assembled a final 10-repo dataset by merging recent trending repos (created in the past 7 days) and all-time cumulative top-starred repos. Each entry is tagged R or C, and includes metadata (stars, created/updated dates) plus a human-readable description suitable for translation into Korean. The cumulative top 5 shifted from the earlier query results to classic community resources (build-your-own-x, awesome, freeCodeCamp, public-apis, free-programming-books), likely because the earlier query hit a different filter. Notable connections to OpenClaw/Claude Code: phuryn/pm-skills (agentic skill marketplace pattern), paperclipai/paperclip (zero-human orchestration), and googleworkspace/cli (AI agent skill integration). This dataset feeds directly into sections 1–4 of Sam's daily Korean briefing.
 
-Read: ~472
+Read: ~526
 
 
-Access 133k tokens of past research & decisions for just 18,743t. Use the claude-mem skill to access memories by ID.
+Access 135k tokens of past research & decisions for just 18,784t. Use the claude-mem skill to access memories by ID.

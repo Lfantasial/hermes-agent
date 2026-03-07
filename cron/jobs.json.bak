@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1772746662588,
+      "updatedAtMs": 1772906431635,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,10 +26,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772820000000,
-        "lastRunAtMs": 1772746607416,
+        "nextRunAtMs": 1772992800000,
+        "lastRunAtMs": 1772906400004,
         "lastStatus": "ok",
-        "lastDurationMs": 55172,
+        "lastDurationMs": 31631,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -43,7 +43,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1772746693276,
+      "updatedAtMs": 1772832044334,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,10 +61,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772830800000,
-        "lastRunAtMs": 1772746662588,
+        "nextRunAtMs": 1772917200000,
+        "lastRunAtMs": 1772832009143,
         "lastStatus": "ok",
-        "lastDurationMs": 30688,
+        "lastDurationMs": 35191,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -111,7 +111,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1772748104996,
+      "updatedAtMs": 1772834505730,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -129,10 +129,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772834400000,
-        "lastRunAtMs": 1772748001683,
+        "nextRunAtMs": 1772920800000,
+        "lastRunAtMs": 1772834401340,
         "lastStatus": "ok",
-        "lastDurationMs": 103313,
+        "lastDurationMs": 104390,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -146,7 +146,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1772746708723,
+      "updatedAtMs": 1772832056553,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -164,10 +164,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772823600000,
-        "lastRunAtMs": 1772746693276,
+        "nextRunAtMs": 1772910000000,
+        "lastRunAtMs": 1772832044334,
         "lastStatus": "ok",
-        "lastDurationMs": 15447,
+        "lastDurationMs": 12219,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -180,7 +180,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1772751642288,
+      "updatedAtMs": 1772838043810,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -199,11 +199,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772838000000,
-        "lastRunAtMs": 1772751603794,
+        "nextRunAtMs": 1772924400000,
+        "lastRunAtMs": 1772838000944,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 38494,
+        "lastDurationMs": 42866,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -214,7 +214,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1772755344785,
+      "updatedAtMs": 1772841806445,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -233,11 +233,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772841600000,
-        "lastRunAtMs": 1772755202288,
+        "nextRunAtMs": 1772928000000,
+        "lastRunAtMs": 1772841601724,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 142497,
+        "lastDurationMs": 204721,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
