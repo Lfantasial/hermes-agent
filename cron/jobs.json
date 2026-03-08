@@ -33,7 +33,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1773003947085
       }
     },
     {
@@ -43,7 +44,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1772832044334,
+      "updatedAtMs": 1772917236715,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,14 +62,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772917200000,
-        "lastRunAtMs": 1772832009143,
+        "nextRunAtMs": 1773003600000,
+        "lastRunAtMs": 1772917206601,
         "lastStatus": "ok",
-        "lastDurationMs": 35191,
+        "lastDurationMs": 30114,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1773003947085
       }
     },
     {
@@ -78,7 +80,7 @@
       "enabled": true,
       "notify": false,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1772373653469,
+      "updatedAtMs": 1772978487686,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -94,10 +96,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772978400000,
-        "lastRunAtMs": 1772373600006,
+        "nextRunAtMs": 1773583200000,
+        "lastRunAtMs": 1772978403386,
         "lastStatus": "ok",
-        "lastDurationMs": 53463,
+        "lastDurationMs": 84300,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -111,7 +113,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1772834505730,
+      "updatedAtMs": 1772921011038,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -129,10 +131,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772920800000,
-        "lastRunAtMs": 1772834401340,
+        "nextRunAtMs": 1773007200000,
+        "lastRunAtMs": 1772920802485,
         "lastStatus": "ok",
-        "lastDurationMs": 104390,
+        "lastDurationMs": 208553,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -146,7 +148,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1772832056553,
+      "updatedAtMs": 1772910015344,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -164,15 +166,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772910000000,
-        "lastRunAtMs": 1772832044334,
+        "nextRunAtMs": 1772996400000,
+        "lastRunAtMs": 1772910000003,
         "lastStatus": "ok",
-        "lastDurationMs": 12219,
+        "lastDurationMs": 15341,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772910000002
+        "runningAtMs": 1773003947085
       }
     },
     {
@@ -181,7 +183,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1772838043810,
+      "updatedAtMs": 1772924435117,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -200,11 +202,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772924400000,
-        "lastRunAtMs": 1772838000944,
+        "nextRunAtMs": 1773010800000,
+        "lastRunAtMs": 1772924400003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 42866,
+        "lastDurationMs": 35114,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -215,7 +217,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1772841806445,
+      "updatedAtMs": 1772928014222,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -234,14 +236,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1772928000000,
-        "lastRunAtMs": 1772841601724,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 204721,
+        "nextRunAtMs": 1773014400000,
+        "lastRunAtMs": 1772928006806,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 7416,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID 38d96cdc-8448-44f5-976f-a6a7437222bf in your message.\",\"param\":null},\"sequence_number\":2}"
       }
     }
   ]

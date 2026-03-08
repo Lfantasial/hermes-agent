@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-08 4:00am GMT+9
+# [openclaw-main] recent context, 2026-03-09 6:08am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,28 +14,11 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (18,784 tokens to read)
-- Work investment: 134,650 tokens spent on research, building, and decisions
-- Your savings: 115,866 tokens (86% reduction from reuse)
+- Loading: 50 observations (17,112 tokens to read)
+- Work investment: 140,182 tokens spent on research, building, and decisions
+- Your savings: 123,070 tokens (88% reduction from reuse)
 
 ### Mar 2, 2026
-
-**../../home/lfant/.openclaw/workspace/memory/2026-03-01.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #645 | 7:01 AM | 🔵 | Daily Memory File Missing for 2026-03-01 | ~205 |  |
-
-**weather skill definition (skill metadata + commands)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #646 | " | 🔵 | Weather Skill Uses wttr.in via curl — No API Key Required | ~363 |  |
-
-**workspace/memory/MEMORY.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #647 | 10:19 AM | ✅ | MEMORY.md Consolidated into Long-Term Reference Document | ~561 |  |
-
-**#S219** Daily Security Scan Report — 03/02 03:00 KST results delivered to user (Mar 2, 10:20 AM)
 
 **#S220** GitHub Backup — automated backup cron job completed successfully (Mar 2, 10:20 AM)
 
@@ -43,76 +26,20 @@ When you need implementation details, rationale, or debugging context:
 
 **#S222** Morning Briefing — 07:00 KST daily briefing with weather, system status, and action items delivered to Sam (Mar 2, 10:20 AM)
 
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #648 | 10:20 AM | 🔵 | GitHub Daily Briefing Cron Job — Korean Language, KST 09:00 | ~455 |  |
-
 **#S223** Notion Daily Briefing — 08:00 KST work task briefing with 16 items triaged and morning execution schedule delivered (Mar 2, 10:20 AM)
 
 **#S251** Pre-compaction memory flush to memory/2026-03-03.md + system environment diagnostics on WSL2 machine (Mar 2, 10:20 AM)
 
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #649 | 10:20 AM | 🔵 | OpenClaw Version Confirmed at 2026.2.26 with Full Cron Management CLI | ~321 |  |
-
 ### Mar 3, 2026
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #696 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Summary for Telegram | ~313 |  |
 
 **#S260** Daily cron update check for OpenClaw and skills, with Telegram sync verification and Sam notification if updates found (Mar 3, 8:45 AM)
 
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #697 | 8:45 AM | 🔵 | NVIDIA RTX 4090 Windows Driver Instability Confirmed via Event Log | ~438 |  |
-| #698 | 9:00 AM | 🔵 | Daily GitHub Trending Briefing Cron Job — Sam (KST 09:00) | ~449 |  |
-
-**SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #699 | " | 🔵 | Hugin Agent Identity — SOUL.md Core Principles | ~391 |  |
-
-**USER.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #700 | 9:01 AM | 🔵 | Sam's User Profile — USER.md | ~472 |  |
-
-**TODAY.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #701 | " | 🔵 | Today's Pre-Compaction Memory Flush — 2026-03-03 System State Snapshot | ~667 |  |
-
 ### Mar 4, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #712 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~305 |  |
-
-**SOUL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #713 | " | 🔵 | SOUL.md — Hugin's Core Identity and Behavioral Constitution | ~438 |  |
-
-**USER.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #714 | " | 🔵 | USER.md — Sam's Detailed Professional Profile and Agent Interaction Contract | ~496 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/2026-03-04.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #715 | 7:01 AM | 🔵 | Daily Memory File Not Yet Created for 2026-03-04 | ~209 |  |
 
 **../../home/lfant/.openclaw/workspace/memory/2026-03-03.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #716 | " | 🔵 | 2026-03-03 Daily Memory: System Configuration Snapshot | ~406 |  |
+| #716 | 7:01 AM | 🔵 | 2026-03-03 Daily Memory: System Configuration Snapshot | ~406 |  |
 | #717 | " | 🟣 | GitHub Repo Daily Briefing Cron Configured and Tested | ~296 |  |
 | #718 | " | 🔵 | NVIDIA Driver Errors (nvlddmkm) Detected on 2026-03-02 | ~293 |  |
 
@@ -145,6 +72,8 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #724 | 7:15 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~329 |  |
+
+**#S263** Daily GitHub Trending Repo Briefing Cron — Korean summary for Sam at 09:00 KST (Mar 4, 7:16 AM)
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
@@ -192,8 +121,6 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #733 | 9:00 AM | 🟣 | Daily GitHub Trending Repo Briefing Cron Job (KST 09:00) | ~449 |  |
-
-**#S263** Daily GitHub Trending Repo Briefing Cron — Korean summary for Sam at 09:00 KST (Mar 5, 9:00 AM)
 
 **.claude/skills/github.md**
 | ID | Time | T | Title | Read | Work |
@@ -258,52 +185,109 @@ When you need implementation details, rationale, or debugging context:
 **../../tmp/gh_recent.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#748** 9:01 AM 🔵 **GitHub API Search Returned Zero Results for Trending Repo Queries**
-
-During the March 7, 2026 09:00 KST daily briefing run, the GitHub API queries for both recent trending repos (created in the last 7 days, sorted by stars) and cumulative top-starred repos returned zero results. The API responses were structurally valid JSON (containing total_count, incomplete_results, and items keys), but the items arrays were empty. This may indicate an issue with query parameters (e.g., date range filters, authentication scope, or API rate limiting). Additionally, both `jq` and `python` (as command) were unavailable in the execution environment, requiring workarounds for JSON parsing.
-
-Read: ~329
+| #748 | 9:01 AM | 🔵 | GitHub API Search Returned Zero Results for Trending Repo Queries | ~329 |  |
 
 **../../tmp/gh_top.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#749** " 🔵 **GitHub Top-Starred Repos Retrieved Successfully via Fallback Query**
-
-After the initial GitHub API queries returned zero results, a fallback or adjusted query successfully retrieved the top 5 all-time starred GitHub repositories. The results reveal that openclaw/openclaw is the most-starred repo on GitHub with 270,888 stars, followed by a collection of AI-tooling repositories: a system-prompts reference collection, opencode (anomalyco), gemini-cli (Google), and DeepSeek-R1. This data is used to populate Section 2 of Sam's daily GitHub briefing (cumulative top stars, non-archived, recently active).
-
-Read: ~345
+| #749 | " | 🔵 | GitHub Top-Starred Repos Retrieved Successfully via Fallback Query | ~345 |  |
 
 **../../tmp/gh_recent.json**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #750 | 9:02 AM | 🔵 | GitHub Recently Trending Repos Retrieved for Daily Briefing (2026-03-07) | ~366 |  |
 
-**#750** 9:02 AM 🔵 **GitHub Recently Trending Repos Retrieved for Daily Briefing (2026-03-07)**
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #751 | " | 🔵 | Ultra-Recent GitHub Trending Repos (Last 7 Days) — March 2026 Snapshot | ~375 |  |
+| #752 | 9:03 AM | 🟣 | Final Merged GitHub Briefing Dataset Assembled (Recent + Cumulative, 10 Repos) | ~526 |  |
 
-The recent trending section of the daily briefing was populated with 5 repos created between January and February 2026, all gaining significant star counts quickly. Notably, the trending list is heavily concentrated in the Claude Code / OpenClaw ecosystem: affaan-m/everything-claude-code leads with 62,990 stars, VoltAgent/awesome-openclaw-skills has 29,614 stars, and zeroclaw-labs/zeroclaw has 23,954 stars — suggesting strong community momentum around these tools. One result with a null name was silently dropped. This data feeds Section 1 of Sam's daily Korean-language GitHub briefing.
+### Mar 8, 2026
 
-Read: ~366
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #763 | 6:00 AM | 🔵 | Daily Update Check Cron Job — OpenClaw & Skills | ~291 |  |
+| #764 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Active for Sam | ~281 |  |
+
+**#S265** Daily 7 AM morning briefing delivered to Sam for Saturday March 7, 2026 (Asia/Seoul) (Mar 8, 7:00 AM)
+
+**skills/weather.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #765 | 7:00 AM | 🔵 | Weather Skill Uses wttr.in and Open-Meteo via curl | ~334 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #766 | " | 🔵 | Background Process Running in tmux Session "nimble-rook" | ~168 |  |
+| #767 | 7:01 AM | 🔵 | Weather curl Fetch Fails with Exit Code 52 (Empty Response) | ~281 |  |
+| #768 | 7:02 AM | 🔵 | Weather Fallback Attempt Fails with Exit Code 92 | ~298 |  |
+| #769 | " | 🔵 | Python Not Available as "python" Command in WSL2 Environment | ~244 |  |
+| #770 | 7:03 AM | 🔵 | Seoul Weather Successfully Retrieved via python3 Fallback | ~264 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #771 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job for Sam (Korean) | ~316 |  |
+
+**MEMORY.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #782 | 11:00 PM | 🟣 | Periodic Memory Maintenance Cron Job Active | ~251 |  |
+
+**../../home/lfant/.openclaw/workspace/skills/simplemem-skill/SKILL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#783** " 🔵 **simplemem-skill SKILL.md Missing**
+
+During the periodic memory maintenance run, a read attempt for the simplemem-skill's SKILL.md failed with a file-not-found error. This suggests either the skill was not yet scaffolded, was deleted, or the path configuration points to an incorrect location. Future sessions should ensure the simplemem-skill directory and its SKILL.md are properly initialized under `/home/lfant/.openclaw/workspace/skills/simplemem-skill/`.
+
+Read: ~197
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#751** " 🔵 **Ultra-Recent GitHub Trending Repos (Last 7 Days) — March 2026 Snapshot**
+**#784** " 🔵 **Available Skills in workspace/skills Directory**
 
-A secondary or refined GitHub search query targeting repos created in the past 7 days (Feb 28 – Mar 3, 2026) returned 10 candidates. The top result, googleworkspace/cli, gained 14,165 stars in just days — suggesting a major official CLI tool release from Google Workspace. Two repos are directly OpenClaw-related: LeoYeAI/openclaw-master-skills (a skills/prompt library) and slowmist/openclaw-security-practice-guide (a security-focused guide for OpenClaw, from the well-known SlowMist security firm). These are highly relevant to the briefing's Section 4 requirement for ideas applicable to OpenClaw or Claude Code in automation/security/dev productivity.
+A directory listing of the skills folder reveals 8 installed skills: github, gog, ontology, proactive-agent, self-improving-agent, summarize, tavily-search, and weather. Notably, simplemem-skill is not present, which explains the earlier ENOENT error when trying to read its SKILL.md. The memory maintenance cron job likely uses one of these existing skills (possibly summarize or self-improving-agent) for its operations.
 
-Read: ~375
+Read: ~206
+
+**../../home/lfant/.openclaw/workspace/skills/proactive-agent/SKILL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#785** " 🔵 **Proactive Agent Skill v3.1.0 — Full Architecture Documented**
+
+The proactive-agent SKILL.md is the foundational operating document for the agent stack. It defines three pillars: Proactive (anticipate needs), Persistent (survive context loss), and Self-improving (get better over time). Key protocols include WAL (Write-Ahead Log) for capturing critical details before responding, Working Buffer for logging every exchange after 60% context usage, and Compaction Recovery for restoring state after context truncation. The v3.1.0 additions focus on the distinction between systemEvent crons (which merely prompt) vs isolated agentTurn crons (which autonomously execute), the "Verify Implementation Not Intent" principle to prevent reporting changes that only modified text but not mechanism, and a Tool Migration Checklist for safely deprecating tools. Security hardening covers skill vetting, rejecting external agent networks, and preventing context leakage in shared channels.
+
+Read: ~749
+
+**workspace/memory/**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#786** 11:01 PM 🔵 **Memory Directory Contains 8 Daily Log Files**
+
+The memory directory holds raw daily capture logs covering roughly 3 weeks of activity. The most recent file is from March 3rd, leaving a 5-day gap up to the current maintenance run on March 8th. The periodic memory maintenance cron will read these files to distill their contents into MEMORY.md.
+
+Read: ~217
+
+### Mar 9, 2026
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 
-**#752** 9:03 AM 🟣 **Final Merged GitHub Briefing Dataset Assembled (Recent + Cumulative, 10 Repos)**
+**#787** 6:08 AM 🔵 **Daily Update Check Cron Job for OpenClaw and Skills**
 
-The briefing pipeline successfully assembled a final 10-repo dataset by merging recent trending repos (created in the past 7 days) and all-time cumulative top-starred repos. Each entry is tagged R or C, and includes metadata (stars, created/updated dates) plus a human-readable description suitable for translation into Korean. The cumulative top 5 shifted from the earlier query results to classic community resources (build-your-own-x, awesome, freeCodeCamp, public-apis, free-programming-books), likely because the earlier query hit a different filter. Notable connections to OpenClaw/Claude Code: phuryn/pm-skills (agentic skill marketplace pattern), paperclipai/paperclip (zero-human orchestration), and googleworkspace/cli (AI agent skill integration). This dataset feeds directly into sections 1–4 of Sam's daily Korean briefing.
+A recurring cron job (daily-update-check) runs each morning to check for updates to OpenClaw and the skills system. It executes `openclaw update status` and `npx skills check` to determine if new versions or changes are available. When updates are detected, the workflow also verifies that the Telegram channel is synced before composing a summary notification for Sam with the relevant update details. The agent itself does not send the message — it flags it for external delivery to Sam. This pattern establishes a morning health-check and update-awareness routine for the development toolchain.
 
-Read: ~526
+Read: ~314
 
 
-Access 135k tokens of past research & decisions for just 18,784t. Use the claude-mem skill to access memories by ID.
+Access 140k tokens of past research & decisions for just 17,112t. Use the claude-mem skill to access memories by ID.
