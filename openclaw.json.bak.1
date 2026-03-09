@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.1",
-    "lastTouchedAt": "2026-03-02T22:23:39.782Z"
+    "lastTouchedVersion": "2026.3.8",
+    "lastTouchedAt": "2026-03-09T11:49:40.219Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-02T22:19:37.333Z",
@@ -94,8 +94,10 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-codex/gpt-5.3-codex",
-        "fallbacks": []
+        "primary": "openai-codex/gpt-5.4",
+        "fallbacks": [
+          "openai-codex/gpt-5.3-codex"
+        ]
       },
       "models": {
         "zai/glm-4.7": {
@@ -103,7 +105,8 @@
         },
         "zai/glm-4.7-flash": {},
         "zai/glm-4.7-flashx": {},
-        "openai-codex/gpt-5.3-codex": {}
+        "openai-codex/gpt-5.3-codex": {},
+        "openai-codex/gpt-5.4": {}
       },
       "workspace": "/home/lfant/.openclaw/workspace",
       "memorySearch": {
@@ -121,7 +124,13 @@
         "model": "openai-codex/gpt-5.3-codex",
         "thinking": "high"
       }
-    }
+    },
+    "list": [
+      {
+        "id": "main",
+        "model": "openai-codex/gpt-5.4"
+      }
+    ]
   },
   "tools": {
     "web": {

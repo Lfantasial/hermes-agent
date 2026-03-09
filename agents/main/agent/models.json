@@ -57,6 +57,11 @@
         }
       ],
       "apiKey": "ZAI_API_KEY"
+    },
+    "openai-codex": {
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "api": "openai-codex-responses",
+      "models": []
     }
   }
 }

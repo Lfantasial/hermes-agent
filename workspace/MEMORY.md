@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-09 6:08am GMT+9
+# [openclaw-main] recent context, 2026-03-10 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,280 +14,268 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (17,112 tokens to read)
-- Work investment: 140,182 tokens spent on research, building, and decisions
-- Your savings: 123,070 tokens (88% reduction from reuse)
-
-### Mar 2, 2026
-
-**#S220** GitHub Backup — automated backup cron job completed successfully (Mar 2, 10:20 AM)
-
-**#S221** Daily Update Check — 06:00 KST component version status report delivered (Mar 2, 10:20 AM)
-
-**#S222** Morning Briefing — 07:00 KST daily briefing with weather, system status, and action items delivered to Sam (Mar 2, 10:20 AM)
-
-**#S223** Notion Daily Briefing — 08:00 KST work task briefing with 16 items triaged and morning execution schedule delivered (Mar 2, 10:20 AM)
-
-**#S251** Pre-compaction memory flush to memory/2026-03-03.md + system environment diagnostics on WSL2 machine (Mar 2, 10:20 AM)
-
-### Mar 3, 2026
-
-**#S260** Daily cron update check for OpenClaw and skills, with Telegram sync verification and Sam notification if updates found (Mar 3, 8:45 AM)
-
-### Mar 4, 2026
-
-**../../home/lfant/.openclaw/workspace/memory/2026-03-03.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #716 | 7:01 AM | 🔵 | 2026-03-03 Daily Memory: System Configuration Snapshot | ~406 |  |
-| #717 | " | 🟣 | GitHub Repo Daily Briefing Cron Configured and Tested | ~296 |  |
-| #718 | " | 🔵 | NVIDIA Driver Errors (nvlddmkm) Detected on 2026-03-02 | ~293 |  |
-
-**agents/main/sessions/[context-index]**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #719 | " | 🔵 | OpenClaw Context Index — Semantic Memory System Architecture | ~402 |  |
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #720 | " | 🔵 | Full Hugin Cron Job Schedule — Five Recurring Automated Tasks | ~383 |  |
-| #721 | 7:12 AM | 🔵 | Daily GitHub Backup Cron Job Configured for openclaw Workspace | ~239 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #722 | " | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~305 |  |
-
-**agents/main/sessions/19e7d098-ea78-4700-96c3-d7ceb81121cc.jsonl**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #723 | 7:13 AM | ✅ | Daily GitHub Backup Completed Successfully — 51 Files Changed | ~382 |  |
-
-**#S261** Daily GitHub Backup Cron Job Execution — March 4, 2026 (Mar 4, 7:13 AM)
-
-**#S262** Daily Morning Briefing for Sam — Wednesday March 4, 2026, 7:00 AM KST (Seoul) (Mar 4, 7:13 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #724 | 7:15 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~329 |  |
-
-**#S263** Daily GitHub Trending Repo Briefing Cron — Korean summary for Sam at 09:00 KST (Mar 4, 7:16 AM)
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #725 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Telegram Summary Pipeline | ~354 |  |
-
-### Mar 5, 2026
-
-**scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #726 | 3:00 AM | 🔵 | Daily Security Audit Cron Job — False Positive Exclusion List | ~339 |  |
-
-**healthcheck (skill/prompt definition)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #727 | " | 🔵 | OpenClaw `healthcheck` Skill — Security Audit Workflow Definition | ~537 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #728 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Configured for Sam | ~318 |  |
-
-**~/.claude/skills/weather.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #729 | " | 🔵 | Weather Skill Uses wttr.in — No API Key Required | ~300 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/2026-03-05.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #730 | 7:01 AM | 🔵 | No Memory File Found for 2026-03-05 | ~211 |  |
-
-**scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #731 | " | 🔵 | March 5 Security Audit Ran at 3 AM KST — Known False Positives Excluded | ~360 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/context-index**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #732 | " | 🔵 | OpenClaw Context Index — 85% Token Savings via Semantic Memory Reuse | ~392 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #733 | 9:00 AM | 🟣 | Daily GitHub Trending Repo Briefing Cron Job (KST 09:00) | ~449 |  |
-
-**.claude/skills/github.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #734 | 9:01 AM | 🔵 | GitHub Skill Doc Loaded for gh CLI Usage | ~268 |  |
-
-### Mar 6, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #737 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~318 |  |
-
-**~/.claude/skills/weather.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #738 | " | 🔵 | Weather Skill Uses wttr.in — No API Key Required | ~326 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/2026-03-06.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #739 | " | 🔵 | No Daily Memory File Exists for 2026-03-06 | ~231 |  |
-
-**../../home/lfant/.openclaw/agents/main/sessions/[context-index]**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #740 | 7:01 AM | 🔵 | OpenClaw Context Index Loaded — Full System State as of March 6, 2026 | ~570 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #741 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job for Telegram Delivery | ~357 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #742 | 9:00 AM | 🔵 | GitHub Daily Briefing Cron Job — Korean Language, Delivered to Sam | ~425 |  |
-| #743 | 9:01 AM | 🔵 | GitHub Briefing Cron — Live API Data Successfully Retrieved (No jq) | ~472 |  |
-
-### Mar 7, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #744 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Configured for Sam (Seoul, 7 AM) | ~317 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #745 | 8:00 AM | 🟣 | Notion Daily Briefing Cron Job — Korean Summary for Telegram | ~300 |  |
-
-**.claude/skills/using-superpowers.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #746 | " | 🔵 | Skill Invocation Protocol — "using-superpowers" System Rule | ~420 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #747 | 9:00 AM | 🟣 | Daily GitHub Trending Repo Briefing Cron Job (09:00 KST) | ~461 |  |
-
-**../../tmp/gh_recent.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #748 | 9:01 AM | 🔵 | GitHub API Search Returned Zero Results for Trending Repo Queries | ~329 |  |
-
-**../../tmp/gh_top.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #749 | " | 🔵 | GitHub Top-Starred Repos Retrieved Successfully via Fallback Query | ~345 |  |
-
-**../../tmp/gh_recent.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #750 | 9:02 AM | 🔵 | GitHub Recently Trending Repos Retrieved for Daily Briefing (2026-03-07) | ~366 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #751 | " | 🔵 | Ultra-Recent GitHub Trending Repos (Last 7 Days) — March 2026 Snapshot | ~375 |  |
-| #752 | 9:03 AM | 🟣 | Final Merged GitHub Briefing Dataset Assembled (Recent + Cumulative, 10 Repos) | ~526 |  |
-
-### Mar 8, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #763 | 6:00 AM | 🔵 | Daily Update Check Cron Job — OpenClaw & Skills | ~291 |  |
-| #764 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job Active for Sam | ~281 |  |
-
-**#S265** Daily 7 AM morning briefing delivered to Sam for Saturday March 7, 2026 (Asia/Seoul) (Mar 8, 7:00 AM)
-
-**skills/weather.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #765 | 7:00 AM | 🔵 | Weather Skill Uses wttr.in and Open-Meteo via curl | ~334 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #766 | " | 🔵 | Background Process Running in tmux Session "nimble-rook" | ~168 |  |
-| #767 | 7:01 AM | 🔵 | Weather curl Fetch Fails with Exit Code 52 (Empty Response) | ~281 |  |
-| #768 | 7:02 AM | 🔵 | Weather Fallback Attempt Fails with Exit Code 92 | ~298 |  |
-| #769 | " | 🔵 | Python Not Available as "python" Command in WSL2 Environment | ~244 |  |
-| #770 | 7:03 AM | 🔵 | Seoul Weather Successfully Retrieved via python3 Fallback | ~264 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #771 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job for Sam (Korean) | ~316 |  |
-
-**MEMORY.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #782 | 11:00 PM | 🟣 | Periodic Memory Maintenance Cron Job Active | ~251 |  |
-
-**../../home/lfant/.openclaw/workspace/skills/simplemem-skill/SKILL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#783** " 🔵 **simplemem-skill SKILL.md Missing**
-
-During the periodic memory maintenance run, a read attempt for the simplemem-skill's SKILL.md failed with a file-not-found error. This suggests either the skill was not yet scaffolded, was deleted, or the path configuration points to an incorrect location. Future sessions should ensure the simplemem-skill directory and its SKILL.md are properly initialized under `/home/lfant/.openclaw/workspace/skills/simplemem-skill/`.
-
-Read: ~197
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#784** " 🔵 **Available Skills in workspace/skills Directory**
-
-A directory listing of the skills folder reveals 8 installed skills: github, gog, ontology, proactive-agent, self-improving-agent, summarize, tavily-search, and weather. Notably, simplemem-skill is not present, which explains the earlier ENOENT error when trying to read its SKILL.md. The memory maintenance cron job likely uses one of these existing skills (possibly summarize or self-improving-agent) for its operations.
-
-Read: ~206
-
-**../../home/lfant/.openclaw/workspace/skills/proactive-agent/SKILL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#785** " 🔵 **Proactive Agent Skill v3.1.0 — Full Architecture Documented**
-
-The proactive-agent SKILL.md is the foundational operating document for the agent stack. It defines three pillars: Proactive (anticipate needs), Persistent (survive context loss), and Self-improving (get better over time). Key protocols include WAL (Write-Ahead Log) for capturing critical details before responding, Working Buffer for logging every exchange after 60% context usage, and Compaction Recovery for restoring state after context truncation. The v3.1.0 additions focus on the distinction between systemEvent crons (which merely prompt) vs isolated agentTurn crons (which autonomously execute), the "Verify Implementation Not Intent" principle to prevent reporting changes that only modified text but not mechanism, and a Tool Migration Checklist for safely deprecating tools. Security hardening covers skill vetting, rejecting external agent networks, and preventing context leakage in shared channels.
-
-Read: ~749
-
-**workspace/memory/**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#786** 11:01 PM 🔵 **Memory Directory Contains 8 Daily Log Files**
-
-The memory directory holds raw daily capture logs covering roughly 3 weeks of activity. The most recent file is from March 3rd, leaving a 5-day gap up to the current maintenance run on March 8th. The periodic memory maintenance cron will read these files to distill their contents into MEMORY.md.
-
-Read: ~217
+- Loading: 50 observations (16,966 tokens to read)
+- Work investment: 203,817 tokens spent on research, building, and decisions
+- Your savings: 186,851 tokens (92% reduction from reuse)
 
 ### Mar 9, 2026
 
+**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #836 | 10:21 PM | 🔵 | HEARTBEAT.md Is a Stub — Proactive Heartbeat System Not Configured | ~331 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #837 | " | 🔵 | heartbeat-state.json Does Not Exist — No Active Heartbeat Loop | ~264 |  |
+
+**../../home/lfant/.openclaw/workspace/AGENTS.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #838 | " | 🔵 | Full Architecture Audit: Same SESSION-STATE.md Gap Existed Since Feb 23 | ~690 |  |
+
+**../../home/lfant/.openclaw/workspace/SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #839 | " | 🔵 | Definitive File Existence Check: 3-Tier Architecture Status Confirmed | ~364 |  |
+
+**../../home/lfant/.openclaw/workspace/.openclaw/workspace-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #840 | 10:22 PM | 🔵 | workspace-state.json Found in .openclaw/ — Potential Cron/Config State | ~278 |  |
+| #841 | " | 🔵 | workspace-state.json Confirms Onboarding Completed Feb 16 — No Cron State | ~303 |  |
+
+**../../home/lfant/.openclaw/cron/jobs.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #842 | " | 🔵 | Cron Jobs ARE Active: Proactive-Agent Layer IS Operational via ~/.openclaw/cron/jobs.json | ~629 |  |
+
+**#S281** 3-Layer Memory Architecture — Current Implementation Status Audit ("Is it already configured?") (Mar 9, 10:37 PM)
+
+**#S282** Workspace Heartbeat Cron Diagnosis and Manual Re-trigger (Mar 9, 10:37 PM)
+
+**SKILL.md (proactive-agent v3.1.0)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #843 | 10:37 PM | 🔵 | proactive-agent v3.1.0 Full Specification Read | ~619 |  |
+
+**HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #844 | 10:38 PM | 🔵 | HEARTBEAT.md Confirmed Empty/Stub State | ~212 |  |
+
+**SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #845 | " | 🔵 | SESSION-STATE.md Confirmed Missing | ~240 |  |
+
+**memory/working-buffer.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #846 | " | 🔵 | memory/working-buffer.md Confirmed Missing | ~245 |  |
+
+**../../home/lfant/.openclaw/crons.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #847 | " | 🔵 | Live Cron Job Configuration — 7 Autonomous Jobs Discovered | ~600 |  |
+
+**HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #848 | 10:39 PM | 🟣 | HEARTBEAT.md Populated — Heartbeat System Activated | ~289 |  |
+
+**SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #849 | " | 🟣 | SESSION-STATE.md Created — WAL Protocol Now Has a Target | ~271 |  |
+
+**memory/working-buffer.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #850 | " | 🟣 | memory/working-buffer.md Created — Danger Zone Capture Now Active | ~334 |  |
+
+**memory/heartbeat-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #851 | " | 🟣 | memory/heartbeat-state.json Created — Heartbeat State Tracking Initialized | ~291 |  |
+
+**memory/2026-03-09.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #852 | " | ⚖️ | claude-mem Confirmed as Primary Memory Layer — simplemem-skill Deprecated | ~280 |  |
+| #853 | 10:40 PM | ✅ | Daily Memory Note Updated — 2026-03-09.md Amended | ~218 |  |
+
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #854 | " | 🟣 | workspace-heartbeat Cron Job Created — L3 Heartbeat Loop Now Live | ~418 |  |
+| #855 | " | 🔵 | workspace-heartbeat Manually Triggered — Doctor Warning on Telegram Group Policy | ~342 |  |
 
-**#787** 6:08 AM 🔵 **Daily Update Check Cron Job for OpenClaw and Skills**
+**SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #856 | " | 🔵 | SESSION-STATE.md Content — Active Working Memory Baseline Established | ~358 |  |
 
-A recurring cron job (daily-update-check) runs each morning to check for updates to OpenClaw and the skills system. It executes `openclaw update status` and `npx skills check` to determine if new versions or changes are available. When updates are detected, the workflow also verifies that the Telegram channel is synced before composing a summary notification for Sam with the relevant update details. The agent itself does not send the message — it flags it for external delivery to Sam. This pattern establishes a morning health-check and update-awareness routine for the development toolchain.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #857 | 10:41 PM | 🔵 | Gateway Logs Confirm workspace-heartbeat Successfully Registered and Enqueued | ~306 |  |
+| #858 | " | 🔵 | claude-mem Hooks Into Every Tool Type — Continuous MEMORY.md Sync Pattern | ~338 |  |
 
-Read: ~314
+**HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #859 | 10:42 PM | ✅ | HEARTBEAT.md Edited — Content Refined | ~222 |  |
+| #860 | " | 🔴 | workspace-heartbeat First Run Timed Out — Prompt Simplified to Fix | ~356 |  |
+| #861 | " | 🔴 | HEARTBEAT.md Rewritten With Reduced Scope — 1754→1503 bytes | ~277 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #862 | " | 🔴 | workspace-heartbeat Timeout Further Reduced — thinking:minimal, 90s timeout | ~318 |  |
+| #863 | 10:44 PM | 🔴 | workspace-heartbeat Second Run Also Timed Out — consecutiveErrors Now 2 | ~357 |  |
+| #864 | 10:45 PM | 🔴 | workspace-heartbeat Switched to GLM Model, thinking:off, 60s Timeout | ~282 |  |
+
+**#S283** Cron job status review and recovery — github-repo-daily-briefing error + workspace-heartbeat validation (Mar 9, 10:46 PM)
+
+**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #865 | 10:47 PM | 🔵 | Workspace Heartbeat Cron Job in Error State | ~393 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #866 | " | ✅ | Workspace Heartbeat Cron Manually Re-triggered | ~201 |  |
+
+**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #867 | 10:49 PM | ✅ | Workspace Heartbeat Manual Run Completed Successfully | ~196 |  |
+
+**../../home/lfant/.openclaw/workspace/heartbeat-status.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #868 | " | 🔵 | Heartbeat Status File Shows No Updates Despite "Done" Completion | ~297 |  |
+
+**../../home/lfant/.openclaw/workspace/cron-registry.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #869 | " | 🔵 | Full OpenClaw Cron Job Registry Mapped | ~567 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #870 | " | ✅ | Workspace Heartbeat Cron Reconfigured to Fix Timeout | ~388 |  |
+| #871 | " | ✅ | Heartbeat Cron Re-triggered After Config Fix | ~157 |  |
+| #872 | 10:50 PM | 🔵 | Heartbeat Run #5 Now Actively Executing | ~209 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #873 | " | 🔴 | Heartbeat Now Successfully Writing State File | ~261 |  |
+
+**../../home/lfant/.openclaw/workspace/SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #874 | " | ✅ | SESSION-STATE.md Updated During Heartbeat Run | ~188 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/2026-03-09.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #875 | " | ✅ | Heartbeat Writing Daily Memory File for 2026-03-09 | ~161 |  |
+
+**proactive-agent skill spec (remote/MCP resource)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #876 | 10:51 PM | 🔵 | Proactive Agent v3.1.0 — Full Spec Read | ~717 |  |
+
+**HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #877 | " | 🔵 | HEARTBEAT.md — Sam's Isolated Heartbeat Routine | ~470 |  |
+
+**SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #878 | " | 🔵 | SESSION-STATE.md — Current Workspace Focus for Sam | ~380 |  |
+
+**#S284** Cron failure root cause analysis — narrowing down workspace-heartbeat timeout to scheduler/completion handling issue (Mar 9, 11:07 PM)
+
+**#S285** Cron job recovery - github-repo-daily-briefing error and workspace-heartbeat verification (Mar 9, 11:07 PM)
+
+**proactive-agent/README.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #879 | 11:07 PM | 🔵 | Proactive Agent v3.1.0 — Full Skill Documentation Read | ~569 |  |
+
+**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #880 | 11:08 PM | ✅ | heartbeat-state.json Updated | ~139 |  |
+
+**#S286** System health check — reviewing cron job and heartbeat status (Mar 9, 11:39 PM)
+
+**HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#881** 11:39 PM 🔵 **HEARTBEAT.md — Workspace Heartbeat Cron Definition**
+
+The HEARTBEAT.md file governs the workspace-heartbeat cron job behavior. It is intentionally constrained: the job only reads four specific files, checks a narrow set of conditions (cron errors and session blockers), and writes minimally — only to heartbeat-state.json unless a meaningful finding warrants appending to the daily memory file. The job always terminates with NO_REPLY to prevent any proactive messaging. This design keeps the heartbeat fast, auditable, and side-effect-free.
+
+Read: ~376
+
+**SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#882** " 🔵 **SESSION-STATE.md — Active Session Context as of 2026-03-09**
+
+SESSION-STATE.md captures the current working context. The session is in a cron stabilization phase with two concrete open tasks. The architectural decisions establish a clear separation between claude-mem (semantic/recall layer) and file memory (auditable policy source of truth). The heartbeat failure hypothesis points to scheduler or execution-path issues rather than prompt/model issues, which guides the diagnostic approach for recovery.
+
+Read: ~347
+
+**memory/heartbeat-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#883** " 🔵 **heartbeat-state.json — Current Cron Error State**
+
+The heartbeat state file confirms both cron problems are actively tracked. The github-repo-daily-briefing has accumulated 2 consecutive errors, while workspace-heartbeat remains unverified healthy after its trigger mode migration. Both are classified medium severity. This file serves as the machine-readable complement to SESSION-STATE.md for cron health tracking.
+
+Read: ~240
+
+**memory/2026-03-09.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#884** 11:40 PM 🔵 **Daily Memory 2026-03-09 — Chronological Session History**
+
+Today's daily memory file provides the full chronological context for the current session. The proactive heartbeat system was built from scratch today, including all scaffolding files. The agentTurn timeout issue drove the switch to main+systemEvent mode for the heartbeat cron. Despite this change, neither cron job has been confirmed healthy by end of day. The working hypothesis — that failures are scheduler/execution-path rather than model-related — shapes the diagnostic approach going forward.
+
+Read: ~354
+
+### Mar 10, 2026
+
+**#S287** System status check — cron job health and workspace state review (Mar 10, 12:44 AM)
+
+**#S288** Media prompt session - heartbeat/status check (Mar 10, 1:17 AM)
+
+**#S289** Memory agent heartbeat check — session alive signal confirmed (Mar 10, 1:49 AM)
+
+**#S290** Media prompt / Heartbeat check (Mar 10, 2:55 AM)
+
+**scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#885** 3:00 AM 🔵 **Daily Security Audit Cron Job with False Positive Exclusions**
+
+A recurring daily security audit is configured via cron (ID: 78f50a18-690a-4667-a12c-99a01398515c) to run `openclaw security audit --deep` each day at 3:00 AM Asia/Seoul time. The audit covers the full project but has established known false positives across three packages: tavily-search (2 files), claude-mem (5 files), and writing-skills (1 file). These exclusions represent script files that trigger security warnings but are not actual vulnerabilities. Results are delivered automatically as plain text with no external recipient.
+
+Read: ~324
 
 
-Access 140k tokens of past research & decisions for just 17,112t. Use the claude-mem skill to access memories by ID.
+Access 204k tokens of past research & decisions for just 16,966t. Use the claude-mem skill to access memories by ID.

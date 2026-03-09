@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "lastRunAt": "2026-03-10T03:28:02+09:00",
+  "lastChecks": {
+    "sessionState": "2026-03-10T03:28:02+09:00",
+    "dailyMemory": "2026-03-10T03:28:02+09:00",
+    "cron": "2026-03-10T03:28:02+09:00"
+  },
+  "findings": [
+    {
+      "severity": "medium",
+      "type": "cron-error",
+      "job": "github-repo-daily-briefing",
+      "message": "lastStatus=error, consecutiveErrors=2"
+    }
+  ],
+  "notes": "file memory is the auditable source of truth; claude-mem remains semantic recall"
+}
