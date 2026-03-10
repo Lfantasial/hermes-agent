@@ -1,16 +1,17 @@
 # SESSION-STATE.md
 
-**Updated:** 2026-03-09T23:39:47+09:00
+**Updated:** 2026-03-10T18:10:00+09:00
 **Status:** active
 
 ## Current focus
 - Memory baseline: `claude-mem` for semantic recall, file memory as auditable source of truth, proactive heartbeat for low-noise continuity.
-- Current task: diagnose and fix `github-repo-daily-briefing` cron error state.
+- Current task: keep local session-state aligned with current cron health and active priorities.
 
 ## Active tasks
 - [x] Validate heartbeat state-file update path (manual verification completed)
-- [x] Confirm `workspace-heartbeat` completes successfully in main/systemEvent mode
-- [ ] Diagnose and recover `github-repo-daily-briefing` cron failures
+- [x] Confirm `github-repo-daily-briefing` cron failures are recovered
+- [x] Confirm `workspace-heartbeat` timeout condition is cleared
+- [x] Refresh stale follow-up items in local state files when cron health changes
 
 ## Decisions
 - `claude-mem` remains the primary semantic memory layer
@@ -19,10 +20,8 @@
 
 ## Risks / watch items
 - The proactive loop was previously only partially implemented
-- Heartbeat cron failure appears more likely to be scheduler/execution-path related than model-related
 - Avoid storing secrets, tokens, cookies, or raw PII in any memory layer
 - Prevent drift between semantic memory and file memory by treating file memory as policy/audit SoT
 
 ## Next actions
-- Recover `github-repo-daily-briefing` by isolating prompt/runtime vs cron path issues
-- Keep heartbeat quiet-by-default while tracking cron failures in local state files
+- Keep heartbeat quiet-by-default while tracking cron failures or state drift in local files
