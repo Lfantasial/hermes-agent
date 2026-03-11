@@ -1,11 +1,14 @@
 {
   "version": 1,
-  "lastRunAt": "2026-03-11T03:50:00+09:00",
+  "lastRunAt": "2026-03-12T01:51:00+09:00",
   "lastChecks": {
-    "sessionState": "2026-03-11T03:50:00+09:00",
-    "dailyMemory": "2026-03-11T03:50:00+09:00",
-    "cron": "2026-03-11T03:50:00+09:00"
+    "sessionState": "2026-03-12T01:51:00+09:00",
+    "dailyMemory": "2026-03-12T01:51:00+09:00",
+    "cron": "2026-03-12T01:51:00+09:00"
   },
-  "findings": [],
+  "findings": [
+    "Cron failure persists: github-repo-daily-briefing lastStatus=error and consecutiveErrors=1 since the 09:00 KST run.",
+    "Session-state follow-up remains open: reconfirm github-repo-daily-briefing cron health after the 2026-03-11 09:00 KST failure."
+  ],
   "notes": "file memory is the auditable source of truth; claude-mem remains semantic recall"
 }

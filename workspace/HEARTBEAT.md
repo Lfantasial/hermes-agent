@@ -3,14 +3,35 @@
 ## Sam heartbeat routine
 
 Use this file only for **isolated agentTurn** heartbeat jobs.
+This file is not the general chat heartbeat rule. It is only for isolated cron/agentTurn heartbeat jobs, so the terminal response is `NO_REPLY`, not `HEARTBEAT_OK`.
 This job must stay **small, deterministic, and quiet**.
 
 ### Scope
 Only read these files unless one is missing and must be created:
 - `SESSION-STATE.md`
+- `memory/working-buffer.md`
 - `memory/heartbeat-state.json`
 - today's `memory/YYYY-MM-DD.md`
 - `~/.openclaw/cron/jobs.json`
+
+### Meaningful finding
+Treat a finding as meaningful only when one of these is true:
+- a cron job newly entered a non-ok state
+- a cron job remains in a non-ok state
+- a cron job has `consecutiveErrors > 0`
+- `SESSION-STATE.md` contains an explicit blocker, risk, or open follow-up
+- the current heartbeat status materially differs from the last recorded state
+
+If none of the above changed, update `memory/heartbeat-state.json` only.
+
+### State file format
+Use ISO8601 timestamps.
+Store `findings` as an array of short strings.
+Keep entries concise, operational, and stable across repeated runs.
+
+### Duplicate control
+Do not append the same finding to today's daily memory more than once unless the state materially changed.
+If a cron error persists with no status change, keep the finding in `memory/heartbeat-state.json` but avoid repeating the same daily-memory bullet.
 
 ### Do on each heartbeat
 1. Ensure these files exist:
@@ -29,8 +50,8 @@ Only read these files unless one is missing and must be created:
    - `lastChecks.cron`
    - `findings`
 4. If there is a meaningful finding:
-   - append a short bullet to today's daily memory file
-   - update `SESSION-STATE.md` only if priorities actually changed
+   - append one short operational bullet to today's daily memory file only if it is new or materially changed
+   - update `SESSION-STATE.md` only if priorities, blockers, or active follow-ups actually changed
    - keep the finding concise and operational
 5. If nothing meaningful changed:
    - update `memory/heartbeat-state.json` only

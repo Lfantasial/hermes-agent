@@ -1,17 +1,31 @@
 # TOOLS.md - Local Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+Skills define _how_ tools work. This file is for _your_ local specifics — the non-sensitive details that are unique to your setup.
 
 ## What Goes Here
 
-Things like:
+Store only non-sensitive local notes such as:
 
 - Camera names and locations
-- SSH hosts and aliases
+- SSH host aliases and friendly names
 - Preferred voices for TTS
-- Speaker/room names
+- Speaker or room names
 - Device nicknames
-- Anything environment-specific
+- Environment-specific hints that do not contain credentials
+
+## Never Store Here
+
+Do **not** store secrets or raw credentials in this file, including:
+
+- Access tokens
+- Passwords or passphrases
+- API keys
+- Session cookies
+- Private keys
+- Recovery codes
+- Raw credential files or copied secrets
+
+Use environment variables, a password manager, or a dedicated secret store for sensitive values.
 
 ## Examples
 
@@ -23,17 +37,19 @@ Things like:
 
 ### SSH
 
-- home-server → 192.168.1.100, user: admin
+- home-server → Home lab jump host
 
 ### Notion
 
-- Integration Token: `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`
+- Workspace: Personal Ops
+- Integration alias: notion-main
+- Secret location: stored outside this file (env / password manager / vault)
 ```
 
 ## Why Separate?
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking local operational context.
 
 ---
 
-Add whatever helps you do your job. This is your cheat sheet.
+Keep this file as a non-sensitive local reference only.
