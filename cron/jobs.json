@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1773165627138,
+      "updatedAtMs": 1773338424167,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,15 +26,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773252000000,
-        "lastRunAtMs": 1773165603326,
+        "nextRunAtMs": 1773424800000,
+        "lastRunAtMs": 1773338403592,
         "lastStatus": "ok",
-        "lastDurationMs": 23812,
+        "lastDurationMs": 20575,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1773265017915
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -44,7 +43,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1773176435291,
+      "updatedAtMs": 1773265108993,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -62,15 +61,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773262800000,
-        "lastRunAtMs": 1773176405313,
+        "nextRunAtMs": 1773349200000,
+        "lastRunAtMs": 1773265069233,
         "lastStatus": "ok",
-        "lastDurationMs": 29978,
+        "lastDurationMs": 39760,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1773265017915
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -113,7 +111,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1773180103633,
+      "updatedAtMs": 1773266448700,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -131,10 +129,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773266400000,
-        "lastRunAtMs": 1773180005373,
+        "nextRunAtMs": 1773352800000,
+        "lastRunAtMs": 1773266402511,
         "lastStatus": "ok",
-        "lastDurationMs": 98260,
+        "lastDurationMs": 46189,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -148,7 +146,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1773169215614,
+      "updatedAtMs": 1773265069233,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -166,15 +164,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773255600000,
-        "lastRunAtMs": 1773169202984,
+        "nextRunAtMs": 1773342000000,
+        "lastRunAtMs": 1773265041334,
         "lastStatus": "ok",
-        "lastDurationMs": 12630,
+        "lastDurationMs": 27899,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1773265017915
+        "runningAtMs": 1773342003427
       }
     },
     {
@@ -183,7 +181,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1773183649009,
+      "updatedAtMs": 1773270042856,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -202,11 +200,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773270000000,
-        "lastRunAtMs": 1773183607203,
+        "nextRunAtMs": 1773356400000,
+        "lastRunAtMs": 1773270000002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 41806,
+        "lastDurationMs": 42854,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -217,7 +215,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1773187208243,
+      "updatedAtMs": 1773277204579,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -236,15 +234,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773273600000,
-        "lastRunAtMs": 1773187200007,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 8236,
+        "nextRunAtMs": 1773360000000,
+        "lastRunAtMs": 1773277026807,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 177772,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "Codex error: {\"type\":\"error\",\"error\":{\"type\":\"server_error\",\"code\":\"server_error\",\"message\":\"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID af049202-4fec-4cc2-86fc-ae56e6f95be3 in your message.\",\"param\":null},\"sequence_number\":2}"
+        "consecutiveErrors": 0
       }
     },
     {
@@ -253,7 +250,7 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1773230425432,
+      "updatedAtMs": 1773316824953,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -266,11 +263,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1773273600000,
-        "lastRunAtMs": 1773230403582,
+        "nextRunAtMs": 1773360000000,
+        "lastRunAtMs": 1773316800004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 21850,
+        "lastDurationMs": 24949,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }

@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-12 6:37am GMT+9
+# [openclaw-main] recent context, 2026-03-13 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,21 +14,11 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (17,037 tokens to read)
-- Work investment: 120,204 tokens spent on research, building, and decisions
-- Your savings: 103,167 tokens (86% reduction from reuse)
+- Loading: 50 observations (17,142 tokens to read)
+- Work investment: 126,146 tokens spent on research, building, and decisions
+- Your savings: 109,004 tokens (86% reduction from reuse)
 
 ### Mar 10, 2026
-
-**SESSION-STATE.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #931 | 6:02 PM | 🔵 | Session Focus: Diagnosing workspace-heartbeat Cron Timeout | ~290 |  |
-
-**memory/2026-03-10.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #932 | " | 🔵 | Daily Cron Health Timeline for 2026-03-10 | ~260 |  |
 
 **~/.openclaw/cron/jobs.json**
 | ID | Time | T | Title | Read | Work |
@@ -191,8 +181,6 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #981 | " | 🔵 | `backup_to_github.sh` Uses `git add .` With No `.gitignore` — All Files Staged Indiscriminately | ~379 |  |
 
-**#S324** GWS Gmail 기능 전체 동작 테스트 — 조회, 검색, 안 읽은 메일, 초안 생성 권한 확인 (Mar 11, 11:02 PM)
-
 **#S332** SOUL.md 운영 원칙 보강 및 GWS 사용 가능 여부 확인 (Mar 11, 11:02 PM)
 
 **../../home/lfant/.openclaw/workspace/IDENTITY.md**
@@ -236,26 +224,12 @@ When you need implementation details, rationale, or debugging context:
 **.openclaw/workspace/TOOLS.md (MCP 리소스로 로드된 using-superpowers 스킬)**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1028** " 🔵 **using-superpowers 스킬: 모든 대화 시작 시 스킬 강제 호출 규칙 정의**
-
-세션에서 "using-superpowers"라는 메타 스킬 파일을 읽었다. 이 스킬은 Claude Code가 모든 사용자 메시지를 받을 때 스킬 호출을 최우선으로 수행하도록 강제하는 규칙 체계다. 핵심은 "1% 가능성 규칙" — 스킬이 적용될 가능성이 조금이라도 있으면 즉시 Skill 도구를 호출해야 한다는 것이다. 이 파일은 또한 Claude가 스킬 호출을 회피하려 할 때 나타나는 12가지 합리화 패턴("This is just a simple question", "I need more context first" 등)을 Red Flags로 명시하여 규칙 우회를 방지한다. 스킬 흐름은 DOT 그래프로 시각화되어 있으며, EnterPlanMode 진입 전에도 brainstorming 스킬 호출을 선행하도록 명시한다. 이 스킬은 현재 TOOLS.md 리뷰 작업의 컨텍스트에서 로드되었다.
-
-Read: ~238
+| #1028 | " | 🔵 | using-superpowers 스킬: 모든 대화 시작 시 스킬 강제 호출 규칙 정의 | ~238 |  |
 
 **../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1029** 11:54 PM 🔵 **HEARTBEAT.md Korean Code Review (서브에이전트 분석)**
-
-2026-03-11 GMT+9 23:53에 서브에이전트가 /home/lfant/.openclaw/workspace/HEARTBEAT.md를 단독 검토하도록 요청받았다. 리뷰는 파일을 수정하지 않고 읽기 전용으로 수행되었으며, AGENTS.md와의 정합성을 포함한 운영 품질 관점에서 한국어로 평가되었다. 결론은 KEEP / TUNE / DROP 중 하나로 제시되도록 설계된 구조화된 리뷰 형식이다. 이 작업은 .openclaw 워크스페이스 내 에이전트 운영 파일(HEARTBEAT.md)의 지속적 품질 관리 프로세스의 일환으로 보인다.
-
-Read: ~179
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
+| #1029 | 11:54 PM | 🔵 | HEARTBEAT.md Korean Code Review (서브에이전트 분석) | ~179 |  |
 
 **#1030** " 🔵 **HEARTBEAT.md 전체 내용 확인 — Sam 하트비트 루틴 정의**
 
@@ -297,15 +271,39 @@ Read: ~304
 
 **#S340** 뒤늦게 표시된 MEMORY.md edit 실패 알림 원인 설명 (Mar 12, 12:14 AM)
 
-**#S341** Heartbeat check — read HEARTBEAT.md and report status (Mar 12, 6:36 AM)
+**#S341** Heartbeat check — read HEARTBEAT.md and report status (Mar 12, 12:15 AM)
 
-**Investigated**: HEARTBEAT.md at /home/lfant/.openclaw/workspace/HEARTBEAT.md was checked for pending tasks or instructions requiring attention.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
 
-**Learned**: The heartbeat protocol uses a specific file path (/home/lfant/.openclaw/workspace/HEARTBEAT.md) and must not fall back to alternative paths like docs/heartbeat.md. When nothing needs attention, the session replies HEARTBEAT_OK with no further action.
+**#1033** 7:00 AM 🔵 **Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM)**
 
-**Completed**: Heartbeat check completed. No tasks required action; session returned NO_REPLY (equivalent to HEARTBEAT_OK).
+A scheduled cron job (ID: eb4407c8-7e9a-4d66-b956-2695d5aee260) named "daily-morning-briefing" fires each morning at 7 AM Seoul time. When triggered, it instructs the primary Claude session to compile a morning briefing for a user named Sam. The briefing has three components: (1) current Seoul weather fetched using the weather skill, (2) a brief system status overview, and (3) any urgent notifications or tasks surfaced from memory. The agent returns plain text output for automated delivery rather than directly messaging external recipients. This pattern reflects a personal productivity automation tied to Seoul timezone.
 
-**Next Steps**: No active work in progress. Session is idle, awaiting next user request.
+Read: ~317
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1034** 8:00 AM 🔵 **Notion Daily Briefing Cron Job for Telegram Delivery**
+
+A recurring cron job (ID: de62862d-0431-460a-93d4-a21c9c54aa7c) is configured to run every morning at 8:00 AM Asia/Seoul time. It executes the Python script at /home/lfant/.openclaw/workspace/notion_daily_brief.py, which pulls data from Notion and produces a concise daily briefing in Korean for a user named Sam. The briefing is constrained to a maximum of 25 items (sorted top priority first), includes category counts and immediate actions, and is kept under 3500 characters to fit Telegram message limits. The output is plain text intended for automated Telegram delivery — the task does not send the message itself but returns the formatted summary for the delivery pipeline to handle.
+
+Read: ~338
+
+### Mar 13, 2026
+
+**#S353** Scheduled heartbeat reminder — HEARTBEAT.md check at 9:00 PM KST (2026-03-12) (Mar 13, 3:46 AM)
+
+**Investigated**: HEARTBEAT.md at /home/lfant/.openclaw/workspace/HEARTBEAT.md was checked for any pending tasks or instructions requiring attention.
+
+**Learned**: No active tasks or pending work items were found in HEARTBEAT.md at the time of the check.
+
+**Completed**: Heartbeat check completed. Response: HEARTBEAT_OK — no action required.
+
+**Next Steps**: Session is idle; awaiting next scheduled heartbeat or user-initiated task.
 
 
-Access 120k tokens of past research & decisions for just 17,037t. Use the claude-mem skill to access memories by ID.
+Access 126k tokens of past research & decisions for just 17,142t. Use the claude-mem skill to access memories by ID.
