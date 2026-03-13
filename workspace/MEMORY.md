@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-13 4:00am GMT+9
+# [openclaw-main] recent context, 2026-03-14 4:13am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,120 +14,15 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (17,142 tokens to read)
-- Work investment: 126,146 tokens spent on research, building, and decisions
-- Your savings: 109,004 tokens (86% reduction from reuse)
-
-### Mar 10, 2026
-
-**~/.openclaw/cron/jobs.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #933 | 6:03 PM | 🔵 | Full Cron Job Inventory for openclaw Workspace | ~492 |  |
-
-**HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #934 | 6:10 PM | 🔵 | Heartbeat Routine Specification (HEARTBEAT.md) | ~435 |  |
-
-**SESSION-STATE.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #935 | 6:11 PM | 🔵 | SESSION-STATE.md — Active Session Context (2026-03-10) | ~391 |  |
-
-**memory/heartbeat-state.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #936 | " | 🔵 | heartbeat-state.json — workspace-heartbeat Cron Timeout Active | ~247 |  |
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #937 | 8:14 PM | 🔵 | HEARTBEAT.md Defines Sam's Heartbeat Routine | ~405 |  |
-
-**https://api.github.com/repos/careerhackeralex/visualize**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #939 | 8:54 PM | 🔵 | careerhackeralex/visualize GitHub Repository Metadata | ~271 |  |
-
-**https://api.github.com/repos/careerhackeralex/visualize/contents/**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #940 | " | 🔵 | careerhackeralex/visualize Repository File Structure | ~234 |  |
-
-**README.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #941 | " | 🔵 | careerhackeralex/visualize: Full README Analysis | ~595 |  |
-
-**.claude-plugin/plugin.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #942 | " | 🔵 | careerhackeralex/visualize Plugin Manifest (plugin.json) | ~153 |  |
-
-**skills/visualize/SKILL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #943 | 8:55 PM | 🔵 | careerhackeralex/visualize SKILL.md — Full Technical Specification | ~707 |  |
+- Loading: 50 observations (17,630 tokens to read)
+- Work investment: 142,663 tokens spent on research, building, and decisions
+- Your savings: 125,033 tokens (88% reduction from reuse)
 
 ### Mar 11, 2026
 
-**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #944 | 1:08 AM | ✅ | Heartbeat State Written to Workspace | ~142 |  |
-
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #945 | 3:00 AM | 🔵 | Daily Security Audit Cron Job Configuration | ~283 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #946 | 3:17 AM | 🔵 | Heartbeat State Persisted to JSON File | ~185 |  |
-
-**HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #947 | 4:23 AM | 🔵 | Heartbeat Routine Definition in HEARTBEAT.md | ~459 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #948 | 6:00 AM | 🔵 | Daily OpenClaw & Skills Update Check Cron Job | ~305 |  |
-| #949 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~264 |  |
-| #950 | 7:01 AM | 🔵 | Primary Session Runtime: OpenClaw 2026.3.8 on GPT-5.4 | ~246 |  |
-
-**daily-notes/2026-03-11.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #951 | " | 🔵 | Daily Notes File Active for 2026-03-11 | ~216 |  |
-
-**daily-notes/2026-03-10.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #952 | " | 🔵 | Cron Health History: 2026-03-10 Incidents and Recoveries | ~298 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #953 | " | 🔵 | wttr.in Weather Fetch Timed Out (curl exit code 28) | ~181 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #954 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job — Korean Summary for Telegram | ~347 |  |
-
-**gog (MCP resource / prompt)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #967 | 10:21 PM | 🔵 | gog CLI Tool — Google Workspace Command-Line Interface | ~365 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #968 | " | 🔵 | gog CLI Keyring Auth Fails Without TTY | ~205 |  |
 | #970 | 10:28 PM | 🔵 | OpenClaw Telegram Group Policy Misconfiguration | ~307 |  |
 | #971 | " | 🔵 | GWS CLI Tool Available at Node Path | ~166 |  |
 
@@ -181,8 +76,6 @@ When you need implementation details, rationale, or debugging context:
 |----|------|---|-------|------|------|
 | #981 | " | 🔵 | `backup_to_github.sh` Uses `git add .` With No `.gitignore` — All Files Staged Indiscriminately | ~379 |  |
 
-**#S332** SOUL.md 운영 원칙 보강 및 GWS 사용 가능 여부 확인 (Mar 11, 11:02 PM)
-
 **../../home/lfant/.openclaw/workspace/IDENTITY.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
@@ -197,8 +90,6 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #1013 | 11:26 PM | 🔵 | USER.md 파일 코드 리뷰 요청 (서브에이전트) | ~158 |  |
-
-**#S334** Personalization document consistency review and update session — refining core agent identity/behavior docs (Mar 11, 11:34 PM)
 
 **../../home/lfant/.openclaw/workspace/AGENTS.md**
 | ID | Time | T | Title | Read | Work |
@@ -230,80 +121,177 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #1029 | 11:54 PM | 🔵 | HEARTBEAT.md Korean Code Review (서브에이전트 분석) | ~179 |  |
-
-**#1030** " 🔵 **HEARTBEAT.md 전체 내용 확인 — Sam 하트비트 루틴 정의**
-
-HEARTBEAT.md는 .openclaw 워크스페이스에서 Sam 에이전트가 주기적으로 실행하는 하트비트 잡의 전체 동작 명세를 담고 있다. 이 파일은 잡이 격리된 agentTurn으로만 실행되어야 하며, 최소한의 파일만 읽고, 결정론적이고 조용하게 동작해야 함을 강제한다. 핵심 설계 원칙은 "필요한 것만, 발견이 있을 때만, 항상 NO_REPLY"이다. cron 에러 감지와 세션 상태 모니터링을 자동화하되, 사용자에게 불필요한 노이즈를 만들지 않도록 엄격히 제한되어 있다. claude-mem이 정책 소스가 아니라 시맨틱 회상 도구임을 명시함으로써 파일 메모리(감사 가능한 소스)와 벡터 기반 회상을 명확히 분리하고 있다.
-
-Read: ~329
+| #1030 | " | 🔵 | HEARTBEAT.md 전체 내용 확인 — Sam 하트비트 루틴 정의 | ~329 |  |
 
 ### Mar 12, 2026
 
-**#S335** Status check of OpenClaw Gateway after restart (Mar 12, 12:05 AM)
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1031 | 12:05 AM | 🔵 | OpenClaw Telegram Group Policy Misconfiguration Warning | ~335 |  |
+| #1032 | 12:11 AM | 🔵 | OpenClaw Telegram groupPolicy Misconfiguration Detected | ~304 |  |
+
+**#S353** Scheduled heartbeat reminder — HEARTBEAT.md check at 9:00 PM KST (2026-03-12) (Mar 12, 6:36 AM)
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1031** 12:05 AM 🔵 **OpenClaw Telegram Group Policy Misconfiguration Warning**
-
-Running OpenClaw's doctor check revealed a misconfiguration in the Telegram channel settings. The groupPolicy is set to "allowlist" mode, which means only explicitly listed sender IDs are allowed to send group messages to the agent. However, both groupAllowFrom and allowFrom are empty, so no senders are whitelisted — resulting in all Telegram group messages being silently discarded. This is a silent failure that would be invisible without the doctor warning. To resolve, either add the appropriate Telegram sender IDs (e.g., Sam Yeo's ID 5487758242) to the allowlist, or switch groupPolicy to "open" to allow all group messages. The command was cut short by SIGTERM before any further output.
-
-Read: ~335
-
-**#S336** User (Sam Yeo / 승주님) requested status check and communication style adjustment (Mar 12, 12:08 AM)
-
-**#S337** 상태 확인 요청 및 edit 도구 exact-match 실패 원인 설명 + 호칭 선호도 반영 (Mar 12, 12:10 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#1032** 12:11 AM 🔵 **OpenClaw Telegram groupPolicy Misconfiguration Detected**
-
-Running OpenClaw's built-in doctor/status check revealed a configuration warning: the Telegram channel is configured with `groupPolicy: "allowlist"` but no sender IDs have been added to the allowlist fields (`groupAllowFrom` or `allowFrom`). This means any Telegram group message sent to the bot will be silently discarded — no error, no response. The user (Sam Yeo) needs to either populate the allowlist with authorized Telegram group/sender IDs, or switch `groupPolicy` to `"open"` to accept all group messages.
-
-Read: ~304
-
-**#S338** MEMORY.md에 호칭 선호도("승주님") 기록 완료 (Mar 12, 12:14 AM)
-
-**#S339** 짧은 확인 응답 — 특별한 작업 없음 (Mar 12, 12:14 AM)
-
-**#S340** 뒤늦게 표시된 MEMORY.md edit 실패 알림 원인 설명 (Mar 12, 12:14 AM)
-
-**#S341** Heartbeat check — read HEARTBEAT.md and report status (Mar 12, 12:15 AM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#1033** 7:00 AM 🔵 **Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM)**
-
-A scheduled cron job (ID: eb4407c8-7e9a-4d66-b956-2695d5aee260) named "daily-morning-briefing" fires each morning at 7 AM Seoul time. When triggered, it instructs the primary Claude session to compile a morning briefing for a user named Sam. The briefing has three components: (1) current Seoul weather fetched using the weather skill, (2) a brief system status overview, and (3) any urgent notifications or tasks surfaced from memory. The agent returns plain text output for automated delivery rather than directly messaging external recipients. This pattern reflects a personal productivity automation tied to Seoul timezone.
-
-Read: ~317
+| #1033 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~317 |  |
 
 **../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1034** 8:00 AM 🔵 **Notion Daily Briefing Cron Job for Telegram Delivery**
-
-A recurring cron job (ID: de62862d-0431-460a-93d4-a21c9c54aa7c) is configured to run every morning at 8:00 AM Asia/Seoul time. It executes the Python script at /home/lfant/.openclaw/workspace/notion_daily_brief.py, which pulls data from Notion and produces a concise daily briefing in Korean for a user named Sam. The briefing is constrained to a maximum of 25 items (sorted top priority first), includes category counts and immediate actions, and is kept under 3500 characters to fit Telegram message limits. The output is plain text intended for automated Telegram delivery — the task does not send the message itself but returns the formatted summary for the delivery pipeline to handle.
-
-Read: ~338
+| #1034 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job for Telegram Delivery | ~338 |  |
 
 ### Mar 13, 2026
 
-**#S353** Scheduled heartbeat reminder — HEARTBEAT.md check at 9:00 PM KST (2026-03-12) (Mar 13, 3:46 AM)
+**#S354** Daily GitHub Backup Cron Job — Execute and confirm backup_to_github.sh (Mar 13, 3:46 AM)
 
-**Investigated**: HEARTBEAT.md at /home/lfant/.openclaw/workspace/HEARTBEAT.md was checked for any pending tasks or instructions requiring attention.
+**.claude/skills/using-superpowers.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1067 | 4:18 AM | 🔵 | using-superpowers Skill: Mandatory Skill Invocation Protocol | ~442 |  |
 
-**Learned**: No active tasks or pending work items were found in HEARTBEAT.md at the time of the check.
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1068 | 6:00 AM | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~269 |  |
 
-**Completed**: Heartbeat check completed. Response: HEARTBEAT_OK — no action required.
+**healthcheck (skill definition)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1069 | " | 🔵 | OpenClaw `healthcheck` Skill: Security Hardening and Update Status Workflow | ~500 |  |
 
-**Next Steps**: Session is idle; awaiting next scheduled heartbeat or user-initiated task.
+**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1070 | 6:38 AM | 🔵 | Daily GitHub Backup Cron Job Configured | ~192 |  |
+
+**scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1071 | " | ✅ | Daily Security Audit Cron — Known False Positives Documented | ~314 |  |
+
+**agents/main/sessions/78491496-ef5a-4bbb-9bdb-79c11d662cc1.jsonl**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1072 | " | ✅ | Daily GitHub Backup Executed Successfully | ~342 |  |
+
+**#S355** Daily Security Audit — openclaw security audit --deep with false-positive filtering (Mar 13, 6:38 AM)
+
+**#S356** Media prompt session - heartbeat check (Mar 13, 6:38 AM)
+
+**#S357** Heartbeat check — read HEARTBEAT.md and follow any active instructions (Mar 13, 6:41 AM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1073 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~277 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1074 | 8:00 AM | 🔵 | Automated Korean Notion Daily Briefing via Cron (Telegram Delivery) | ~344 |  |
+
+**#S358** OpenClaw iOS node 페어링 구조, 연결 방식, 운영 절차 설명 요청 (Mar 13, 8:27 AM)
+
+**docs/nodes/index.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1075 | 8:29 AM | 🔵 | OpenClaw Nodes System — Full Capability Reference | ~1060 |  |
+
+**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1076 | 12:12 PM | 🟣 | Automated Korean Notion Daily Briefing via Cron | ~314 |  |
+
+**#S359** Notion Daily Briefing — Korean morning summary for Sam delivered via scheduled cron (2026-03-13 08:00 KST) (Mar 13, 12:12 PM)
+
+**#S364** Verify that openclaw sub-agent default model is actually running as GPT-5.4 high after config change (Mar 13, 12:12 PM)
+
+**../../home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/docs/gateway/configuration-reference.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1084 | 9:27 PM | 🔵 | OpenClaw Gateway: Thinking Level & Model Configuration System | ~480 |  |
+
+**config.patch**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1085 | 9:34 PM | ✅ | Sub-agent Default Model Set to GPT-5.4 via Gateway Config Patch | ~258 |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1086 | " | 🔵 | Sub-agent Spawn Confirmed modelApplied: true for GPT-5.4 Config | ~264 |  |
+
+**config.patch**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1087 | 9:36 PM | ✅ | Openclaw Sub-agent Model Configuration Change to GPT-5.4 | ~322 |  |
+
+**#S365** No new user request — checkpoint triggered with no reply generated (Mar 13, 9:36 PM)
+
+**~/.claude/skills/simplemem-skill/README.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1088 | 9:37 PM | 🔵 | SimpleMem Skill Documentation Read | ~440 |  |
+
+**../../home/lfant/.openclaw/workspace/MEMORY.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1089 | " | 🔴 | Failed Edit on MEMORY.md Due to Exact Text Mismatch | ~218 |  |
+| #1090 | " | 🔵 | MEMORY.md Read — OpenClaw Workspace Session Log State | ~355 |  |
+| #1091 | " | 🔵 | OpenClaw Sub-agent Orchestration is Push-Based | ~338 |  |
+
+**#1092** " 🔴 **Second Consecutive Failed Edit on MEMORY.md**
+
+After reading MEMORY.md twice to locate the correct anchor text, the session attempted a second edit which also failed. This pattern suggests the file content as rendered in read output does not faithfully represent the raw bytes (e.g., trimmed trailing spaces, normalized newlines, or invisible characters). A write/overwrite approach may be needed instead of an edit to successfully update this file.
+
+Read: ~251
+
+**../../home/lfant/.openclaw/workspace/MEMORY.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1093** 9:39 PM 🔴 **MEMORY.md Updated via Full Write After Edit Failures**
+
+After two failed attempts to edit MEMORY.md using the edit tool (which requires exact text matching), the session switched to a full file write/overwrite. This successfully updated the file with 18474 bytes of content. The lesson: MEMORY.md has content that cannot be reliably matched for in-place edits — likely due to invisible characters, trailing whitespace, or encoding differences — so full rewrites are the correct update strategy for this file.
+
+Read: ~249
+
+**config.patch**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1094** 10:07 PM ✅ **Openclaw 서브에이전트 기본 모델 GPT-5.4로 변경**
+
+openclaw 제어 UI(openclaw-control-ui)를 통해 Gateway 설정 패치가 적용되었고, 서브에이전트 기본 모델이 GPT-5.4로 변경되었다. 변경 후 `openclaw doctor --non-interactive`를 실행하여 시스템 상태를 점검했으며, 사용자는 서브에이전트가 실제로 GPT-5.4 high 모델로 동작하는지 검증을 요청했다. 이는 모델 업그레이드 후 실제 적용 여부를 확인하는 표준 검증 절차로 보인다.
+
+Read: ~150
+
+**config.patch**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1095** 11:14 PM ✅ **Sub-agent Default Model Configuration Changed to GPT-5.4**
+
+After a gateway restart triggered by a config patch, the openclaw system's sub-agent default model was set to GPT-5.4. The `openclaw doctor --non-interactive` command was run to validate the system state. The user then asked to confirm whether the sub-agent is actually operating on GPT-5.4 "high" (고성능) tier, suggesting uncertainty about whether the model tier designation ("하이") was correctly applied alongside the version change.
+
+Read: ~245
+
+**#S366** Verify sub-agent default model is actually set to GPT-5.4 "high" tier after config-patch (Mar 13, 11:14 PM)
+
+### Mar 14, 2026
+
+**scripts/extract.mjs**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1096** 4:13 AM 🔵 **Daily Security Audit Cron Job Configuration**
+
+A daily deep security audit is configured as a recurring cron job using `openclaw security audit --deep`. The audit is aware of known false positives in three packages: tavily-search (two script files), claude-mem (five runtime/server files), and writing-skills (one rendering file). These exclusions are intentional and documented to prevent noise in audit results. The task delivers its summary as plain text automatically rather than messaging an external recipient.
+
+Read: ~290
 
 
-Access 126k tokens of past research & decisions for just 17,142t. Use the claude-mem skill to access memories by ID.
+Access 143k tokens of past research & decisions for just 17,630t. Use the claude-mem skill to access memories by ID.

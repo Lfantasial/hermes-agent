@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-09T11:38:20.310Z"
+    "lastTouchedAt": "2026-03-09T11:51:25.756Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-02T22:19:37.333Z",
@@ -95,7 +95,9 @@
     "defaults": {
       "model": {
         "primary": "openai-codex/gpt-5.4",
-        "fallbacks": []
+        "fallbacks": [
+          "openai-codex/gpt-5.3-codex"
+        ]
       },
       "models": {
         "zai/glm-4.7": {
@@ -122,7 +124,13 @@
         "model": "openai-codex/gpt-5.3-codex",
         "thinking": "high"
       }
-    }
+    },
+    "list": [
+      {
+        "id": "main",
+        "model": "openai-codex/gpt-5.4"
+      }
+    ]
   },
   "tools": {
     "web": {
