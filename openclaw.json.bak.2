@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-11T21:49:00.125Z"
+    "lastTouchedVersion": "2026.3.12",
+    "lastTouchedAt": "2026-03-13T12:29:51.726Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-02T22:19:37.333Z",
-    "lastRunVersion": "2026.3.1",
+    "lastRunAt": "2026-03-13T12:23:49.584Z",
+    "lastRunVersion": "2026.3.12",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
@@ -96,7 +96,11 @@
       "model": {
         "primary": "openai-codex/gpt-5.4",
         "fallbacks": [
-          "openai-codex/gpt-5.3-codex"
+          "zai/glm-4.7",
+          "zai/glm-4.7-flash",
+          "zai/glm-4.7-flashx",
+          "openai-codex/gpt-5.3-codex",
+          "openai-codex/gpt-5.3-codex-spark"
         ]
       },
       "models": {
@@ -106,7 +110,8 @@
         "zai/glm-4.7-flash": {},
         "zai/glm-4.7-flashx": {},
         "openai-codex/gpt-5.3-codex": {},
-        "openai-codex/gpt-5.4": {}
+        "openai-codex/gpt-5.4": {},
+        "openai-codex/gpt-5.3-codex-spark": {}
       },
       "workspace": "/home/lfant/.openclaw/workspace",
       "memorySearch": {
