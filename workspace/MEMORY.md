@@ -1,4 +1,4 @@
-# [openclaw-main] recent context, 2026-03-15 4:00am GMT+9
+# [openclaw-main] recent context, 2026-03-16 4:00am GMT+9
 
 **Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
 
@@ -14,84 +14,16 @@ When you need implementation details, rationale, or debugging context:
 - Trust this index over re-reading code for past decisions and learnings
 
 **Context Economics**:
-- Loading: 50 observations (17,218 tokens to read)
-- Work investment: 155,132 tokens spent on research, building, and decisions
-- Your savings: 137,914 tokens (89% reduction from reuse)
-
-### Mar 11, 2026
-
-**../../home/lfant/.openclaw/workspace/AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1023 | 11:37 PM | 🔵 | AGENTS.md Review for /home/lfant/.openclaw/workspace | ~277 |  |
-| #1024 | 11:38 PM | 🔵 | AGENTS.md Full Content — openclaw Workspace Configuration | ~732 |  |
-
-**AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1025 | 11:45 PM | 🔵 | AGENTS.md Workspace Configuration Loaded | ~360 |  |
-
-**../../home/lfant/.openclaw/workspace/AGENTS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1026 | 11:46 PM | ✅ | AGENTS.md Modified in Workspace | ~184 |  |
-
-**../../home/lfant/.openclaw/workspace/TOOLS.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1027 | 11:48 PM | 🔵 | TOOLS.md 파일 한국어 보안/품질 리뷰 수행 | ~157 |  |
-
-**.openclaw/workspace/TOOLS.md (MCP 리소스로 로드된 using-superpowers 스킬)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1028 | " | 🔵 | using-superpowers 스킬: 모든 대화 시작 시 스킬 강제 호출 규칙 정의 | ~238 |  |
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1029 | 11:54 PM | 🔵 | HEARTBEAT.md Korean Code Review (서브에이전트 분석) | ~179 |  |
-| #1030 | " | 🔵 | HEARTBEAT.md 전체 내용 확인 — Sam 하트비트 루틴 정의 | ~329 |  |
-
-### Mar 12, 2026
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1031 | 12:05 AM | 🔵 | OpenClaw Telegram Group Policy Misconfiguration Warning | ~335 |  |
-| #1032 | 12:11 AM | 🔵 | OpenClaw Telegram groupPolicy Misconfiguration Detected | ~304 |  |
-| #1033 | 7:00 AM | 🔵 | Daily Morning Briefing Cron Job for Sam (Seoul, 7 AM) | ~317 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1034 | 8:00 AM | 🔵 | Notion Daily Briefing Cron Job for Telegram Delivery | ~338 |  |
+- Loading: 50 observations (17,984 tokens to read)
+- Work investment: 142,896 tokens spent on research, building, and decisions
+- Your savings: 124,912 tokens (87% reduction from reuse)
 
 ### Mar 13, 2026
-
-**.claude/skills/using-superpowers.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1067 | 4:18 AM | 🔵 | using-superpowers Skill: Mandatory Skill Invocation Protocol | ~442 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1068 | 6:00 AM | 🔵 | Daily Update Check Cron Job for OpenClaw and Skills | ~269 |  |
-
-**healthcheck (skill definition)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1069 | " | 🔵 | OpenClaw `healthcheck` Skill: Security Hardening and Update Status Workflow | ~500 |  |
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1070 | 6:38 AM | 🔵 | Daily GitHub Backup Cron Job Configured | ~192 |  |
 
 **scripts/extract.mjs**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-| #1071 | " | ✅ | Daily Security Audit Cron — Known False Positives Documented | ~314 |  |
+| #1071 | 6:38 AM | ✅ | Daily Security Audit Cron — Known False Positives Documented | ~314 |  |
 
 **agents/main/sessions/78491496-ef5a-4bbb-9bdb-79c11d662cc1.jsonl**
 | ID | Time | T | Title | Read | Work |
@@ -210,74 +142,148 @@ When you need implementation details, rationale, or debugging context:
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
 | #1106 | 6:25 PM | 🔵 | User Interest in prompt-injection-guard Skill | ~195 |  |
-
-**#1107** " 🔵 **OpenClaw Bot Running with Configuration Warning**
-
-The OpenClaw bot system started (session marine-falcon, pid 698236) and completed with exit code 0. A doctor warning was issued about a Telegram group policy misconfiguration — the groupPolicy is "allowlist" but no IDs are specified in groupAllowFrom or allowFrom, meaning all Telegram group messages are silently dropped. An update to version 2026.3.13 is also available via `openclaw update`.
-
-Read: ~274
-
-**#S386** Progress checkpoint – session-state risk and watch items review (proactive loop maturity, file-memory drift) (Mar 14, 9:16 PM)
-
-**#S387** Progress checkpoint — session-state risk/watch items around proactive loop maturity and file-memory drift control (Mar 14, 9:49 PM)
-
-**#S388** Progress checkpoint — session state review with risk/watch items noted (Mar 14, 10:23 PM)
-
-**#S389** Progress checkpoint — session state review with risk/watch items noted (Mar 14, 10:56 PM)
-
-**#S390** Heartbeat state write and session-state risk/watch item tracking for proactive loop maturity and file-memory drift (Mar 14, 11:29 PM)
+| #1107 | " | 🔵 | OpenClaw Bot Running with Configuration Warning | ~274 |  |
 
 ### Mar 15, 2026
-
-**#S391** Media prompt session state review — risk/watch items for proactive loop maturity and file-memory drift (Mar 15, 12:02 AM)
 
 **.openclaw/workspace/memory/using-superpowers (skill definition)**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1108** 12:02 AM 🔵 **using-superpowers Skill: Mandatory Skill-First Workflow**
-
-The "using-superpowers" skill acts as a meta-skill and session bootstrap. It defines the rule system for how all other skills should be discovered and used. The core rule is absolute: invoke skills before doing anything else, even asking clarifying questions. A flowchart (in DOT format) is embedded to visualize the decision flow from "user message received" through skill invocation to response. The skill distinguishes between rigid skills (must follow exactly) and flexible skills (adapt principles). It also establishes a priority ordering so that process skills (which define HOW to work) are invoked before implementation skills (which guide execution). The "Red Flags" table is a self-correction mechanism to prevent Claude from rationalizing away skill use with common deflections. This skill underpins the entire agentic workflow discipline of the openclaw system.
-
-Read: ~489
-
-**#S392** Media prompt session observation — progress checkpoint with risk/watch item review (Mar 15, 12:35 AM)
-
-**#S393** Media prompt session — progress checkpoint on system maturity and risk monitoring (Mar 15, 1:08 AM)
-
-**#S394** HEARTBEAT.md status check — routine session health probe at 2:51 AM KST, March 15 2026 (Mar 15, 1:41 AM)
+| #1108 | 12:02 AM | 🔵 | using-superpowers Skill: Mandatory Skill-First Workflow | ~489 |  |
 
 **General**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1109** 3:00 AM 🔵 **Daily Security Audit Cron Job with False Positive Exclusions**
-
-A recurring daily security audit is configured via cron to run `openclaw security audit --deep` every day at 3:00 AM Korea Standard Time (18:00 UTC). The audit has a maintained list of known false positives organized by plugin/package: tavily-search (extract.mjs, search.mjs), claude-mem (bun-runner.js, context-generator.cjs, mcp-server.cjs, smart-install.js, worker-cli.js), and writing-skills (render-graphs.js). These files are intentionally excluded from flagging to reduce noise. Results are delivered automatically as plain text with no external recipient, suggesting they feed into an internal monitoring or notification pipeline.
-
-Read: ~355
+| #1109 | 3:00 AM | 🔵 | Daily Security Audit Cron Job with False Positive Exclusions | ~355 |  |
 
 **healthcheck (MCP resource / skill definition)**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
-
-**#1110** " 🔵 **OpenClaw Healthcheck Skill: Security Hardening Workflow Definition**
-
-The healthcheck skill resource was read as part of the daily-security-audit cron run. It defines the full operating procedure for OpenClaw host hardening: gathering OS/network/access context, running `openclaw security audit --deep`, checking update status, assessing risk posture, producing a remediation plan, and executing changes with per-step approvals. The skill enforces that OpenClaw never touches host firewall or SSH config. Cron scheduling uses deterministic job names and prefers editing existing jobs. Memory logging is append-only and opt-in only.
-
-Read: ~508
-
-**#S395** HEARTBEAT.md check — routine session health pulse at 2:51 AM KST, March 15 2026 (Mar 15, 3:58 AM)
+| #1110 | " | 🔵 | OpenClaw Healthcheck Skill: Security Hardening Workflow Definition | ~508 |  |
 
 **.claude/skills/using-superpowers.md**
 | ID | Time | T | Title | Read | Work |
 |----|------|---|-------|------|------|
+| #1111 | 3:58 AM | 🔵 | using-superpowers Skill — Mandatory Skill Invocation Protocol | ~470 |  |
+| #1112 | 4:31 AM | 🔵 | using-superpowers Skill: Mandatory Skill Invocation Protocol | ~414 |  |
 
-**#1111** 3:58 AM 🔵 **using-superpowers Skill — Mandatory Skill Invocation Protocol**
+**#S397** Daily Security Audit: openclaw security audit --deep with false positive exclusions for tavily-search, claude-mem, and writing-skills plugins (Mar 15, 5:30 AM)
 
-The using-superpowers skill defines the meta-protocol for how all skills are discovered and used within Claude Code sessions. It enforces a mandatory pre-response skill check: before any action or response, the agent must evaluate whether any available skill applies (even at 1% confidence) and invoke it. This prevents the common failure mode of "just doing something" before checking if a skill provides the correct workflow. The skill includes a flowchart (dot/graphviz format) describing the decision tree, a red-flags table for self-auditing rationalization, and a priority ordering for when multiple skills apply. The skill is designed as the first thing loaded in any conversation to establish the correct operating discipline for the entire session.
+**#S398** HEARTBEAT.md status check — routine workspace health ping (Mar 15, 5:30 AM)
 
-Read: ~470
+**#S399** Heartbeat check — read HEARTBEAT.md and follow any pending instructions (Mar 15, 5:08 PM)
+
+**#S400** Heartbeat check — read HEARTBEAT.md and respond with status (Mar 15, 5:40 PM)
+
+**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1113 | 6:46 PM | ✅ | Heartbeat State Written to Persistent Memory File | ~154 |  |
+| #1114 | 7:20 PM | ✅ | Heartbeat State Written to workspace/memory | ~163 |  |
+
+**#S401** Heartbeat check — read HEARTBEAT.md and follow instructions or reply HEARTBEAT_OK (Mar 15, 7:53 PM)
+
+**#S402** HEARTBEAT.md check — read workspace heartbeat file and follow instructions strictly (Mar 15, 8:26 PM)
+
+**.claude/skills/using-superpowers.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1115 | 8:26 PM | 🔵 | using-superpowers Skill: Mandatory Skill-First Protocol | ~406 |  |
+
+**#S403** Heartbeat check — read HEARTBEAT.md and follow instructions (Mar 15, 8:59 PM)
+
+**#S404** Heartbeat check — read HEARTBEAT.md and follow instructions (Mar 15, 9:33 PM)
+
+**#S405** Heartbeat check — read HEARTBEAT.md and follow instructions (Mar 15, 10:06 PM)
+
+**https://github.com/corazzon/pptx-design-styles (README via web fetch)**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1116 | 10:44 PM | 🔵 | pptx-design-styles: Claude Skill for PPTX Presentation Design | ~466 |  |
+
+**https://raw.githubusercontent.com/corazzon/pptx-design-styles/main/SKILL.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1117 | " | 🔵 | SKILL.md: pptx-design-styles Skill Trigger & Production Rules | ~483 |  |
+
+**https://raw.githubusercontent.com/corazzon/pptx-design-styles/main/references/styles.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1118 | 10:45 PM | 🔵 | references/styles.md: Per-Style Technical Specs (Styles 01–10 of 30) | ~498 |  |
+
+**MEMORY.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1119 | 11:00 PM | 🔵 | Periodic Memory Maintenance Cron Job Active | ~228 |  |
+
+**workspace/memory/using-superpowers.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1120 | " | 🔵 | using-superpowers Skill: Mandatory Skill-Check Protocol | ~381 |  |
+
+**workspace/memory/**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1121 | " | 🔵 | Memory Directory Structure: Daily Logs + Special Files | ~245 |  |
+
+**#S406** HEARTBEAT check — read /home/lfant/.openclaw/workspace/HEARTBEAT.md and follow instructions (Mar 15, 11:12 PM)
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #1122 | 11:50 PM | 🔵 | OpenClaw System Status Check on WSL2 Environment | ~346 |  |
+
+### Mar 16, 2026
+
+**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1123** 1:26 AM 🔵 **HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Protocol**
+
+The HEARTBEAT.md file defines the operational protocol for an isolated, quiet heartbeat agent job. Unlike general chat heartbeats, this job ends with NO_REPLY to stay silent. Its scope is tightly bounded to five workspace files. The job checks cron job health and SESSION-STATE.md for blockers, then updates heartbeat-state.json. It only writes to daily memory or SESSION-STATE.md when something materially new is detected, preventing noisy duplicate entries. This design keeps the heartbeat deterministic and low-token.
+
+Read: ~431
+
+**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1124** 3:39 AM 🔵 **HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Routine**
+
+The primary session read /home/lfant/.openclaw/workspace/HEARTBEAT.md to understand the heartbeat routine. The file defines a strict, minimal protocol for isolated agentTurn heartbeat jobs. Its purpose is to keep the heartbeat small, deterministic, and quiet — it reads only five specific files, evaluates a narrow set of conditions, updates heartbeat-state.json on every run, and only writes to daily memory or SESSION-STATE.md when something materially changed. The job always ends with NO_REPLY. This design prevents noisy or redundant memory writes while still tracking cron job health and session blockers.
+
+Read: ~463
+
+**../../home/lfant/.openclaw/workspace/SESSION-STATE.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1125** 3:40 AM 🔵 **SESSION-STATE.md Shows All Active Tasks Completed, No Current Blockers**
+
+The primary session read SESSION-STATE.md to assess whether any blockers, risks, or open follow-ups exist per the HEARTBEAT.md protocol. The file shows the session is active but all previously tracked tasks are complete. The only standing items are ongoing architectural decisions and risk watch items — none of which represent new or escalating issues. This means the heartbeat evaluation should find no meaningful findings requiring daily memory updates.
+
+Read: ~347
+
+**../../home/lfant/.openclaw/workspace/memory/working-buffer.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1126** " 🔵 **Working Buffer INACTIVE; Heartbeat State Last Run at 2026-03-16T03:05 KST**
+
+The primary session read both memory/working-buffer.md and memory/heartbeat-state.json as part of the HEARTBEAT.md scoped file check. The working buffer is inactive and empty, indicating no context pressure or compaction risk. The heartbeat-state.json shows the previous heartbeat ran at 03:05 KST on March 16 and recorded one non-escalating standing finding about proactive loop maturity risk. No cron errors or new blockers were present in the prior run.
+
+Read: ~350
+
+**../../home/lfant/.openclaw/workspace/memory/2026-03-16.md**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+
+**#1127** " 🔵 **All 8 Cron Jobs Healthy — No Errors or Failures Detected**
+
+The primary session read ~/.openclaw/cron/jobs.json as part of the HEARTBEAT.md cron health check. All 8 jobs are healthy with no errors. The previously tracked github-repo-daily-briefing failure from 2026-03-11 is fully resolved. The workspace-heartbeat cron is unique in targeting the "main" session rather than isolated sessions, and uses systemEvent kind payload. Today's daily memory file exists but is empty, meaning the heartbeat will need to decide whether to write a first entry. Per HEARTBEAT.md rules, since all cron jobs are ok and no blockers exist in SESSION-STATE.md, the heartbeat should only update heartbeat-state.json.
+
+Read: ~544
 
 
-Access 155k tokens of past research & decisions for just 17,218t. Use the claude-mem skill to access memories by ID.
+Access 143k tokens of past research & decisions for just 17,984t. Use the claude-mem skill to access memories by ID.
