@@ -21,7 +21,7 @@
   },
   "usageStats": {
     "zai:default": {
-      "lastUsed": 1772062521272,
+      "lastUsed": 1773623897340,
       "errorCount": 0
     },
     "openai-codex:default": {
@@ -30,8 +30,8 @@
       "failureCounts": {
         "rate_limit": 1
       },
-      "lastFailureAt": 1773601220443,
-      "cooldownUntil": 1773601280443
+      "lastFailureAt": 1773687613940,
+      "cooldownUntil": 1773687673940
     }
   }
 }
