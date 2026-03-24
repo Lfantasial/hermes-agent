@@ -25,7 +25,7 @@
         ],
         "createdAtMs": 1771252522327,
         "rotatedAtMs": 1771406582380,
-        "lastUsedAtMs": 1773666285051
+        "lastUsedAtMs": 1774125364464
       }
     },
     "createdAtMs": 1771252522327,
@@ -36,7 +36,7 @@
     "publicKey": "QcOlI06t1uj7fa0ITLvvf14k-GQGsJ9aFoyeY0kaB7Y",
     "platform": "linux",
     "clientId": "cli",
-    "clientMode": "probe",
+    "clientMode": "cli",
     "role": "operator",
     "roles": [
       "operator"

@@ -1,279 +1,93 @@
-# [openclaw-main] recent context, 2026-03-17 4:00am GMT+9
+# $CMEM openclaw-main 2026-03-25 8:31am GMT+9
 
-**Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
+Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision
+Format: ID TIME TYPE TITLE
+Fetch details: get_observations([IDs]) | Search: mem-search skill
 
-**Column Key**:
-- **Read**: Tokens to read this observation (cost to learn it now)
-- **Work**: Tokens spent on work that produced this record ( research, building, deciding)
-
-**Context Index:** This semantic index (titles, types, files, tokens) is usually sufficient to understand past work.
-
-When you need implementation details, rationale, or debugging context:
-- Fetch by ID: get_observations([IDs]) for observations visible in this index
-- Search history: Use the mem-search skill for past decisions, bugs, and deeper research
-- Trust this index over re-reading code for past decisions and learnings
-
-**Context Economics**:
-- Loading: 50 observations (19,075 tokens to read)
-- Work investment: 121,367 tokens spent on research, building, and decisions
-- Your savings: 102,292 tokens (84% reduction from reuse)
-
-### Mar 13, 2026
-
-**../../home/lfant/.openclaw/workspace/MEMORY.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1091 | 9:37 PM | 🔵 | OpenClaw Sub-agent Orchestration is Push-Based | ~338 |  |
-| #1092 | " | 🔴 | Second Consecutive Failed Edit on MEMORY.md | ~251 |  |
-| #1093 | 9:39 PM | 🔴 | MEMORY.md Updated via Full Write After Edit Failures | ~249 |  |
-
-**config.patch**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1094 | 10:07 PM | ✅ | Openclaw 서브에이전트 기본 모델 GPT-5.4로 변경 | ~150 |  |
-| #1095 | 11:14 PM | ✅ | Sub-agent Default Model Configuration Changed to GPT-5.4 | ~245 |  |
-
-### Mar 14, 2026
-
-**scripts/extract.mjs**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1096 | 4:13 AM | 🔵 | Daily Security Audit Cron Job Configuration | ~290 |  |
-
-**../../home/lfant/.openclaw/workspace/backup_to_github.sh**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1097 | 4:14 AM | 🔵 | Daily GitHub Backup Cron Job Configured | ~204 |  |
-
-**agents/main/sessions/4527a794-894d-47ea-8b89-6cb3efec80b6.jsonl**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1098 | 4:15 AM | ✅ | Daily GitHub Backup Executed Successfully | ~315 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1099 | 7:00 AM | 🔵 | Automated Daily Morning Briefing Cron Job for Sam | ~269 |  |
-
-**../../home/lfant/.openclaw/workspace/notion_daily_brief.py**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1100 | 8:00 AM | 🔵 | Automated Notion Daily Briefing Cron Job for Telegram Delivery | ~303 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1101 | 9:00 AM | 🟣 | Daily GitHub Trending Repo Briefing Cron Job (Korean, 09:00 KST) | ~449 |  |
-
-**../../home/lf/.openclaw/workspace/skills/github/SKILL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1102 | " | 🔵 | GitHub Skill Definition Located at Alternative Path | ~329 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1103 | 9:01 AM | 🔵 | GitHub Trending Repos Fetched via API for 2026-03-14 Briefing | ~530 |  |
-
-**.claude/skills/using-superpowers.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1104 | 9:06 AM | 🔵 | using-superpowers Skill: Mandatory Skill-First Workflow | ~427 |  |
-| #1105 | 3:10 PM | 🔵 | Meta-Skill: "using-superpowers" Governs All Skill Usage | ~437 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1106 | 6:25 PM | 🔵 | User Interest in prompt-injection-guard Skill | ~195 |  |
-| #1107 | " | 🔵 | OpenClaw Bot Running with Configuration Warning | ~274 |  |
+Stats: 50 obs (18,461t read) | 96,417t work | 81% savings
 
 ### Mar 15, 2026
-
-**.openclaw/workspace/memory/using-superpowers (skill definition)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1108 | 12:02 AM | 🔵 | using-superpowers Skill: Mandatory Skill-First Workflow | ~489 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1109 | 3:00 AM | 🔵 | Daily Security Audit Cron Job with False Positive Exclusions | ~355 |  |
-
-**healthcheck (MCP resource / skill definition)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1110 | " | 🔵 | OpenClaw Healthcheck Skill: Security Hardening Workflow Definition | ~508 |  |
-
-**.claude/skills/using-superpowers.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1111 | 3:58 AM | 🔵 | using-superpowers Skill — Mandatory Skill Invocation Protocol | ~470 |  |
-| #1112 | 4:31 AM | 🔵 | using-superpowers Skill: Mandatory Skill Invocation Protocol | ~414 |  |
-
-**#S397** Daily Security Audit: openclaw security audit --deep with false positive exclusions for tavily-search, claude-mem, and writing-skills plugins (Mar 15, 5:30 AM)
-
-**#S398** HEARTBEAT.md status check — routine workspace health ping (Mar 15, 5:30 AM)
-
-**#S399** Heartbeat check — read HEARTBEAT.md and follow any pending instructions (Mar 15, 5:08 PM)
-
-**#S400** Heartbeat check — read HEARTBEAT.md and respond with status (Mar 15, 5:40 PM)
-
-**../../home/lfant/.openclaw/workspace/memory/heartbeat-state.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1113 | 6:46 PM | ✅ | Heartbeat State Written to Persistent Memory File | ~154 |  |
-| #1114 | 7:20 PM | ✅ | Heartbeat State Written to workspace/memory | ~163 |  |
-
-**#S401** Heartbeat check — read HEARTBEAT.md and follow instructions or reply HEARTBEAT_OK (Mar 15, 7:53 PM)
-
-**#S402** HEARTBEAT.md check — read workspace heartbeat file and follow instructions strictly (Mar 15, 8:26 PM)
-
-**.claude/skills/using-superpowers.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1115 | 8:26 PM | 🔵 | using-superpowers Skill: Mandatory Skill-First Protocol | ~406 |  |
-
-**#S403** Heartbeat check — read HEARTBEAT.md and follow instructions (Mar 15, 8:59 PM)
-
-**#S404** Heartbeat check — read HEARTBEAT.md and follow instructions (Mar 15, 9:33 PM)
-
-**#S405** Heartbeat check — read HEARTBEAT.md and follow instructions (Mar 15, 10:06 PM)
-
-**https://github.com/corazzon/pptx-design-styles (README via web fetch)**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1116 | 10:44 PM | 🔵 | pptx-design-styles: Claude Skill for PPTX Presentation Design | ~466 |  |
-
-**https://raw.githubusercontent.com/corazzon/pptx-design-styles/main/SKILL.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1117 | " | 🔵 | SKILL.md: pptx-design-styles Skill Trigger & Production Rules | ~483 |  |
-
-**https://raw.githubusercontent.com/corazzon/pptx-design-styles/main/references/styles.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1118 | 10:45 PM | 🔵 | references/styles.md: Per-Style Technical Specs (Styles 01–10 of 30) | ~498 |  |
-
-**MEMORY.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1119 | 11:00 PM | 🔵 | Periodic Memory Maintenance Cron Job Active | ~228 |  |
-
-**workspace/memory/using-superpowers.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1120 | " | 🔵 | using-superpowers Skill: Mandatory Skill-Check Protocol | ~381 |  |
-
-**workspace/memory/**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1121 | " | 🔵 | Memory Directory Structure: Daily Logs + Special Files | ~245 |  |
-
-**#S406** HEARTBEAT check — read /home/lfant/.openclaw/workspace/HEARTBEAT.md and follow instructions (Mar 15, 11:12 PM)
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1122 | 11:50 PM | 🔵 | OpenClaw System Status Check on WSL2 Environment | ~346 |  |
-
+1112 4:31a 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
+1113 6:46p ✅ Heartbeat State Written to Persistent Memory File
+1114 7:20p ✅ Heartbeat State Written to workspace/memory
+1115 8:26p 🔵 using-superpowers Skill: Mandatory Skill-First Protocol
+1116 10:44p 🔵 pptx-design-styles: Claude Skill for PPTX Presentation Design
+1117 " 🔵 SKILL.md: pptx-design-styles Skill Trigger & Production Rules
+1118 10:45p 🔵 references/styles.md: Per-Style Technical Specs (Styles 01–10 of 30)
+1119 11:00p 🔵 Periodic Memory Maintenance Cron Job Active
+1120 " 🔵 using-superpowers Skill: Mandatory Skill-Check Protocol
+1121 " 🔵 Memory Directory Structure: Daily Logs + Special Files
+1122 11:50p 🔵 OpenClaw System Status Check on WSL2 Environment
 ### Mar 16, 2026
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1123 | 1:26 AM | 🔵 | HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Protocol | ~431 |  |
-| #1124 | 3:39 AM | 🔵 | HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Routine | ~463 |  |
-
-**../../home/lfant/.openclaw/workspace/SESSION-STATE.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1125 | 3:40 AM | 🔵 | SESSION-STATE.md Shows All Active Tasks Completed, No Current Blockers | ~347 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/working-buffer.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1126 | " | 🔵 | Working Buffer INACTIVE; Heartbeat State Last Run at 2026-03-16T03:05 KST | ~350 |  |
-
-**../../home/lfant/.openclaw/workspace/memory/2026-03-16.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1127 | " | 🔵 | All 8 Cron Jobs Healthy — No Errors or Failures Detected | ~544 |  |
-
-**HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1128 | 6:25 AM | 🔵 | HEARTBEAT.md — Isolated AgentTurn Heartbeat Job Specification | ~464 |  |
-| #1129 | 8:05 AM | 🔵 | Heartbeat Routine Specification (HEARTBEAT.md) | ~444 |  |
-
-**General**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1130 | 9:00 AM | 🟣 | GitHub Daily Briefing Cron Job — Korean Summary for Sam | ~518 |  |
-| #1131 | " | 🔵 | gh api Does Not Support --limit Flag | ~283 |  |
-| #1132 | 9:01 AM | 🔵 | GitHub Trending Repos — Top 5 (Last 7 Days, as of 2026-03-16) | ~482 |  |
-| #1133 | " | 🔵 | GitHub All-Time Top Starred Repos — Query Results (2026-03-16) | ~582 |  |
-
-**SESSION-STATE.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1134 | 9:45 AM | 🔵 | SESSION-STATE.md Memory Architecture Baseline | ~371 |  |
-
-**../../home/lfant/.openclaw/cron/jobs.json**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-| #1136 | 9:26 PM | 🔵 | Full cron job inventory — all 8 jobs healthy as of 2026-03-16 | ~544 |  |
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#1135** 9:27 PM 🔵 **HEARTBEAT.md defines isolated agentTurn heartbeat job rules**
-
-The HEARTBEAT.md file defines strict operating rules for the Sam heartbeat routine, which runs as an isolated agentTurn cron job. Unlike general chat heartbeats, this job must always end silently with NO_REPLY. It is intentionally small, deterministic, and quiet — only checking a fixed set of files for meaningful state changes. The meaningful-finding threshold is high: only cron errors, persistent non-ok states, or explicit blockers in SESSION-STATE.md qualify. Routine no-change runs only update heartbeat-state.json. This design keeps the heartbeat auditable and avoids noisy memory pollution from repeated identical findings.
-
-Read: ~441
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#1137** 9:57 PM 🔵 **HEARTBEAT.md defines isolated agentTurn cron heartbeat protocol**
-
-HEARTBEAT.md defines the protocol for an isolated, quiet cron/agentTurn heartbeat job. It is distinct from the general chat heartbeat rule. The job is designed to be small and deterministic: it reads a fixed set of files, checks for non-ok cron states and session blockers, updates memory/heartbeat-state.json on every run, and only writes to daily memory or SESSION-STATE.md when something materially changes. The NO_REPLY terminal response keeps the job silent in normal operation. Duplicate-control and guardrail rules prevent memory pollution and unintended side effects.
-
-Read: ~442
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#1138** 10:57 PM 🔵 **HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol**
-
-The primary session read HEARTBEAT.md to understand the heartbeat protocol. This file defines a narrow, deterministic cron/agentTurn heartbeat job distinct from general chat heartbeat behavior. The job is designed to stay small and quiet: it reads a fixed set of files, checks only specific conditions (cron errors, SESSION-STATE.md blockers), updates heartbeat-state.json every run, and only writes to daily memory or SESSION-STATE.md when something materially changed. The protocol ends with NO_REPLY to suppress any output. This design keeps the heartbeat auditable and low-noise.
-
-Read: ~509
-
+1123 1:26a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Protocol
+1124 3:39a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Routine
+1125 3:40a 🔵 SESSION-STATE.md Shows All Active Tasks Completed, No Current Blockers
+1126 " 🔵 Working Buffer INACTIVE; Heartbeat State Last Run at 2026-03-16T03:05 KST
+1127 " 🔵 All 8 Cron Jobs Healthy — No Errors or Failures Detected
+1128 6:25a 🔵 HEARTBEAT.md — Isolated AgentTurn Heartbeat Job Specification
+1129 8:05a 🔵 Heartbeat Routine Specification (HEARTBEAT.md)
+1130 9:00a 🟣 GitHub Daily Briefing Cron Job — Korean Summary for Sam
+1131 " 🔵 gh api Does Not Support --limit Flag
+1132 9:01a 🔵 GitHub Trending Repos — Top 5 (Last 7 Days, as of 2026-03-16)
+1133 " 🔵 GitHub All-Time Top Starred Repos — Query Results (2026-03-16)
+1134 9:45a 🔵 SESSION-STATE.md Memory Architecture Baseline
+1136 9:26p 🔵 Full cron job inventory — all 8 jobs healthy as of 2026-03-16
+1135 9:27p 🔵 HEARTBEAT.md defines isolated agentTurn heartbeat job rules
+1137 9:57p 🔵 HEARTBEAT.md defines isolated agentTurn cron heartbeat protocol
+1138 10:57p 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
 ### Mar 17, 2026
+1139 12:27a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
+1140 12:58a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
+1141 8:00a 🔵 Automated Korean Notion Daily Briefing via Cron
+1142 9:07a ✅ 크론 잡 브리핑 언어 한국어로 변경 요청
+1143 9:11a ✅ 크론 잡 브리핑 언어를 한국어로 변경 요청
+1144 " 🔵 OpenClaw 워크스페이스 구조 파악
+### Mar 19, 2026
+1159 3:40p 🔵 using-superpowers Meta-Skill Defines Mandatory Skill Invocation Protocol
+### Mar 20, 2026
+1190 3:30a ✅ Heartbeat State Persisted to Workspace Memory
+### Mar 22, 2026
+1274 12:57p 🔵 using-superpowers Skill — Mandatory Skill Invocation Policy
+1288 5:50p 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
+1289 6:55p 🔵 Heartbeat State File in OpenClaw Memory Workspace
+1290 8:01p 🔵 using-superpowers Skill: Mandatory Skill-Invocation Protocol
+1291 9:07p 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
+S540 Session observation — minimal activity recorded so far (Mar 22, 10:45 PM)
+S541 Media prompt processing and heartbeat state update (Mar 22, 11:50 PM)
+### Mar 23, 2026
+1292 12:23a ✅ Heartbeat State File Written
+S542 Media prompt session - minimal activity observed (Mar 23, 12:23 AM)
+S543 Media prompt session with heartbeat state write (Mar 23, 12:55 AM)
+S544 Media prompt — no substantive content observed (Mar 23, 1:28 AM)
+S545 Media prompt — session observed but no actionable content captured (Mar 23, 2:00 AM)
+1293 2:01a 🔵 using-superpowers Skill: Mandatory Skill-First Workflow
+S546 Media prompt — session start with no substantive content (Mar 23, 2:33 AM)
+1294 2:33a 🔵 using-superpowers Skill: Mandatory Skill-Check Protocol
+S547 Media prompt request (placeholder) — no substantive content provided (Mar 23, 3:06 AM)
+S548 Media prompt — no substantive content provided (Mar 23, 3:38 AM)
+### Mar 25, 2026
+S550 Media prompt — no substantive content observed (Mar 25, 7:31 AM)
+1295 8:26a 🔵 Cron Task Not Sending Telegram Notifications After Execution
+1296 " 🔵 openclaw Skill `gws-workflow-file-announce` Skipped Due to Path Resolution Outside Root
+**1297** 8:30a 🔵 **Cron Task Not Sending Telegram Notifications After Execution**
+Sam Yeo reported that a scheduled cron task is executing but not sending Telegram notifications upon completion. This suggests a broken or missing notification hook in the post-execution flow of the cron task. The issue may involve a misconfigured webhook URL, missing bot token, failed API call to Telegram, or a broken callback integration between the task runner and the Telegram notification system. Investigation is needed into the cron task's post-run notification logic.
+~237t
 
-**../../home/lfaint/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
+**1298** " ✅ **Cron Jobs Configuration File Updated After Backup**
+During investigation or remediation of the cron Telegram notification issue, the cron jobs configuration file was updated. A backup was taken first (result: "backup_ok"), then /home/lfant/.openclaw/cron/jobs.json was written with 8986 bytes. This may represent a fix or reconfiguration of the cron jobs, potentially adding or restoring a Telegram notification step to the post-execution hook within job definitions.
+~213t
 
-**#1139** 12:27 AM 🔵 **HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol**
+**1299** " 🔵 **Cron Jobs Configuration Validated: 8 Jobs Present**
+After writing the updated cron jobs configuration, a validation step confirmed the file is valid JSON with 8 job entries. This pattern of backup → write → validate ensures the cron configuration is not corrupted. The 8 jobs are the active scheduled tasks in the OpenClaw system.
+~145t
 
-The HEARTBEAT.md file at /home/lfant/.openclaw/workspace/HEARTBEAT.md defines the Sam heartbeat routine for isolated agentTurn/cron jobs. It is explicitly NOT the general chat heartbeat. The protocol is designed to be small, deterministic, and quiet — it always ends with NO_REPLY and never sends proactive messages. Each run checks a narrow set of files, evaluates a specific list of conditions to determine if a finding is "meaningful," and writes only to memory/heartbeat-state.json unless something material changed. This prevents log/memory bloat from repetitive no-op heartbeats while still surfacing genuine issues like cron failures or new blockers in SESSION-STATE.md.
+**1300** " 🔴 **Root Cause Found: Telegram Group Messages Silently Dropped Due to Empty Allowlist**
+The OpenClaw doctor command revealed the root cause of Sam Yeo's reported issue: cron tasks execute but Telegram notifications are silently dropped. The Telegram channel is configured with groupPolicy="allowlist" but the allowlist (groupAllowFrom / allowFrom) contains no entries. This means every group message — including cron task completion notifications — is silently discarded. The fix requires either populating the allowlist with authorized sender IDs or switching groupPolicy to "open". The silent-drop behavior is the exact reason no Telegram alerts were received after cron execution.
+~345t
 
-Read: ~550
-
-**../../home/lfant/.openclaw/workspace/HEARTBEAT.md**
-| ID | Time | T | Title | Read | Work |
-|----|------|---|-------|------|------|
-
-**#1140** 12:58 AM 🔵 **HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol**
-
-HEARTBEAT.md at /home/lfant/.openclaw/workspace/HEARTBEAT.md defines the protocol for Sam's isolated agentTurn heartbeat cron jobs. It is a narrow, deterministic routine: read a fixed set of files, check specific error conditions, update heartbeat-state.json on every run, and only touch daily memory or SESSION-STATE.md when something materially changes. The job must remain small and quiet, always terminating with NO_REPLY. This separation from the general chat heartbeat rule is explicit — the file's scope is strictly cron/agentTurn invocations.
-
-Read: ~449
+**1301** " 🔵 **OpenClaw Healthcheck Skill — Security Audit Workflow**
+A daily cron trigger (`78f50a18-690a-4667-a12c-99a01398515c`, named `daily-security-audit`) invoked the healthcheck skill at 2026-03-25 08:30 KST. The session began by reading the full healthcheck skill definition. The skill outlines an 8-step workflow: model self-check, read-only context gathering (OS, firewall, ports, backups), running `openclaw security audit --deep`, checking update status, determining risk tolerance, producing a remediation plan, executing with confirmations, and verifying. The skill explicitly documents known false-positive file paths that should be ignored during audits across three packages: tavily-search, claude-mem, and writing-skills. Scheduling is done via OpenClaw's built-in cron tooling, and audit summaries are appended to dated memory files.
+~468t
 
 
-Access 121k tokens of past research & decisions for just 19,075t. Use the claude-mem skill to access memories by ID.
+Access 96k tokens of past work via get_observations([IDs]) or mem-search skill.
