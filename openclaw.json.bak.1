@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-29T01:41:24.041Z"
+    "lastTouchedVersion": "2026.3.28",
+    "lastTouchedAt": "2026-03-29T15:29:57.296Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-13T12:23:49.584Z",
@@ -31,8 +31,9 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "zai/glm-4.7",
+        "primary": "zai/glm-5.1",
         "fallbacks": [
+          "openai-codex/gpt-5.1",
           "openrouter/stepfun/step-3.5-flash:free",
           "openrouter/minimax/minimax-m2.7"
         ]
@@ -55,7 +56,7 @@
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8,
-        "model": "openai-codex/gpt-5.4",
+        "model": "zai/glm-4.7",
         "thinking": "high"
       }
     },
@@ -153,10 +154,16 @@
     },
     "entries": {
       "telegram": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "claude-mem": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "syncMemoryFile": true,
+          "workerPort": 37777,
+          "project": "openclaw"
+        }
       },
       "memory-core": {
         "enabled": false

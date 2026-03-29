@@ -1,92 +1,87 @@
-# $CMEM openclaw-main 2026-03-29 11:08am GMT+9
+# $CMEM openclaw-main 2026-03-30 4:00am GMT+9
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision
 Format: ID TIME TYPE TITLE
 Fetch details: get_observations([IDs]) | Search: mem-search skill
 
-Stats: 50 obs (16,032t read) | 92,782t work | 83% savings
+Stats: 50 obs (15,404t read) | 115,770t work | 87% savings
 
-### Mar 17, 2026
-1139 12:27a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
-1140 12:58a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
-1141 8:00a 🔵 Automated Korean Notion Daily Briefing via Cron
-1142 9:07a ✅ 크론 잡 브리핑 언어 한국어로 변경 요청
-1143 9:11a ✅ 크론 잡 브리핑 언어를 한국어로 변경 요청
-1144 " 🔵 OpenClaw 워크스페이스 구조 파악
-### Mar 19, 2026
-1159 3:40p 🔵 using-superpowers Meta-Skill Defines Mandatory Skill Invocation Protocol
-### Mar 20, 2026
-1190 3:30a ✅ Heartbeat State Persisted to Workspace Memory
-### Mar 22, 2026
-1274 12:57p 🔵 using-superpowers Skill — Mandatory Skill Invocation Policy
-1288 5:50p 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
-1289 6:55p 🔵 Heartbeat State File in OpenClaw Memory Workspace
-1290 8:01p 🔵 using-superpowers Skill: Mandatory Skill-Invocation Protocol
-1291 9:07p 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
-### Mar 23, 2026
-1292 12:23a ✅ Heartbeat State File Written
-S545 Media prompt — session observed but no actionable content captured (Mar 23, 2:00 AM)
-1293 2:01a 🔵 using-superpowers Skill: Mandatory Skill-First Workflow
-S546 Media prompt — session start with no substantive content (Mar 23, 2:33 AM)
-1294 2:33a 🔵 using-superpowers Skill: Mandatory Skill-Check Protocol
-S547 Media prompt request (placeholder) — no substantive content provided (Mar 23, 3:06 AM)
-S548 Media prompt — no substantive content provided (Mar 23, 3:38 AM)
-S550 Media prompt — no substantive content observed (Mar 23, 4:43 AM)
-### Mar 25, 2026
-S551 Sam Yeo requested notification when system recovery was complete — cron scheduler and gateway restored after jobs.json corruption (Mar 25, 7:31 AM)
-1295 8:26a 🔵 Cron Task Not Sending Telegram Notifications After Execution
-1296 " 🔵 openclaw Skill `gws-workflow-file-announce` Skipped Due to Path Resolution Outside Root
-1297 8:30a 🔵 Cron Task Not Sending Telegram Notifications After Execution
-1298 " ✅ Cron Jobs Configuration File Updated After Backup
-1299 " 🔵 Cron Jobs Configuration Validated: 8 Jobs Present
-1300 " 🔴 Root Cause Found: Telegram Group Messages Silently Dropped Due to Empty Allowlist
-1301 " 🔵 OpenClaw Healthcheck Skill — Security Audit Workflow
-1302 8:31a 🔵 Weather Skill Missing from Expected Path
-1303 8:32a 🔵 Automated Korean Daily Briefing via Notion + Telegram Cron Job
-S552 OpenClaw update availability check and recommendation after cron recovery — version 2026.3.23-2 available on stable channel (Mar 25, 8:32 AM)
-1304 8:33a 🔵 Periodic Memory Maintenance Cron Job Active
-1305 " 🟣 Daily GitHub Repo Briefing Cron Job (09:00 KST)
-1306 8:34a 🔵 GitHub Search API Returns 404 via gh CLI Field Syntax
-1307 " 🔵 GitHub Search API: URL-Encoded Query String Works; All-Time Stars Query Returns Zero
-1308 " 🔵 All-Time Stars Query Fix: Requires stars:>N Qualifier; openclaw/openclaw Ranks #9 Globally
-1309 8:39a 🔵 OpenClaw `healthcheck` Skill Definition
-S553 Andrej Karpathy의 autoresearch GitHub 저장소 분석 및 설명 (Mar 25, 8:42 AM)
-1310 8:47a 🔵 Andrej Karpathy "AutoResearch" GitHub Lookup Returned 404
-1311 " 🔵 Andrej Karpathy's "autoresearch" Project Confirmed on GitHub
-S554 User asked about Andrej Karpathy's "AutoResearch" project on GitHub, then asked about current weather near Bongeunsa Station, Seoul (Mar 25, 8:52 AM)
-1312 8:53a 🔵 User Inquiry: Andrej Karpathy's AutoResearch on GitHub
-1313 9:00a 🟣 GitHub Daily Repo Briefing — Scheduled Cron Agent (KST 09:00)
-1314 " 🔵 Missing GitHub Skill File at Expected Path
-1315 " 🔵 GitHub Skill Definition Loaded Successfully (Fallback Path)
-1316 " 🔵 `python` Command Not Available in Cron Agent Environment
-1317 9:25a 🔵 User Inquiry: Andrej Karpathy's AutoResearch on GitHub
 ### Mar 29, 2026
-1340 11:05a ✅ Manual Cron Job Execution Requested for Service Status Check
-S567 Manual One-Time Execution of All Cron Jobs for Service Status Check (Mar 29, 11:05 AM)
-1341 11:05a ✅ All 8 Cron Jobs Manually Triggered for Service Status Check
-1342 " ✅ Manual Cron Job Run Completed — 7 of 8 Jobs Enqueued
-1343 11:06a 🔵 OpenClaw Uses Named Process Sessions for Background Command Tracking
-1344 " 🔵 workspace-heartbeat Cron Job Reads HEARTBEAT.md for Workspace Context
-1345 " 🔵 Root Cause Found: All Error Cron Jobs Fail Due to Expired openai-codex OAuth Token
-**1346** 11:07a ✅ **Manual Cron Job Execution Requested for Service Status Check**
-The openclaw-control-ui interface issued a request to run all existing cron jobs a single time. The stated reason was to check service status. This is a one-off manual invocation, not a change to the cron schedule itself. The source label is flagged as untrusted metadata, meaning its identity should be verified independently before acting on privileged operations.
-~197t
+1366 11:12a 🟣 Daily GitHub Popular Repo Briefing Cron Job (Korean, for Sam)
+1418 11:45a 🔵 Manual Cron Job Trigger for Service Status Check
+1419 11:46a ✅ Heartbeat State File Updated After Cron Health Verification
+1420 " ✅ Daily Memory Updated to Reflect Full Cron Recovery
+1430 12:00p 🔵 Manual Cron Job Execution Request for Service Status Check
+1436 12:18p ✅ Manual Cron Job Trigger for Service Status Check
+1437 " 🔵 Openclaw Cron System Fully Healthy — All 8 Jobs Running on GLM 4.7
+1438 12:50p 🔵 Manual Cron Job Trigger Request for Service Status Check
+1439 1:56p ✅ Manual Cron Job Trigger for Service Status Check
+1440 3:00p 🔵 All 8 Cron Jobs Report status=None Despite Zero Errors
+1441 5:11p 🔵 Heartbeat Cron Health Verification — All 8 Jobs Healthy
+1442 7:23p 🔵 Heartbeat System State: All 8 Cron Jobs Healthy After GLM 4.7 Migration
+1489 9:00p 🔵 Heartbeat State Confirms All 8 Cron Jobs Healthy
+1490 9:01p 🔵 Full Cron Job Registry: 8 Jobs All Healthy on GLM 4.7
+1491 10:03p 🔵 ClawHub CLI v0.7.0 Skill Management Tool
+1492 10:42p 🔵 Heartbeat State: All 8 Cron Jobs Healthy After GLM 4.7 Migration
+1493 11:00p 🔵 Periodic Memory Maintenance Cron Job Active
+1494 11:01p 🔵 OpenClaw Cron System Fully Recovered on GLM 4.7 — All 8 Jobs Healthy
+1495 " 🔵 OpenClaw Workspace Memory Architecture: Daily Files + MEMORY.md Distillation
+1496 " 🔵 multi-search-engine Skill Installation Investigated but Skipped
+1497 " 🔵 OpenClaw HEARTBEAT.md Protocol: Isolated agentTurn Monitoring Job
+1498 " 🔵 Two Long-Running Open Watch Items Persist in SESSION-STATE.md Since Mid-March
+1499 11:02p 🔵 SESSION-STATE.md: Workspace Architecture Decisions and Active Risk Items
+1500 " 🔵 github-repo-daily-briefing Had Extended Error State on Mar 11 Before Recovery
+1501 " 🔵 working-buffer.md: Context Compaction Safety Net Protocol
+1502 " 🔵 OpenClaw Agent Identity: Hugin — Sam Yeo's Personal Operations Assistant
+1503 " 🔵 OpenClaw Internal Hooks: 4 Active Internal Automation Handlers
+1504 " 🔵 8 Installed Skills on OpenClaw Agent as of 2026-03-09
+1505 " ✅ Model Upgraded from GPT-5.3-Codex to GPT-5.4 on 2026-03-09
+1506 11:05p 🟣 github-repo-daily-briefing Cron Job Created on 2026-03-03
+1507 " 🔵 OpenClaw Cron Run Success Determination: Use API Status, Not CLI Exit Code
+1508 " 🔵 Two Persistent Security Audit Warnings Are Known False Positives
+1509 " 🔵 NVIDIA Driver Errors Detected on 2026-03-02 (nvlddmkm, Event IDs 153 and 14)
+1510 " 🔵 OpenClaw Agent Configuration Snapshot as of 2026-03-03
+1511 " 🔵 Two UI Bugs Observed on 2026-03-09: Template Substitution Failure and GPT-5.4 Session Failure
+1512 11:07p ✅ MEMORY.md Updated by Periodic Memory Maintenance Cron Job
+1513 " 🔵 HEARTBEAT.md Full Protocol: Complete Specification for Isolated agentTurn Heartbeat Jobs
+1514 11:08p ✅ SESSION-STATE.md Updated by Memory Maintenance Job
+S617 HEARTBEAT.md routine execution — workspace-heartbeat cron job ran and updated heartbeat-state.json (Mar 29, 11:14 PM)
+1515 11:15p 🔵 periodic-memory-maintenance cron job in error state
+1516 11:17p 🔵 Tavily Search Tool Configuration in Workspace
+1517 11:18p 🔵 Heartbeat Check: periodic-memory-maintenance Cron Error
+S618 Heartbeat routine execution — HEARTBEAT.md agentTurn isolated job (Mar 29, 11:46 PM)
+### Mar 30, 2026
+S619 HEARTBEAT.md check — routine system status verification for openclaw agent session (Mar 30, 12:19 AM)
+S620 Sam Yeo asked whether GPT-5.1 (openai-codex/gpt-5.1) is available in the current subscription/configuration (Mar 30, 12:28 AM)
+1518 12:29a ✅ openclaw.json configuration updated
+1519 " 🔵 OpenClaw Agent Configuration Layout
+1520 12:30a ✅ OpenClaw Primary Model Changed to zai/glm-4.7
+1521 " ✅ OpenClaw Primary Model Upgraded to zai/glm-5.1 with Fallback Chain
+S621 User asked about model availability in their subscription — GLM-4.7, GLM-5.1, GPT-5.1 comparison and subscription access check (Mar 30, 12:30 AM)
+S622 Heartbeat routine execution — Sam Yeo on z.ai light coding plan (Mar 30, 12:38 AM)
+**1522** 1:11a 🔵 **User Sam Yeo on z.ai Light Coding Plan**
+Sam Yeo volunteered that they are on the z.ai light coding plan. This is relevant context for future sessions involving this user, as plan tier may affect available features, token limits, or capabilities within the z.ai platform.
+~158t
 
-**1347** " 🔵 **Manual Cron Job Trigger Request for Service Status Check**
-At 10:44 GMT+9 on 2026-03-29, a request came through the openclaw-control-ui interface to manually trigger all existing cron jobs once for a service status check. The request was written in Korean and indicates the user wants to verify that services are running correctly by forcing a single execution of scheduled cron jobs rather than waiting for their scheduled time.
-~224t
+**1523** 1:43a 🔵 **User is on z.ai Light Coding Plan**
+Sam Yeo disclosed that they are currently using the z.ai light coding plan. This is relevant context for understanding the user's available capabilities and resource limits when working in their Claude Code session — light plan may imply usage caps or feature restrictions compared to higher-tier plans.
+~144t
 
-**1348** 11:08a 🔵 **OpenClaw Config Validation Error: Unrecognized Key "default_model"**
-While attempting to run cron jobs for service status checking, OpenClaw's config validation step failed because the current config file contains an unrecognized key "default_model" at the root level. The team investigated the OpenClaw CLI config command structure to understand how to fix this. The config system uses dot-path notation for getting/setting values and supports advanced features like secret reference providers and batch config updates. The "default_model" key is not part of OpenClaw's recognized config schema and needs to be removed or corrected.
-~353t
+S623 Sam mentioned using z.ai 라이트 코딩 플랜 — heartbeat routine execution observed (Mar 30, 1:43 AM)
+S624 Sam Yeo mentions using z.ai light coding plan — heartbeat routine running (Mar 30, 2:16 AM)
+**1524** 2:48a 🔵 **Sam Yeo Uses z.ai Light Coding Plan**
+Sam Yeo disclosed that they are currently subscribed to the z.ai light coding plan. This is relevant context for understanding any feature limitations or resource constraints that may apply to their sessions.
+~134t
 
-**1349** " 🔵 **Daily Security Audit — Known False Positives Documented**
-A recurring daily security audit is configured using the `openclaw security audit --deep` command. Three packages have known false-positive findings that should be ignored on every run: tavily-search (two script files), claude-mem (five runtime/worker files), and writing-skills (one graph-rendering file). The audit output is plain text, auto-delivered by the cron system. This observation captures the stable false-positive list so future audit triaging can skip these files without re-investigation.
-~305t
+S625 Heartbeat routine execution — checking periodic-memory-maintenance cron error state and daily memory (Mar 30, 2:48 AM)
+**1525** 3:00a 🔵 **Daily Security Audit Cron Job Configuration**
+A daily deep security audit runs via cron at 3:00 AM KST using `openclaw security audit --deep`. The audit is configured with a known set of false positives that should be ignored when reviewing results. These false positives span three packages: tavily-search (2 files), claude-mem (5 files), and writing-skills (1 file). Documenting these exclusions ensures future audit reviewers do not investigate known-clean files flagged by the scanner, keeping security review efficient and focused on genuine findings.
+~320t
 
-**1350** " 🔵 **OpenClaw Config Path "model" Does Not Exist**
-The investigation into the OpenClaw config validation error continued by attempting to read the "model" config path, which also does not exist. This confirms that "default_model" (and any variation like "model") is not a recognized key in OpenClaw's config schema. The key likely needs to be removed from the config file entirely using "openclaw config unset default_model".
-~219t
+S626 Sam mentions using z.ai light coding plan — heartbeat routine ran and checked system state (Mar 30, 3:53 AM)
+**1526** 3:54a 🔵 **Full cron job inventory — 7/8 healthy, periodic-memory-maintenance has 1 consecutive error**
+The heartbeat job read the full cron job registry. All 8 jobs are operational. The one anomaly is periodic-memory-maintenance, which failed on its last weekly run when attempting to write 880 chars to MEMORY.md — the edit tool returned an error. This is a known low-severity issue (consecutiveErrors: 1, not escalating). The heartbeat-state.json notes this separately. The remaining 7 jobs — daily-security-audit, daily-update-check, daily-morning-briefing, daily-github-backup, notion-daily-briefing, github-repo-daily-briefing, and workspace-heartbeat — all last ran successfully and delivered. The GLM 4.7 migration from 2026-03-29 successfully resolved all previous OAuth-related failures.
+~457t
 
 
-Access 93k tokens of past work via get_observations([IDs]) or mem-search skill.
+Access 116k tokens of past work via get_observations([IDs]) or mem-search skill.

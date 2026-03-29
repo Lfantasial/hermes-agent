@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1774750099421,
+      "updatedAtMs": 1774807231961,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -18,7 +18,8 @@
       "wakeMode": "now",
       "payload": {
         "message": "Run 'openclaw security audit --deep'. Ignore false positives from tavily-search (scripts/extract.mjs, scripts/search.mjs) and also from claude-mem (bun-runner.js, context-generator.cjs, mcp-server.cjs, smart-install.js, worker-cli.js) and writing-skills (render-graphs.js).",
-        "kind": "agentTurn"
+        "kind": "agentTurn",
+        "model": "zai/glm-4.7"
       },
       "delivery": {
         "mode": "announce",
@@ -26,10 +27,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1774807200000,
-        "lastRunAtMs": 1774750062005,
+        "nextRunAtMs": 1774893600000,
+        "lastRunAtMs": 1774807202672,
         "lastStatus": "ok",
-        "lastDurationMs": 37416,
+        "lastDurationMs": 29289,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -43,7 +44,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1774731602037,
+      "updatedAtMs": 1774750142241,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -53,7 +54,8 @@
       "wakeMode": "now",
       "payload": {
         "message": "Check for OpenClaw and skills updates using 'openclaw update status' and 'npx skills check'. If updates are available, verify that Telegram channel is synced and notify Sam with the update details.",
-        "kind": "agentTurn"
+        "kind": "agentTurn",
+        "model": "zai/glm-4.7"
       },
       "delivery": {
         "mode": "announce",
@@ -62,14 +64,13 @@
       },
       "state": {
         "nextRunAtMs": 1774818000000,
-        "lastRunAtMs": 1774731601290,
-        "lastStatus": "error",
-        "lastDurationMs": 747,
-        "consecutiveErrors": 3,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastErrorReason": "auth",
-        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
+        "lastRunAtMs": 1774750110254,
+        "lastStatus": "ok",
+        "lastDurationMs": 17048,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
       }
     },
     {
@@ -77,9 +78,8 @@
       "agentId": "main",
       "name": "periodic-memory-maintenance",
       "enabled": true,
-      "notify": false,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1774395216439,
+      "updatedAtMs": 1774793447457,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -95,14 +95,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774792800000,
-        "lastRunAtMs": 1774395170658,
-        "lastStatus": "ok",
-        "lastDurationMs": 45781,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
+        "nextRunAtMs": 1775397600000,
+        "lastRunAtMs": 1774792800003,
+        "lastStatus": "error",
+        "lastDurationMs": 647454,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "lastError": "⚠️ 📝 Edit: `in ~/.openclaw/workspace/MEMORY.md (880 chars)` failed"
       }
     },
     {
@@ -112,7 +113,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1774735200766,
+      "updatedAtMs": 1774750146113,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -122,7 +123,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "It's 7 AM. Provide a morning briefing for Sam: 1. Current weather in Seoul (using weather skill). 2. Brief system status overview. 3. Any urgent notifications or tasks from memory. Keep it sharp and helpful."
+        "message": "It's 7 AM. Provide a morning briefing for Sam: 1. Current weather in Seoul (using weather skill). 2. Brief system status overview. 3. Any urgent notifications or tasks from memory. Keep it sharp and helpful.",
+        "model": "zai/glm-4.7"
       },
       "delivery": {
         "mode": "announce",
@@ -131,14 +133,13 @@
       },
       "state": {
         "nextRunAtMs": 1774821600000,
-        "lastRunAtMs": 1774735200003,
-        "lastStatus": "error",
-        "lastDurationMs": 763,
-        "consecutiveErrors": 3,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastErrorReason": "auth",
-        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
+        "lastRunAtMs": 1774750127306,
+        "lastStatus": "ok",
+        "lastDurationMs": 18536,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
       }
     },
     {
@@ -148,7 +149,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1774724400740,
+      "updatedAtMs": 1774750110250,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -167,14 +168,14 @@
       },
       "state": {
         "nextRunAtMs": 1774810800000,
-        "lastRunAtMs": 1774724400002,
-        "lastStatus": "error",
-        "lastDurationMs": 738,
-        "consecutiveErrors": 3,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastErrorReason": "auth",
-        "runningAtMs": 1774750099426
+        "lastRunAtMs": 1774750099426,
+        "lastStatus": "ok",
+        "lastDurationMs": 10824,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true,
+        "runningAtMs": 1774810803207
       }
     },
     {
@@ -183,7 +184,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1774738805856,
+      "updatedAtMs": 1774750179557,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -194,7 +195,8 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Run 'python3 /home/lfant/.openclaw/workspace/notion_daily_brief.py'. Then produce a concise Korean briefing for Sam: max 25 items (top priority first), include category counts and immediate actions. Keep under 3500 characters for Telegram delivery.",
-        "timeoutSeconds": 300
+        "timeoutSeconds": 300,
+        "model": "zai/glm-4.7"
       },
       "delivery": {
         "mode": "announce",
@@ -203,14 +205,13 @@
       },
       "state": {
         "nextRunAtMs": 1774825200000,
-        "lastRunAtMs": 1774738804986,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 870,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
-        "lastErrorReason": "auth",
-        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
+        "lastRunAtMs": 1774750145846,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 33711,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -218,7 +219,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1774742403335,
+      "updatedAtMs": 1774750365494,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -229,7 +230,8 @@
       "payload": {
         "kind": "agentTurn",
         "message": "매일 09:00 KST 기준으로 GitHub 인기 레포 브리핑을 생성해 Sam에게 한국어로 전달하세요. 반드시 GitHub API(gh api 또는 공식 REST)로 실제 데이터를 조회하세요. 출력 형식: (1) 최근 인기 Top 5(최근 7일 생성 + stars 기준), (2) 누적 스타 상위 Top 5(archived 제외, 가능하면 최근 활동 있는 레포 우선), (3) 각 레포 핵심 설명 1~2문장(무엇/왜 중요한지), (4) OpenClaw 또는 Claude Code에 바로 적용 가능한 아이디어 3~5개(자동화/보안/개발생산성 관점), (5) 오늘 바로 실행할 액션 3개. 중복 레포는 한 번만 노출하고 전체 2500자 이내로 간결하게 작성하세요.",
-        "timeoutSeconds": 300
+        "timeoutSeconds": 300,
+        "model": "zai/glm-4.7"
       },
       "delivery": {
         "mode": "announce",
@@ -238,15 +240,15 @@
       },
       "state": {
         "nextRunAtMs": 1774828800000,
-        "lastRunAtMs": 1774742402483,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 852,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
-        "lastErrorReason": "auth",
-        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
-      }
+        "lastRunAtMs": 1774750320389,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 45105,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      },
+      "agentId": "main"
     },
     {
       "id": "34ae8346-6001-49dd-b83d-17865b2b46c3",
@@ -254,7 +256,7 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1774750062000,
+      "updatedAtMs": 1774785669814,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -267,11 +269,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1774753200000,
-        "lastRunAtMs": 1774749917914,
+        "nextRunAtMs": 1774828800000,
+        "lastRunAtMs": 1774785607174,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 144086,
+        "lastDurationMs": 62640,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
