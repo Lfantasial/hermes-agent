@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-18T11:48:28.332Z"
+    "lastTouchedVersion": "2026.3.24",
+    "lastTouchedAt": "2026-03-29T02:00:43.964Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-13T12:23:49.584Z",
@@ -18,9 +18,9 @@
   },
   "auth": {
     "profiles": {
-      "openai-codex:default": {
-        "provider": "openai-codex",
-        "mode": "oauth"
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
       }
     }
   },
@@ -31,16 +31,16 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-codex/gpt-5.4",
+        "primary": "zai/glm-4.7",
         "fallbacks": [
-          "openai-codex/gpt-5.3-codex",
-          "openai-codex/gpt-5.3-codex-spark"
+          "openrouter/stepfun/step-3.5-flash:free",
+          "openrouter/minimax/minimax-m2.7"
         ]
       },
       "models": {
-        "openai-codex/gpt-5.3-codex": {},
-        "openai-codex/gpt-5.4": {},
-        "openai-codex/gpt-5.3-codex-spark": {}
+        "zai/glm-4.7": {},
+        "openrouter/stepfun/step-3.5-flash:free": {},
+        "openrouter/minimax/minimax-m2.7": {}
       },
       "workspace": "/home/lfant/.openclaw/workspace",
       "memorySearch": {
@@ -55,14 +55,14 @@
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8,
-        "model": "openai-codex/gpt-5.4",
+        "model": "zai/glm-4.7",
         "thinking": "high"
       }
     },
     "list": [
       {
         "id": "main",
-        "model": "openai-codex/gpt-5.4"
+        "model": "zai/glm-4.7"
       }
     ]
   },

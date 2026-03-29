@@ -1,0 +1,16 @@
+{
+  "entries": {
+    "/home/lfant/.openclaw/openclaw.json": {
+      "lastKnownGood": {
+        "hash": "4bd3ba125743f6eed4a4d61923a85e64292d2616303577b3ffbf20a1e2d45219",
+        "bytes": 3701,
+        "mtimeMs": 1774749643960.8035,
+        "ctimeMs": 1774749643964.497,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-03-29T02:00:44.040Z"
+      },
+      "lastObservedSuspiciousSignature": null
+    }
+  }
+}

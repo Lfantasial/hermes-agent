@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "lastRunAt": "2026-03-25T08:03:00+09:00",
+  "lastRunAt": "2026-03-29T11:06:00+09:00",
   "lastChecks": {
-    "sessionState": "2026-03-25T08:03:00+09:00",
-    "dailyMemory": "2026-03-25T08:03:00+09:00",
-    "cron": "2026-03-25T08:03:00+09:00"
+    "sessionState": "2026-03-29T11:06:00+09:00",
+    "dailyMemory": "2026-03-29T11:06:00+09:00",
+    "cron": "2026-03-29T11:06:00+09:00"
   },
   "findings": [
-    "SESSION-STATE still lists active watch items: proactive loop implementation drift and file-memory/semantic-memory alignment"
+    "6 cron jobs failing with OAuth token refresh error (openai-codex): daily-security-audit (3 consecutive errors), daily-update-check (3), daily-morning-briefing (3), daily-github-backup (3), notion-daily-briefing (4), github-repo-daily-briefing (4)"
   ],
-  "notes": "file memory is the auditable source of truth; claude-mem remains semantic recall"
+  "notes": "OAuth token refresh required for openai-codex provider"
 }

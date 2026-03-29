@@ -1,40 +1,11 @@
-# $CMEM openclaw-main 2026-03-25 8:31am GMT+9
+# $CMEM openclaw-main 2026-03-29 11:08am GMT+9
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision
 Format: ID TIME TYPE TITLE
 Fetch details: get_observations([IDs]) | Search: mem-search skill
 
-Stats: 50 obs (18,461t read) | 96,417t work | 81% savings
+Stats: 50 obs (16,032t read) | 92,782t work | 83% savings
 
-### Mar 15, 2026
-1112 4:31a 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
-1113 6:46p ✅ Heartbeat State Written to Persistent Memory File
-1114 7:20p ✅ Heartbeat State Written to workspace/memory
-1115 8:26p 🔵 using-superpowers Skill: Mandatory Skill-First Protocol
-1116 10:44p 🔵 pptx-design-styles: Claude Skill for PPTX Presentation Design
-1117 " 🔵 SKILL.md: pptx-design-styles Skill Trigger & Production Rules
-1118 10:45p 🔵 references/styles.md: Per-Style Technical Specs (Styles 01–10 of 30)
-1119 11:00p 🔵 Periodic Memory Maintenance Cron Job Active
-1120 " 🔵 using-superpowers Skill: Mandatory Skill-Check Protocol
-1121 " 🔵 Memory Directory Structure: Daily Logs + Special Files
-1122 11:50p 🔵 OpenClaw System Status Check on WSL2 Environment
-### Mar 16, 2026
-1123 1:26a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Protocol
-1124 3:39a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Heartbeat Routine
-1125 3:40a 🔵 SESSION-STATE.md Shows All Active Tasks Completed, No Current Blockers
-1126 " 🔵 Working Buffer INACTIVE; Heartbeat State Last Run at 2026-03-16T03:05 KST
-1127 " 🔵 All 8 Cron Jobs Healthy — No Errors or Failures Detected
-1128 6:25a 🔵 HEARTBEAT.md — Isolated AgentTurn Heartbeat Job Specification
-1129 8:05a 🔵 Heartbeat Routine Specification (HEARTBEAT.md)
-1130 9:00a 🟣 GitHub Daily Briefing Cron Job — Korean Summary for Sam
-1131 " 🔵 gh api Does Not Support --limit Flag
-1132 9:01a 🔵 GitHub Trending Repos — Top 5 (Last 7 Days, as of 2026-03-16)
-1133 " 🔵 GitHub All-Time Top Starred Repos — Query Results (2026-03-16)
-1134 9:45a 🔵 SESSION-STATE.md Memory Architecture Baseline
-1136 9:26p 🔵 Full cron job inventory — all 8 jobs healthy as of 2026-03-16
-1135 9:27p 🔵 HEARTBEAT.md defines isolated agentTurn heartbeat job rules
-1137 9:57p 🔵 HEARTBEAT.md defines isolated agentTurn cron heartbeat protocol
-1138 10:57p 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
 ### Mar 17, 2026
 1139 12:27a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
 1140 12:58a 🔵 HEARTBEAT.md Defines Isolated AgentTurn Cron Heartbeat Protocol
@@ -52,42 +23,70 @@ Stats: 50 obs (18,461t read) | 96,417t work | 81% savings
 1289 6:55p 🔵 Heartbeat State File in OpenClaw Memory Workspace
 1290 8:01p 🔵 using-superpowers Skill: Mandatory Skill-Invocation Protocol
 1291 9:07p 🔵 using-superpowers Skill: Mandatory Skill Invocation Protocol
-S540 Session observation — minimal activity recorded so far (Mar 22, 10:45 PM)
-S541 Media prompt processing and heartbeat state update (Mar 22, 11:50 PM)
 ### Mar 23, 2026
 1292 12:23a ✅ Heartbeat State File Written
-S542 Media prompt session - minimal activity observed (Mar 23, 12:23 AM)
-S543 Media prompt session with heartbeat state write (Mar 23, 12:55 AM)
-S544 Media prompt — no substantive content observed (Mar 23, 1:28 AM)
 S545 Media prompt — session observed but no actionable content captured (Mar 23, 2:00 AM)
 1293 2:01a 🔵 using-superpowers Skill: Mandatory Skill-First Workflow
 S546 Media prompt — session start with no substantive content (Mar 23, 2:33 AM)
 1294 2:33a 🔵 using-superpowers Skill: Mandatory Skill-Check Protocol
 S547 Media prompt request (placeholder) — no substantive content provided (Mar 23, 3:06 AM)
 S548 Media prompt — no substantive content provided (Mar 23, 3:38 AM)
+S550 Media prompt — no substantive content observed (Mar 23, 4:43 AM)
 ### Mar 25, 2026
-S550 Media prompt — no substantive content observed (Mar 25, 7:31 AM)
+S551 Sam Yeo requested notification when system recovery was complete — cron scheduler and gateway restored after jobs.json corruption (Mar 25, 7:31 AM)
 1295 8:26a 🔵 Cron Task Not Sending Telegram Notifications After Execution
 1296 " 🔵 openclaw Skill `gws-workflow-file-announce` Skipped Due to Path Resolution Outside Root
-**1297** 8:30a 🔵 **Cron Task Not Sending Telegram Notifications After Execution**
-Sam Yeo reported that a scheduled cron task is executing but not sending Telegram notifications upon completion. This suggests a broken or missing notification hook in the post-execution flow of the cron task. The issue may involve a misconfigured webhook URL, missing bot token, failed API call to Telegram, or a broken callback integration between the task runner and the Telegram notification system. Investigation is needed into the cron task's post-run notification logic.
-~237t
+1297 8:30a 🔵 Cron Task Not Sending Telegram Notifications After Execution
+1298 " ✅ Cron Jobs Configuration File Updated After Backup
+1299 " 🔵 Cron Jobs Configuration Validated: 8 Jobs Present
+1300 " 🔴 Root Cause Found: Telegram Group Messages Silently Dropped Due to Empty Allowlist
+1301 " 🔵 OpenClaw Healthcheck Skill — Security Audit Workflow
+1302 8:31a 🔵 Weather Skill Missing from Expected Path
+1303 8:32a 🔵 Automated Korean Daily Briefing via Notion + Telegram Cron Job
+S552 OpenClaw update availability check and recommendation after cron recovery — version 2026.3.23-2 available on stable channel (Mar 25, 8:32 AM)
+1304 8:33a 🔵 Periodic Memory Maintenance Cron Job Active
+1305 " 🟣 Daily GitHub Repo Briefing Cron Job (09:00 KST)
+1306 8:34a 🔵 GitHub Search API Returns 404 via gh CLI Field Syntax
+1307 " 🔵 GitHub Search API: URL-Encoded Query String Works; All-Time Stars Query Returns Zero
+1308 " 🔵 All-Time Stars Query Fix: Requires stars:>N Qualifier; openclaw/openclaw Ranks #9 Globally
+1309 8:39a 🔵 OpenClaw `healthcheck` Skill Definition
+S553 Andrej Karpathy의 autoresearch GitHub 저장소 분석 및 설명 (Mar 25, 8:42 AM)
+1310 8:47a 🔵 Andrej Karpathy "AutoResearch" GitHub Lookup Returned 404
+1311 " 🔵 Andrej Karpathy's "autoresearch" Project Confirmed on GitHub
+S554 User asked about Andrej Karpathy's "AutoResearch" project on GitHub, then asked about current weather near Bongeunsa Station, Seoul (Mar 25, 8:52 AM)
+1312 8:53a 🔵 User Inquiry: Andrej Karpathy's AutoResearch on GitHub
+1313 9:00a 🟣 GitHub Daily Repo Briefing — Scheduled Cron Agent (KST 09:00)
+1314 " 🔵 Missing GitHub Skill File at Expected Path
+1315 " 🔵 GitHub Skill Definition Loaded Successfully (Fallback Path)
+1316 " 🔵 `python` Command Not Available in Cron Agent Environment
+1317 9:25a 🔵 User Inquiry: Andrej Karpathy's AutoResearch on GitHub
+### Mar 29, 2026
+1340 11:05a ✅ Manual Cron Job Execution Requested for Service Status Check
+S567 Manual One-Time Execution of All Cron Jobs for Service Status Check (Mar 29, 11:05 AM)
+1341 11:05a ✅ All 8 Cron Jobs Manually Triggered for Service Status Check
+1342 " ✅ Manual Cron Job Run Completed — 7 of 8 Jobs Enqueued
+1343 11:06a 🔵 OpenClaw Uses Named Process Sessions for Background Command Tracking
+1344 " 🔵 workspace-heartbeat Cron Job Reads HEARTBEAT.md for Workspace Context
+1345 " 🔵 Root Cause Found: All Error Cron Jobs Fail Due to Expired openai-codex OAuth Token
+**1346** 11:07a ✅ **Manual Cron Job Execution Requested for Service Status Check**
+The openclaw-control-ui interface issued a request to run all existing cron jobs a single time. The stated reason was to check service status. This is a one-off manual invocation, not a change to the cron schedule itself. The source label is flagged as untrusted metadata, meaning its identity should be verified independently before acting on privileged operations.
+~197t
 
-**1298** " ✅ **Cron Jobs Configuration File Updated After Backup**
-During investigation or remediation of the cron Telegram notification issue, the cron jobs configuration file was updated. A backup was taken first (result: "backup_ok"), then /home/lfant/.openclaw/cron/jobs.json was written with 8986 bytes. This may represent a fix or reconfiguration of the cron jobs, potentially adding or restoring a Telegram notification step to the post-execution hook within job definitions.
-~213t
+**1347** " 🔵 **Manual Cron Job Trigger Request for Service Status Check**
+At 10:44 GMT+9 on 2026-03-29, a request came through the openclaw-control-ui interface to manually trigger all existing cron jobs once for a service status check. The request was written in Korean and indicates the user wants to verify that services are running correctly by forcing a single execution of scheduled cron jobs rather than waiting for their scheduled time.
+~224t
 
-**1299** " 🔵 **Cron Jobs Configuration Validated: 8 Jobs Present**
-After writing the updated cron jobs configuration, a validation step confirmed the file is valid JSON with 8 job entries. This pattern of backup → write → validate ensures the cron configuration is not corrupted. The 8 jobs are the active scheduled tasks in the OpenClaw system.
-~145t
+**1348** 11:08a 🔵 **OpenClaw Config Validation Error: Unrecognized Key "default_model"**
+While attempting to run cron jobs for service status checking, OpenClaw's config validation step failed because the current config file contains an unrecognized key "default_model" at the root level. The team investigated the OpenClaw CLI config command structure to understand how to fix this. The config system uses dot-path notation for getting/setting values and supports advanced features like secret reference providers and batch config updates. The "default_model" key is not part of OpenClaw's recognized config schema and needs to be removed or corrected.
+~353t
 
-**1300** " 🔴 **Root Cause Found: Telegram Group Messages Silently Dropped Due to Empty Allowlist**
-The OpenClaw doctor command revealed the root cause of Sam Yeo's reported issue: cron tasks execute but Telegram notifications are silently dropped. The Telegram channel is configured with groupPolicy="allowlist" but the allowlist (groupAllowFrom / allowFrom) contains no entries. This means every group message — including cron task completion notifications — is silently discarded. The fix requires either populating the allowlist with authorized sender IDs or switching groupPolicy to "open". The silent-drop behavior is the exact reason no Telegram alerts were received after cron execution.
-~345t
+**1349** " 🔵 **Daily Security Audit — Known False Positives Documented**
+A recurring daily security audit is configured using the `openclaw security audit --deep` command. Three packages have known false-positive findings that should be ignored on every run: tavily-search (two script files), claude-mem (five runtime/worker files), and writing-skills (one graph-rendering file). The audit output is plain text, auto-delivered by the cron system. This observation captures the stable false-positive list so future audit triaging can skip these files without re-investigation.
+~305t
 
-**1301** " 🔵 **OpenClaw Healthcheck Skill — Security Audit Workflow**
-A daily cron trigger (`78f50a18-690a-4667-a12c-99a01398515c`, named `daily-security-audit`) invoked the healthcheck skill at 2026-03-25 08:30 KST. The session began by reading the full healthcheck skill definition. The skill outlines an 8-step workflow: model self-check, read-only context gathering (OS, firewall, ports, backups), running `openclaw security audit --deep`, checking update status, determining risk tolerance, producing a remediation plan, executing with confirmations, and verifying. The skill explicitly documents known false-positive file paths that should be ignored during audits across three packages: tavily-search, claude-mem, and writing-skills. Scheduling is done via OpenClaw's built-in cron tooling, and audit summaries are appended to dated memory files.
-~468t
+**1350** " 🔵 **OpenClaw Config Path "model" Does Not Exist**
+The investigation into the OpenClaw config validation error continued by attempting to read the "model" config path, which also does not exist. This confirms that "default_model" (and any variation like "model") is not a recognized key in OpenClaw's config schema. The key likely needs to be removed from the config file entirely using "openclaw config unset default_model".
+~219t
 
 
-Access 96k tokens of past work via get_observations([IDs]) or mem-search skill.
+Access 93k tokens of past work via get_observations([IDs]) or mem-search skill.

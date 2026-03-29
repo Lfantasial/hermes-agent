@@ -8,7 +8,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1773684038557,
+      "updatedAtMs": 1774750099421,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,15 +26,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773770400000,
-        "lastRunAtMs": 1773684000771,
+        "nextRunAtMs": 1774807200000,
+        "lastRunAtMs": 1774750062005,
         "lastStatus": "ok",
-        "lastDurationMs": 37786,
+        "lastDurationMs": 37416,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
-        "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1774395020201
+        "lastDelivered": true
       }
     },
     {
@@ -44,7 +43,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1773694837391,
+      "updatedAtMs": 1774731602037,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -62,15 +61,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773781200000,
-        "lastRunAtMs": 1773694802113,
-        "lastStatus": "ok",
-        "lastDurationMs": 35278,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1774395020201
+        "nextRunAtMs": 1774818000000,
+        "lastRunAtMs": 1774731601290,
+        "lastStatus": "error",
+        "lastDurationMs": 747,
+        "consecutiveErrors": 3,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastErrorReason": "auth",
+        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -80,7 +79,7 @@
       "enabled": true,
       "notify": false,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1773583262362,
+      "updatedAtMs": 1774395216439,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -96,10 +95,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774188000000,
-        "lastRunAtMs": 1773583207165,
+        "nextRunAtMs": 1774792800000,
+        "lastRunAtMs": 1774395170658,
         "lastStatus": "ok",
-        "lastDurationMs": 55197,
+        "lastDurationMs": 45781,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -113,7 +112,7 @@
       "enabled": true,
       "notify": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1773698429357,
+      "updatedAtMs": 1774735200766,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -131,15 +130,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773784800000,
-        "lastRunAtMs": 1773698401015,
-        "lastStatus": "ok",
-        "lastDurationMs": 28342,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true,
-        "runningAtMs": 1774395020201
+        "nextRunAtMs": 1774821600000,
+        "lastRunAtMs": 1774735200003,
+        "lastStatus": "error",
+        "lastDurationMs": 763,
+        "consecutiveErrors": 3,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastErrorReason": "auth",
+        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -149,7 +148,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1773687622016,
+      "updatedAtMs": 1774724400740,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -167,15 +166,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773774000000,
-        "lastRunAtMs": 1773687601808,
-        "lastStatus": "ok",
-        "lastDurationMs": 20208,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1774395020201
+        "nextRunAtMs": 1774810800000,
+        "lastRunAtMs": 1774724400002,
+        "lastStatus": "error",
+        "lastDurationMs": 738,
+        "consecutiveErrors": 3,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastErrorReason": "auth",
+        "runningAtMs": 1774750099426
       }
     },
     {
@@ -184,7 +183,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1773702045862,
+      "updatedAtMs": 1774738805856,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -203,14 +202,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773788400000,
-        "lastRunAtMs": 1773702001072,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 44790,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774825200000,
+        "lastRunAtMs": 1774738804986,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 870,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 4,
+        "lastErrorReason": "auth",
+        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -218,7 +218,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1773705626161,
+      "updatedAtMs": 1774742403335,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -237,14 +237,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1773792000000,
-        "lastRunAtMs": 1773705600745,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 25416,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1774828800000,
+        "lastRunAtMs": 1774742402483,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 852,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 4,
+        "lastErrorReason": "auth",
+        "lastError": "Error: All models failed (3): openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth) | openai-codex/gpt-5.3-codex-spark: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -253,7 +254,7 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1773705651800,
+      "updatedAtMs": 1774750062000,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -266,14 +267,13 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1773716400000,
-        "lastRunAtMs": 1773705626161,
+        "nextRunAtMs": 1774753200000,
+        "lastRunAtMs": 1774749917914,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 25639,
+        "lastDurationMs": 144086,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1774395020201
+        "consecutiveErrors": 0
       }
     }
   ]
