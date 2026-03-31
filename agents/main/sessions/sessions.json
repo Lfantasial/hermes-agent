@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
-    "sessionId": "0d4ddc2e-a724-41a4-907e-fc4a93b16b4e",
-    "updatedAt": 1774896281090,
+    "sessionId": "3a7be382-cbc3-48de-a4d5-5f1939672ea3",
+    "updatedAt": 1774981963086,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -14,7 +14,7 @@
       "from": "telegram:5487758242",
       "to": "telegram:5487758242"
     },
-    "sessionFile": "/home/lfant/.openclaw/agents/main/sessions/0d4ddc2e-a724-41a4-907e-fc4a93b16b4e.jsonl",
+    "sessionFile": "/home/lfant/.openclaw/agents/main/sessions/3a7be382-cbc3-48de-a4d5-5f1939672ea3.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
       "prompt": "⚠️ Skills catalog using compact format (descriptions omitted). Run `openclaw skills check` to audit.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its name.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <location>~/.openclaw/workspace/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <location>~/.agents/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <location>~/.openclaw/workspace/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>agent-browser</name>\n    <location>~/.agents/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>algorithmic-art</name>\n    <location>~/.agents/skills/algorithmic-art/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>audit-website</name>\n    <location>~/.agents/skills/audit-website/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>better-auth-best-practices</name>\n    <location>~/.agents/skills/better-auth-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brainstorming</name>\n    <location>~/.agents/skills/brainstorming/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brand-guidelines</name>\n    <location>~/.agents/skills/brand-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-use</name>\n    <location>~/.agents/skills/browser-use/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas-design</name>\n    <location>~/.agents/skills/canvas-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>copywriting</name>\n    <location>~/.agents/skills/copywriting/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>create-auth-skill</name>\n    <location>~/.agents/skills/create-auth-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>dispatching-parallel-agents</name>\n    <location>~/.agents/skills/dispatching-parallel-agents/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>doc-coauthoring</name>\n    <location>~/.agents/skills/doc-coauthoring/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>docx</name>\n    <location>~/.agents/skills/docx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>email-and-password-best-practices</name>\n    <location>~/.agents/skills/email-and-password-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>executing-plans</name>\n    <location>~/.agents/skills/executing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <location>~/.agents/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>finishing-a-development-branch</name>\n    <location>~/.agents/skills/finishing-a-development-branch/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>frontend-design</name>\n    <location>~/.agents/skills/frontend-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>internal-comms</name>\n    <location>~/.agents/skills/internal-comms/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcp-builder</name>\n    <location>~/.agents/skills/mcp-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-best-practices</name>\n    <location>~/.agents/skills/next-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-cache-components</name>\n    <location>~/.agents/skills/next-cache-components/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-upgrade</name>\n    <location>~/.agents/skills/next-upgrade/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>organization-best-practices</name>\n    <location>~/.agents/skills/organization-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pdf</name>\n    <location>~/.agents/skills/pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pptx</name>\n    <location>~/.agents/skills/pptx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>receiving-code-review</name>\n    <location>~/.agents/skills/receiving-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>remotion-best-practices</name>\n    <location>~/.agents/skills/remotion-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>requesting-code-review</name>\n    <location>~/.agents/skills/requesting-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>seo-audit</name>\n    <location>~/.agents/skills/seo-audit/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>simplemem-skill</name>\n    <location>~/.agents/skills/simplemem-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>slack-gif-creator</name>\n    <location>~/.agents/skills/slack-gif-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>subagent-driven-development</name>\n    <location>~/.agents/skills/subagent-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supabase-postgres-best-practices</name>\n    <location>~/.agents/skills/supabase-postgres-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>systematic-debugging</name>\n    <location>~/.agents/skills/systematic-debugging/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>template-skill</name>\n    <location>~/.agents/skills/template-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>test-driven-development</name>\n    <location>~/.agents/skills/test-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>theme-factory</name>\n    <location>~/.agents/skills/theme-factory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>two-factor-authentication-best-practices</name>\n    <location>~/.agents/skills/two-factor-authentication-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ui-ux-pro-max</name>\n    <location>~/.agents/skills/ui-ux-pro-max/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-git-worktrees</name>\n    <location>~/.agents/skills/using-git-worktrees/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-superpowers</name>\n    <location>~/.agents/skills/using-superpowers/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-composition-patterns</name>\n    <location>~/.agents/skills/vercel-composition-patterns/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-best-practices</name>\n    <location>~/.agents/skills/vercel-react-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-native-skills</name>\n    <location>~/.agents/skills/vercel-react-native-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>verification-before-completion</name>\n    <location>~/.agents/skills/verification-before-completion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-artifacts-builder</name>\n    <location>~/.agents/skills/web-artifacts-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-design-guidelines</name>\n    <location>~/.agents/skills/web-design-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>webapp-testing</name>\n    <location>~/.agents/skills/webapp-testing/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-plans</name>\n    <location>~/.agents/skills/writing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-skills</name>\n    <location>~/.agents/skills/writing-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>xlsx</name>\n    <location>~/.agents/skills/xlsx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ontology</name>\n    <location>~/.openclaw/workspace/skills/ontology/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>proactive-agent</name>\n    <location>~/.openclaw/workspace/skills/proactive-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Self-Improving + Proactive Agent</name>\n    <location>~/.openclaw/workspace/skills/self-improving/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <location>~/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -1228,13 +1228,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774896262734,
+    "startedAt": 1774981953016,
     "modelProvider": "zai",
     "model": "glm-4.7",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774896262649,
-      "sessionId": "0d4ddc2e-a724-41a4-907e-fc4a93b16b4e",
+      "generatedAt": 1774981952952,
+      "sessionId": "3a7be382-cbc3-48de-a4d5-5f1939672ea3",
       "sessionKey": "agent:main:main",
       "provider": "zai",
       "model": "glm-4.7",
@@ -1253,8 +1253,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 47152,
-        "projectContextChars": 27973,
+        "chars": 47388,
+        "projectContextChars": 28209,
         "nonProjectContextChars": 19179
       },
       "injectedWorkspaceFiles": [
@@ -1318,8 +1318,8 @@
           "name": "MEMORY.md",
           "path": "/home/lfant/.openclaw/workspace/MEMORY.md",
           "missing": false,
-          "rawChars": 7622,
-          "injectedChars": 7622,
+          "rawChars": 7858,
+          "injectedChars": 7858,
           "truncated": false
         }
       ],
@@ -1723,21 +1723,21 @@
         ]
       }
     },
-    "cacheRead": 29550,
+    "cacheRead": 28558,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "lastTo": "telegram:5487758242",
     "contextTokens": 204800,
-    "inputTokens": 26843,
-    "outputTokens": 616,
-    "estimatedCostUsd": 1.2021314750000005,
-    "totalTokens": 29576,
-    "endedAt": 1774896281044,
-    "runtimeMs": 18310
+    "inputTokens": 22918,
+    "outputTokens": 357,
+    "estimatedCostUsd": 1.117358985,
+    "totalTokens": 28586,
+    "endedAt": 1774981963038,
+    "runtimeMs": 10022
   },
   "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c": {
-    "sessionId": "9aff876f-ac06-49f8-8607-bd3d07b54b69",
-    "updatedAt": 1774893605436,
+    "sessionId": "a60f3bbc-8773-4d8f-861b-5bbf4a064762",
+    "updatedAt": 1774980003588,
     "systemSent": true,
     "model": "glm-4.7",
     "contextTokens": 204800,
@@ -2395,16 +2395,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 16877,
-    "outputTokens": 1219,
-    "totalTokens": 20901,
+    "inputTokens": 18670,
+    "outputTokens": 1769,
+    "totalTokens": 20919,
     "totalTokensFresh": true,
-    "cacheRead": 23439,
+    "cacheRead": 21664,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774893605773,
-      "sessionId": "9aff876f-ac06-49f8-8607-bd3d07b54b69",
+      "generatedAt": 1774980007353,
+      "sessionId": "a60f3bbc-8773-4d8f-861b-5bbf4a064762",
       "sessionKey": "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -2839,14 +2839,14 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.041680645
+    "estimatedCostUsd": 0.056282175000000004
   },
   "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260": {
-    "sessionId": "944d6b30-e4e3-4ee7-b92e-36e17360e778",
-    "updatedAt": 1774821600015,
+    "sessionId": "919ac551-a530-498d-af91-7cbca4555b0e",
+    "updatedAt": 1774908003389,
     "systemSent": true,
     "model": "glm-4.7",
-    "contextTokens": 200000,
+    "contextTokens": 204800,
     "label": "Cron: daily-morning-briefing",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>\n    <location>/home/lfant/.agents/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>agent-browser</name>\n    <description>Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to &quot;open a website&quot;, &quot;fill out a form&quot;, &quot;click a button&quot;, &quot;take a screenshot&quot;, &quot;scrape data from a page&quot;, &quot;test this web app&quot;, &quot;login to a site&quot;, &quot;automate browser actions&quot;, or any task requiring programmatic web interaction.</description>\n    <location>/home/lfant/.agents/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>algorithmic-art</name>\n    <description>Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists&apos; work to avoid copyright violations.</description>\n    <location>/home/lfant/.agents/skills/algorithmic-art/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>audit-website</name>\n    <description>Audit websites for SEO, performance, security, technical, content, and 15 other issue cateories with 230+ rules using the squirrelscan CLI. Returns LLM-optimized reports with health scores, broken links, meta tag analysis, and actionable recommendations. Use to discover and asses website or webapp issues and health.</description>\n    <location>/home/lfant/.agents/skills/audit-website/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>better-auth-best-practices</name>\n    <description>Skill for integrating Better Auth - the comprehensive TypeScript authentication framework.</description>\n    <location>/home/lfant/.agents/skills/better-auth-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brainstorming</name>\n    <description>You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.</description>\n    <location>/home/lfant/.agents/skills/brainstorming/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brand-guidelines</name>\n    <description>Applies Anthropic&apos;s official brand colors and typography to any sort of artifact that may benefit from having Anthropic&apos;s look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.</description>\n    <location>/home/lfant/.agents/skills/brand-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-use</name>\n    <description>Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, or extract information from web pages.</description>\n    <location>/home/lfant/.agents/skills/browser-use/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas-design</name>\n    <description>Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists&apos; work to avoid copyright violations.</description>\n    <location>/home/lfant/.agents/skills/canvas-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>copywriting</name>\n    <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says &quot;write copy for,&quot; &quot;improve this copy,&quot; &quot;rewrite this page,&quot; &quot;marketing copy,&quot; &quot;headline help,&quot; or &quot;CTA copy.&quot; For email copy, see email-sequence. For popup copy, see popup-cro.</description>\n    <location>/home/lfant/.agents/skills/copywriting/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>create-auth-skill</name>\n    <description>Skill for creating auth layers in TypeScript/JavaScript apps using Better Auth.</description>\n    <location>/home/lfant/.agents/skills/create-auth-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>dispatching-parallel-agents</name>\n    <description>Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies</description>\n    <location>/home/lfant/.agents/skills/dispatching-parallel-agents/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>doc-coauthoring</name>\n    <description>Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.</description>\n    <location>/home/lfant/.agents/skills/doc-coauthoring/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>docx</name>\n    <description>Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of &quot;Word doc&quot;, &quot;word document&quot;, &quot;.docx&quot;, or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a &quot;report&quot;, &quot;memo&quot;, &quot;letter&quot;, &quot;template&quot;, or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.</description>\n    <location>/home/lfant/.agents/skills/docx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>email-and-password-best-practices</name>\n    <description>This skill provides guidance and enforcement rules for implementing secure email and password authentication using Better Auth.</description>\n    <location>/home/lfant/.agents/skills/email-and-password-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>executing-plans</name>\n    <description>Use when you have a written implementation plan to execute in a separate session with review checkpoints</description>\n    <location>/home/lfant/.agents/skills/executing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>/home/lfant/.agents/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>finishing-a-development-branch</name>\n    <description>Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup</description>\n    <location>/home/lfant/.agents/skills/finishing-a-development-branch/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>frontend-design</name>\n    <description>Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.</description>\n    <location>/home/lfant/.agents/skills/frontend-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>internal-comms</name>\n    <description>A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).</description>\n    <location>/home/lfant/.agents/skills/internal-comms/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcp-builder</name>\n    <description>Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).</description>\n    <location>/home/lfant/.agents/skills/mcp-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-best-practices</name>\n    <description>Next.js best practices - file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, route handlers, image/font optimization, bundling</description>\n    <location>/home/lfant/.agents/skills/next-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-cache-components</name>\n    <description>Next.js 16 Cache Components - PPR, use cache directive, cacheLife, cacheTag, updateTag</description>\n    <location>/home/lfant/.agents/skills/next-cache-components/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-upgrade</name>\n    <description>Upgrade Next.js to the latest version following official migration guides and codemods</description>\n    <location>/home/lfant/.agents/skills/next-upgrade/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>organization-best-practices</name>\n    <description>This skill provides guidance and enforcement rules for implementing multi-tenant organizations, teams, and role-based access control using Better Auth&apos;s organization plugin.</description>\n    <location>/home/lfant/.agents/skills/organization-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pdf</name>\n    <description>Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.</description>\n    <location>/home/lfant/.agents/skills/pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pptx</name>\n    <description>Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions &quot;deck,&quot; &quot;slides,&quot; &quot;presentation,&quot; or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.</description>\n    <location>/home/lfant/.agents/skills/pptx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>receiving-code-review</name>\n    <description>Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation</description>\n    <location>/home/lfant/.agents/skills/receiving-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>remotion-best-practices</name>\n    <description>Best practices for Remotion - Video creation in React</description>\n    <location>/home/lfant/.agents/skills/remotion-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>requesting-code-review</name>\n    <description>Use when completing tasks, implementing major features, or before merging to verify work meets requirements</description>\n    <location>/home/lfant/.agents/skills/requesting-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>seo-audit</name>\n    <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions &quot;SEO audit,&quot; &quot;technical SEO,&quot; &quot;why am I not ranking,&quot; &quot;SEO issues,&quot; &quot;on-page SEO,&quot; &quot;meta tags review,&quot; or &quot;SEO health check.&quot; For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup.</description>\n    <location>/home/lfant/.agents/skills/seo-audit/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>simplemem-skill</name>\n    <description>Store and retrieve conversation memories across sessions. Use when asked to &apos;remember this&apos;, &apos;save conversation&apos;, &apos;add to memory&apos;, &apos;what did we discuss about...&apos;, &apos;query memories&apos;, or &apos;import chat history&apos;. Also use proactively to preserve important dialogue context and decisions.</description>\n    <location>/home/lfant/.agents/skills/simplemem-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>slack-gif-creator</name>\n    <description>Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like &quot;make me a GIF of X doing Y for Slack.&quot;</description>\n    <location>/home/lfant/.agents/skills/slack-gif-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>subagent-driven-development</name>\n    <description>Use when executing implementation plans with independent tasks in the current session</description>\n    <location>/home/lfant/.agents/skills/subagent-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supabase-postgres-best-practices</name>\n    <description>Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.</description>\n    <location>/home/lfant/.agents/skills/supabase-postgres-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>systematic-debugging</name>\n    <description>Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes</description>\n    <location>/home/lfant/.agents/skills/systematic-debugging/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>template-skill</name>\n    <description>Replace with description of the skill and when Claude should use it.</description>\n    <location>/home/lfant/.agents/skills/template-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>test-driven-development</name>\n    <description>Use when implementing any feature or bugfix, before writing implementation code</description>\n    <location>/home/lfant/.agents/skills/test-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>theme-factory</name>\n    <description>Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.</description>\n    <location>/home/lfant/.agents/skills/theme-factory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>two-factor-authentication-best-practices</name>\n    <description>This skill provides guidance and enforcement rules for implementing secure two-factor authentication (2FA) using Better Auth&apos;s twoFactor plugin.</description>\n    <location>/home/lfant/.agents/skills/two-factor-authentication-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ui-ux-pro-max</name>\n    <description>UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app, .html, .tsx, .vue, .svelte. Elements: button, modal, navbar, sidebar, card, table, form, chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, flat design. Topics: color palette, accessibility, animation, layout, typography, font pairing, spacing, hover, shadow, gradient. Integrations: shadcn/ui MCP for component search and examples.</description>\n    <location>/home/lfant/.agents/skills/ui-ux-pro-max/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-git-worktrees</name>\n    <description>Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification</description>\n    <location>/home/lfant/.agents/skills/using-git-worktrees/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-superpowers</name>\n    <description>Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions</description>\n    <location>/home/lfant/.agents/skills/using-superpowers/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-composition-patterns</name>\n    <description>React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19 API changes.</description>\n    <location>/home/lfant/.agents/skills/vercel-composition-patterns/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-best-practices</name>\n    <description>React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.</description>\n    <location>/home/lfant/.agents/skills/vercel-react-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-native-skills</name>\n    <description>React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing list performance, implementing animations, or working with native modules. Triggers on tasks involving React Native, Expo, mobile performance, or native platform APIs.</description>\n    <location>/home/lfant/.agents/skills/vercel-react-native-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>verification-before-completion</name>\n    <description>Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always</description>\n    <location>/home/lfant/.agents/skills/verification-before-completion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-artifacts-builder</name>\n    <description>Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.</description>\n    <location>/home/lfant/.agents/skills/web-artifacts-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-design-guidelines</name>\n    <description>Review UI code for Web Interface Guidelines compliance. Use when asked to &quot;review my UI&quot;, &quot;check accessibility&quot;, &quot;audit design&quot;, &quot;review UX&quot;, or &quot;check my site against best practices&quot;.</description>\n    <location>/home/lfant/.agents/skills/web-design-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>webapp-testing</name>\n    <description>Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.</description>\n    <location>/home/lfant/.agents/skills/webapp-testing/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-plans</name>\n    <description>Use when you have a spec or requirements for a multi-step task, before touching code</description>\n    <location>/home/lfant/.agents/skills/writing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-skills</name>\n    <description>Use when creating new skills, editing existing skills, or verifying skills work before deployment</description>\n    <location>/home/lfant/.agents/skills/writing-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>xlsx</name>\n    <description>Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like &quot;the xlsx in my downloads&quot;) — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.</description>\n    <location>/home/lfant/.agents/skills/xlsx/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -3501,16 +3501,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 16957,
-    "outputTokens": 918,
-    "totalTokens": 21177,
+    "inputTokens": 16736,
+    "outputTokens": 1061,
+    "totalTokens": 20942,
     "totalTokensFresh": true,
-    "cacheRead": 105756,
+    "cacheRead": 64262,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774821600432,
-      "sessionId": "944d6b30-e4e3-4ee7-b92e-36e17360e778",
+      "generatedAt": 1774908003709,
+      "sessionId": "919ac551-a530-498d-af91-7cbca4555b0e",
       "sessionKey": "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260",
       "provider": "zai",
       "model": "glm-4.7",
@@ -3945,7 +3945,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.04517405
+    "estimatedCostUsd": 0.06608893
   },
   "agent:main:cron:9fbab8e2-08fa-4e76-aa00-93296c5dfd89": {
     "sessionId": "53bda970-7e8f-4b71-bc05-90ed57f05e3e",
@@ -4618,8 +4618,8 @@
     "authProfileOverrideCompactionCount": 0
   },
   "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93": {
-    "sessionId": "e65b9d73-1e6b-4a19-8bc0-b54f157a3d10",
-    "updatedAt": 1774897203573,
+    "sessionId": "cf69de28-cc7e-428b-9009-ff0e39575540",
+    "updatedAt": 1774983605528,
     "systemSent": true,
     "label": "Cron: daily-github-backup",
     "skillsSnapshot": {
@@ -5289,16 +5289,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 21703,
-    "outputTokens": 541,
-    "totalTokens": 23930,
+    "inputTokens": 21339,
+    "outputTokens": 627,
+    "totalTokens": 23670,
     "totalTokensFresh": true,
-    "cacheRead": 21800,
+    "cacheRead": 41669,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774810803404,
-      "sessionId": "6dc33f9e-4af5-4860-9af3-6d9a2aab4c3a",
+      "generatedAt": 1774897203473,
+      "sessionId": "e65b9d73-1e6b-4a19-8bc0-b54f157a3d10",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
       "model": "glm-4.7",
@@ -5737,14 +5737,14 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.0252116,
+    "estimatedCostUsd": 0.042756515,
     "status": "running",
-    "startedAt": 1774897203543,
+    "startedAt": 1774983605497,
     "abortedLastRun": false
   },
   "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc": {
-    "sessionId": "45da2c84-7b08-4fc6-a27a-860e8d59a9f3",
-    "updatedAt": 1774818000006,
+    "sessionId": "6982bc9a-34dc-41d3-a839-e7ff25b358e0",
+    "updatedAt": 1774904400006,
     "systemSent": true,
     "label": "Cron: daily-update-check",
     "skillsSnapshot": {
@@ -6414,16 +6414,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 21457,
-    "outputTokens": 544,
-    "totalTokens": 25495,
+    "inputTokens": 21436,
+    "outputTokens": 679,
+    "totalTokens": 25468,
     "totalTokensFresh": true,
-    "cacheRead": 43408,
+    "cacheRead": 23589,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774818000219,
-      "sessionId": "45da2c84-7b08-4fc6-a27a-860e8d59a9f3",
+      "generatedAt": 1774904400323,
+      "sessionId": "6982bc9a-34dc-41d3-a839-e7ff25b358e0",
       "sessionKey": "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc",
       "provider": "zai",
       "model": "glm-4.7",
@@ -6862,7 +6862,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.030095045
+    "estimatedCostUsd": 0.04424319
   },
   "agent:main:subagent:36d5820f-791e-4c41-a9ca-92d3b0514008": {
     "sessionId": "4fd8c027-491e-44a6-b373-23f8daa6ab65",
@@ -8951,8 +8951,8 @@
     "cacheWrite": 0
   },
   "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c": {
-    "sessionId": "468dcc00-5ab9-409f-8664-d5453ad9d316",
-    "updatedAt": 1774825202070,
+    "sessionId": "4907a3c6-1d84-4d5f-bd7b-804906ae9505",
+    "updatedAt": 1774911601972,
     "systemSent": true,
     "label": "Cron: notion-daily-briefing",
     "skillsSnapshot": {
@@ -9727,16 +9727,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19236,
-    "outputTokens": 1413,
-    "totalTokens": 21407,
+    "inputTokens": 21178,
+    "outputTokens": 2289,
+    "totalTokens": 25348,
     "totalTokensFresh": true,
-    "cacheRead": 22467,
+    "cacheRead": 45740,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774825202435,
-      "sessionId": "468dcc00-5ab9-409f-8664-d5453ad9d316",
+      "generatedAt": 1774911604241,
+      "sessionId": "4907a3c6-1d84-4d5f-bd7b-804906ae9505",
       "sessionKey": "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -10211,11 +10211,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.027238815
+    "estimatedCostUsd": 0.048423284999999996
   },
   "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1": {
-    "sessionId": "bbd30ed7-3e24-4c8e-82c7-90b55ba9f74c",
-    "updatedAt": 1774828801034,
+    "sessionId": "62f9e806-6152-4892-952d-8df2cc44e9d2",
+    "updatedAt": 1774915203082,
     "systemSent": true,
     "label": "Cron: github-repo-daily-briefing",
     "skillsSnapshot": {
@@ -10990,16 +10990,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 14496,
-    "outputTokens": 944,
-    "totalTokens": 20521,
+    "inputTokens": 32160,
+    "outputTokens": 3324,
+    "totalTokens": 36870,
     "totalTokensFresh": true,
-    "cacheRead": 6025,
+    "cacheRead": 96608,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774828801373,
-      "sessionId": "bbd30ed7-3e24-4c8e-82c7-90b55ba9f74c",
+      "generatedAt": 1774915203378,
+      "sessionId": "62f9e806-6152-4892-952d-8df2cc44e9d2",
       "sessionKey": "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1",
       "provider": "zai",
       "model": "glm-4.7",
@@ -11474,7 +11474,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.2951728900000001,
+    "estimatedCostUsd": 0.3323708500000001,
     "abortedLastRun": false,
     "chatType": "direct",
     "origin": {
@@ -12269,9 +12269,9 @@
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0
   },
-  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:6dc33f9e-4af5-4860-9af3-6d9a2aab4c3a": {
-    "sessionId": "6dc33f9e-4af5-4860-9af3-6d9a2aab4c3a",
-    "updatedAt": 1774810803212,
+  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:e65b9d73-1e6b-4a19-8bc0-b54f157a3d10": {
+    "sessionId": "e65b9d73-1e6b-4a19-8bc0-b54f157a3d10",
+    "updatedAt": 1774897203126,
     "systemSent": true,
     "label": "Cron: daily-github-backup",
     "skillsSnapshot": {
@@ -12941,16 +12941,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 21703,
-    "outputTokens": 541,
-    "totalTokens": 23930,
+    "inputTokens": 21339,
+    "outputTokens": 627,
+    "totalTokens": 23670,
     "totalTokensFresh": true,
-    "cacheRead": 21800,
+    "cacheRead": 41669,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774810803404,
-      "sessionId": "6dc33f9e-4af5-4860-9af3-6d9a2aab4c3a",
+      "generatedAt": 1774897203473,
+      "sessionId": "e65b9d73-1e6b-4a19-8bc0-b54f157a3d10",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
       "model": "glm-4.7",
@@ -13389,11 +13389,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.0252116
+    "estimatedCostUsd": 0.042756515
   },
-  "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc:run:45da2c84-7b08-4fc6-a27a-860e8d59a9f3": {
-    "sessionId": "45da2c84-7b08-4fc6-a27a-860e8d59a9f3",
-    "updatedAt": 1774818000006,
+  "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc:run:6982bc9a-34dc-41d3-a839-e7ff25b358e0": {
+    "sessionId": "6982bc9a-34dc-41d3-a839-e7ff25b358e0",
+    "updatedAt": 1774904400006,
     "systemSent": true,
     "label": "Cron: daily-update-check",
     "skillsSnapshot": {
@@ -14063,16 +14063,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 21457,
-    "outputTokens": 544,
-    "totalTokens": 25495,
+    "inputTokens": 21436,
+    "outputTokens": 679,
+    "totalTokens": 25468,
     "totalTokensFresh": true,
-    "cacheRead": 43408,
+    "cacheRead": 23589,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774818000219,
-      "sessionId": "45da2c84-7b08-4fc6-a27a-860e8d59a9f3",
+      "generatedAt": 1774904400323,
+      "sessionId": "6982bc9a-34dc-41d3-a839-e7ff25b358e0",
       "sessionKey": "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc",
       "provider": "zai",
       "model": "glm-4.7",
@@ -14511,14 +14511,14 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.030095045
+    "estimatedCostUsd": 0.04424319
   },
-  "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260:run:944d6b30-e4e3-4ee7-b92e-36e17360e778": {
-    "sessionId": "944d6b30-e4e3-4ee7-b92e-36e17360e778",
-    "updatedAt": 1774821600015,
+  "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260:run:919ac551-a530-498d-af91-7cbca4555b0e": {
+    "sessionId": "919ac551-a530-498d-af91-7cbca4555b0e",
+    "updatedAt": 1774908003389,
     "systemSent": true,
     "model": "glm-4.7",
-    "contextTokens": 200000,
+    "contextTokens": 204800,
     "label": "Cron: daily-morning-briefing",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude&apos;s capabilities with specialized knowledge, workflows, or tool integrations.</description>\n    <location>/home/lfant/.agents/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>agent-browser</name>\n    <description>Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to &quot;open a website&quot;, &quot;fill out a form&quot;, &quot;click a button&quot;, &quot;take a screenshot&quot;, &quot;scrape data from a page&quot;, &quot;test this web app&quot;, &quot;login to a site&quot;, &quot;automate browser actions&quot;, or any task requiring programmatic web interaction.</description>\n    <location>/home/lfant/.agents/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>algorithmic-art</name>\n    <description>Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists&apos; work to avoid copyright violations.</description>\n    <location>/home/lfant/.agents/skills/algorithmic-art/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>audit-website</name>\n    <description>Audit websites for SEO, performance, security, technical, content, and 15 other issue cateories with 230+ rules using the squirrelscan CLI. Returns LLM-optimized reports with health scores, broken links, meta tag analysis, and actionable recommendations. Use to discover and asses website or webapp issues and health.</description>\n    <location>/home/lfant/.agents/skills/audit-website/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>better-auth-best-practices</name>\n    <description>Skill for integrating Better Auth - the comprehensive TypeScript authentication framework.</description>\n    <location>/home/lfant/.agents/skills/better-auth-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brainstorming</name>\n    <description>You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.</description>\n    <location>/home/lfant/.agents/skills/brainstorming/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brand-guidelines</name>\n    <description>Applies Anthropic&apos;s official brand colors and typography to any sort of artifact that may benefit from having Anthropic&apos;s look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.</description>\n    <location>/home/lfant/.agents/skills/brand-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-use</name>\n    <description>Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, or extract information from web pages.</description>\n    <location>/home/lfant/.agents/skills/browser-use/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas-design</name>\n    <description>Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists&apos; work to avoid copyright violations.</description>\n    <location>/home/lfant/.agents/skills/canvas-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>copywriting</name>\n    <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says &quot;write copy for,&quot; &quot;improve this copy,&quot; &quot;rewrite this page,&quot; &quot;marketing copy,&quot; &quot;headline help,&quot; or &quot;CTA copy.&quot; For email copy, see email-sequence. For popup copy, see popup-cro.</description>\n    <location>/home/lfant/.agents/skills/copywriting/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>create-auth-skill</name>\n    <description>Skill for creating auth layers in TypeScript/JavaScript apps using Better Auth.</description>\n    <location>/home/lfant/.agents/skills/create-auth-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>dispatching-parallel-agents</name>\n    <description>Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies</description>\n    <location>/home/lfant/.agents/skills/dispatching-parallel-agents/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>doc-coauthoring</name>\n    <description>Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.</description>\n    <location>/home/lfant/.agents/skills/doc-coauthoring/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>docx</name>\n    <description>Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of &quot;Word doc&quot;, &quot;word document&quot;, &quot;.docx&quot;, or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a &quot;report&quot;, &quot;memo&quot;, &quot;letter&quot;, &quot;template&quot;, or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.</description>\n    <location>/home/lfant/.agents/skills/docx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>email-and-password-best-practices</name>\n    <description>This skill provides guidance and enforcement rules for implementing secure email and password authentication using Better Auth.</description>\n    <location>/home/lfant/.agents/skills/email-and-password-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>executing-plans</name>\n    <description>Use when you have a written implementation plan to execute in a separate session with review checkpoints</description>\n    <location>/home/lfant/.agents/skills/executing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>/home/lfant/.agents/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>finishing-a-development-branch</name>\n    <description>Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup</description>\n    <location>/home/lfant/.agents/skills/finishing-a-development-branch/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>frontend-design</name>\n    <description>Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.</description>\n    <location>/home/lfant/.agents/skills/frontend-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>internal-comms</name>\n    <description>A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).</description>\n    <location>/home/lfant/.agents/skills/internal-comms/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcp-builder</name>\n    <description>Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).</description>\n    <location>/home/lfant/.agents/skills/mcp-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-best-practices</name>\n    <description>Next.js best practices - file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, route handlers, image/font optimization, bundling</description>\n    <location>/home/lfant/.agents/skills/next-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-cache-components</name>\n    <description>Next.js 16 Cache Components - PPR, use cache directive, cacheLife, cacheTag, updateTag</description>\n    <location>/home/lfant/.agents/skills/next-cache-components/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-upgrade</name>\n    <description>Upgrade Next.js to the latest version following official migration guides and codemods</description>\n    <location>/home/lfant/.agents/skills/next-upgrade/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>organization-best-practices</name>\n    <description>This skill provides guidance and enforcement rules for implementing multi-tenant organizations, teams, and role-based access control using Better Auth&apos;s organization plugin.</description>\n    <location>/home/lfant/.agents/skills/organization-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pdf</name>\n    <description>Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.</description>\n    <location>/home/lfant/.agents/skills/pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pptx</name>\n    <description>Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions &quot;deck,&quot; &quot;slides,&quot; &quot;presentation,&quot; or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.</description>\n    <location>/home/lfant/.agents/skills/pptx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>receiving-code-review</name>\n    <description>Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation</description>\n    <location>/home/lfant/.agents/skills/receiving-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>remotion-best-practices</name>\n    <description>Best practices for Remotion - Video creation in React</description>\n    <location>/home/lfant/.agents/skills/remotion-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>requesting-code-review</name>\n    <description>Use when completing tasks, implementing major features, or before merging to verify work meets requirements</description>\n    <location>/home/lfant/.agents/skills/requesting-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>seo-audit</name>\n    <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions &quot;SEO audit,&quot; &quot;technical SEO,&quot; &quot;why am I not ranking,&quot; &quot;SEO issues,&quot; &quot;on-page SEO,&quot; &quot;meta tags review,&quot; or &quot;SEO health check.&quot; For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup.</description>\n    <location>/home/lfant/.agents/skills/seo-audit/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>simplemem-skill</name>\n    <description>Store and retrieve conversation memories across sessions. Use when asked to &apos;remember this&apos;, &apos;save conversation&apos;, &apos;add to memory&apos;, &apos;what did we discuss about...&apos;, &apos;query memories&apos;, or &apos;import chat history&apos;. Also use proactively to preserve important dialogue context and decisions.</description>\n    <location>/home/lfant/.agents/skills/simplemem-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>slack-gif-creator</name>\n    <description>Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like &quot;make me a GIF of X doing Y for Slack.&quot;</description>\n    <location>/home/lfant/.agents/skills/slack-gif-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>subagent-driven-development</name>\n    <description>Use when executing implementation plans with independent tasks in the current session</description>\n    <location>/home/lfant/.agents/skills/subagent-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supabase-postgres-best-practices</name>\n    <description>Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.</description>\n    <location>/home/lfant/.agents/skills/supabase-postgres-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>systematic-debugging</name>\n    <description>Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes</description>\n    <location>/home/lfant/.agents/skills/systematic-debugging/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>template-skill</name>\n    <description>Replace with description of the skill and when Claude should use it.</description>\n    <location>/home/lfant/.agents/skills/template-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>test-driven-development</name>\n    <description>Use when implementing any feature or bugfix, before writing implementation code</description>\n    <location>/home/lfant/.agents/skills/test-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>theme-factory</name>\n    <description>Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.</description>\n    <location>/home/lfant/.agents/skills/theme-factory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>two-factor-authentication-best-practices</name>\n    <description>This skill provides guidance and enforcement rules for implementing secure two-factor authentication (2FA) using Better Auth&apos;s twoFactor plugin.</description>\n    <location>/home/lfant/.agents/skills/two-factor-authentication-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ui-ux-pro-max</name>\n    <description>UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app, .html, .tsx, .vue, .svelte. Elements: button, modal, navbar, sidebar, card, table, form, chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, flat design. Topics: color palette, accessibility, animation, layout, typography, font pairing, spacing, hover, shadow, gradient. Integrations: shadcn/ui MCP for component search and examples.</description>\n    <location>/home/lfant/.agents/skills/ui-ux-pro-max/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-git-worktrees</name>\n    <description>Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification</description>\n    <location>/home/lfant/.agents/skills/using-git-worktrees/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-superpowers</name>\n    <description>Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions</description>\n    <location>/home/lfant/.agents/skills/using-superpowers/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-composition-patterns</name>\n    <description>React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19 API changes.</description>\n    <location>/home/lfant/.agents/skills/vercel-composition-patterns/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-best-practices</name>\n    <description>React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.</description>\n    <location>/home/lfant/.agents/skills/vercel-react-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-native-skills</name>\n    <description>React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing list performance, implementing animations, or working with native modules. Triggers on tasks involving React Native, Expo, mobile performance, or native platform APIs.</description>\n    <location>/home/lfant/.agents/skills/vercel-react-native-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>verification-before-completion</name>\n    <description>Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always</description>\n    <location>/home/lfant/.agents/skills/verification-before-completion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-artifacts-builder</name>\n    <description>Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.</description>\n    <location>/home/lfant/.agents/skills/web-artifacts-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-design-guidelines</name>\n    <description>Review UI code for Web Interface Guidelines compliance. Use when asked to &quot;review my UI&quot;, &quot;check accessibility&quot;, &quot;audit design&quot;, &quot;review UX&quot;, or &quot;check my site against best practices&quot;.</description>\n    <location>/home/lfant/.agents/skills/web-design-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>webapp-testing</name>\n    <description>Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.</description>\n    <location>/home/lfant/.agents/skills/webapp-testing/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-plans</name>\n    <description>Use when you have a spec or requirements for a multi-step task, before touching code</description>\n    <location>/home/lfant/.agents/skills/writing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-skills</name>\n    <description>Use when creating new skills, editing existing skills, or verifying skills work before deployment</description>\n    <location>/home/lfant/.agents/skills/writing-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>xlsx</name>\n    <description>Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like &quot;the xlsx in my downloads&quot;) — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.</description>\n    <location>/home/lfant/.agents/skills/xlsx/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -15173,16 +15173,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 16957,
-    "outputTokens": 918,
-    "totalTokens": 21177,
+    "inputTokens": 16736,
+    "outputTokens": 1061,
+    "totalTokens": 20942,
     "totalTokensFresh": true,
-    "cacheRead": 105756,
+    "cacheRead": 64262,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774821600432,
-      "sessionId": "944d6b30-e4e3-4ee7-b92e-36e17360e778",
+      "generatedAt": 1774908003709,
+      "sessionId": "919ac551-a530-498d-af91-7cbca4555b0e",
       "sessionKey": "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260",
       "provider": "zai",
       "model": "glm-4.7",
@@ -15617,11 +15617,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.04517405
+    "estimatedCostUsd": 0.06608893
   },
-  "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c:run:468dcc00-5ab9-409f-8664-d5453ad9d316": {
-    "sessionId": "468dcc00-5ab9-409f-8664-d5453ad9d316",
-    "updatedAt": 1774825202070,
+  "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c:run:4907a3c6-1d84-4d5f-bd7b-804906ae9505": {
+    "sessionId": "4907a3c6-1d84-4d5f-bd7b-804906ae9505",
+    "updatedAt": 1774911601972,
     "systemSent": true,
     "label": "Cron: notion-daily-briefing",
     "skillsSnapshot": {
@@ -16396,16 +16396,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19236,
-    "outputTokens": 1413,
-    "totalTokens": 21407,
+    "inputTokens": 21178,
+    "outputTokens": 2289,
+    "totalTokens": 25348,
     "totalTokensFresh": true,
-    "cacheRead": 22467,
+    "cacheRead": 45740,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774825202435,
-      "sessionId": "468dcc00-5ab9-409f-8664-d5453ad9d316",
+      "generatedAt": 1774911604241,
+      "sessionId": "4907a3c6-1d84-4d5f-bd7b-804906ae9505",
       "sessionKey": "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -16880,11 +16880,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.027238815
+    "estimatedCostUsd": 0.048423284999999996
   },
-  "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1:run:bbd30ed7-3e24-4c8e-82c7-90b55ba9f74c": {
-    "sessionId": "bbd30ed7-3e24-4c8e-82c7-90b55ba9f74c",
-    "updatedAt": 1774828801034,
+  "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1:run:62f9e806-6152-4892-952d-8df2cc44e9d2": {
+    "sessionId": "62f9e806-6152-4892-952d-8df2cc44e9d2",
+    "updatedAt": 1774915203082,
     "systemSent": true,
     "label": "Cron: github-repo-daily-briefing",
     "skillsSnapshot": {
@@ -17659,16 +17659,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 14496,
-    "outputTokens": 944,
-    "totalTokens": 20521,
+    "inputTokens": 32160,
+    "outputTokens": 3324,
+    "totalTokens": 36870,
     "totalTokensFresh": true,
-    "cacheRead": 6025,
+    "cacheRead": 96608,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774828801373,
-      "sessionId": "bbd30ed7-3e24-4c8e-82c7-90b55ba9f74c",
+      "generatedAt": 1774915203378,
+      "sessionId": "62f9e806-6152-4892-952d-8df2cc44e9d2",
       "sessionKey": "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1",
       "provider": "zai",
       "model": "glm-4.7",
@@ -18143,7 +18143,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.2951728900000001,
+    "estimatedCostUsd": 0.3323708500000001,
     "abortedLastRun": false,
     "chatType": "direct",
     "origin": {
@@ -18158,9 +18158,9 @@
     "endedAt": 1774761934331,
     "runtimeMs": 15850
   },
-  "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c:run:9aff876f-ac06-49f8-8607-bd3d07b54b69": {
-    "sessionId": "9aff876f-ac06-49f8-8607-bd3d07b54b69",
-    "updatedAt": 1774893605436,
+  "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c:run:a60f3bbc-8773-4d8f-861b-5bbf4a064762": {
+    "sessionId": "a60f3bbc-8773-4d8f-861b-5bbf4a064762",
+    "updatedAt": 1774980003588,
     "systemSent": true,
     "model": "glm-4.7",
     "contextTokens": 204800,
@@ -18818,16 +18818,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 16877,
-    "outputTokens": 1219,
-    "totalTokens": 20901,
+    "inputTokens": 18670,
+    "outputTokens": 1769,
+    "totalTokens": 20919,
     "totalTokensFresh": true,
-    "cacheRead": 23439,
+    "cacheRead": 21664,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774893605773,
-      "sessionId": "9aff876f-ac06-49f8-8607-bd3d07b54b69",
+      "generatedAt": 1774980007353,
+      "sessionId": "a60f3bbc-8773-4d8f-861b-5bbf4a064762",
       "sessionKey": "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -19262,11 +19262,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.041680645
+    "estimatedCostUsd": 0.056282175000000004
   },
-  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:e65b9d73-1e6b-4a19-8bc0-b54f157a3d10": {
-    "sessionId": "e65b9d73-1e6b-4a19-8bc0-b54f157a3d10",
-    "updatedAt": 1774897203126,
+  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:cf69de28-cc7e-428b-9009-ff0e39575540": {
+    "sessionId": "cf69de28-cc7e-428b-9009-ff0e39575540",
+    "updatedAt": 1774983605125,
     "systemSent": true,
     "label": "Cron: daily-github-backup",
     "skillsSnapshot": {
@@ -19936,16 +19936,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 21703,
-    "outputTokens": 541,
-    "totalTokens": 23930,
+    "inputTokens": 21339,
+    "outputTokens": 627,
+    "totalTokens": 23670,
     "totalTokensFresh": true,
-    "cacheRead": 21800,
+    "cacheRead": 41669,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774810803404,
-      "sessionId": "6dc33f9e-4af5-4860-9af3-6d9a2aab4c3a",
+      "generatedAt": 1774897203473,
+      "sessionId": "e65b9d73-1e6b-4a19-8bc0-b54f157a3d10",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
       "model": "glm-4.7",
@@ -20384,6 +20384,6 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.0252116
+    "estimatedCostUsd": 0.042756515
   }
 }
