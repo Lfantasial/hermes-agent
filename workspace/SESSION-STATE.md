@@ -1,15 +1,16 @@
 # SESSION-STATE.md
 
-**Updated:** 2026-04-02T04:09:00+09:00
+**Updated:** 2026-04-03T07:02:00+09:00
 **Status:** active
 
 ## Current focus
 - Memory baseline: `claude-mem` for semantic recall, file memory as auditable source of truth, proactive heartbeat for low-noise continuity.
 - Current task: keep local session-state aligned with current cron health and active priorities.
-- Cron health: 6/8 jobs healthy, 2 jobs with issues (daily-github-backup push failure, periodic-memory-maintenance edit failure)
+- Cron health: 6/8 jobs healthy, 2 jobs with issues (daily-github-backup push failure, periodic-memory-maintenance edit failure), 1 new error (daily-update-check Telegram delivery)
 
 ## Active tasks
-- [ ] Resolve daily-github-backup push failure: GitHub token expired or permission denied (403) to NousResearch/hermes-agent.git (last failure: 2026-04-02 04:00 KST)
+- [ ] Resolve daily-github-backup push failure: GitHub token expired or permission denied (403) to NousResearch/hermes-agent.git (last failure: 2026-04-03 04:00 KST)
+- [ ] Fix daily-update-check Telegram delivery: target configuration missing, cron job failing on notification step
 - [x] Validate heartbeat state-file update path (manual verification completed)
 - [x] Reconfirm `github-repo-daily-briefing` cron health after the 2026-03-11 09:00 KST failure
 - [x] Investigate and resolve workspace-heartbeat job timeout (resolved 2026-03-16T15:26)
@@ -26,6 +27,7 @@
 
 ## Risks / watch items
 - **HIGH**: daily-github-backup cannot push to GitHub (Permission denied 403) — local commits succeed but remote sync broken
+- **MEDIUM**: daily-update-check failing on Telegram delivery step (target configuration issue)
 - The proactive loop was previously only partially implemented
 - Avoid storing secrets, tokens, cookies, or raw PII in any memory layer
 - Prevent drift between semantic memory and file memory by treating file memory as policy/audit SoT
