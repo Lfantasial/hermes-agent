@@ -27,6 +27,16 @@ type PluginCommandResult = string | {
 interface BeforeAgentStartEvent {
     prompt?: string;
 }
+interface BeforePromptBuildEvent {
+    prompt: string;
+    messages: unknown[];
+}
+interface BeforePromptBuildResult {
+    systemPrompt?: string;
+    prependContext?: string;
+    prependSystemContext?: string;
+    appendSystemContext?: string;
+}
 interface ToolResultPersistEvent {
     toolName?: string;
     params?: Record<string, unknown>;
@@ -77,6 +87,7 @@ interface MessageContext {
     conversationId?: string;
 }
 type EventCallback<T> = (event: T, ctx: EventContext) => void | Promise<void>;
+type PromptBuildCallback = (event: BeforePromptBuildEvent, ctx: EventContext) => BeforePromptBuildResult | Promise<BeforePromptBuildResult | void> | void;
 type MessageEventCallback<T> = (event: T, ctx: MessageContext) => void | Promise<void>;
 interface OpenClawPluginApi {
     id: string;
@@ -98,7 +109,7 @@ interface OpenClawPluginApi {
         requireAuth?: boolean;
         handler: (ctx: PluginCommandContext) => PluginCommandResult | Promise<PluginCommandResult>;
     }) => void;
-    on: ((event: "before_agent_start", callback: EventCallback<BeforeAgentStartEvent>) => void) & ((event: "tool_result_persist", callback: EventCallback<ToolResultPersistEvent>) => void) & ((event: "agent_end", callback: EventCallback<AgentEndEvent>) => void) & ((event: "session_start", callback: EventCallback<SessionStartEvent>) => void) & ((event: "session_end", callback: EventCallback<SessionEndEvent>) => void) & ((event: "message_received", callback: MessageEventCallback<MessageReceivedEvent>) => void) & ((event: "after_compaction", callback: EventCallback<AfterCompactionEvent>) => void) & ((event: "gateway_start", callback: EventCallback<Record<string, never>>) => void);
+    on: ((event: "before_prompt_build", callback: PromptBuildCallback) => void) & ((event: "before_agent_start", callback: EventCallback<BeforeAgentStartEvent>) => void) & ((event: "tool_result_persist", callback: EventCallback<ToolResultPersistEvent>) => void) & ((event: "agent_end", callback: EventCallback<AgentEndEvent>) => void) & ((event: "session_start", callback: EventCallback<SessionStartEvent>) => void) & ((event: "session_end", callback: EventCallback<SessionEndEvent>) => void) & ((event: "message_received", callback: MessageEventCallback<MessageReceivedEvent>) => void) & ((event: "after_compaction", callback: EventCallback<AfterCompactionEvent>) => void) & ((event: "gateway_start", callback: EventCallback<Record<string, never>>) => void);
     runtime: {
         channel: Record<string, Record<string, (...args: any[]) => Promise<any>>>;
     };

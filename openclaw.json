@@ -111,7 +111,7 @@
       "enabled": true,
       "dmPolicy": "pairing",
       "botToken": "8383705979:AAGV0AIQftM-rzingVgFV-orYcKgHZP8e8Q",
-      "groupPolicy": "allowlist",
+      "groupPolicy": "open",
       "streaming": "partial",
       "actions": {
         "reactions": true,

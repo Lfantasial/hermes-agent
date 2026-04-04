@@ -2,19 +2,19 @@
   "entries": {
     "/home/lfant/.openclaw/openclaw.json": {
       "lastKnownGood": {
-        "hash": "58736a7415915f104fa9c6e5d38904405ae0b2dd4049ee540aea6b7484bc4363",
-        "bytes": 3885,
-        "mtimeMs": 1774798220291.6804,
-        "ctimeMs": 1774798220295.2803,
+        "hash": "ce57811cc0752c8e59791d05a9f64df8c752a50dea086b7a4c0e04f4b0de9eee",
+        "bytes": 3880,
+        "mtimeMs": 1775310529335.776,
+        "ctimeMs": 1775310529339.4424,
         "dev": "2096",
-        "ino": "564631",
+        "ino": "641647",
         "mode": 384,
         "nlink": 1,
         "uid": 1000,
         "gid": 1000,
         "hasMeta": true,
         "gatewayMode": "local",
-        "observedAt": "2026-03-29T15:30:20.824Z"
+        "observedAt": "2026-04-04T13:48:49.929Z"
       },
       "lastObservedSuspiciousSignature": null
     }

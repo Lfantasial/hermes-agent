@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
-    "sessionId": "ec6ff230-222d-4296-a700-9c3f3bb437ec",
-    "updatedAt": 1775241074300,
+    "sessionId": "b3e88ebe-2fca-4d5f-9c6e-37e953d07434",
+    "updatedAt": 1775329045698,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -14,7 +14,7 @@
       "from": "telegram:5487758242",
       "to": "telegram:5487758242"
     },
-    "sessionFile": "/home/lfant/.openclaw/agents/main/sessions/ec6ff230-222d-4296-a700-9c3f3bb437ec.jsonl",
+    "sessionFile": "/home/lfant/.openclaw/agents/main/sessions/b3e88ebe-2fca-4d5f-9c6e-37e953d07434.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
       "prompt": "⚠️ Skills catalog using compact format (descriptions omitted). Run `openclaw skills check` to audit.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its name.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <location>~/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <location>~/.openclaw/workspace/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <location>~/.agents/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <location>~/.openclaw/workspace/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <location>~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>agent-browser</name>\n    <location>~/.agents/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>algorithmic-art</name>\n    <location>~/.agents/skills/algorithmic-art/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>audit-website</name>\n    <location>~/.agents/skills/audit-website/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>better-auth-best-practices</name>\n    <location>~/.agents/skills/better-auth-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brainstorming</name>\n    <location>~/.agents/skills/brainstorming/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>brand-guidelines</name>\n    <location>~/.agents/skills/brand-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-use</name>\n    <location>~/.agents/skills/browser-use/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas-design</name>\n    <location>~/.agents/skills/canvas-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>copywriting</name>\n    <location>~/.agents/skills/copywriting/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>create-auth-skill</name>\n    <location>~/.agents/skills/create-auth-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>dispatching-parallel-agents</name>\n    <location>~/.agents/skills/dispatching-parallel-agents/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>doc-coauthoring</name>\n    <location>~/.agents/skills/doc-coauthoring/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>docx</name>\n    <location>~/.agents/skills/docx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>email-and-password-best-practices</name>\n    <location>~/.agents/skills/email-and-password-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>executing-plans</name>\n    <location>~/.agents/skills/executing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <location>~/.agents/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>finishing-a-development-branch</name>\n    <location>~/.agents/skills/finishing-a-development-branch/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>frontend-design</name>\n    <location>~/.agents/skills/frontend-design/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>internal-comms</name>\n    <location>~/.agents/skills/internal-comms/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcp-builder</name>\n    <location>~/.agents/skills/mcp-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-best-practices</name>\n    <location>~/.agents/skills/next-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-cache-components</name>\n    <location>~/.agents/skills/next-cache-components/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>next-upgrade</name>\n    <location>~/.agents/skills/next-upgrade/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>organization-best-practices</name>\n    <location>~/.agents/skills/organization-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pdf</name>\n    <location>~/.agents/skills/pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>pptx</name>\n    <location>~/.agents/skills/pptx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>receiving-code-review</name>\n    <location>~/.agents/skills/receiving-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>remotion-best-practices</name>\n    <location>~/.agents/skills/remotion-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>requesting-code-review</name>\n    <location>~/.agents/skills/requesting-code-review/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>seo-audit</name>\n    <location>~/.agents/skills/seo-audit/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>simplemem-skill</name>\n    <location>~/.agents/skills/simplemem-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>slack-gif-creator</name>\n    <location>~/.agents/skills/slack-gif-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>subagent-driven-development</name>\n    <location>~/.agents/skills/subagent-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supabase-postgres-best-practices</name>\n    <location>~/.agents/skills/supabase-postgres-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>systematic-debugging</name>\n    <location>~/.agents/skills/systematic-debugging/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>template-skill</name>\n    <location>~/.agents/skills/template-skill/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>test-driven-development</name>\n    <location>~/.agents/skills/test-driven-development/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>theme-factory</name>\n    <location>~/.agents/skills/theme-factory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>two-factor-authentication-best-practices</name>\n    <location>~/.agents/skills/two-factor-authentication-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ui-ux-pro-max</name>\n    <location>~/.agents/skills/ui-ux-pro-max/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-git-worktrees</name>\n    <location>~/.agents/skills/using-git-worktrees/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>using-superpowers</name>\n    <location>~/.agents/skills/using-superpowers/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-composition-patterns</name>\n    <location>~/.agents/skills/vercel-composition-patterns/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-best-practices</name>\n    <location>~/.agents/skills/vercel-react-best-practices/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>vercel-react-native-skills</name>\n    <location>~/.agents/skills/vercel-react-native-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>verification-before-completion</name>\n    <location>~/.agents/skills/verification-before-completion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-artifacts-builder</name>\n    <location>~/.agents/skills/web-artifacts-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>web-design-guidelines</name>\n    <location>~/.agents/skills/web-design-guidelines/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>webapp-testing</name>\n    <location>~/.agents/skills/webapp-testing/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-plans</name>\n    <location>~/.agents/skills/writing-plans/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>writing-skills</name>\n    <location>~/.agents/skills/writing-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>xlsx</name>\n    <location>~/.agents/skills/xlsx/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ontology</name>\n    <location>~/.openclaw/workspace/skills/ontology/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>proactive-agent</name>\n    <location>~/.openclaw/workspace/skills/proactive-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Self-Improving + Proactive Agent</name>\n    <location>~/.openclaw/workspace/skills/self-improving/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <location>~/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -1228,13 +1228,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1775240998937,
+    "startedAt": 1775329036980,
     "modelProvider": "zai",
     "model": "glm-4.7",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775240998872,
-      "sessionId": "ec6ff230-222d-4296-a700-9c3f3bb437ec",
+      "generatedAt": 1775329036907,
+      "sessionId": "b3e88ebe-2fca-4d5f-9c6e-37e953d07434",
       "sessionKey": "agent:main:main",
       "provider": "zai",
       "model": "glm-4.7",
@@ -1253,9 +1253,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 47786,
-        "projectContextChars": 28607,
-        "nonProjectContextChars": 19179
+        "chars": 48552,
+        "projectContextChars": 29245,
+        "nonProjectContextChars": 19307
       },
       "injectedWorkspaceFiles": [
         {
@@ -1318,8 +1318,8 @@
           "name": "MEMORY.md",
           "path": "/home/lfant/.openclaw/workspace/MEMORY.md",
           "missing": false,
-          "rawChars": 8256,
-          "injectedChars": 8256,
+          "rawChars": 8894,
+          "injectedChars": 8894,
           "truncated": false
         }
       ],
@@ -1610,7 +1610,7 @@
       },
       "tools": {
         "listChars": 1461,
-        "schemaChars": 16218,
+        "schemaChars": 14863,
         "entries": [
           {
             "name": "read",
@@ -1620,9 +1620,9 @@
           },
           {
             "name": "edit",
-            "summaryChars": 511,
-            "schemaChars": 2470,
-            "propertiesCount": 13
+            "summaryChars": 326,
+            "schemaChars": 1103,
+            "propertiesCount": 5
           },
           {
             "name": "write",
@@ -1633,7 +1633,7 @@
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1086,
+            "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
@@ -1704,7 +1704,7 @@
           },
           {
             "name": "session_status",
-            "summaryChars": 207,
+            "summaryChars": 262,
             "schemaChars": 89,
             "propertiesCount": 2
           },
@@ -1723,21 +1723,21 @@
         ]
       }
     },
-    "cacheRead": 30048,
+    "cacheRead": 36762,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "lastTo": "telegram:5487758242",
     "contextTokens": 204800,
-    "inputTokens": 27114,
-    "outputTokens": 849,
-    "estimatedCostUsd": 1.19412303,
-    "totalTokens": 30078,
-    "endedAt": 1775241074248,
-    "runtimeMs": 75311
+    "inputTokens": 31409,
+    "outputTokens": 393,
+    "estimatedCostUsd": 1.0747068400000004,
+    "totalTokens": 36792,
+    "endedAt": 1775329045634,
+    "runtimeMs": 8654
   },
   "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c": {
-    "sessionId": "7c26f200-5436-41d5-911e-bcb80422d658",
-    "updatedAt": 1775239202937,
+    "sessionId": "c8553700-6d0b-4bea-9809-e8284c9310ed",
+    "updatedAt": 1775325603119,
     "systemSent": true,
     "model": "glm-4.7",
     "contextTokens": 204800,
@@ -2395,16 +2395,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 18686,
-    "outputTokens": 2130,
-    "totalTokens": 21031,
+    "inputTokens": 23477,
+    "outputTokens": 1653,
+    "totalTokens": 25403,
     "totalTokensFresh": true,
-    "cacheRead": 21776,
+    "cacheRead": 25266,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775239203103,
-      "sessionId": "7c26f200-5436-41d5-911e-bcb80422d658",
+      "generatedAt": 1775325604740,
+      "sessionId": "c8553700-6d0b-4bea-9809-e8284c9310ed",
       "sessionKey": "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -2423,9 +2423,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 49703,
+        "chars": 49983,
         "projectContextChars": 17853,
-        "nonProjectContextChars": 31850
+        "nonProjectContextChars": 32130
       },
       "injectedWorkspaceFiles": [
         {
@@ -2708,7 +2708,7 @@
       },
       "tools": {
         "listChars": 1921,
-        "schemaChars": 19193,
+        "schemaChars": 23698,
         "entries": [
           {
             "name": "read",
@@ -2718,9 +2718,9 @@
           },
           {
             "name": "edit",
-            "summaryChars": 511,
-            "schemaChars": 2470,
-            "propertiesCount": 13
+            "summaryChars": 326,
+            "schemaChars": 1103,
+            "propertiesCount": 5
           },
           {
             "name": "write",
@@ -2731,7 +2731,7 @@
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1086,
+            "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
@@ -2748,14 +2748,14 @@
           },
           {
             "name": "nodes",
-            "summaryChars": 122,
-            "schemaChars": 1800,
-            "propertiesCount": 37
+            "summaryChars": 118,
+            "schemaChars": 1589,
+            "propertiesCount": 32
           },
           {
             "name": "cron",
-            "summaryChars": 3420,
-            "schemaChars": 690,
+            "summaryChars": 3570,
+            "schemaChars": 6761,
             "propertiesCount": 13
           },
           {
@@ -2820,7 +2820,7 @@
           },
           {
             "name": "session_status",
-            "summaryChars": 207,
+            "summaryChars": 262,
             "schemaChars": 89,
             "propertiesCount": 2
           },
@@ -2839,11 +2839,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.11556986500000002
+    "estimatedCostUsd": 0.13254551500000003
   },
   "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260": {
-    "sessionId": "1c0a96e0-09b4-459d-b879-d561e11d7828",
-    "updatedAt": 1775167200006,
+    "sessionId": "7931e0c8-e0ac-4dee-9cad-8a234e2f420f",
+    "updatedAt": 1775253603591,
     "systemSent": true,
     "model": "glm-4.7",
     "contextTokens": 204800,
@@ -3501,16 +3501,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 17306,
-    "outputTokens": 1224,
-    "totalTokens": 21474,
+    "inputTokens": 21630,
+    "outputTokens": 1917,
+    "totalTokens": 24271,
     "totalTokensFresh": true,
-    "cacheRead": 44312,
+    "cacheRead": 110347,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775167200341,
-      "sessionId": "1c0a96e0-09b4-459d-b879-d561e11d7828",
+      "generatedAt": 1775253603759,
+      "sessionId": "7931e0c8-e0ac-4dee-9cad-8a234e2f420f",
       "sessionKey": "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260",
       "provider": "zai",
       "model": "glm-4.7",
@@ -3945,7 +3945,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.13791121
+    "estimatedCostUsd": 0.171219325
   },
   "agent:main:cron:9fbab8e2-08fa-4e76-aa00-93296c5dfd89": {
     "sessionId": "53bda970-7e8f-4b71-bc05-90ed57f05e3e",
@@ -4618,8 +4618,8 @@
     "authProfileOverrideCompactionCount": 0
   },
   "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93": {
-    "sessionId": "3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca",
-    "updatedAt": 1775242806268,
+    "sessionId": "368648a6-6f55-4996-b7f9-059aeaa9a6fa",
+    "updatedAt": 1775329204110,
     "systemSent": true,
     "label": "Cron: daily-github-backup",
     "skillsSnapshot": {
@@ -5289,16 +5289,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19084,
-    "outputTokens": 581,
-    "totalTokens": 21315,
+    "inputTokens": 17180,
+    "outputTokens": 698,
+    "totalTokens": 21184,
     "totalTokensFresh": true,
-    "cacheRead": 21804,
+    "cacheRead": 23577,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775156403922,
-      "sessionId": "9a33f762-8931-46ed-b69d-f23489ed9b76",
+      "generatedAt": 1775242806186,
+      "sessionId": "3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
       "model": "glm-4.7",
@@ -5737,14 +5737,14 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.08076032000000001,
+    "estimatedCostUsd": 0.09327953500000001,
     "status": "running",
-    "startedAt": 1775242806253,
+    "startedAt": 1775329204084,
     "abortedLastRun": false
   },
   "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc": {
-    "sessionId": "339f0087-c562-46e4-b2b5-8c5a3943a13f",
-    "updatedAt": 1775163603592,
+    "sessionId": "eae100b5-049f-4f23-acaf-97013ddffd43",
+    "updatedAt": 1775250003595,
     "systemSent": true,
     "label": "Cron: daily-update-check",
     "skillsSnapshot": {
@@ -6414,16 +6414,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 23296,
-    "outputTokens": 1023,
-    "totalTokens": 25823,
+    "inputTokens": 25199,
+    "outputTokens": 1118,
+    "totalTokens": 27619,
     "totalTokensFresh": true,
-    "cacheRead": 47572,
+    "cacheRead": 93350,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775163603914,
-      "sessionId": "339f0087-c562-46e4-b2b5-8c5a3943a13f",
+      "generatedAt": 1775250003888,
+      "sessionId": "eae100b5-049f-4f23-acaf-97013ddffd43",
       "sessionKey": "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc",
       "provider": "zai",
       "model": "glm-4.7",
@@ -6862,7 +6862,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.112175755
+    "estimatedCostUsd": 0.142163115
   },
   "agent:main:subagent:36d5820f-791e-4c41-a9ca-92d3b0514008": {
     "sessionId": "4fd8c027-491e-44a6-b373-23f8daa6ab65",
@@ -8951,8 +8951,8 @@
     "cacheWrite": 0
   },
   "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c": {
-    "sessionId": "2888b229-b0d5-42cb-aa10-211531f61b9b",
-    "updatedAt": 1775170803589,
+    "sessionId": "39f2facc-7bcb-4190-bd68-20df6e1aec83",
+    "updatedAt": 1775257200006,
     "systemSent": true,
     "label": "Cron: notion-daily-briefing",
     "skillsSnapshot": {
@@ -9727,16 +9727,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 22169,
-    "outputTokens": 2622,
-    "totalTokens": 26206,
+    "inputTokens": 25261,
+    "outputTokens": 2368,
+    "totalTokens": 27496,
     "totalTokensFresh": true,
-    "cacheRead": 24333,
+    "cacheRead": 22531,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775170803941,
-      "sessionId": "2888b229-b0d5-42cb-aa10-211531f61b9b",
+      "generatedAt": 1775257200183,
+      "sessionId": "39f2facc-7bcb-4190-bd68-20df6e1aec83",
       "sessionKey": "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -10211,11 +10211,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.097908665
+    "estimatedCostUsd": 0.11629800000000001
   },
   "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1": {
-    "sessionId": "44459c3e-7ed2-4855-8f11-23f0aef3e27b",
-    "updatedAt": 1775174400006,
+    "sessionId": "01d339c9-8813-4a4c-ad54-134a79925f08",
+    "updatedAt": 1775309326745,
     "systemSent": true,
     "label": "Cron: github-repo-daily-briefing",
     "skillsSnapshot": {
@@ -10990,16 +10990,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19208,
-    "outputTokens": 2727,
-    "totalTokens": 22004,
+    "inputTokens": 20897,
+    "outputTokens": 744,
+    "totalTokens": 23423,
     "totalTokensFresh": true,
-    "cacheRead": 65868,
+    "cacheRead": 23395,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775174400348,
-      "sessionId": "44459c3e-7ed2-4855-8f11-23f0aef3e27b",
+      "generatedAt": 1775309307349,
+      "sessionId": "01d339c9-8813-4a4c-ad54-134a79925f08",
       "sessionKey": "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1",
       "provider": "zai",
       "model": "glm-4.7",
@@ -11018,9 +11018,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 53345,
-        "projectContextChars": 17853,
-        "nonProjectContextChars": 35492
+        "chars": 53245,
+        "projectContextChars": 17845,
+        "nonProjectContextChars": 35400
       },
       "injectedWorkspaceFiles": [
         {
@@ -11342,8 +11342,8 @@
         ]
       },
       "tools": {
-        "listChars": 1921,
-        "schemaChars": 19193,
+        "listChars": 1461,
+        "schemaChars": 14863,
         "entries": [
           {
             "name": "read",
@@ -11353,9 +11353,9 @@
           },
           {
             "name": "edit",
-            "summaryChars": 511,
-            "schemaChars": 2470,
-            "propertiesCount": 13
+            "summaryChars": 326,
+            "schemaChars": 1103,
+            "propertiesCount": 5
           },
           {
             "name": "write",
@@ -11366,7 +11366,7 @@
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1086,
+            "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
@@ -11382,21 +11382,9 @@
             "propertiesCount": 18
           },
           {
-            "name": "nodes",
-            "summaryChars": 122,
-            "schemaChars": 1800,
-            "propertiesCount": 37
-          },
-          {
-            "name": "cron",
-            "summaryChars": 3420,
-            "schemaChars": 690,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
-            "summaryChars": 175,
-            "schemaChars": 6819,
+            "summaryChars": 167,
+            "schemaChars": 6831,
             "propertiesCount": 109
           },
           {
@@ -11404,12 +11392,6 @@
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 464,
-            "schemaChars": 497,
-            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -11455,7 +11437,7 @@
           },
           {
             "name": "session_status",
-            "summaryChars": 207,
+            "summaryChars": 262,
             "schemaChars": 89,
             "propertiesCount": 2
           },
@@ -11474,7 +11456,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.4438551250000001,
+    "estimatedCostUsd": 0.4912517650000001,
     "abortedLastRun": false,
     "chatType": "direct",
     "origin": {
@@ -11485,9 +11467,13 @@
     },
     "sessionFile": "/home/lfant/.openclaw/agents/main/sessions/6a06135a-5739-4c0f-a9ce-30ef24270d24.jsonl",
     "status": "done",
-    "startedAt": 1775127409166,
-    "endedAt": 1775127422434,
-    "runtimeMs": 13268
+    "startedAt": 1775309307401,
+    "deliveryContext": {
+      "to": "heartbeat"
+    },
+    "lastTo": "heartbeat",
+    "endedAt": 1775309325714,
+    "runtimeMs": 18313
   },
   "agent:main:cron:34ae8346-6001-49dd-b83d-17865b2b46c3": {
     "sessionId": "a69cae07-d4e7-4cd8-b3ff-f5770879f44d",
@@ -12269,9 +12255,9 @@
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0
   },
-  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:9a33f762-8931-46ed-b69d-f23489ed9b76": {
-    "sessionId": "9a33f762-8931-46ed-b69d-f23489ed9b76",
-    "updatedAt": 1775156403588,
+  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca": {
+    "sessionId": "3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca",
+    "updatedAt": 1775242805869,
     "systemSent": true,
     "label": "Cron: daily-github-backup",
     "skillsSnapshot": {
@@ -12941,16 +12927,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19084,
-    "outputTokens": 581,
-    "totalTokens": 21315,
+    "inputTokens": 17180,
+    "outputTokens": 698,
+    "totalTokens": 21184,
     "totalTokensFresh": true,
-    "cacheRead": 21804,
+    "cacheRead": 23577,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775156403922,
-      "sessionId": "9a33f762-8931-46ed-b69d-f23489ed9b76",
+      "generatedAt": 1775242806186,
+      "sessionId": "3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
       "model": "glm-4.7",
@@ -13389,11 +13375,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.08076032000000001
+    "estimatedCostUsd": 0.09327953500000001
   },
-  "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc:run:339f0087-c562-46e4-b2b5-8c5a3943a13f": {
-    "sessionId": "339f0087-c562-46e4-b2b5-8c5a3943a13f",
-    "updatedAt": 1775163603592,
+  "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc:run:eae100b5-049f-4f23-acaf-97013ddffd43": {
+    "sessionId": "eae100b5-049f-4f23-acaf-97013ddffd43",
+    "updatedAt": 1775250003595,
     "systemSent": true,
     "label": "Cron: daily-update-check",
     "skillsSnapshot": {
@@ -14063,16 +14049,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 23296,
-    "outputTokens": 1023,
-    "totalTokens": 25823,
+    "inputTokens": 25199,
+    "outputTokens": 1118,
+    "totalTokens": 27619,
     "totalTokensFresh": true,
-    "cacheRead": 47572,
+    "cacheRead": 93350,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775163603914,
-      "sessionId": "339f0087-c562-46e4-b2b5-8c5a3943a13f",
+      "generatedAt": 1775250003888,
+      "sessionId": "eae100b5-049f-4f23-acaf-97013ddffd43",
       "sessionKey": "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc",
       "provider": "zai",
       "model": "glm-4.7",
@@ -14511,11 +14497,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.112175755
+    "estimatedCostUsd": 0.142163115
   },
-  "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260:run:1c0a96e0-09b4-459d-b879-d561e11d7828": {
-    "sessionId": "1c0a96e0-09b4-459d-b879-d561e11d7828",
-    "updatedAt": 1775167200006,
+  "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260:run:7931e0c8-e0ac-4dee-9cad-8a234e2f420f": {
+    "sessionId": "7931e0c8-e0ac-4dee-9cad-8a234e2f420f",
+    "updatedAt": 1775253603591,
     "systemSent": true,
     "model": "glm-4.7",
     "contextTokens": 204800,
@@ -15173,16 +15159,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 17306,
-    "outputTokens": 1224,
-    "totalTokens": 21474,
+    "inputTokens": 21630,
+    "outputTokens": 1917,
+    "totalTokens": 24271,
     "totalTokensFresh": true,
-    "cacheRead": 44312,
+    "cacheRead": 110347,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775167200341,
-      "sessionId": "1c0a96e0-09b4-459d-b879-d561e11d7828",
+      "generatedAt": 1775253603759,
+      "sessionId": "7931e0c8-e0ac-4dee-9cad-8a234e2f420f",
       "sessionKey": "agent:main:cron:eb4407c8-7e9a-4d66-b956-2695d5aee260",
       "provider": "zai",
       "model": "glm-4.7",
@@ -15617,11 +15603,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.13791121
+    "estimatedCostUsd": 0.171219325
   },
-  "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c:run:2888b229-b0d5-42cb-aa10-211531f61b9b": {
-    "sessionId": "2888b229-b0d5-42cb-aa10-211531f61b9b",
-    "updatedAt": 1775170803589,
+  "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c:run:39f2facc-7bcb-4190-bd68-20df6e1aec83": {
+    "sessionId": "39f2facc-7bcb-4190-bd68-20df6e1aec83",
+    "updatedAt": 1775257200006,
     "systemSent": true,
     "label": "Cron: notion-daily-briefing",
     "skillsSnapshot": {
@@ -16396,16 +16382,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 22169,
-    "outputTokens": 2622,
-    "totalTokens": 26206,
+    "inputTokens": 25261,
+    "outputTokens": 2368,
+    "totalTokens": 27496,
     "totalTokensFresh": true,
-    "cacheRead": 24333,
+    "cacheRead": 22531,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775170803941,
-      "sessionId": "2888b229-b0d5-42cb-aa10-211531f61b9b",
+      "generatedAt": 1775257200183,
+      "sessionId": "39f2facc-7bcb-4190-bd68-20df6e1aec83",
       "sessionKey": "agent:main:cron:de62862d-0431-460a-93d4-a21c9c54aa7c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -16880,11 +16866,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.097908665
+    "estimatedCostUsd": 0.11629800000000001
   },
-  "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1:run:44459c3e-7ed2-4855-8f11-23f0aef3e27b": {
-    "sessionId": "44459c3e-7ed2-4855-8f11-23f0aef3e27b",
-    "updatedAt": 1775174400006,
+  "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1:run:01d339c9-8813-4a4c-ad54-134a79925f08": {
+    "sessionId": "01d339c9-8813-4a4c-ad54-134a79925f08",
+    "updatedAt": 1775260800006,
     "systemSent": true,
     "label": "Cron: github-repo-daily-briefing",
     "skillsSnapshot": {
@@ -17659,16 +17645,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19208,
-    "outputTokens": 2727,
-    "totalTokens": 22004,
+    "inputTokens": 17673,
+    "outputTokens": 3090,
+    "totalTokens": 22341,
     "totalTokensFresh": true,
-    "cacheRead": 65868,
+    "cacheRead": 46891,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775174400348,
-      "sessionId": "44459c3e-7ed2-4855-8f11-23f0aef3e27b",
+      "generatedAt": 1775260800329,
+      "sessionId": "01d339c9-8813-4a4c-ad54-134a79925f08",
       "sessionKey": "agent:main:cron:0f2e06c5-425c-40b2-845b-135e47277fe1",
       "provider": "zai",
       "model": "glm-4.7",
@@ -18143,7 +18129,7 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.4438551250000001,
+    "estimatedCostUsd": 0.4652988400000001,
     "abortedLastRun": false,
     "chatType": "direct",
     "origin": {
@@ -18158,9 +18144,9 @@
     "endedAt": 1775127422434,
     "runtimeMs": 13268
   },
-  "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c:run:7c26f200-5436-41d5-911e-bcb80422d658": {
-    "sessionId": "7c26f200-5436-41d5-911e-bcb80422d658",
-    "updatedAt": 1775239202937,
+  "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c:run:c8553700-6d0b-4bea-9809-e8284c9310ed": {
+    "sessionId": "c8553700-6d0b-4bea-9809-e8284c9310ed",
+    "updatedAt": 1775325603119,
     "systemSent": true,
     "model": "glm-4.7",
     "contextTokens": 204800,
@@ -18818,16 +18804,16 @@
       "version": 0
     },
     "modelProvider": "zai",
-    "inputTokens": 18686,
-    "outputTokens": 2130,
-    "totalTokens": 21031,
+    "inputTokens": 23477,
+    "outputTokens": 1653,
+    "totalTokens": 25403,
     "totalTokensFresh": true,
-    "cacheRead": 21776,
+    "cacheRead": 25266,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775239203103,
-      "sessionId": "7c26f200-5436-41d5-911e-bcb80422d658",
+      "generatedAt": 1775325604740,
+      "sessionId": "c8553700-6d0b-4bea-9809-e8284c9310ed",
       "sessionKey": "agent:main:cron:78f50a18-690a-4667-a12c-99a01398515c",
       "provider": "zai",
       "model": "glm-4.7",
@@ -18846,9 +18832,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 49703,
+        "chars": 49983,
         "projectContextChars": 17853,
-        "nonProjectContextChars": 31850
+        "nonProjectContextChars": 32130
       },
       "injectedWorkspaceFiles": [
         {
@@ -19131,7 +19117,7 @@
       },
       "tools": {
         "listChars": 1921,
-        "schemaChars": 19193,
+        "schemaChars": 23698,
         "entries": [
           {
             "name": "read",
@@ -19141,9 +19127,9 @@
           },
           {
             "name": "edit",
-            "summaryChars": 511,
-            "schemaChars": 2470,
-            "propertiesCount": 13
+            "summaryChars": 326,
+            "schemaChars": 1103,
+            "propertiesCount": 5
           },
           {
             "name": "write",
@@ -19154,7 +19140,7 @@
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1086,
+            "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
@@ -19171,14 +19157,14 @@
           },
           {
             "name": "nodes",
-            "summaryChars": 122,
-            "schemaChars": 1800,
-            "propertiesCount": 37
+            "summaryChars": 118,
+            "schemaChars": 1589,
+            "propertiesCount": 32
           },
           {
             "name": "cron",
-            "summaryChars": 3420,
-            "schemaChars": 690,
+            "summaryChars": 3570,
+            "schemaChars": 6761,
             "propertiesCount": 13
           },
           {
@@ -19243,7 +19229,7 @@
           },
           {
             "name": "session_status",
-            "summaryChars": 207,
+            "summaryChars": 262,
             "schemaChars": 89,
             "propertiesCount": 2
           },
@@ -19262,11 +19248,11 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.11556986500000002
+    "estimatedCostUsd": 0.13254551500000003
   },
-  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca": {
-    "sessionId": "3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca",
-    "updatedAt": 1775242805869,
+  "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93:run:368648a6-6f55-4996-b7f9-059aeaa9a6fa": {
+    "sessionId": "368648a6-6f55-4996-b7f9-059aeaa9a6fa",
+    "updatedAt": 1775329203603,
     "systemSent": true,
     "label": "Cron: daily-github-backup",
     "skillsSnapshot": {
@@ -19936,16 +19922,16 @@
     "modelProvider": "zai",
     "model": "glm-4.7",
     "contextTokens": 204800,
-    "inputTokens": 19084,
-    "outputTokens": 581,
-    "totalTokens": 21315,
+    "inputTokens": 17180,
+    "outputTokens": 698,
+    "totalTokens": 21184,
     "totalTokensFresh": true,
-    "cacheRead": 21804,
+    "cacheRead": 23577,
     "cacheWrite": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775156403922,
-      "sessionId": "9a33f762-8931-46ed-b69d-f23489ed9b76",
+      "generatedAt": 1775242806186,
+      "sessionId": "3d7cd8c2-c5ab-4fa6-9243-9c4e2d47afca",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
       "model": "glm-4.7",
@@ -20384,6 +20370,6 @@
         ]
       }
     },
-    "estimatedCostUsd": 0.08076032000000001
+    "estimatedCostUsd": 0.09327953500000001
   }
 }

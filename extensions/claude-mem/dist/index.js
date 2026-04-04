@@ -1,5 +1,5 @@
-import { writeFile } from "fs/promises";
-import { join } from "path";
+// No file-system imports needed — context is injected via system prompt hook,
+// not by writing to MEMORY.md.
 // ============================================================================
 // Constants
 // ============================================================================
@@ -281,8 +281,8 @@ export default function claudeMemPlugin(api) {
     // Session tracking for observation I/O
     // ------------------------------------------------------------------
     const sessionIds = new Map();
-    const workspaceDirsBySessionKey = new Map();
     const syncMemoryFile = userConfig.syncMemoryFile !== false; // default true
+    const syncMemoryFileExclude = new Set(userConfig.syncMemoryFileExclude || []);
     function getContentSessionId(sessionKey) {
         const key = sessionKey || "default";
         if (!sessionIds.has(key)) {
@@ -290,24 +290,39 @@ export default function claudeMemPlugin(api) {
         }
         return sessionIds.get(key);
     }
-    async function syncMemoryToWorkspace(workspaceDir, ctx) {
+    function shouldInjectContext(ctx) {
+        if (!syncMemoryFile)
+            return false;
+        const agentId = ctx?.agentId;
+        if (agentId && syncMemoryFileExclude.has(agentId))
+            return false;
+        return true;
+    }
+    // TTL cache for context injection to avoid re-fetching on every LLM turn.
+    // before_prompt_build fires on every turn; caching for 60s keeps the worker
+    // load manageable while still picking up new observations reasonably quickly.
+    const CONTEXT_CACHE_TTL_MS = 60_000;
+    const contextCache = new Map();
+    async function getContextForPrompt(ctx) {
         // Include both the base project and agent-scoped project (e.g. "openclaw" + "openclaw-main")
         const projects = [baseProjectName];
         const agentProject = ctx ? getProjectName(ctx) : null;
         if (agentProject && agentProject !== baseProjectName) {
             projects.push(agentProject);
         }
-        const contextText = await workerGetText(workerPort, `/api/context/inject?projects=${encodeURIComponent(projects.join(","))}`, api.logger);
-        if (contextText && contextText.trim().length > 0) {
-            try {
-                await writeFile(join(workspaceDir, "MEMORY.md"), contextText, "utf-8");
-                api.logger.info(`[claude-mem] MEMORY.md synced to ${workspaceDir}`);
-            }
-            catch (writeError) {
-                const msg = writeError instanceof Error ? writeError.message : String(writeError);
-                api.logger.warn(`[claude-mem] Failed to write MEMORY.md: ${msg}`);
-            }
+        const cacheKey = projects.join(",");
+        // Return cached context if still fresh
+        const cached = contextCache.get(cacheKey);
+        if (cached && Date.now() - cached.fetchedAt < CONTEXT_CACHE_TTL_MS) {
+            return cached.text;
         }
+        const contextText = await workerGetText(workerPort, `/api/context/inject?projects=${encodeURIComponent(cacheKey)}`, api.logger);
+        if (contextText && contextText.trim().length > 0) {
+            const trimmed = contextText.trim();
+            contextCache.set(cacheKey, { text: trimmed, fetchedAt: Date.now() });
+            return trimmed;
+        }
+        return null;
     }
     // ------------------------------------------------------------------
     // Event: session_start — init claude-mem session (fires on /new, /reset)
@@ -346,13 +361,9 @@ export default function claudeMemPlugin(api) {
         api.logger.info(`[claude-mem] Session re-initialized after compaction: ${contentSessionId}`);
     });
     // ------------------------------------------------------------------
-    // Event: before_agent_start — init session + sync MEMORY.md + track workspace
+    // Event: before_agent_start — init session
     // ------------------------------------------------------------------
     api.on("before_agent_start", async (event, ctx) => {
-        // Track workspace dir so tool_result_persist can sync MEMORY.md later
-        if (ctx.workspaceDir) {
-            workspaceDirsBySessionKey.set(ctx.sessionKey || "default", ctx.workspaceDir);
-        }
         // Initialize session in the worker so observations are not skipped
         // (the privacy check requires a stored user prompt to exist)
         const contentSessionId = getContentSessionId(ctx.sessionKey);
@@ -361,18 +372,34 @@ export default function claudeMemPlugin(api) {
             project: getProjectName(ctx),
             prompt: event.prompt || "agent run",
         }, api.logger);
-        // Sync MEMORY.md before agent runs (provides context to agent)
-        if (syncMemoryFile && ctx.workspaceDir) {
-            await syncMemoryToWorkspace(ctx.workspaceDir, ctx);
+    });
+    // ------------------------------------------------------------------
+    // Event: before_prompt_build — inject context into system prompt
+    //
+    // Instead of writing to MEMORY.md (which conflicts with agent-curated
+    // memory), inject the observation timeline via appendSystemContext.
+    // This keeps MEMORY.md under the agent's control while still providing
+    // cross-session context to the LLM.
+    // ------------------------------------------------------------------
+    api.on("before_prompt_build", async (_event, ctx) => {
+        if (!shouldInjectContext(ctx))
+            return;
+        const contextText = await getContextForPrompt(ctx);
+        if (contextText) {
+            api.logger.info(`[claude-mem] Context injected via system prompt for agent=${ctx.agentId ?? "unknown"}`);
+            return { appendSystemContext: contextText };
         }
     });
     // ------------------------------------------------------------------
-    // Event: tool_result_persist — record tool observations + sync MEMORY.md
+    // Event: tool_result_persist — record tool observations
     // ------------------------------------------------------------------
     api.on("tool_result_persist", (event, ctx) => {
         api.logger.info(`[claude-mem] tool_result_persist fired: tool=${event.toolName ?? "unknown"} agent=${ctx.agentId ?? "none"} session=${ctx.sessionKey ?? "none"}`);
         const toolName = event.toolName;
         if (!toolName)
+            return;
+        // Skip memory_ tools to prevent recursive observation loops
+        if (toolName.startsWith("memory_"))
             return;
         const contentSessionId = getContentSessionId(ctx.sessionKey);
         // Extract result text from all content blocks
@@ -384,7 +411,12 @@ export default function claudeMemPlugin(api) {
                 .map((block) => String(block.text))
                 .join("\n");
         }
-        // Fire-and-forget: send observation + sync MEMORY.md in parallel
+        // Truncate long responses to prevent oversized payloads
+        const MAX_TOOL_RESPONSE_LENGTH = 1000;
+        if (toolResponseText.length > MAX_TOOL_RESPONSE_LENGTH) {
+            toolResponseText = toolResponseText.slice(0, MAX_TOOL_RESPONSE_LENGTH);
+        }
+        // Fire-and-forget: send observation to worker
         workerPostFireAndForget(workerPort, "/api/sessions/observations", {
             contentSessionId,
             tool_name: toolName,
@@ -392,10 +424,6 @@ export default function claudeMemPlugin(api) {
             tool_response: toolResponseText,
             cwd: "",
         }, api.logger);
-        const workspaceDir = ctx.workspaceDir || workspaceDirsBySessionKey.get(ctx.sessionKey || "default");
-        if (syncMemoryFile && workspaceDir) {
-            syncMemoryToWorkspace(workspaceDir, ctx);
-        }
     });
     // ------------------------------------------------------------------
     // Event: agent_end — summarize and complete session
@@ -438,14 +466,13 @@ export default function claudeMemPlugin(api) {
     api.on("session_end", async (_event, ctx) => {
         const key = ctx.sessionKey || "default";
         sessionIds.delete(key);
-        workspaceDirsBySessionKey.delete(key);
     });
     // ------------------------------------------------------------------
     // Event: gateway_start — clear session tracking for fresh start
     // ------------------------------------------------------------------
     api.on("gateway_start", async () => {
-        workspaceDirsBySessionKey.clear();
         sessionIds.clear();
+        contextCache.clear();
         api.logger.info("[claude-mem] Gateway started — session tracking reset");
     });
     // ------------------------------------------------------------------
