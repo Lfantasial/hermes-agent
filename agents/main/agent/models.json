@@ -61,6 +61,67 @@
         }
       ],
       "apiKey": "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"
+    },
+    "arcee": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "arcee/trinity-mini",
+          "name": "Trinity Mini 26B",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.045,
+            "output": 0.15,
+            "cacheRead": 0.045,
+            "cacheWrite": 0.045
+          },
+          "contextWindow": 131072,
+          "maxTokens": 80000
+        },
+        {
+          "id": "arcee/trinity-large-preview",
+          "name": "Trinity Large Preview",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.25,
+            "output": 1,
+            "cacheRead": 0.25,
+            "cacheWrite": 0.25
+          },
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        },
+        {
+          "id": "arcee/trinity-large-thinking",
+          "name": "Trinity Large Thinking",
+          "api": "openai-completions",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.25,
+            "output": 0.9,
+            "cacheRead": 0.25,
+            "cacheWrite": 0.25
+          },
+          "contextWindow": 262144,
+          "maxTokens": 80000,
+          "compat": {
+            "supportsReasoningEffort": false
+          }
+        }
+      ],
+      "apiKey": "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"
     }
   }
 }

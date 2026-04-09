@@ -1,14 +1,16 @@
 {
   "version": 1,
-  "lastRunAt": "2026-04-07T12:36:00+09:00",
+  "lastRunAt": "2026-04-09T23:11:00+09:00",
   "lastChecks": {
-    "sessionState": "2026-04-07T12:36:00+09:00",
-    "dailyMemory": "2026-04-07T12:36:00+09:00",
-    "cron": "2026-04-07T12:36:00+09:00"
+    "sessionState": "2026-04-09T23:11:00+09:00",
+    "dailyMemory": "2026-04-09T23:11:00+09:00",
+    "cron": "2026-04-09T23:11:00+09:00"
   },
   "findings": [
-    "daily-github-backup: lastStatus=ok, lastRun 2026-04-05 04:00:51 KST, push failed with Permission denied (403) to NousResearch/hermes-agent.git (recurring issue)",
-    "periodic-memory-maintenance: lastStatus=error, consecutiveErrors=2, lastError=MEMORY.md edit failure; Telegram delivery error: chat @heartbeat not found (400: Bad Request: chat not found)"
+    "periodic-memory-maintenance: lastStatus=error, consecutiveErrors=2, lastError=Telegram @heartbeat not found (400: Bad Request: chat not found)",
+    "notion-daily-briefing: lastStatus=error, consecutiveErrors=2, lastError=Unsupported channel: telegram",
+    "github-repo-daily-briefing: lastStatus=error, consecutiveErrors=2, lastError=Unsupported channel: telegram",
+    "daily-github-backup: lastStatus=ok, lastRun 2026-04-05 04:00:51 KST (no new run since last check)"
   ],
-  "notes": "daily-github-backup push failure confirmed again at 2026-04-05 04:00:51 KST. Local commits succeed (426 files, 2.6M insertions) but GitHub push denied to Lfantasial account. Periodic memory maintenance error: consecutiveErrors increased from 1 to 2 (MEMORY.md edit failure + Telegram @heartbeat delivery failure)."
+  "notes": "Three cron jobs with consecutiveErrors=2: periodic-memory-maintenance (Telegram @heartbeat delivery failure), notion-daily-briefing (Unsupported channel: telegram), github-repo-daily-briefing (Unsupported channel: telegram). Daily github backup last run on 2026-04-05 with push failure; no new run observed at this check."
 }

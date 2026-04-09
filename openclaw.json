@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.28",
-    "lastTouchedAt": "2026-03-29T15:30:20.295Z"
+    "lastTouchedVersion": "2026.4.8",
+    "lastTouchedAt": "2026-04-09T23:08:44.850Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-13T12:23:49.584Z",
@@ -112,7 +112,9 @@
       "dmPolicy": "pairing",
       "botToken": "8383705979:AAGV0AIQftM-rzingVgFV-orYcKgHZP8e8Q",
       "groupPolicy": "open",
-      "streaming": "partial",
+      "streaming": {
+        "mode": "partial"
+      },
       "actions": {
         "reactions": true,
         "sendMessage": true,
@@ -147,7 +149,11 @@
   "plugins": {
     "allow": [
       "telegram",
-      "claude-mem"
+      "claude-mem",
+      "memory-core",
+      "zai",
+      "openai",
+      "openrouter"
     ],
     "slots": {
       "memory": "claude-mem"
@@ -166,10 +172,16 @@
         }
       },
       "memory-core": {
-        "enabled": false
+        "enabled": true
       },
-      "memory-lancedb": {
-        "enabled": false
+      "zai": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
       }
     },
     "installs": {

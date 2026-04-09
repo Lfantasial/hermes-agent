@@ -21,5 +21,14 @@
       "expires": 1774096321000,
       "accountId": "e758ac6c-c8e5-44d8-89ca-331e0947a528"
     }
+  },
+  "lastGood": {
+    "openrouter": "openrouter:default"
+  },
+  "usageStats": {
+    "openrouter:default": {
+      "errorCount": 0,
+      "lastUsed": 1775725271343
+    }
   }
 }
