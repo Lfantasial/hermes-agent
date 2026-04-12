@@ -27,7 +27,7 @@
         ],
         "createdAtMs": 1771252522327,
         "rotatedAtMs": 1771406582380,
-        "lastUsedAtMs": 1775933005403
+        "lastUsedAtMs": 1775972991359
       }
     },
     "createdAtMs": 1771252522327,
@@ -37,8 +37,8 @@
     "deviceId": "71006e4ba8a5e0ce8ed39a6ceb072750be71048e9b53fb6148f9f853cddd6429",
     "publicKey": "QcOlI06t1uj7fa0ITLvvf14k-GQGsJ9aFoyeY0kaB7Y",
     "platform": "linux",
-    "clientId": "gateway-client",
-    "clientMode": "backend",
+    "clientId": "cli",
+    "clientMode": "probe",
     "role": "operator",
     "roles": [
       "operator"
@@ -62,8 +62,7 @@
       }
     },
     "createdAtMs": 1771252810180,
-    "approvedAtMs": 1771603619701,
-    "displayName": "gateway:doctor.memory.status"
+    "approvedAtMs": 1771603619701
   },
   "a98d0280ff86b60e5bd3c168c2b73251a86e72d7e1bfd55bcb3ac171a459b5f6": {
     "deviceId": "a98d0280ff86b60e5bd3c168c2b73251a86e72d7e1bfd55bcb3ac171a459b5f6",

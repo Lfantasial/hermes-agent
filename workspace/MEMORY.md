@@ -1,44 +1,38 @@
 # MEMORY.md - Long-Term Memory
 
-**Last Updated:** 2026-04-05
+**Last Updated:** 2026-04-12
 
 > This is curated long-term memory for durable preferences, decisions, and context.
 > For raw daily logs, see `memory/YYYY-MM-DD.md`.
 
 ---
 
-## Current System State (as of 2026-04-05)
+## Current System State (as of 2026-04-12)
 
 ### Cron Job Health
 - **Total Jobs:** 8
-- **Healthy:** 6/8
-- **Active Failures:** 2
+- **Healthy:** 7/8
+- **Active Failures:** 1
+
+### Recent Resolutions (2026-04-06 to 2026-04-12)
+- **daily-github-backup**: Resolved - Local commits and remote push now succeeding
+- **daily-update-check**: Resolved - Telegram delivery configuration fixed
+- **notion-daily-briefing**: Resolved - Telegram channel issue fixed
+- **github-repo-daily-briefing**: Resolved - Telegram channel issue fixed
 
 ### Persistent Issues
-1. **daily-github-backup** (HIGH priority)
-   - Symptom: Local commits succeed, but push to `NousResearch/hermes-agent.git` fails with Permission denied (403)
-   - Root cause: Lfantasial account lacks push permissions or GitHub token is expired
-   - Last failure: 2026-04-05 04:00 KST
-   - Action required: Refresh GitHub token or grant Lfantasial push access to repo
+1. **daily-security-audit** (HIGH priority - NEW)
+   - Symptom: Module not found error - `Cannot find module '/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/usage-format-BxwBwHAF.js'`
+   - Root cause: OpenClaw npm update may have changed module structure
+   - Consecutive errors: 1
+   - Last failure: 2026-04-12 03:00 KST
+   - Action required: Investigate OpenClaw version and module structure changes
 
 2. **periodic-memory-maintenance** (MEDIUM priority)
    - Symptom: MEMORY.md edit failure
-   - Consecutive errors: 1
+   - Consecutive errors: 2
+   - Last failure: 2026-04-04 (no new runs observed in logs)
    - Status: Requires investigation of edit operation
-
-3. **daily-update-check** (LOW priority)
-   - Symptom: Telegram delivery failure
-   - Root cause: Target configuration missing
-   - Status: Works for update checking, fails only on notification step
-
-### Security Audit Status
-- **Schedule:** Daily at 03:00 KST via `openclaw security audit --deep`
-- **Known false positives** (intentionally suppressed):
-  - `tavily-search`: `scripts/extract.mjs`, `scripts/search.mjs`
-  - `claude-mem`: `bun-runner.js`, `context-generator.cjs`, `mcp-server.cjs`, `smart-install.js`, `worker-cli.js`
-  - `writing-skills`: `render-graphs.js`
-- **Recent CRITICAL findings:** Telegram open group exposes runtime and filesystem tools (requires permission review)
-- **Warnings:** Trusted proxies missing, auto-allow skills enabled
 
 ---
 
@@ -93,6 +87,18 @@
 - Initial implementation: Isolated agentTurn mode repeatedly timed out
 - Solution: Switched to `main` + `systemEvent` heartbeat mode
 - Result: Heartbeat job stabilized
+
+### System Resolutions (April 2026)
+**2026-04-06 to 2026-04-12:** Multiple Telegram delivery issues resolved
+- daily-github-backup: GitHub push permissions/token issue resolved
+- daily-update-check: Telegram target configuration fixed
+- notion-daily-briefing: Telegram channel issue resolved
+- github-repo-daily-briefing: Telegram channel issue resolved
+- Result: Cron health improved from 6/8 to 7/8 jobs healthy
+
+**2026-04-12:** Gateway restart executed via npm
+- System maintenance completed successfully
+- Gateway service restored after npm global update
 
 ---
 
@@ -155,26 +161,26 @@
 
 ## Known Workarounds
 
-### GitHub Backup
-- **Issue:** daily-github-backup push fails with 403
-- **Workaround:** None currently - requires GitHub token refresh or permission grant
-- **Impact:** Local commits succeed, workspace backup exists locally but not synchronized to remote
-
-### Telegram Open Group Security
-- **Issue:** Critical findings for runtime/filesystem tool exposure
-- **Workaround:** Permission model review in progress
-- **Impact:** High - security posture degraded until resolved
+### Security Audit Module Error
+- **Issue:** daily-security-audit fails with module not found (usage-format-BxwBwHAF.js)
+- **Workaround:** None currently - requires OpenClaw version investigation and possible rollback or fix
+- **Impact:** High - daily security monitoring interrupted
 
 ### Memory Maintenance
 - **Issue:** periodic-memory-maintenance MEMORY.md edit failure
 - **Workaround:** Manual memory updates by operator
 - **Impact:** Medium - automation not fully functional
 
+### Telegram Open Group Security
+- **Issue:** Critical findings for runtime/filesystem tool exposure (ongoing since March 2026)
+- **Workaround:** Permission model review needed
+- **Impact:** High - security posture degraded until resolved
+
 ---
 
 ## Cron Job Inventory (8 Jobs)
 
-### Active Jobs (6/8)
+### Active Jobs (7/8)
 1. **daily-morning-briefing** (07:00 KST)
    - Purpose: Seoul weather + system status + urgent notifications for Sam
    - Model: zai/glm-4.7
@@ -184,42 +190,40 @@
    - Purpose: Korean IT ops summary from Notion (OB맥주 / AB InBev Korea)
    - Model: zai/glm-4.7
    - Constraints: 25 items max, <3500 characters (Telegram limit)
-   - Status: OK
+   - Status: OK (Telegram delivery resolved)
 
 3. **github-repo-daily-briefing** (09:00 KST)
    - Purpose: Korean GitHub trending/high-star repo briefing
    - Model: zai/glm-4.7
    - Constraints: <2500 characters, 5 sections with deduplication
-   - Status: OK
+   - Status: OK (Telegram delivery resolved)
 
-4. **daily-security-audit** (03:00 KST)
-   - Purpose: Deep security audit via `openclaw security audit --deep`
-   - Model: zai/glm-4.7
-   - Known false positives: tavily-search, claude-mem, writing-skills
-   - Status: OK
-
-5. **daily-update-check** (06:00 KST)
+4. **daily-update-check** (06:00 KST)
    - Purpose: Check OpenClaw & skills for updates
    - Model: zai/glm-4.7
-   - Issue: Telegram delivery fails (missing target config)
-   - Status: Partial failure (update check works, notification fails)
+   - Status: OK (Telegram delivery resolved)
+
+5. **daily-github-backup** (04:00 KST)
+   - Purpose: Run `backup_to_github.sh` to push workspace to GitHub
+   - Status: OK (GitHub push resolved)
 
 6. **workspace-heartbeat** (every 3 hours: 09:00/12:00/15:00/18:00/21:00 KST)
-   - Purpose: Isolated agentTurn job for cron health + state file maintenance
-   - Model: zai/glm-4.7
-   - Mode: main + systemEvent (after timeout issues with agentTurn)
+   - Purpose: Low-noise workspace heartbeat for session state, cron health, and file-memory continuity
+   - Mode: main + systemEvent
    - Scope: HEARTBEAT.md, SESSION-STATE.md, working-buffer.md, heartbeat-state.json, daily memory
    - Status: OK
 
-### Failing Jobs (2/8)
-7. **daily-github-backup** (04:00 KST)
-   - Purpose: Run `backup_to_github.sh` to push workspace to GitHub
-   - Status: Local commits succeed, push fails with 403
-   - Root cause: Lfantasial account lacks push permission or token expired
+7. **daily-security-audit** (03:00 KST) - NEW ERROR
+   - Purpose: Deep security audit via `openclaw security audit --deep`
+   - Model: zai/glm-4.7
+   - Known false positives: tavily-search, claude-mem, writing-skills
+   - Status: ERROR - Module not found (usage-format-BxwBwHAF.js)
 
-8. **periodic-memory-maintenance** (varies)
+### Failing Jobs (1/8)
+8. **periodic-memory-maintenance** (23:00 KST Sundays)
    - Purpose: Distill recent memory files into MEMORY.md
-   - Status: MEMORY.md edit failure (consecutiveErrors=1)
+   - Status: MEMORY.md edit failure (consecutiveErrors=2)
+   - Last successful run: Unknown (no recent success in logs)
 
 ---
 
@@ -296,12 +300,14 @@
 
 ## Notes for Future
 
+- **Security audit monitoring:** daily-security-audit failing with module error - requires immediate investigation
 - **Model evolution:** Monitor for new model releases and evaluate migration benefits
 - **Cron job optimization:** Review batch opportunities to reduce API calls (e.g., combine multiple checks into heartbeat)
 - **Security posture:** Telegram open group permissions need formal review
+- **OpenClaw npm updates:** Monitor for module structure changes that may break cron jobs
 - **Memory hygiene:** Regularly promote important daily notes into MEMORY.md, prune outdated entries
 - **Automation maturity:** Proactive agent patterns need refinement (autonomous crons, WAL Protocol, Working Buffer)
 
 ---
 
-_Updated: 2026-04-05 by periodic-memory-maintenance cron job_
+_Updated: 2026-04-12 by periodic-memory-maintenance cron job_

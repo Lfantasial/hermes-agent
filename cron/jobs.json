@@ -7,7 +7,7 @@
       "name": "daily-security-audit",
       "enabled": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1775932873626,
+      "updatedAtMs": 1776016866019,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,14 +26,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776016800000,
-        "lastRunAtMs": 1775932819152,
-        "lastStatus": "error",
-        "lastDurationMs": 54474,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastError": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/usage-format-BxwBwHAF.js' imported from /home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/server.impl-BxLfE9ri.js"
+        "nextRunAtMs": 1776103200000,
+        "lastRunAtMs": 1776016800005,
+        "lastStatus": "ok",
+        "lastDurationMs": 66014,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "daily-update-check",
       "enabled": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1775854836726,
+      "updatedAtMs": 1775941223762,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,10 +61,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1775941200000,
-        "lastRunAtMs": 1775854802935,
+        "nextRunAtMs": 1776027600000,
+        "lastRunAtMs": 1775941203893,
         "lastStatus": "ok",
-        "lastDurationMs": 33791,
+        "lastDurationMs": 19869,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -77,7 +77,7 @@
       "name": "periodic-memory-maintenance",
       "enabled": true,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1775398097200,
+      "updatedAtMs": 1776002641235,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -93,11 +93,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776002400000,
-        "lastRunAtMs": 1775397602935,
+        "nextRunAtMs": 1776607200000,
+        "lastRunAtMs": 1776002403620,
         "lastStatus": "error",
-        "lastDurationMs": 494265,
-        "consecutiveErrors": 2,
+        "lastDurationMs": 237615,
+        "consecutiveErrors": 3,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
         "lastError": "Error: Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found))"
@@ -109,7 +109,7 @@
       "name": "daily-morning-briefing",
       "enabled": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1775858425488,
+      "updatedAtMs": 1775944836966,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -128,10 +128,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1775944800000,
-        "lastRunAtMs": 1775858403527,
+        "nextRunAtMs": 1776031200000,
+        "lastRunAtMs": 1775944802930,
         "lastStatus": "ok",
-        "lastDurationMs": 21961,
+        "lastDurationMs": 34036,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -145,7 +145,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1775847612987,
+      "updatedAtMs": 1775934067746,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -163,15 +163,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1775934000000,
-        "lastRunAtMs": 1775847602939,
+        "nextRunAtMs": 1776020400000,
+        "lastRunAtMs": 1775934002937,
         "lastStatus": "ok",
-        "lastDurationMs": 10048,
+        "lastDurationMs": 64809,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
         "lastDelivered": true,
-        "runningAtMs": 1775934002933
+        "runningAtMs": 1776020400001
       }
     },
     {
@@ -180,7 +180,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1775862020354,
+      "updatedAtMs": 1775948412621,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -200,11 +200,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1775948400000,
-        "lastRunAtMs": 1775862000003,
+        "nextRunAtMs": 1776034800000,
+        "lastRunAtMs": 1775948402929,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 20351,
+        "lastDurationMs": 9692,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -215,7 +215,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1775865640590,
+      "updatedAtMs": 1775952048228,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -235,11 +235,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1775952000000,
-        "lastRunAtMs": 1775865605876,
+        "nextRunAtMs": 1776038400000,
+        "lastRunAtMs": 1775952005872,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 34714,
+        "lastDurationMs": 42356,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -252,7 +252,7 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1775908874946,
+      "updatedAtMs": 1775995248707,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -265,11 +265,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1775952000000,
-        "lastRunAtMs": 1775908803583,
+        "nextRunAtMs": 1776038400000,
+        "lastRunAtMs": 1775995200599,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 71363,
+        "lastDurationMs": 48108,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
