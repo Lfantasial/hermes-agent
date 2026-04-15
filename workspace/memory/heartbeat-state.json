@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "lastRunAt": "2026-04-15T03:58:00+09:00",
+  "lastRunAt": "2026-04-16T03:58:00+09:00",
   "lastChecks": {
-    "sessionState": "2026-04-15T03:58:00+09:00",
-    "dailyMemory": "2026-04-15T03:58:00+09:00",
-    "cron": "2026-04-15T03:58:00+09:00"
+    "sessionState": "2026-04-16T03:58:00+09:00",
+    "dailyMemory": "2026-04-16T03:58:00+09:00",
+    "cron": "2026-04-16T03:58:00+09:00"
   },
-  "findings": ["Daily security audit completed at 03:00 KST. Critical findings (3): open Telegram group policy with elevated tools, autoAllowSkills enabled, reverse proxy headers not trusted", "Daily update check completed at 06:00 KST. OpenClaw update available (npm 2026.4.12, current: pnpm stable). Skills: all up to date"],
-  "notes": "Day rollover to 2026-04-15. Security audit report received. Update check completed. All briefings delivered."
+  "findings": ["Security audit at 03:00 KST: Auto-allow Skills enabled (Rust exec auto-allowed), Multi-user heuristic warning (groupPolicy=open with runtime/process tools exposed, no sandbox), Plugin tools accessible (claude-mem)"],
+  "notes": "Day rollover to 2026-04-16. Security audit completed at 03:00 KST with warnings. All cron jobs ok."
 }
