@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "lastRunAt": "2026-04-17T03:59:00+09:00",
+  "lastChecks": {
+    "sessionState": "2026-04-17T03:59:00+09:00",
+    "dailyMemory": "2026-04-17T03:59:00+09:00",
+    "cron": "2026-04-17T03:59:00+09:00"
+  },
+  "findings": ["daily-github-backup push failed (403 error). Commit 77ee2720 (41 files, 7140 insertions, 317 deletions). Lfantasial lacks write permission to NousResearch/hermes-agent.git", "Security audit at 03:00 KST on 2026-04-17: 3 critical issues (down from 6). False positives removed: tavily-search, claude-mem, writing-skills. Remaining: open group policy with elevated tools (2), open group policy with runtime/filesystem exposed (1), telegram groupPolicy=open without allowlist (1), missing reverse proxy headers (1), autoAllowSkills enabled (1), multi-user setup warning (1), permissive tool policy with plugin tools (1)", "Morning briefing delivered at 07:00 KST on 2026-04-16: Weather +14°C, Gateway active, OpenClaw 2026.4.14", "Notion briefing at 08:00 KST on 2026-04-16: 79 items (Security 17, Infra 33, Workplace 10, Daily 19) with urgent actions required (GitHub 403, SharePoint migration, CRM DB, SQL audit, PIM config, NPA audit, Oracle DB evaluation, external service transfer, OS/DB migration)", "GitHub briefing at 09:01 KST on 2026-04-16: trending (5 repos: fireworks-tech-graph, codeburn, codex-oauth-automation-extension, MOSS-TTS-Nano, hermes-hudui) and all-time (5 repos: build-your-own-x, awesome, freeCodeCamp, public-apis, free-programming-books) with Claude Code context integration opportunities (SVG diagrams, TTS automation, Hermes HUD UI, Awesome lists, TTS model)"],
+  "notes": "Day rollover to 2026-04-17. GitHub backup push failure at 04:00 KST on 2026-04-16 (403 error, persistent). Security audit at 03:00 KST on 2026-04-17: 3 critical issues (improvement from 6). Morning briefing at 07:00 KST on 2026-04-16. Notion briefing at 08:00 KST on 2026-04-16 (79 items urgent). GitHub briefing at 09:01 KST on 2026-04-16 (10 repos). Update check at 06:00 KST on 2026-04-16: up to date. All other cron jobs ok."
+}
