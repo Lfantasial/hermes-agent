@@ -1,38 +1,40 @@
 # MEMORY.md - Long-Term Memory
 
-**Last Updated:** 2026-04-12
+**Last Updated:** 2026-04-19
 
 > This is curated long-term memory for durable preferences, decisions, and context.
 > For raw daily logs, see `memory/YYYY-MM-DD.md`.
 
 ---
 
-## Current System State (as of 2026-04-12)
+## Current System State (as of 2026-04-19)
 
 ### Cron Job Health
 - **Total Jobs:** 8
-- **Healthy:** 7/8
-- **Active Failures:** 1
-
-### Recent Resolutions (2026-04-06 to 2026-04-12)
-- **daily-github-backup**: Resolved - Local commits and remote push now succeeding
-- **daily-update-check**: Resolved - Telegram delivery configuration fixed
-- **notion-daily-briefing**: Resolved - Telegram channel issue fixed
-- **github-repo-daily-briefing**: Resolved - Telegram channel issue fixed
+- **Healthy:** 6/8
+- **Active Failures:** 2
 
 ### Persistent Issues
-1. **daily-security-audit** (HIGH priority - NEW)
-   - Symptom: Module not found error - `Cannot find module '/home/lfant/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/usage-format-BxwBwHAF.js'`
-   - Root cause: OpenClaw npm update may have changed module structure
-   - Consecutive errors: 1
-   - Last failure: 2026-04-12 03:00 KST
-   - Action required: Investigate OpenClaw version and module structure changes
-
-2. **periodic-memory-maintenance** (MEDIUM priority)
-   - Symptom: MEMORY.md edit failure
+1. **daily-github-backup** (HIGH priority - Persistent since 2026-04-14)
+   - Symptom: GitHub push failed with HTTP 403 Forbidden
+   - Root cause: Lfantasial lacks write permission to NousResearch/hermes-agent.git repository
    - Consecutive errors: 2
-   - Last failure: 2026-04-04 (no new runs observed in logs)
-   - Status: Requires investigation of edit operation
+   - First failure: 2026-04-14 04:00 KST
+   - Last failure: 2026-04-17 04:00 KST
+   - Local commits: Successful (41 files, 7140 insertions, 317 deletions on Apr 16)
+   - Action required: Update remote to fork or obtain write permission
+
+2. **periodic-memory-maintenance** (MEDIUM priority - Escalating)
+   - Symptom: Telegram recipient @heartbeat could not be resolved
+   - Consecutive errors: 3
+   - Impact: Memory distillation automation disrupted
+   - Action required: Update Telegram recipient configuration
+
+3. **Security Posture Regression** (HIGH priority - Worsening)
+   - Symptom: Security audit critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19)
+   - Last audit: 2026-04-19 03:00 KST (6 Critical, 5 Warn, 1 Info)
+   - Critical issues: Open groups with elevated tools, runtime/filesystem exposure in Telegram, Telegram groupPolicy=open without allowlist
+   - Action required: Immediately configure Telegram groupPolicy → allowlist + explicit group configuration
 
 ---
 
@@ -88,17 +90,28 @@
 - Solution: Switched to `main` + `systemEvent` heartbeat mode
 - Result: Heartbeat job stabilized
 
-### System Resolutions (April 2026)
-**2026-04-06 to 2026-04-12:** Multiple Telegram delivery issues resolved
-- daily-github-backup: GitHub push permissions/token issue resolved
-- daily-update-check: Telegram target configuration fixed
-- notion-daily-briefing: Telegram channel issue resolved
-- github-repo-daily-briefing: Telegram channel issue resolved
-- Result: Cron health improved from 6/8 to 7/8 jobs healthy
+### System Issues (April 2026)
+**2026-04-14 to 2026-04-17:** GitHub backup persistent failure
+- daily-github-backup: HTTP 403 Forbidden - Lfantasial lacks write permission to NousResearch/hermes-agent.git
+- Local commits successful, but remote push fails consistently
+- Consecutive errors: 2 (Apr 16-17)
+- Status: Unresolved - requires remote update or permission grant
 
-**2026-04-12:** Gateway restart executed via npm
+**2026-04-11 to 2026-04-19:** periodic-memory-maintenance Telegram recipient error
+- Telegram recipient @heartbeat could not be resolved
+- Consecutive errors: 3
+- Impact: Memory distillation automation disrupted
+- Status: Unresolved - requires Telegram configuration update
+
+**2026-04-19:** Security audit regression
+- Critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19)
+- Critical findings: Open groups with elevated tools, runtime/filesystem exposure, Telegram groupPolicy=open without allowlist
+- Status: Escalating - immediate action required for security posture
+
+**2026-04-17:** Gateway restart via npm
 - System maintenance completed successfully
-- Gateway service restored after npm global update
+- OpenClaw up to date (2026.4.14 npm latest)
+- Skills all up to date (1 global skill checked: simplemem-skill)
 
 ---
 
@@ -161,20 +174,22 @@
 
 ## Known Workarounds
 
-### Security Audit Module Error
-- **Issue:** daily-security-audit fails with module not found (usage-format-BxwBwHAF.js)
-- **Workaround:** None currently - requires OpenClaw version investigation and possible rollback or fix
-- **Impact:** High - daily security monitoring interrupted
+### GitHub Backup 403 Error
+- **Issue:** daily-github-backup fails with HTTP 403 Forbidden
+- **Cause:** Lfantasial lacks write permission to NousResearch/hermes-agent.git repository
+- **Workaround:** None currently - requires remote update to fork or write permission grant
+- **Impact:** High - daily backup automation interrupted since 2026-04-14
 
-### Memory Maintenance
-- **Issue:** periodic-memory-maintenance MEMORY.md edit failure
+### Memory Maintenance Telegram Recipient Error
+- **Issue:** periodic-memory-maintenance fails with Telegram recipient @heartbeat not found
 - **Workaround:** Manual memory updates by operator
-- **Impact:** Medium - automation not fully functional
+- **Impact:** Medium - automation disrupted for 3 consecutive runs
 
-### Telegram Open Group Security
-- **Issue:** Critical findings for runtime/filesystem tool exposure (ongoing since March 2026)
-- **Workaround:** Permission model review needed
-- **Impact:** High - security posture degraded until resolved
+### Security Posture Regression
+- **Issue:** Security audit critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19)
+- **Critical findings:** Open groups with elevated tools, runtime/filesystem exposure in Telegram, Telegram groupPolicy=open without allowlist
+- **Workaround:** None currently - requires immediate security configuration changes
+- **Impact:** High - security posture degraded, requires urgent attention
 
 ---
 
@@ -213,17 +228,27 @@
    - Scope: HEARTBEAT.md, SESSION-STATE.md, working-buffer.md, heartbeat-state.json, daily memory
    - Status: OK
 
-7. **daily-security-audit** (03:00 KST) - NEW ERROR
+7. **daily-security-audit** (03:00 KST)
    - Purpose: Deep security audit via `openclaw security audit --deep`
    - Model: zai/glm-4.7
    - Known false positives: tavily-search, claude-mem, writing-skills
-   - Status: ERROR - Module not found (usage-format-BxwBwHAF.js)
+   - Status: OK (but critical findings worsened: 2-3 critical Apr 10-17 → 6 critical Apr 19)
 
-### Failing Jobs (1/8)
-8. **periodic-memory-maintenance** (23:00 KST Sundays)
+### Failing Jobs (2/8)
+8. **daily-github-backup** (04:00 KST)
+   - Purpose: Run `backup_to_github.sh` to push workspace to GitHub
+   - Status: ERROR - HTTP 403 Forbidden
+   - Consecutive errors: 2
+   - First failure: 2026-04-14 04:00 KST
+   - Last failure: 2026-04-17 04:00 KST
+   - Local commits: Successful, remote push failing
+   - Cause: Lfantasial lacks write permission to NousResearch/hermes-agent.git
+
+9. **periodic-memory-maintenance** (23:00 KST Sundays)
    - Purpose: Distill recent memory files into MEMORY.md
-   - Status: MEMORY.md edit failure (consecutiveErrors=2)
-   - Last successful run: Unknown (no recent success in logs)
+   - Status: ERROR - Telegram recipient @heartbeat not found
+   - Consecutive errors: 3
+   - Impact: Memory distillation automation disrupted
 
 ---
 
@@ -300,10 +325,12 @@
 
 ## Notes for Future
 
-- **Security audit monitoring:** daily-security-audit failing with module error - requires immediate investigation
+- **Security audit regression:** Critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19) - requires immediate attention for Telegram groupPolicy configuration
+- **GitHub backup failure:** HTTP 403 error since 2026-04-14 - Lfantasial lacks write permission to NousResearch/hermes-agent.git, needs remote update or permission grant
+- **Memory maintenance disruption:** Telegram recipient @heartbeat not found (3 consecutive errors) - requires configuration update
 - **Model evolution:** Monitor for new model releases and evaluate migration benefits
 - **Cron job optimization:** Review batch opportunities to reduce API calls (e.g., combine multiple checks into heartbeat)
-- **Security posture:** Telegram open group permissions need formal review
+- **Security posture:** Telegram open group permissions with elevated tools and runtime/filesystem exposure need urgent formal review
 - **OpenClaw npm updates:** Monitor for module structure changes that may break cron jobs
 - **Memory hygiene:** Regularly promote important daily notes into MEMORY.md, prune outdated entries
 - **Automation maturity:** Proactive agent patterns need refinement (autonomous crons, WAL Protocol, Working Buffer)

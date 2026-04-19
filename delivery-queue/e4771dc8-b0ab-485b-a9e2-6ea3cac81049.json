@@ -1,0 +1,19 @@
+{
+  "id": "e4771dc8-b0ab-485b-a9e2-6ea3cac81049",
+  "enqueuedAt": 1776607299935,
+  "channel": "telegram",
+  "to": "heartbeat",
+  "payloads": [
+    {
+      "text": "⚠️ Cron job \"periodic-memory-maintenance\" failed: Error: Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found))"
+    }
+  ],
+  "bestEffort": false,
+  "session": {
+    "key": "cron:07b6a467-2277-4376-8c4c-b8ae1a7ac74f:failure",
+    "agentId": "main"
+  },
+  "retryCount": 1,
+  "lastAttemptAt": 1776607300318,
+  "lastError": "Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found)) | Call to 'getChat' failed! (400: Bad Request: chat not found)"
+}

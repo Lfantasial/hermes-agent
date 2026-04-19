@@ -7,7 +7,7 @@
       "name": "daily-security-audit",
       "enabled": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1776535264264,
+      "updatedAtMs": 1776621662286,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,10 +26,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776621600000,
-        "lastRunAtMs": 1776535204515,
+        "nextRunAtMs": 1776708000000,
+        "lastRunAtMs": 1776621603582,
         "lastStatus": "ok",
-        "lastDurationMs": 59749,
+        "lastDurationMs": 58704,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -42,7 +42,7 @@
       "name": "daily-update-check",
       "enabled": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1776459627036,
+      "updatedAtMs": 1776546019005,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,10 +61,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776546000000,
-        "lastRunAtMs": 1776459603599,
+        "nextRunAtMs": 1776632400000,
+        "lastRunAtMs": 1776546005865,
         "lastStatus": "ok",
-        "lastDurationMs": 23437,
+        "lastDurationMs": 13140,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -77,7 +77,7 @@
       "name": "periodic-memory-maintenance",
       "enabled": true,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1776002641235,
+      "updatedAtMs": 1776607299920,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -93,11 +93,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776607200000,
-        "lastRunAtMs": 1776002403620,
+        "nextRunAtMs": 1777212000000,
+        "lastRunAtMs": 1776607203592,
         "lastStatus": "error",
-        "lastDurationMs": 237615,
-        "consecutiveErrors": 3,
+        "lastDurationMs": 96328,
+        "consecutiveErrors": 4,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
         "lastError": "Error: Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found))"
@@ -109,7 +109,7 @@
       "name": "daily-morning-briefing",
       "enabled": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1776463239864,
+      "updatedAtMs": 1776549639550,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -128,10 +128,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776549600000,
-        "lastRunAtMs": 1776463200003,
+        "nextRunAtMs": 1776636000000,
+        "lastRunAtMs": 1776549605869,
         "lastStatus": "ok",
-        "lastDurationMs": 39861,
+        "lastDurationMs": 33681,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -145,7 +145,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1776452418533,
+      "updatedAtMs": 1776538818808,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -163,15 +163,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776538800000,
-        "lastRunAtMs": 1776452407226,
+        "nextRunAtMs": 1776625200000,
+        "lastRunAtMs": 1776538807166,
         "lastStatus": "ok",
-        "lastDurationMs": 11307,
+        "lastDurationMs": 11642,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
         "lastDelivered": true,
-        "runningAtMs": 1776538807163
+        "runningAtMs": 1776625202934
       }
     },
     {
@@ -180,7 +180,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1776466836854,
+      "updatedAtMs": 1776553256038,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -200,11 +200,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776553200000,
-        "lastRunAtMs": 1776466803589,
+        "nextRunAtMs": 1776639600000,
+        "lastRunAtMs": 1776553202939,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 33265,
+        "lastDurationMs": 53099,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -215,7 +215,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1776470528607,
+      "updatedAtMs": 1776556859530,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -235,11 +235,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776556800000,
-        "lastRunAtMs": 1776470403590,
+        "nextRunAtMs": 1776643200000,
+        "lastRunAtMs": 1776556800006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 125017,
+        "lastDurationMs": 59524,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -252,7 +252,7 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1776513629455,
+      "updatedAtMs": 1776600022049,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -265,11 +265,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1776556800000,
-        "lastRunAtMs": 1776513605867,
+        "nextRunAtMs": 1776643200000,
+        "lastRunAtMs": 1776600000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 23588,
+        "lastDurationMs": 22044,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
