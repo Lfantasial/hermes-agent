@@ -7,7 +7,7 @@
       "name": "daily-security-audit",
       "enabled": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1776621662286,
+      "updatedAtMs": 1776708075681,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -26,10 +26,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776708000000,
-        "lastRunAtMs": 1776621603582,
+        "nextRunAtMs": 1776794400000,
+        "lastRunAtMs": 1776708005411,
         "lastStatus": "ok",
-        "lastDurationMs": 58704,
+        "lastDurationMs": 70270,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -42,7 +42,7 @@
       "name": "daily-update-check",
       "enabled": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1776546019005,
+      "updatedAtMs": 1776632421091,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -61,10 +61,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776632400000,
-        "lastRunAtMs": 1776546005865,
+        "nextRunAtMs": 1776718800000,
+        "lastRunAtMs": 1776632400004,
         "lastStatus": "ok",
-        "lastDurationMs": 13140,
+        "lastDurationMs": 21087,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -109,7 +109,7 @@
       "name": "daily-morning-briefing",
       "enabled": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1776549639550,
+      "updatedAtMs": 1776636048628,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -128,10 +128,10 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776636000000,
-        "lastRunAtMs": 1776549605869,
+        "nextRunAtMs": 1776722400000,
+        "lastRunAtMs": 1776636005865,
         "lastStatus": "ok",
-        "lastDurationMs": 33681,
+        "lastDurationMs": 42763,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -145,7 +145,7 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1776538818808,
+      "updatedAtMs": 1776625215525,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -163,15 +163,15 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776625200000,
-        "lastRunAtMs": 1776538807166,
+        "nextRunAtMs": 1776711600000,
+        "lastRunAtMs": 1776625202936,
         "lastStatus": "ok",
-        "lastDurationMs": 11642,
+        "lastDurationMs": 12589,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
         "lastDelivered": true,
-        "runningAtMs": 1776625202934
+        "runningAtMs": 1776711605868
       }
     },
     {
@@ -180,7 +180,7 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1776553256038,
+      "updatedAtMs": 1776639655672,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -200,11 +200,11 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776639600000,
-        "lastRunAtMs": 1776553202939,
+        "nextRunAtMs": 1776726000000,
+        "lastRunAtMs": 1776639602528,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 53099,
+        "lastDurationMs": 53144,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -215,7 +215,7 @@
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1776556859530,
+      "updatedAtMs": 1776643236532,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -235,14 +235,14 @@
         "to": "telegram:5487758242"
       },
       "state": {
-        "nextRunAtMs": 1776643200000,
-        "lastRunAtMs": 1776556800006,
+        "nextRunAtMs": 1776729600000,
+        "lastRunAtMs": 1776643203491,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 59524,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 33041,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": false
       },
       "agentId": "main"
     },
@@ -252,7 +252,7 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1776600022049,
+      "updatedAtMs": 1776686405355,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -265,11 +265,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1776643200000,
-        "lastRunAtMs": 1776600000005,
+        "nextRunAtMs": 1776729600000,
+        "lastRunAtMs": 1776686405348,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22044,
+        "lastDurationMs": 7,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
