@@ -196,6 +196,23 @@
           }
         }
       ]
+    },
+    "ollama": {
+      "apiKey": "ollama-local",
+      "baseUrl": "http://172.26.112.1:11434/v1",
+      "api": "ollama",
+      "models": [
+        {
+          "id": "huihui_ai/gemma-4-abliterated:26b",
+          "name": "huihui_ai/gemma-4-abliterated:26b",
+          "api": "ollama",
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 32768
+        }
+      ]
     }
   }
 }

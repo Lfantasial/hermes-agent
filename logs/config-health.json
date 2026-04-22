@@ -2,21 +2,36 @@
   "entries": {
     "/home/lfant/.openclaw/openclaw.json": {
       "lastKnownGood": {
-        "hash": "e1ed790396598008a8321baef5fe34f395e2125b5e6fb655932118a63829ffe4",
-        "bytes": 4068,
-        "mtimeMs": 1775776124845.0032,
-        "ctimeMs": 1775776124848.6033,
+        "hash": "7725c1704b1b37d20bd9b9cab7e0573280bcf9c4d40817ff2b7db55534d8ba2d",
+        "bytes": 6150,
+        "mtimeMs": 1776875686938.2124,
+        "ctimeMs": 1776875686938.2124,
         "dev": "2096",
-        "ino": "693846",
+        "ino": "417859",
         "mode": 384,
         "nlink": 1,
         "uid": 1000,
         "gid": 1000,
         "hasMeta": true,
         "gatewayMode": "local",
-        "observedAt": "2026-04-09T23:08:49.252Z"
+        "observedAt": "2026-04-22T16:34:47.496Z"
       },
-      "lastObservedSuspiciousSignature": null
+      "lastObservedSuspiciousSignature": null,
+      "lastPromotedGood": {
+        "hash": "7725c1704b1b37d20bd9b9cab7e0573280bcf9c4d40817ff2b7db55534d8ba2d",
+        "bytes": 6150,
+        "mtimeMs": 1776875686938.2124,
+        "ctimeMs": 1776875686938.2124,
+        "dev": "2096",
+        "ino": "417859",
+        "mode": 33152,
+        "nlink": 1,
+        "uid": 1000,
+        "gid": 1000,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-04-22T16:34:47.287Z"
+      }
     }
   }
 }

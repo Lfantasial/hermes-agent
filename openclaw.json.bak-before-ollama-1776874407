@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.8",
+    "lastTouchedAt": "2026-04-09T23:08:44.850Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-13T12:23:49.584Z",
+    "lastRunVersion": "2026.3.12",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "update": {
+    "channel": "stable",
+    "checkOnStart": true,
+    "auto": {
+      "enabled": true
+    }
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {}
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "zai/glm-4.7",
+        "fallbacks": [
+          "openai-codex/gpt-5.1",
+          "openrouter/stepfun/step-3.5-flash:free",
+          "openrouter/minimax/minimax-m2.7"
+        ]
+      },
+      "models": {
+        "zai/glm-4.7": {},
+        "openrouter/stepfun/step-3.5-flash:free": {},
+        "openrouter/minimax/minimax-m2.7": {}
+      },
+      "workspace": "/home/lfant/.openclaw/workspace",
+      "memorySearch": {
+        "provider": "local",
+        "local": {
+          "modelPath": "hf:nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q8_0.gguf"
+        }
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8,
+        "model": "zai/glm-4.7",
+        "thinking": "high"
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "model": "zai/glm-4.7"
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": false
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "messages": {
+    "responsePrefix": "[{model} | thinking:{thinkingLevel}]",
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": false,
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8383705979:AAGV0AIQftM-rzingVgFV-orYcKgHZP8e8Q",
+      "groupPolicy": "open",
+      "streaming": {
+        "mode": "partial"
+      },
+      "actions": {
+        "reactions": true,
+        "sendMessage": true,
+        "sticker": true
+      },
+      "heartbeat": {
+        "showOk": true,
+        "showAlerts": true,
+        "useIndicator": true
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "b44011b2db51156528f461d7970e14d189068730cd9444f8"
+    },
+    "channelHealthCheckMinutes": 5,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "allow": [
+      "telegram",
+      "claude-mem",
+      "memory-core",
+      "zai",
+      "openai",
+      "openrouter"
+    ],
+    "slots": {
+      "memory": "claude-mem"
+    },
+    "entries": {
+      "telegram": {
+        "enabled": true,
+        "config": {}
+      },
+      "claude-mem": {
+        "enabled": true,
+        "config": {
+          "syncMemoryFile": true,
+          "workerPort": 37777,
+          "project": "openclaw"
+        }
+      },
+      "memory-core": {
+        "enabled": true
+      },
+      "zai": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "claude-mem": {
+        "source": "path",
+        "sourcePath": "/tmp/claude-mem-install",
+        "installPath": "/home/lfant/.openclaw/extensions/claude-mem",
+        "version": "1.0.0",
+        "installedAt": "2026-02-18T11:55:10.134Z"
+      }
+    }
+  }
+}

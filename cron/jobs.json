@@ -7,7 +7,6 @@
       "name": "daily-security-audit",
       "enabled": true,
       "createdAtMs": 1771254363238,
-      "updatedAtMs": 1776794520731,
       "schedule": {
         "tz": "Asia/Seoul",
         "expr": "0 3 * * *",
@@ -25,16 +24,7 @@
         "channel": "telegram",
         "to": "telegram:5487758242"
       },
-      "state": {
-        "nextRunAtMs": 1776880800000,
-        "lastRunAtMs": 1776794407176,
-        "lastStatus": "ok",
-        "lastDurationMs": 113555,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
-      }
+      "state": {}
     },
     {
       "id": "dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc",
@@ -42,7 +32,6 @@
       "name": "daily-update-check",
       "enabled": true,
       "createdAtMs": 1771254363249,
-      "updatedAtMs": 1776718849945,
       "schedule": {
         "tz": "Asia/Seoul",
         "kind": "cron",
@@ -60,16 +49,7 @@
         "channel": "telegram",
         "to": "telegram:5487758242"
       },
-      "state": {
-        "nextRunAtMs": 1776805200000,
-        "lastRunAtMs": 1776718800004,
-        "lastStatus": "ok",
-        "lastDurationMs": 49941,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
-      }
+      "state": {}
     },
     {
       "id": "07b6a467-2277-4376-8c4c-b8ae1a7ac74f",
@@ -77,7 +57,6 @@
       "name": "periodic-memory-maintenance",
       "enabled": true,
       "createdAtMs": 1771254363257,
-      "updatedAtMs": 1776607299920,
       "schedule": {
         "expr": "0 23 * * 0",
         "kind": "cron",
@@ -92,16 +71,7 @@
       "delivery": {
         "mode": "announce"
       },
-      "state": {
-        "nextRunAtMs": 1777212000000,
-        "lastRunAtMs": 1776607203592,
-        "lastStatus": "error",
-        "lastDurationMs": 96328,
-        "consecutiveErrors": 4,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "lastError": "Error: Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found))"
-      }
+      "state": {}
     },
     {
       "id": "eb4407c8-7e9a-4d66-b956-2695d5aee260",
@@ -109,7 +79,6 @@
       "name": "daily-morning-briefing",
       "enabled": true,
       "createdAtMs": 1771254363268,
-      "updatedAtMs": 1776722452647,
       "schedule": {
         "expr": "0 7 * * *",
         "kind": "cron",
@@ -127,16 +96,7 @@
         "channel": "telegram",
         "to": "telegram:5487758242"
       },
-      "state": {
-        "nextRunAtMs": 1776808800000,
-        "lastRunAtMs": 1776722400005,
-        "lastStatus": "ok",
-        "lastDurationMs": 52642,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
-      }
+      "state": {}
     },
     {
       "id": "52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
@@ -145,7 +105,6 @@
       "name": "daily-github-backup",
       "enabled": true,
       "createdAtMs": 1771408374779,
-      "updatedAtMs": 1776711622079,
       "schedule": {
         "kind": "cron",
         "tz": "Asia/Seoul",
@@ -162,17 +121,7 @@
         "channel": "telegram",
         "to": "telegram:5487758242"
       },
-      "state": {
-        "nextRunAtMs": 1776798000000,
-        "lastRunAtMs": 1776711605873,
-        "lastStatus": "ok",
-        "lastDurationMs": 16206,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true,
-        "runningAtMs": 1776798002938
-      }
+      "state": {}
     },
     {
       "id": "de62862d-0431-460a-93d4-a21c9c54aa7c",
@@ -180,7 +129,6 @@
       "name": "notion-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772063184622,
-      "updatedAtMs": 1776726091845,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -199,23 +147,13 @@
         "channel": "telegram",
         "to": "telegram:5487758242"
       },
-      "state": {
-        "nextRunAtMs": 1776812400000,
-        "lastRunAtMs": 1776726002939,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 88906,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      }
+      "state": {}
     },
     {
       "id": "0f2e06c5-425c-40b2-845b-135e47277fe1",
       "name": "github-repo-daily-briefing",
       "enabled": true,
       "createdAtMs": 1772414390336,
-      "updatedAtMs": 1776729699524,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -234,17 +172,8 @@
         "channel": "telegram",
         "to": "telegram:5487758242"
       },
-      "state": {
-        "nextRunAtMs": 1776816000000,
-        "lastRunAtMs": 1776729600008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 99516,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      },
-      "agentId": "main"
+      "agentId": "main",
+      "state": {}
     },
     {
       "id": "34ae8346-6001-49dd-b83d-17865b2b46c3",
@@ -252,7 +181,6 @@
       "description": "Low-noise workspace heartbeat for session state, cron health, and file-memory continuity",
       "enabled": true,
       "createdAtMs": 1773063542846,
-      "updatedAtMs": 1776778746353,
       "schedule": {
         "kind": "cron",
         "expr": "0 9,12,15,18,21 * * *",
@@ -264,15 +192,7 @@
         "kind": "systemEvent",
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
-      "state": {
-        "nextRunAtMs": 1776816000000,
-        "lastRunAtMs": 1776778570441,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 175912,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
-      }
+      "state": {}
     }
   ]
 }

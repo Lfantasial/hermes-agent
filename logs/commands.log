@@ -3,3 +3,4 @@
 {"timestamp":"2026-02-23T12:42:15.955Z","action":"new","sessionKey":"agent:main:main","senderId":"5487758242","source":"telegram"}
 {"timestamp":"2026-03-09T11:49:16.841Z","action":"new","sessionKey":"agent:main:main","senderId":"5487758242","source":"telegram"}
 {"timestamp":"2026-03-09T12:00:42.916Z","action":"reset","sessionKey":"agent:main:main","senderId":"5487758242","source":"telegram"}
+{"timestamp":"2026-04-22T16:25:01.943Z","action":"new","sessionKey":"agent:main:main","senderId":"openclaw-control-ui","source":"webchat"}
