@@ -198,8 +198,8 @@
       ]
     },
     "ollama": {
-      "apiKey": "ollama-local",
       "baseUrl": "http://172.26.112.1:11434/v1",
+      "apiKey": "ollama-local",
       "api": "ollama",
       "models": [
         {
@@ -210,7 +210,15 @@
             "text",
             "image"
           ],
-          "contextWindow": 32768
+          "contextWindow": 32768,
+          "reasoning": false,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "maxTokens": 8192
         }
       ]
     }

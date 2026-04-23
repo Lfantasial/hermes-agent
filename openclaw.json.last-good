@@ -49,16 +49,14 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "ollama/huihui_ai/gemma-4-abliterated:26b",
+        "primary": "zai/glm-4.7",
         "fallbacks": [
-          "zai/glm-4.7",
           "openai-codex/gpt-5.1",
           "openrouter/stepfun/step-3.5-flash:free",
           "openrouter/minimax/minimax-m2.7"
         ]
       },
       "models": {
-        "ollama/huihui_ai/gemma-4-abliterated:26b": {},
         "zai/glm-4.7": {},
         "openrouter/stepfun/step-3.5-flash:free": {},
         "openrouter/minimax/minimax-m2.7": {}
@@ -76,7 +74,7 @@
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8,
-        "model": "ollama/huihui_ai/gemma-4-abliterated:26b",
+        "model": "zai/glm-4.7",
         "thinking": "high"
       }
     },
@@ -84,9 +82,8 @@
       {
         "id": "main",
         "model": {
-          "primary": "ollama/huihui_ai/gemma-4-abliterated:26b",
+          "primary": "zai/glm-4.7",
           "fallbacks": [
-            "zai/glm-4.7",
             "openrouter/stepfun/step-3.5-flash:free",
             "openrouter/minimax/minimax-m2.7"
           ]
