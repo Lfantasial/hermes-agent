@@ -99,7 +99,7 @@ _openclaw_onboard() {
     "--accept-risk[Acknowledge that agents are powerful and full system access is risky (required for --non-interactive)]" \
     "--flow[Onboard flow: quickstart|advanced|manual]" \
     "--mode[Onboard mode: local|remote]" \
-    "--auth-choice[Auth: custom-api-key|skip|claude-cli|codex-cli|apiKey|anthropic-cli|setup-token|arceeai-api-key|byteplus-api-key|chutes|chutes-api-key|cloudflare-ai-gateway-api-key|zai-cn|qwen-api-key-cn|qwen-api-key|zai-coding-cn|zai-coding-global|copilot-proxy|deepseek-api-key|fireworks-api-key|google-gemini-cli|github-copilot|zai-global|gemini-api-key|huggingface-api-key|kilocode-api-key|moonshot-api-key|moonshot-api-key-cn|kimi-code-api-key|litellm-api-key|lmstudio|microsoft-foundry-apikey|microsoft-foundry-entra|minimax-cn-api|minimax-global-api|minimax-cn-oauth|minimax-global-oauth|mistral-api-key|ollama|openai-api-key|openai-codex|opencode-go|opencode-zen|arceeai-openrouter|openrouter-api-key|qianfan-api-key|sglang|qwen-standard-api-key-cn|qwen-standard-api-key|stepfun-standard-api-key-cn|stepfun-standard-api-key-intl|stepfun-plan-api-key-cn|stepfun-plan-api-key-intl|synthetic-api-key|together-api-key|venice-api-key|ai-gateway-api-key|vllm|volcengine-api-key|xai-api-key|xiaomi-api-key|zai-api-key]" \
+    "--auth-choice[Auth: custom-api-key|skip|claude-cli|codex-cli|apiKey|anthropic-cli|setup-token|arceeai-api-key|byteplus-api-key|chutes|chutes-api-key|cloudflare-ai-gateway-api-key|zai-cn|qwen-api-key-cn|qwen-api-key|zai-coding-cn|zai-coding-global|copilot-proxy|deepseek-api-key|fireworks-api-key|google-gemini-cli|github-copilot|zai-global|gemini-api-key|huggingface-api-key|kilocode-api-key|moonshot-api-key|moonshot-api-key-cn|kimi-code-api-key|litellm-api-key|lmstudio|microsoft-foundry-apikey|microsoft-foundry-entra|minimax-cn-api|minimax-global-api|minimax-cn-oauth|minimax-global-oauth|mistral-api-key|ollama|openai-api-key|openai-codex|openai-codex-device-code|opencode-go|opencode-zen|arceeai-openrouter|openrouter-api-key|qianfan-api-key|sglang|qwen-standard-api-key-cn|qwen-standard-api-key|stepfun-standard-api-key-cn|stepfun-standard-api-key-intl|stepfun-plan-api-key-cn|stepfun-plan-api-key-intl|synthetic-api-key|tokenhub-api-key|together-api-key|venice-api-key|ai-gateway-api-key|vllm|volcengine-api-key|xai-api-key|xiaomi-api-key|zai-api-key]" \
     "--token-provider[Token provider id (non-interactive; used with --auth-choice token)]" \
     "--token[Token value (non-interactive; used with --auth-choice token)]" \
     "--token-profile-id[Auth profile id (non-interactive; default: <provider>:manual)]" \
@@ -126,7 +126,7 @@ _openclaw_onboard() {
     "--minimax-api-key[MiniMax API key]" \
     "--mistral-api-key[Mistral API key]" \
     "--moonshot-api-key[Moonshot API key]" \
-    "--openai-api-key[OpenAI API key]" \
+    "--openai-api-key[OpenAI API Key]" \
     "--opencode-zen-api-key[OpenCode API key (Zen catalog)]" \
     "--opencode-go-api-key[OpenCode API key (Go catalog)]" \
     "--qianfan-api-key[QIANFAN API key]" \
@@ -137,6 +137,7 @@ _openclaw_onboard() {
     "--runway-api-key[Runway API key]" \
     "--stepfun-api-key[StepFun API key]" \
     "--synthetic-api-key[Synthetic API key]" \
+    "--tokenhub-api-key[Tencent TokenHub API key]" \
     "--together-api-key[Together AI API key]" \
     "--venice-api-key[Venice API key]" \
     "--ai-gateway-api-key[Vercel AI Gateway API key]" \
@@ -189,6 +190,8 @@ _openclaw_config_set() {
     "--json[Legacy alias for --strict-json]" \
     "--dry-run[Validate changes without writing openclaw.json (checks run in builder/json/batch modes; exec SecretRefs are skipped unless --allow-exec is set)]" \
     "--allow-exec[Dry-run only: allow exec SecretRef resolvability checks (may execute provider commands)]" \
+    "--merge[Merge object/map values instead of replacing the target path]" \
+    "--replace[Allow full replacement of protected map/list paths such as agents.defaults.models]" \
     "--ref-provider[SecretRef builder: provider alias]" \
     "--ref-source[SecretRef builder: source (env|file|exec)]" \
     "--ref-id[SecretRef builder: ref id]" \
@@ -336,10 +339,9 @@ _openclaw_message_send() {
     "(--message -m)"{--message,-m}"[Message body (required unless --media is set)]" \
     "(--target -t)"{--target,-t}"[Recipient/channel: E.164 for WhatsApp/Signal, Telegram chat id/@username, Discord/Slack channel/user, or iMessage handle/chat_id]" \
     "--media[Attach media (image/audio/video/document). Accepts local paths or URLs.]" \
-    "--interactive[Shared interactive payload as JSON (buttons/selects rendered natively by supported channels)]" \
-    "--buttons[Telegram inline keyboard buttons as JSON (array of button rows)]" \
-    "--components[Discord components payload as JSON]" \
-    "--card[Adaptive Card JSON object (when supported by the channel)]" \
+    "--presentation[Shared presentation payload as JSON (text, context, dividers, buttons, selects)]" \
+    "--delivery[Shared delivery preferences as JSON]" \
+    "--pin[Request that the delivered message be pinned when supported]" \
     "--reply-to[Reply-to message id]" \
     "--thread-id[Thread id (Telegram forum thread)]" \
     "--gif-playback[Treat video media as GIF playback (WhatsApp only).]" \
@@ -997,7 +999,7 @@ _openclaw_agent() {
     "(--to -t)"{--to,-t}"[Recipient number in E.164 used to derive the session key]" \
     "--session-id[Use an explicit session id]" \
     "--agent[Agent id (overrides routing bindings)]" \
-    "--thinking[Thinking level: off | minimal | low | medium | high | xhigh]" \
+    "--thinking[Thinking level: off | minimal | low | medium | high | xhigh | adaptive | max where supported]" \
     "--verbose[Persist agent verbose level for the session]" \
     "--channel[Delivery channel: last|feishu|googlechat|nostr|msteams|mattermost|nextcloud-talk|matrix|bluebubbles|line|zalo|zalouser|synology-chat|tlon|discord|imessage|irc|qqbot|signal|slack|telegram|twitch|whatsapp (omit to use the main session channel)]" \
     "--reply-to[Delivery target override (separate from session routing)]" \
@@ -1375,6 +1377,53 @@ _openclaw_gateway_health() {
     "--json[Output JSON]"
 }
 
+_openclaw_gateway_stability() {
+  _arguments -C \
+    "--limit[Maximum number of recent events]" \
+    "--type[Filter by diagnostic event type]" \
+    "--since-seq[Only include events after this sequence]" \
+    "--bundle[Read a persisted stability bundle instead of calling Gateway; pass \"latest\" for newest]" \
+    "--export[Write a shareable support diagnostics export]" \
+    "--output[Diagnostics export output .zip path]" \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--password[Gateway password (password auth)]" \
+    "--timeout[Timeout in ms]" \
+    "--expect-final[Wait for final response (agent)]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_gateway_diagnostics_export() {
+  _arguments -C \
+    "--output[Output .zip path]" \
+    "--log-lines[Maximum sanitized log lines to include]" \
+    "--log-bytes[Maximum log bytes to inspect]" \
+    "--url[Gateway WebSocket URL for health snapshot]" \
+    "--token[Gateway token for health snapshot]" \
+    "--password[Gateway password for health snapshot]" \
+    "--timeout[Status/health snapshot timeout in ms]" \
+    "--no-stability-bundle[Skip persisted stability bundle lookup]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_gateway_diagnostics() {
+  local -a commands
+  local -a options
+  
+  _arguments -C \
+     \
+    "1: :_values 'command' 'export[Write a shareable, payload-free diagnostics .zip]'" \
+    "*::arg:->args"
+
+  case $state in
+    (args)
+      case $line[1] in
+        (export) _openclaw_gateway_diagnostics_export ;;
+      esac
+      ;;
+  esac
+}
+
 _openclaw_gateway_probe() {
   _arguments -C \
     "--url[Explicit Gateway WebSocket URL (still probes localhost)]" \
@@ -1417,7 +1466,7 @@ _openclaw_gateway() {
     "--compact[Alias for \"--ws-log compact\"]" \
     "--raw-stream[Log raw model stream events to jsonl]" \
     "--raw-stream-path[Raw stream jsonl path]" \
-    "1: :_values 'command' 'run[Run the WebSocket Gateway (foreground)]' 'status[Show gateway service status + probe the Gateway]' 'install[Install the Gateway service (launchd/systemd/schtasks)]' 'uninstall[Uninstall the Gateway service (launchd/systemd/schtasks)]' 'start[Start the Gateway service (launchd/systemd/schtasks)]' 'stop[Stop the Gateway service (launchd/systemd/schtasks)]' 'restart[Restart the Gateway service (launchd/systemd/schtasks)]' 'call[Call a Gateway method]' 'usage-cost[Fetch usage cost summary from session logs]' 'health[Fetch Gateway health]' 'probe[Show gateway reachability + discovery + health + status summary (local + remote)]' 'discover[Discover gateways via Bonjour (local + wide-area if configured)]'" \
+    "1: :_values 'command' 'run[Run the WebSocket Gateway (foreground)]' 'status[Show gateway service status + probe connectivity/capability]' 'install[Install the Gateway service (launchd/systemd/schtasks)]' 'uninstall[Uninstall the Gateway service (launchd/systemd/schtasks)]' 'start[Start the Gateway service (launchd/systemd/schtasks)]' 'stop[Stop the Gateway service (launchd/systemd/schtasks)]' 'restart[Restart the Gateway service (launchd/systemd/schtasks)]' 'call[Call a Gateway method]' 'usage-cost[Fetch usage cost summary from session logs]' 'health[Fetch Gateway health]' 'stability[Fetch payload-free Gateway stability diagnostics]' 'diagnostics[Export local support diagnostics]' 'probe[Show gateway reachability, auth capability, and read-probe summary (local + remote)]' 'discover[Discover gateways via Bonjour (local + wide-area if configured)]'" \
     "*::arg:->args"
 
   case $state in
@@ -1433,6 +1482,8 @@ _openclaw_gateway() {
         (call) _openclaw_gateway_call ;;
         (usage-cost) _openclaw_gateway_usage_cost ;;
         (health) _openclaw_gateway_health ;;
+        (stability) _openclaw_gateway_stability ;;
+        (diagnostics) _openclaw_gateway_diagnostics ;;
         (probe) _openclaw_gateway_probe ;;
         (discover) _openclaw_gateway_discover ;;
       esac
@@ -1487,7 +1538,7 @@ _openclaw_daemon() {
   
   _arguments -C \
      \
-    "1: :_values 'command' 'status[Show service install status + probe the Gateway]' 'install[Install the Gateway service (launchd/systemd/schtasks)]' 'uninstall[Uninstall the Gateway service (launchd/systemd/schtasks)]' 'start[Start the Gateway service (launchd/systemd/schtasks)]' 'stop[Stop the Gateway service (launchd/systemd/schtasks)]' 'restart[Restart the Gateway service (launchd/systemd/schtasks)]'" \
+    "1: :_values 'command' 'status[Show service install status + probe connectivity/capability]' 'install[Install the Gateway service (launchd/systemd/schtasks)]' 'uninstall[Uninstall the Gateway service (launchd/systemd/schtasks)]' 'start[Start the Gateway service (launchd/systemd/schtasks)]' 'stop[Stop the Gateway service (launchd/systemd/schtasks)]' 'restart[Restart the Gateway service (launchd/systemd/schtasks)]'" \
     "*::arg:->args"
 
   case $state in
@@ -1611,7 +1662,7 @@ _openclaw_models_list() {
   _arguments -C \
     "--all[Show full model catalog]" \
     "--local[Filter to local models]" \
-    "--provider[Filter by provider]" \
+    "--provider[Filter by provider id]" \
     "--json[Output JSON]" \
     "--plain[Plain line output]"
 }
@@ -3007,6 +3058,7 @@ _openclaw_sandbox() {
 
 _openclaw_tui() {
   _arguments -C \
+    "--local[Run against the local embedded agent runtime]" \
     "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
     "--token[Gateway token (if required)]" \
     "--password[Gateway password (if required)]" \
@@ -3060,10 +3112,10 @@ _openclaw_cron_add() {
     "--model[Model override for agent jobs (provider/model or alias)]" \
     "--timeout-seconds[Timeout seconds for agent jobs]" \
     "--light-context[Use lightweight bootstrap context for agent jobs]" \
-    "--tools[Comma-separated tool allow-list (e.g. exec,read,write)]" \
-    "--announce[Announce summary to a chat (subagent-style)]" \
-    "--deliver[Deprecated (use --announce). Announces a summary to a chat.]" \
-    "--no-deliver[Disable announce delivery and skip main-session summary]" \
+    "--tools[Tool allow-list (e.g. exec,read,write or exec read write)]" \
+    "--announce[Fallback-deliver final text to a chat]" \
+    "--deliver[Deprecated (use --announce). Fallback-delivers final text to a chat.]" \
+    "--no-deliver[Disable runner fallback delivery]" \
     "--channel[Delivery channel (last|<channel-id>)]" \
     "--to[Delivery destination (E.164, Telegram chatId, or Discord channel/user)]" \
     "--account[Channel account id for delivery (multi-account setups)]" \
@@ -3094,6 +3146,15 @@ _openclaw_cron_enable() {
 
 _openclaw_cron_disable() {
   _arguments -C \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--timeout[Timeout in ms]" \
+    "--expect-final[Wait for final response (agent)]"
+}
+
+_openclaw_cron_show() {
+  _arguments -C \
+    "--json[Output JSON]" \
     "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
     "--token[Gateway token (if required)]" \
     "--timeout[Timeout in ms]" \
@@ -3146,11 +3207,11 @@ _openclaw_cron_edit() {
     "--timeout-seconds[Timeout seconds for agent jobs]" \
     "--light-context[Enable lightweight bootstrap context for agent jobs]" \
     "--no-light-context[Disable lightweight bootstrap context for agent jobs]" \
-    "--tools[Comma-separated tool allow-list (e.g. exec,read,write)]" \
+    "--tools[Tool allow-list (e.g. exec,read,write or exec read write)]" \
     "--clear-tools[Remove tool allow-list (use all tools)]" \
-    "--announce[Announce summary to a chat (subagent-style)]" \
-    "--deliver[Deprecated (use --announce). Announces a summary to a chat.]" \
-    "--no-deliver[Disable announce delivery]" \
+    "--announce[Fallback-deliver final text to a chat]" \
+    "--deliver[Deprecated (use --announce). Fallback-delivers final text to a chat.]" \
+    "--no-deliver[Disable runner fallback delivery]" \
     "--channel[Delivery channel (last|<channel-id>)]" \
     "--to[Delivery destination (E.164, Telegram chatId, or Discord channel/user)]" \
     "--account[Channel account id for delivery (multi-account setups)]" \
@@ -3176,7 +3237,7 @@ _openclaw_cron() {
   
   _arguments -C \
      \
-    "1: :_values 'command' 'status[Show cron scheduler status]' 'list[List cron jobs]' 'add[Add a cron job]' 'rm[Remove a cron job]' 'enable[Enable a cron job]' 'disable[Disable a cron job]' 'runs[Show cron run history (JSONL-backed)]' 'run[Run a cron job now (debug)]' 'edit[Edit a cron job (patch fields)]'" \
+    "1: :_values 'command' 'status[Show cron scheduler status]' 'list[List cron jobs]' 'add[Add a cron job]' 'rm[Remove a cron job]' 'enable[Enable a cron job]' 'disable[Disable a cron job]' 'show[Show a cron job]' 'runs[Show cron run history (JSONL-backed)]' 'run[Run a cron job now (debug)]' 'edit[Edit a cron job (patch fields)]'" \
     "*::arg:->args"
 
   case $state in
@@ -3188,6 +3249,7 @@ _openclaw_cron() {
         (rm) _openclaw_cron_rm ;;
         (enable) _openclaw_cron_enable ;;
         (disable) _openclaw_cron_disable ;;
+        (show) _openclaw_cron_show ;;
         (runs) _openclaw_cron_runs ;;
         (run) _openclaw_cron_run ;;
         (edit) _openclaw_cron_edit ;;
@@ -3474,14 +3536,14 @@ _openclaw_clawbot() {
 
 _openclaw_pairing_list() {
   _arguments -C \
-    "--channel[Channel (telegram)]" \
+    "--channel[Channel ()]" \
     "--account[Account id (for multi-account channels)]" \
     "--json[Print JSON]"
 }
 
 _openclaw_pairing_approve() {
   _arguments -C \
-    "--channel[Channel (telegram)]" \
+    "--channel[Channel ()]" \
     "--account[Account id (for multi-account channels)]" \
     "--notify[Notify the requester on the same channel]"
 }
@@ -3648,39 +3710,15 @@ _openclaw_channels_add() {
     "--channel[Channel (feishu|googlechat|nostr|msteams|mattermost|nextcloud-talk|matrix|bluebubbles|line|zalo|zalouser|synology-chat|tlon|discord|imessage|irc|qqbot|signal|slack|telegram|twitch|whatsapp)]" \
     "--account[Account id (default when omitted)]" \
     "--name[Display name for this account]" \
-    "--token[Bot token (Telegram/Discord)]" \
-    "--private-key[Nostr private key (nsec... or hex)]" \
-    "--token-file[Bot token file (Telegram)]" \
-    "--bot-token[Slack bot token (xoxb-...)]" \
-    "--app-token[Slack app token (xapp-...)]" \
-    "--signal-number[Signal account number (E.164)]" \
-    "--cli-path[CLI path (signal-cli or imsg)]" \
-    "--db-path[iMessage database path]" \
-    "--service[iMessage service (imessage|sms|auto)]" \
-    "--region[iMessage region (for SMS)]" \
-    "--auth-dir[WhatsApp auth directory override]" \
-    "--http-url[Signal HTTP daemon base URL]" \
-    "--http-host[Signal HTTP host]" \
-    "--http-port[Signal HTTP port]" \
-    "--webhook-path[Webhook path (Google Chat/BlueBubbles)]" \
-    "--webhook-url[Google Chat webhook URL]" \
-    "--audience-type[Google Chat audience type (app-url|project-number)]" \
-    "--audience[Google Chat audience value (app URL or project number)]" \
-    "--homeserver[Matrix homeserver URL]" \
-    "--user-id[Matrix user ID]" \
-    "--access-token[Matrix access token]" \
-    "--password[Matrix password]" \
-    "--device-name[Matrix device name]" \
-    "--initial-sync-limit[Matrix initial sync limit]" \
-    "--ship[Tlon ship name (~sampel-palnet)]" \
-    "--url[Tlon ship URL]" \
-    "--relay-urls[Nostr relay URLs (comma-separated)]" \
-    "--code[Tlon login code]" \
-    "--group-channels[Tlon group channels (comma-separated)]" \
-    "--dm-allowlist[Tlon DM allowlist (comma-separated ships)]" \
-    "--auto-discover-channels[Tlon auto-discover group channels]" \
-    "--no-auto-discover-channels[Disable Tlon auto-discovery]" \
-    "--use-env[Use env token (default account only)]"
+    "--token[Channel token or credential payload]" \
+    "--token-file[Read channel token or credential payload from file]" \
+    "--bot-token[Bot token]" \
+    "--app-token[App token]" \
+    "--password[Channel password or login secret]" \
+    "--cli-path[Channel CLI path]" \
+    "--url[Channel setup URL]" \
+    "--http-url[Channel HTTP service URL]" \
+    "--use-env[Use env-backed credentials when supported]"
 }
 
 _openclaw_channels_remove() {
