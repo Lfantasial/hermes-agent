@@ -179,7 +179,7 @@ complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-json-only 
 complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-env -d 'Provider builder (exec): env assignment (repeatable)'
 complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-pass-env -d 'Provider builder (exec): pass host env var (repeatable)'
 complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-trusted-dir -d 'Provider builder (exec): trusted directory (repeatable)'
-complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-allow-insecure-path -d 'Provider builder (exec): bypass strict path permission checks'
+complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-allow-insecure-path -d 'Provider builder (file|exec): bypass strict path permission checks'
 complete -c openclaw -n "__fish_seen_subcommand_from set" -l provider-allow-symlink-command -d 'Provider builder (exec): allow command symlink path'
 complete -c openclaw -n "__fish_seen_subcommand_from set" -l batch-json -d 'Batch mode: JSON array of set operations'
 complete -c openclaw -n "__fish_seen_subcommand_from set" -l batch-file -d 'Batch mode: read JSON array of set operations from file'

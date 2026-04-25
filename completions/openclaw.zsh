@@ -209,7 +209,7 @@ _openclaw_config_set() {
     "--provider-env[Provider builder (exec): env assignment (repeatable)]" \
     "--provider-pass-env[Provider builder (exec): pass host env var (repeatable)]" \
     "--provider-trusted-dir[Provider builder (exec): trusted directory (repeatable)]" \
-    "--provider-allow-insecure-path[Provider builder (exec): bypass strict path permission checks]" \
+    "--provider-allow-insecure-path[Provider builder (file|exec): bypass strict path permission checks]" \
     "--provider-allow-symlink-command[Provider builder (exec): allow command symlink path]" \
     "--batch-json[Batch mode: JSON array of set operations]" \
     "--batch-file[Batch mode: read JSON array of set operations from file]"
