@@ -1,15 +1,16 @@
 {
   "version": 1,
-  "lastRunAt": "2026-04-27T03:59:00+09:00",
+  "lastRunAt": "2026-04-28T03:58:00+09:00",
   "lastChecks": {
-    "sessionState": "2026-04-27T03:59:00+09:00",
-    "dailyMemory": "2026-04-27T03:59:00+09:00",
-    "cron": "2026-04-27T03:59:00+09:00"
+    "sessionState": "2026-04-28T03:58:00+09:00",
+    "dailyMemory": "2026-04-28T03:58:00+09:00",
+    "cron": "2026-04-28T03:58:00+09:00"
   },
   "findings": [
-    "daily-github-backup: HTTP 403 error since 2026-04-14 04:00 KST. Lfantasial lacks write permission to NousResearch/hermes-agent.git. Consecutive errors: 5. Action: Update remote to fork or obtain write permission.",
+    "daily-github-backup: HTTP 403 error since 2026-04-14 04:00 KST. Lfantasial lacks write permission to NousResearch/hermes-agent.git. Consecutive errors: 6. Action: Update remote to fork or obtain write permission.",
     "periodic-memory-maintenance: Telegram recipient @heartbeat could not be resolved. Consecutive errors: 3. Memory distillation automation disrupted. Action: Update Telegram recipient configuration.",
+    "daily-security-audit: Module error since 2026-04-12 03:00 KST. Root cause identified at Apr 28 03:09 KST: gtoken dependency ENOTEMPTY error in /home/lfant/node_modules/gtoken. Action: Clean up gtoken directory and retry security audit.",
     "Security audit regression: Critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19). Critical findings: Open groups with elevated tools, runtime/filesystem exposure in Telegram, Telegram groupPolicy=open without allowlist. Action: Immediate security configuration required."
   ],
-  "notes": "Heartbeat at 03:59 KST (Apr 27). State unchanged - two persistent cron failures and security posture regression remain. Note: daily-github-backup consecutive errors increased to 5 (new error at Apr 26 04:00 KST)."
+  "notes": "Heartbeat at 03:58 KST (Apr 28). State unchanged - three persistent cron failures and security posture regression remain. Note: daily-github-backup consecutive errors increased to 6 (new error at Apr 27 04:00 KST)."
 }

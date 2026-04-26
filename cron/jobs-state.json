@@ -2,12 +2,12 @@
   "version": 1,
   "jobs": {
     "78f50a18-690a-4667-a12c-99a01398515c": {
-      "updatedAtMs": 1777140090644,
+      "updatedAtMs": 1777226978950,
       "state": {
-        "nextRunAtMs": 1777226400000,
-        "lastRunAtMs": 1777140003590,
+        "nextRunAtMs": 1777312800000,
+        "lastRunAtMs": 1777226431332,
         "lastStatus": "ok",
-        "lastDurationMs": 87054,
+        "lastDurationMs": 547618,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -15,12 +15,12 @@
       }
     },
     "dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc": {
-      "updatedAtMs": 1777064466895,
+      "updatedAtMs": 1777150818396,
       "state": {
-        "nextRunAtMs": 1777150800000,
-        "lastRunAtMs": 1777064402781,
+        "nextRunAtMs": 1777237200000,
+        "lastRunAtMs": 1777150800005,
         "lastStatus": "ok",
-        "lastDurationMs": 64114,
+        "lastDurationMs": 18391,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -28,24 +28,25 @@
       }
     },
     "07b6a467-2277-4376-8c4c-b8ae1a7ac74f": {
-      "updatedAtMs": 1776607299920,
+      "updatedAtMs": 1777212426690,
       "state": {
-        "nextRunAtMs": 1777212000000,
-        "lastRunAtMs": 1776607203592,
+        "nextRunAtMs": 1777816800000,
+        "lastRunAtMs": 1777212021145,
         "lastStatus": "error",
-        "lastDurationMs": 96328,
-        "consecutiveErrors": 4,
+        "lastDurationMs": 405545,
+        "consecutiveErrors": 5,
         "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown"
+        "lastDeliveryStatus": "unknown",
+        "lastError": "Delivering to Telegram requires target <chatId>"
       }
     },
     "eb4407c8-7e9a-4d66-b956-2695d5aee260": {
-      "updatedAtMs": 1777068050204,
+      "updatedAtMs": 1777154441273,
       "state": {
-        "nextRunAtMs": 1777154400000,
-        "lastRunAtMs": 1777068003589,
+        "nextRunAtMs": 1777240800000,
+        "lastRunAtMs": 1777154405868,
         "lastStatus": "ok",
-        "lastDurationMs": 46615,
+        "lastDurationMs": 35405,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -53,53 +54,53 @@
       }
     },
     "52ed00fd-cb4e-41ec-bde8-8c03c61c3d93": {
-      "updatedAtMs": 1777057247977,
+      "updatedAtMs": 1777143642686,
       "state": {
-        "nextRunAtMs": 1777143600000,
-        "lastRunAtMs": 1777057205365,
+        "nextRunAtMs": 1777230000000,
+        "lastRunAtMs": 1777143603591,
         "lastStatus": "ok",
-        "lastDurationMs": 42612,
+        "lastDurationMs": 39095,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
         "lastDelivered": true,
-        "runningAtMs": 1777143603588
+        "runningAtMs": 1777230007169
       }
     },
     "de62862d-0431-460a-93d4-a21c9c54aa7c": {
-      "updatedAtMs": 1777071622610,
+      "updatedAtMs": 1777158015841,
       "state": {
-        "nextRunAtMs": 1777158000000,
-        "lastRunAtMs": 1777071600005,
+        "nextRunAtMs": 1777244400000,
+        "lastRunAtMs": 1777158002597,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22605,
+        "lastDurationMs": 13244,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
       }
     },
     "0f2e06c5-425c-40b2-845b-135e47277fe1": {
-      "updatedAtMs": 1777075339497,
+      "updatedAtMs": 1777161739270,
       "state": {
-        "nextRunAtMs": 1777161600000,
-        "lastRunAtMs": 1777075206918,
+        "nextRunAtMs": 1777248000000,
+        "lastRunAtMs": 1777161603588,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 132579,
+        "lastDurationMs": 135682,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
       }
     },
     "34ae8346-6001-49dd-b83d-17865b2b46c3": {
-      "updatedAtMs": 1777118419275,
+      "updatedAtMs": 1777204875755,
       "state": {
-        "nextRunAtMs": 1777161600000,
-        "lastRunAtMs": 1777118403588,
+        "nextRunAtMs": 1777248000000,
+        "lastRunAtMs": 1777204803594,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15687,
+        "lastDurationMs": 72161,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }

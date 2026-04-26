@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-**Last Updated:** 2026-04-19
+**Last Updated:** 2026-04-26
 
 > This is curated long-term memory for durable preferences, decisions, and context.
 > For raw daily logs, see `memory/YYYY-MM-DD.md`.
@@ -11,30 +11,45 @@
 
 ### Cron Job Health
 - **Total Jobs:** 8
-- **Healthy:** 6/8
-- **Active Failures:** 2
+- **Healthy:** 5/8
+- **Active Failures:** 3
 
 ### Persistent Issues
 1. **daily-github-backup** (HIGH priority - Persistent since 2026-04-14)
    - Symptom: GitHub push failed with HTTP 403 Forbidden
    - Root cause: Lfantasial lacks write permission to NousResearch/hermes-agent.git repository
-   - Consecutive errors: 2
+   - Consecutive errors: 6+
    - First failure: 2026-04-14 04:00 KST
-   - Last failure: 2026-04-17 04:00 KST
-   - Local commits: Successful (41 files, 7140 insertions, 317 deletions on Apr 16)
+   - Last failure: 2026-04-26 04:00 KST
+   - Local commits: Successful
    - Action required: Update remote to fork or obtain write permission
 
-2. **periodic-memory-maintenance** (MEDIUM priority - Escalating)
-   - Symptom: Telegram recipient @heartbeat could not be resolved
-   - Consecutive errors: 3
-   - Impact: Memory distillation automation disrupted
-   - Action required: Update Telegram recipient configuration
+2. **periodic-memory-maintenance** (MEDIUM priority - Configuration Error)
+   - Symptom: delivery.mode=announce with no target channel configured
+   - Impact: Cannot deliver results, memory distillation automation disrupted
+   - Action required: Add delivery channel configuration
 
-3. **Security Posture Regression** (HIGH priority - Worsening)
-   - Symptom: Security audit critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19)
-   - Last audit: 2026-04-19 03:00 KST (6 Critical, 5 Warn, 1 Info)
-   - Critical issues: Open groups with elevated tools, runtime/filesystem exposure in Telegram, Telegram groupPolicy=open without allowlist
-   - Action required: Immediately configure Telegram groupPolicy → allowlist + explicit group configuration
+3. **daily-security-audit** (HIGH priority - Module Error)
+   - Symptom: Module error since 2026-04-12 03:00 KST
+   - Impact: Security monitoring automation disrupted
+   - Action required: Investigate and recover module error
+
+### Security Audit Findings (Latest: 2026-04-26)
+**High - Trust Boundary Multi-User Exposure:**
+- `channels.telegram.groupPolicy="open"` allows multiple users on same Gateway
+- Runtime/Process tools exposed without full sandboxing
+- Risk: Potential privilege escalation in shared environment with untrusted users
+
+**Medium - Phantom Plugin Allowlist Entries:**
+- Unused entries in `plugins.allow` not matching installed plugins
+- Risk: New plugins could spoof allowlisted IDs
+
+**Medium - Extension Plugin Tools Reachable Under Permissive Policy:**
+- `claude-mem` extension plugin enabled
+- Permissive tool policy in: `default`, `agents.list.main`
+- Risk: Plugin tools may be exposed when handling untrusted input
+
+**Context:** Current config optimized for personal assistant model (single trusted operator), not hostile multi-tenant isolation. No action required if operating within trusted environment.
 
 ---
 
@@ -103,10 +118,16 @@
 - Impact: Memory distillation automation disrupted
 - Status: Unresolved - requires Telegram configuration update
 
-**2026-04-19:** Security audit regression
-- Critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19)
-- Critical findings: Open groups with elevated tools, runtime/filesystem exposure, Telegram groupPolicy=open without allowlist
-- Status: Escalating - immediate action required for security posture
+**2026-04-26:** Security audit and cron failure tracking
+- Latest security audit (2026-04-26): 1 High, 2 Medium issues identified
+- Key findings: Trust boundary multi-user exposure, phantom plugin allowlist entries, extension plugin tools reachable under permissive policy
+- Context: Config optimized for personal assistant model, not multi-tenant isolation
+- Status: No action required if operating within trusted environment
+
+**2026-04-26:** Cron failure consolidation
+- daily-github-backup: 6+ consecutive errors (HTTP 403 since 2026-04-14)
+- periodic-memory-maintenance: delivery.mode=announce with no target channel
+- daily-security-audit: Module error since 2026-04-12
 
 **2026-04-17:** Gateway restart via npm
 - System maintenance completed successfully
@@ -231,24 +252,29 @@
 7. **daily-security-audit** (03:00 KST)
    - Purpose: Deep security audit via `openclaw security audit --deep`
    - Model: zai/glm-4.7
+   - Status: ERROR - Module error since 2026-04-12 03:00 KST
    - Known false positives: tavily-search, claude-mem, writing-skills
-   - Status: OK (but critical findings worsened: 2-3 critical Apr 10-17 → 6 critical Apr 19)
 
-### Failing Jobs (2/8)
+### Failing Jobs (3/8)
 8. **daily-github-backup** (04:00 KST)
    - Purpose: Run `backup_to_github.sh` to push workspace to GitHub
    - Status: ERROR - HTTP 403 Forbidden
-   - Consecutive errors: 2
+   - Consecutive errors: 6+
    - First failure: 2026-04-14 04:00 KST
-   - Last failure: 2026-04-17 04:00 KST
+   - Last failure: 2026-04-26 04:00 KST
    - Local commits: Successful, remote push failing
    - Cause: Lfantasial lacks write permission to NousResearch/hermes-agent.git
 
 9. **periodic-memory-maintenance** (23:00 KST Sundays)
    - Purpose: Distill recent memory files into MEMORY.md
-   - Status: ERROR - Telegram recipient @heartbeat not found
-   - Consecutive errors: 3
-   - Impact: Memory distillation automation disrupted
+   - Status: ERROR - delivery.mode=announce with no target channel configured
+   - Impact: Cannot deliver results
+
+10. **daily-security-audit** (03:00 KST)
+    - Purpose: Deep security audit via `openclaw security audit --deep`
+    - Model: zai/glm-4.7
+    - Status: ERROR - Module error since 2026-04-12 03:00 KST
+    - Impact: Security monitoring automation disrupted
 
 ---
 
@@ -325,9 +351,10 @@
 
 ## Notes for Future
 
-- **Security audit regression:** Critical issues increased from 2-3 (Apr 10-17) to 6 (Apr 19) - requires immediate attention for Telegram groupPolicy configuration
-- **GitHub backup failure:** HTTP 403 error since 2026-04-14 - Lfantasial lacks write permission to NousResearch/hermes-agent.git, needs remote update or permission grant
-- **Memory maintenance disruption:** Telegram recipient @heartbeat not found (3 consecutive errors) - requires configuration update
+- **Security audit findings (2026-04-26):** 1 High, 2 Medium issues - config optimized for personal assistant model, no action required within trusted environment
+- **GitHub backup failure:** HTTP 403 error since 2026-04-14 - 6+ consecutive errors, Lfantasial lacks write permission to NousResearch/hermes-agent.git, needs remote update or permission grant
+- **Memory maintenance delivery error:** delivery.mode=announce with no target channel configured - requires delivery channel configuration
+- **Security audit module error:** Module error since 2026-04-12 - security monitoring automation disrupted, requires investigation and recovery
 - **Model evolution:** Monitor for new model releases and evaluate migration benefits
 - **Cron job optimization:** Review batch opportunities to reduce API calls (e.g., combine multiple checks into heartbeat)
 - **Security posture:** Telegram open group permissions with elevated tools and runtime/filesystem exposure need urgent formal review
@@ -337,4 +364,4 @@
 
 ---
 
-_Updated: 2026-04-12 by periodic-memory-maintenance cron job_
+_Updated: 2026-04-26 by periodic-memory-maintenance cron job_
