@@ -1,0 +1,24 @@
+# Sensitive credentials
+.env
+*.key
+*.pem
+
+# Memory files (local only)
+workspace/memory/
+workspace/MEMORY.md
+workspace/SESSION-STATE.md
+memory/
+
+# Large binary files
+extensions/claude-mem/plugin/scripts/claude-mem
+
+# Runtime data
+sessions/*.jsonl
+sessions/*.json
+sessions/*.deleted.*
+agents/*/sessions/
+agents/*/agent/auth-state.json
+
+# Logs
+logs/
+*.log
