@@ -5568,7 +5568,7 @@
     "chatType": "direct",
     "label": "Cron: daily-github-backup",
     "sessionId": "43db14dd-93cb-4c93-a5ca-8f6050855f1d",
-    "updatedAt": 1777334999213,
+    "updatedAt": 1777335265872,
     "sessionStartedAt": 1777334882526,
     "lastInteractionAt": 1777334882526,
     "systemSent": true,
@@ -6803,7 +6803,7 @@
     "model": "glm-4.7",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1777334906579,
+      "generatedAt": 1777334990051,
       "sessionId": "43db14dd-93cb-4c93-a5ca-8f6050855f1d",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
@@ -6823,9 +6823,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 32963,
-        "projectContextChars": 17688,
-        "nonProjectContextChars": 15275
+        "chars": 33073,
+        "projectContextChars": 18241,
+        "nonProjectContextChars": 14832
       },
       "injectedWorkspaceFiles": [
         {
@@ -7144,7 +7144,7 @@
       },
       "tools": {
         "listChars": 0,
-        "schemaChars": 17649,
+        "schemaChars": 17661,
         "entries": [
           {
             "name": "read",
@@ -7184,8 +7184,8 @@
           },
           {
             "name": "message",
-            "summaryChars": 175,
-            "schemaChars": 7060,
+            "summaryChars": 167,
+            "schemaChars": 7072,
             "propertiesCount": 110
           },
           {
@@ -7269,16 +7269,16 @@
         ]
       }
     },
-    "contextTokens": 200000,
-    "inputTokens": 12209,
-    "outputTokens": 281,
-    "totalTokens": 27181,
+    "contextTokens": 204800,
+    "inputTokens": 42705,
+    "outputTokens": 954,
+    "totalTokens": 50997,
     "totalTokensFresh": true,
-    "cacheRead": 98454,
+    "cacheRead": 37192,
     "cacheWrite": 0,
     "abortedLastRun": false,
     "status": "running",
-    "startedAt": 1777334990199
+    "startedAt": 1777335265818
   },
   "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc": {
     "chatType": "direct",
