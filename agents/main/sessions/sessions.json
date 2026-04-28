@@ -5568,7 +5568,7 @@
     "chatType": "direct",
     "label": "Cron: daily-github-backup",
     "sessionId": "43db14dd-93cb-4c93-a5ca-8f6050855f1d",
-    "updatedAt": 1777335265872,
+    "updatedAt": 1777335427913,
     "sessionStartedAt": 1777334882526,
     "lastInteractionAt": 1777334882526,
     "systemSent": true,
@@ -6803,7 +6803,7 @@
     "model": "glm-4.7",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1777334990051,
+      "generatedAt": 1777335265663,
       "sessionId": "43db14dd-93cb-4c93-a5ca-8f6050855f1d",
       "sessionKey": "agent:main:cron:52ed00fd-cb4e-41ec-bde8-8c03c61c3d93",
       "provider": "zai",
@@ -7270,15 +7270,15 @@
       }
     },
     "contextTokens": 204800,
-    "inputTokens": 42705,
-    "outputTokens": 954,
-    "totalTokens": 50997,
+    "inputTokens": 87685,
+    "outputTokens": 426,
+    "totalTokens": 102911,
     "totalTokensFresh": true,
-    "cacheRead": 37192,
+    "cacheRead": 50616,
     "cacheWrite": 0,
     "abortedLastRun": false,
     "status": "running",
-    "startedAt": 1777335265818
+    "startedAt": 1777335427862
   },
   "agent:main:cron:dc1f52da-a247-4c7c-8ad8-c3f0d5ca71fc": {
     "chatType": "direct",
