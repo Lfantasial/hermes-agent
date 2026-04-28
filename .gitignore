@@ -12,6 +12,9 @@ memory/
 # Large binary files
 extensions/claude-mem/plugin/scripts/claude-mem
 
+# Plugin runtime dependencies (large node_modules)
+plugin-runtime-deps/
+
 # Runtime data
 sessions/*.jsonl
 sessions/*.json
