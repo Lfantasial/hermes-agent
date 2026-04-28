@@ -24,7 +24,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1777334564030
       }
     },
     "07b6a467-2277-4376-8c4c-b8ae1a7ac74f": {
@@ -50,7 +51,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1777334564030
       }
     },
     "52ed00fd-cb4e-41ec-bde8-8c03c61c3d93": {
@@ -64,7 +66,7 @@
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
         "lastDelivered": true,
-        "runningAtMs": 1777316402359
+        "runningAtMs": 1777334564030
       }
     },
     "de62862d-0431-460a-93d4-a21c9c54aa7c": {
@@ -77,30 +79,31 @@
         "lastDurationMs": 324867,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1777334564030
       }
     },
     "0f2e06c5-425c-40b2-845b-135e47277fe1": {
-      "updatedAtMs": 1777248295882,
+      "updatedAtMs": 1777334562021,
       "state": {
-        "nextRunAtMs": 1777334400000,
-        "lastRunAtMs": 1777248003592,
+        "nextRunAtMs": 1777420800000,
+        "lastRunAtMs": 1777334407173,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 292290,
+        "lastDurationMs": 154848,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
       }
     },
     "34ae8346-6001-49dd-b83d-17865b2b46c3": {
-      "updatedAtMs": 1777291219918,
+      "updatedAtMs": 1777334562022,
       "state": {
-        "nextRunAtMs": 1777334400000,
-        "lastRunAtMs": 1777291219910,
+        "nextRunAtMs": 1777345200000,
+        "lastRunAtMs": 1777334562021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8,
+        "lastDurationMs": 1,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }

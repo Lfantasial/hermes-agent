@@ -276,15 +276,6 @@
         "enabled": true,
         "config": {}
       }
-    },
-    "installs": {
-      "claude-mem": {
-        "source": "path",
-        "sourcePath": "/tmp/claude-mem-install",
-        "installPath": "/home/lfant/.openclaw/extensions/claude-mem",
-        "version": "1.0.0",
-        "installedAt": "2026-02-18T11:55:10.134Z"
-      }
     }
   }
 }
